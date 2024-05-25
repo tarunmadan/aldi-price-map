@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Grape Tomatoes</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Grape Tomatoes cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2b7bc19fa676a3cf9903c7562fde828 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+<style>
+                        .header {
+                            
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            background-color: #001f78;
+                            color: #FFF;
+                            padding-left: 20px;
+                        }
+                        .footer{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            background-color: #001f78;
+                            color: #FFF;
+                        }
+                        .banner {
+                            padding-top: 20px;
+                            padding-bottom: 15px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            
+                            background-color: #ffbf45;
+                        }
+
+                        .header option {
+                            font-weight: 800;
+                        }
+                        .header select {
+                            font-weight: 800; 
+                            max-width: 250px;                            
+                        }
+                        .header .main {                            
+                            float: left;
+                        }
+                        .header .sub {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: 	#ffbf45;
+                            float: right;
+                            padding-top: 10px;
+                            padding-right: 20px;
+                        }
+                        .header a, .footer a {
+                            color: 	#ffbf45;
+                        }
+                    </style>
+</head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>0.89</li>
+                <li><span style='background:#b22222'></span>1.89</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+<div class="header">
+                <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                        
+            <option value="bake_shop_gourmet_cookies">Bake Shop Gourmet Cookies</option>
+
+            
+            <option value="baker's_corner_regular_marshmallows">Baker's Corner Regular Marshmallows</option>
+
+            
+            <option value="benton's_honey_graham_crackers">Benton's Honey Graham Crackers</option>
+
+            
+            <option value="benton's_jumbo_waffle_cones">Benton's Jumbo Waffle Cones</option>
+
+            
+            <option value="blueberries">Blueberries</option>
+
+            
+            <option value="dakota's_pride_homestyle,_bold_and_spicy_or_countryside_bbq_baked_beans">Dakota's Pride Homestyle, Bold and Spicy or Countryside BBQ Baked Beans</option>
+
+            
+            <option value="driscoll's_blackberries">Driscoll's Blackberries</option>
+
+            
+            <option value="fresh_7327_ground_beef_roll">Fresh 73/27 Ground Beef Roll</option>
+
+            
+            <option value="grape_tomatoes" selected>Grape Tomatoes</option>
+
+            
+            <option value="hershey's_milk_chocolate_6-pack">Hershey's Milk Chocolate 6-Pack</option>
+
+            
+            <option value="l'oven_fresh_hamburger_or_hot_dog_buns">L'oven Fresh Hamburger or Hot Dog Buns</option>
+
+            
+            <option value="large_whole_seedless_watermelon">Large Whole Seedless Watermelon</option>
+
+            
+            <option value="mini_cucumbers">Mini Cucumbers</option>
+
+            
+            <option value="organic_baby_peeled_carrots">Organic Baby Peeled Carrots</option>
+
+            
+            <option value="park_street_deli_fresh_salsa">Park Street Deli Fresh Salsa</option>
+
+            
+            <option value="party_pack_bratwurst">Party Pack Bratwurst</option>
+
+            
+            <option value="pueblo_lindo_party_size_tortilla_strips">Pueblo Lindo Party Size Tortilla Strips</option>
+
+            
+            <option value="puraqua_24-pack_purified_drinking_water">PurAqua 24-Pack Purified Drinking Water</option>
+
+            
+            <option value="puraqua_sparkling_flavored_water">PurAqua Sparkling Flavored Water</option>
+
+            
+            <option value="savoritz_sea_salt_or_garlic_chive_pita_crackers">Savoritz Sea Salt or Garlic Chive Pita Crackers</option>
+
+            
+            <option value="strawberries">Strawberries</option>
+
+            
+            <option value="summit_cola">Summit Cola</option>
+
+            
+            <option value="sundae_shoppe_creamy_strawberry,_mango_or_coconut_fruit_bars">Sundae Shoppe Creamy Strawberry, Mango or Coconut Fruit Bars</option>
+
+            
+            <option value="sundae_shoppe_vanilla_light_ice_cream_pail">Sundae Shoppe Vanilla Light Ice Cream Pail</option>
+
+            
+            <option value="sweet_baby_ray's_original_or_honey_barbecue_sauce">Sweet Baby Ray's Original or Honey Barbecue Sauce</option>
+
+            
+            <option value="sweet_corn">Sweet Corn</option>
+
+            </select> &nbsp;cost at Aldi? </div>
+                <div class="sub">Prices valid May 22<sup>nd</sup> - May 28<sup>th</sup>. New products and next update on May 29<sup>th</sup></span>    </div>
+                <div style="clear: both;"></div>           
+            </div>
+<div class="folium-map" id="map_e2b7bc19fa676a3cf9903c7562fde828" ></div>
+        
+
+<div class="footer">
+    <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+    Store pricing may change without notice and may differ from the information provided on this site. 
+    View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+        
+    </p>
+    <p>For the week of May 22<sup>nd</sup>, price maps are available for the following products - 
+            <a href="bake_shop_gourmet_cookies.html">Bake Shop Gourmet Cookies</a>, 
+            <a href="baker's_corner_regular_marshmallows.html">Baker's Corner Regular Marshmallows</a>, 
+            <a href="benton's_honey_graham_crackers.html">Benton's Honey Graham Crackers</a>, 
+            <a href="benton's_jumbo_waffle_cones.html">Benton's Jumbo Waffle Cones</a>, 
+            <a href="blueberries.html">Blueberries</a>, 
+            <a href="dakota's_pride_homestyle,_bold_and_spicy_or_countryside_bbq_baked_beans.html">Dakota's Pride Homestyle, Bold and Spicy or Countryside BBQ Baked Beans</a>, 
+            <a href="driscoll's_blackberries.html">Driscoll's Blackberries</a>, 
+            <a href="fresh_7327_ground_beef_roll.html">Fresh 73/27 Ground Beef Roll</a>, 
+            <a href="grape_tomatoes.html">Grape Tomatoes</a>, 
+            <a href="hershey's_milk_chocolate_6-pack.html">Hershey's Milk Chocolate 6-Pack</a>, 
+            <a href="l'oven_fresh_hamburger_or_hot_dog_buns.html">L'oven Fresh Hamburger or Hot Dog Buns</a>, 
+            <a href="large_whole_seedless_watermelon.html">Large Whole Seedless Watermelon</a>, 
+            <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+            <a href="organic_baby_peeled_carrots.html">Organic Baby Peeled Carrots</a>, 
+            <a href="park_street_deli_fresh_salsa.html">Park Street Deli Fresh Salsa</a>, 
+            <a href="party_pack_bratwurst.html">Party Pack Bratwurst</a>, 
+            <a href="pueblo_lindo_party_size_tortilla_strips.html">Pueblo Lindo Party Size Tortilla Strips</a>, 
+            <a href="puraqua_24-pack_purified_drinking_water.html">PurAqua 24-Pack Purified Drinking Water</a>, 
+            <a href="puraqua_sparkling_flavored_water.html">PurAqua Sparkling Flavored Water</a>, 
+            <a href="savoritz_sea_salt_or_garlic_chive_pita_crackers.html">Savoritz Sea Salt or Garlic Chive Pita Crackers</a>, 
+            <a href="strawberries.html">Strawberries</a>, 
+            <a href="summit_cola.html">Summit Cola</a>, 
+            <a href="sundae_shoppe_creamy_strawberry,_mango_or_coconut_fruit_bars.html">Sundae Shoppe Creamy Strawberry, Mango or Coconut Fruit Bars</a>, 
+            <a href="sundae_shoppe_vanilla_light_ice_cream_pail.html">Sundae Shoppe Vanilla Light Ice Cream Pail</a>, 
+            <a href="sweet_baby_ray's_original_or_honey_barbecue_sauce.html">Sweet Baby Ray's Original or Honey Barbecue Sauce</a>, 
+            <a href="sweet_corn.html">Sweet Corn</a></p></div></body>
+<script>
+    function countryHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+<script>
+    
+    
+            var map_e2b7bc19fa676a3cf9903c7562fde828 = L.map(
+                "map_e2b7bc19fa676a3cf9903c7562fde828",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e2b7bc19fa676a3cf9903c7562fde828);
+
+            
+
+        
+    
+            var tile_layer_470d28f880695c62b770a8a538ed9ced = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_470d28f880695c62b770a8a538ed9ced.addTo(map_e2b7bc19fa676a3cf9903c7562fde828);
+        
+    
+            map_e2b7bc19fa676a3cf9903c7562fde828.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_0dd1d893b01ffa52dc9931e619379043_styler(feature) {
+            switch(feature.id) {
+                case "52265": case "52456": case "52519": case "52582": case "52909": case "53038": case "54421": case "54484": case "54609": case "54672": case "54735": case "54798": case "54861": case "56112": case "56175": case "56300": case "58079": case "58142": case "58733": case "59324": case "59783": case "60110": case "60367": case "61288": case "61351": case "64248": case "65037": case "65694": case "65823": case "66546": case "67137": case "67200": case "67263": case "67326": case "67455": case "67584": case "67911": case "68436": case "71069": case "73508": case "75023": case "77000": case "77789": case "77852": case "78905": case "78968": case "79823": case "79886": case "81269": case "82384": case "82843": case "83302": case "84813": case "84876": case "86655": case "86718": case "89681": case "90404": case "93855": case "94508": case "95363": case "99634": case "99697": case "101996": case "102587": case "103244": case "103901": case "106732": case "110281": case "113512": case "115221": case "115936": case "118635": case "119820": case "122515": case "124558": case "124687": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_0dd1d893b01ffa52dc9931e619379043_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_0dd1d893b01ffa52dc9931e619379043_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_0dd1d893b01ffa52dc9931e619379043_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_0dd1d893b01ffa52dc9931e619379043_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_0dd1d893b01ffa52dc9931e619379043.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_0dd1d893b01ffa52dc9931e619379043_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_0dd1d893b01ffa52dc9931e619379043 = L.geoJson(null, {
+                onEachFeature: geo_json_0dd1d893b01ffa52dc9931e619379043_onEachFeature,
+            
+                style: geo_json_0dd1d893b01ffa52dc9931e619379043_styler,
+                pointToLayer: geo_json_0dd1d893b01ffa52dc9931e619379043_pointToLayer,
+        });
+
+        function geo_json_0dd1d893b01ffa52dc9931e619379043_add (data) {
+            geo_json_0dd1d893b01ffa52dc9931e619379043
+                .addData(data);
+        }
+            geo_json_0dd1d893b01ffa52dc9931e619379043_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "52265", "properties": {"Current Price": "$1.89", "Location": "Fontana, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "52387", "properties": {"Current Price": "89\u00a2", "Location": "Menifee, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "52456", "properties": {"Current Price": "$1.89", "Location": "Palmdale, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "52519", "properties": {"Current Price": "$1.89", "Location": "Buena Park, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "52582", "properties": {"Current Price": "$1.89", "Location": "Covina, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "52909", "properties": {"Current Price": "$1.89", "Location": "South Gate, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "53038", "properties": {"Current Price": "$1.89", "Location": "Lancaster, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "54421", "properties": {"Current Price": "$1.89", "Location": "San Bernardino, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "54484", "properties": {"Current Price": "$1.89", "Location": "El Centro, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "54540", "properties": {"Current Price": "89\u00a2", "Location": "La Quinta, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "54609", "properties": {"Current Price": "$1.89", "Location": "Bakersfield, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "54672", "properties": {"Current Price": "$1.89", "Location": "Escondido, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "54735", "properties": {"Current Price": "$1.89", "Location": "Calexico, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "54798", "properties": {"Current Price": "$1.89", "Location": "Lake Elsinore, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "54861", "properties": {"Current Price": "$1.89", "Location": "Palm Springs, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "56112", "properties": {"Current Price": "$1.89", "Location": "Cerritos, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "56175", "properties": {"Current Price": "$1.89", "Location": "San Bernardino, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "56231", "properties": {"Current Price": "89\u00a2", "Location": "Simi Valley, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "56300", "properties": {"Current Price": "$1.89", "Location": "Anaheim, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "58079", "properties": {"Current Price": "$1.89", "Location": "Moreno Valley, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "58142", "properties": {"Current Price": "$1.89", "Location": "Long Beach, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "58733", "properties": {"Current Price": "$1.89", "Location": "Fountain Valley, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "59324", "properties": {"Current Price": "$1.89", "Location": "Santa Clarita, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "59783", "properties": {"Current Price": "$1.89", "Location": "Arcadia, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "60110", "properties": {"Current Price": "$1.89", "Location": "Beaumont, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "60166", "properties": {"Current Price": "89\u00a2", "Location": "Palm Desert, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "60367", "properties": {"Current Price": "$1.89", "Location": "La Puente, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "61288", "properties": {"Current Price": "$1.89", "Location": "Inglewood, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "61351", "properties": {"Current Price": "$1.89", "Location": "Westminster, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "61473", "properties": {"Current Price": "89\u00a2", "Location": "Yucaipa, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "64248", "properties": {"Current Price": "$1.89", "Location": "La Verne, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "65037", "properties": {"Current Price": "$1.89", "Location": "Rancho Cucamonga, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "65694", "properties": {"Current Price": "$1.89", "Location": "Vista, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "65823", "properties": {"Current Price": "$1.89", "Location": "Altadena, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "66546", "properties": {"Current Price": "$1.89", "Location": "Downey, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "67137", "properties": {"Current Price": "$1.89", "Location": "Hesperia, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "67200", "properties": {"Current Price": "$1.89", "Location": "Oxnard, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "67263", "properties": {"Current Price": "$1.89", "Location": "La Habra, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "67326", "properties": {"Current Price": "$1.89", "Location": "Garden Grove, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "67455", "properties": {"Current Price": "$1.89", "Location": "Chino, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "67584", "properties": {"Current Price": "$1.89", "Location": "Temecula, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "67911", "properties": {"Current Price": "$1.89", "Location": "Chula Vista, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "68436", "properties": {"Current Price": "$1.89", "Location": "Whittier, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "68888", "properties": {"Current Price": "89\u00a2", "Location": "Ramona, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "71069", "properties": {"Current Price": "$1.89", "Location": "Santa Fe Springs, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "73508", "properties": {"Current Price": "$1.89", "Location": "Compton, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "75023", "properties": {"Current Price": "$1.89", "Location": "Oxnard, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "77000", "properties": {"Current Price": "$1.89", "Location": "Hesperia, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "77789", "properties": {"Current Price": "$1.89", "Location": "Bakersfield, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "77852", "properties": {"Current Price": "$1.89", "Location": "Monrovia, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "78905", "properties": {"Current Price": "$1.89", "Location": "Santa Ana, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "78968", "properties": {"Current Price": "$1.89", "Location": "Panorama City, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "79823", "properties": {"Current Price": "$1.89", "Location": "Chula Vista, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "79886", "properties": {"Current Price": "$1.89", "Location": "Pico Rivera, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "81269", "properties": {"Current Price": "$1.89", "Location": "Rialto, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "81325", "properties": {"Current Price": "89\u00a2", "Location": "Laguna Woods, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "82384", "properties": {"Current Price": "$1.89", "Location": "Glendora, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "82843", "properties": {"Current Price": "$1.89", "Location": "Alhambra, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "83302", "properties": {"Current Price": "$1.89", "Location": "Upland, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "83886", "properties": {"Current Price": "89\u00a2", "Location": "Murrieta, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "84813", "properties": {"Current Price": "$1.89", "Location": "San Jacinto, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "84876", "properties": {"Current Price": "$1.89", "Location": "Corona, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "86655", "properties": {"Current Price": "$1.89", "Location": "Delano, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "86718", "properties": {"Current Price": "$1.89", "Location": "Escondido, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "88952", "properties": {"Current Price": "89\u00a2", "Location": "San Diego, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "89681", "properties": {"Current Price": "$1.89", "Location": "Porterville, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "90404", "properties": {"Current Price": "$1.89", "Location": "Hanford, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "90528", "properties": {"Current Price": "89\u00a2", "Location": "Glendale, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "91184", "properties": {"Current Price": "89\u00a2", "Location": "Tempe, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "91246", "properties": {"Current Price": "89\u00a2", "Location": "Buckeye, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "91308", "properties": {"Current Price": "89\u00a2", "Location": "Queen Creek, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "91964", "properties": {"Current Price": "89\u00a2", "Location": "Chandler, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "92092", "properties": {"Current Price": "89\u00a2", "Location": "Phoenix, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "92484", "properties": {"Current Price": "89\u00a2", "Location": "Peoria, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "92546", "properties": {"Current Price": "89\u00a2", "Location": "Phoenix, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "93002", "properties": {"Current Price": "89\u00a2", "Location": "Torrance, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "93064", "properties": {"Current Price": "89\u00a2", "Location": "Arroyo Grande, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "93786", "properties": {"Current Price": "89\u00a2", "Location": "Clovis, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "93855", "properties": {"Current Price": "$1.89", "Location": "Gardena, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "93913", "properties": {"Current Price": "89\u00a2", "Location": "Goodyear, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "94508", "properties": {"Current Price": "$1.89", "Location": "San Diego, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "95363", "properties": {"Current Price": "$1.89", "Location": "Northridge, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "96147", "properties": {"Current Price": "89\u00a2", "Location": "Gilbert, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "96341", "properties": {"Current Price": "89\u00a2", "Location": "Mesa, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "97457", "properties": {"Current Price": "89\u00a2", "Location": "Simi Valley, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "98443", "properties": {"Current Price": "89\u00a2", "Location": "Encinitas, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "99634", "properties": {"Current Price": "$1.89", "Location": "Bellflower, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "99697", "properties": {"Current Price": "$1.89", "Location": "Walnut, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "101469", "properties": {"Current Price": "89\u00a2", "Location": "Thousand Oaks, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "101861", "properties": {"Current Price": "89\u00a2", "Location": "Redlands, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "101996", "properties": {"Current Price": "$1.89", "Location": "Ventura, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "102587", "properties": {"Current Price": "$1.89", "Location": "Perris, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "103244", "properties": {"Current Price": "$1.89", "Location": "Fresno, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "103901", "properties": {"Current Price": "$1.89", "Location": "Riverside, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "105343", "properties": {"Current Price": "89\u00a2", "Location": "Oceanside, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "106732", "properties": {"Current Price": "$1.89", "Location": "Long Beach, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "107118", "properties": {"Current Price": "89\u00a2", "Location": "Poway, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "107246", "properties": {"Current Price": "89\u00a2", "Location": "Murrieta, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "109486", "properties": {"Current Price": "89\u00a2", "Location": "Burbank, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "110281", "properties": {"Current Price": "$1.89", "Location": "Santa Maria, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "113512", "properties": {"Current Price": "$1.89", "Location": "Visalia, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "113568", "properties": {"Current Price": "89\u00a2", "Location": "El Cajon, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "115221", "properties": {"Current Price": "$1.89", "Location": "Coachella, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "115541", "properties": {"Current Price": "89\u00a2", "Location": "West Hills, CA, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "115867", "properties": {"Current Price": "89\u00a2", "Location": "Tustin, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "115936", "properties": {"Current Price": "$1.89", "Location": "Lompoc, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "117444", "properties": {"Current Price": "89\u00a2", "Location": "Yucca Valley, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "118635", "properties": {"Current Price": "$1.89", "Location": "San Marcos, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "119820", "properties": {"Current Price": "$1.89", "Location": "Moreno Valley, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "120272", "properties": {"Current Price": "89\u00a2", "Location": "Carson, CA", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "121722", "properties": {"Current Price": "89\u00a2", "Location": "Phoenix, AZ", "Price": 0.89, "Product": "Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "122515", "properties": {"Current Price": "$1.89", "Location": "Mira Loma, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "124558", "properties": {"Current Price": "$1.89", "Location": "Santa Clarita, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "124687", "properties": {"Current Price": "$1.89", "Location": "Temecula, CA", "Price": 1.89, "Product": "Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_0dd1d893b01ffa52dc9931e619379043.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_0dd1d893b01ffa52dc9931e619379043.addTo(map_e2b7bc19fa676a3cf9903c7562fde828);
+        
+</script>
+</html>
