@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Fresh USDA Choice Top Sirloin Steak</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Fresh USDA Choice Top Sirloin Steak cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2403d2754f5777c069bbff4d108d7b8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+<style>
+                        .header {
+                            
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            background-color: #001f78;
+                            color: #FFF;
+                            padding-left: 20px;
+                        }
+                        .footer{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            background-color: #001f78;
+                            color: #FFF;
+                        }
+                        .banner {
+                            padding-top: 20px;
+                            padding-bottom: 15px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            
+                            background-color: #ffbf45;
+                        }
+
+                        .header option {
+                            font-weight: 800;
+                        }
+                        .header select {
+                            font-weight: 800; 
+                            max-width: 250px;                            
+                        }
+                        .header .main {                            
+                            float: left;
+                        }
+                        .header .sub {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: 	#ffbf45;
+                            float: right;
+                            padding-top: 10px;
+                            padding-right: 20px;
+                        }
+                        .header a, .footer a {
+                            color: 	#ffbf45;
+                        }
+                    </style>
+</head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>4.89</li>
+                <li><span style='background:#b22222'></span>6.99</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+<div class="header">
+                <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                        
+            <option value="appleton_farms_bite-size_salami">Appleton Farms Bite-Size Salami</option>
+
+            
+            <option value="athena_cantaloupe">Athena Cantaloupe</option>
+
+            
+            <option value="baker's_treat_peanut_butter_wafers">Baker's Treat Peanut Butter Wafers</option>
+
+            
+            <option value="benner_peach_tea_or_peach_zero_tea_6-pack">Benner Peach Tea or Peach Zero Tea 6-Pack</option>
+
+            
+            <option value="benton's_caramel_coconut_fudge_cookies">Benton's Caramel Coconut Fudge Cookies</option>
+
+            
+            <option value="benton's_lemon_sandwich_cremes">Benton's Lemon Sandwich Cremes</option>
+
+            
+            <option value="blackberries">Blackberries</option>
+
+            
+            <option value="blueberries">Blueberries</option>
+
+            
+            <option value="brussels_sprouts">Brussels Sprouts</option>
+
+            
+            <option value="fresh_usda_choice_top_sirloin_steak" selected>Fresh USDA Choice Top Sirloin Steak</option>
+
+            
+            <option value="happy_farms_cheddar_or_colby_jack_cheese_cubes">Happy Farms Cheddar or Colby Jack Cheese Cubes</option>
+
+            
+            <option value="happy_farms_deli-sliced_provolone_cheese">Happy Farms Deli-Sliced Provolone Cheese</option>
+
+            
+            <option value="mangoes">Mangoes</option>
+
+            
+            <option value="organic_avocados">Organic Avocados</option>
+
+            
+            <option value="park_street_deli_kalamata,_jubilee,_antipasti_or_greek_feta_salad">Park Street Deli Kalamata, Jubilee, Antipasti or Greek Feta Salad</option>
+
+            
+            <option value="peaches">Peaches</option>
+
+            
+            <option value="puraqua_24-pack_purified_drinking_water">PurAqua 24-Pack Purified Drinking Water</option>
+
+            
+            <option value="southern_grove_shelled_pistachios">Southern Grove Shelled Pistachios</option>
+
+            
+            <option value="sundae_shoppe_chocolate_or_strawberry_crunch_bars">Sundae Shoppe Chocolate or Strawberry Crunch Bars</option>
+
+            
+            <option value="sweet_corn">Sweet Corn</option>
+
+            
+            <option value="washington_fuji_apples">Washington Fuji Apples</option>
+
+            </select> &nbsp;cost at Aldi? </div>
+                <div class="sub">Prices valid Jun 19<sup>th</sup> - Jun 25<sup>th</sup>. New products and next update on Jun 26<sup>th</sup></span>    </div>
+                <div style="clear: both;"></div>           
+            </div>
+<div class="folium-map" id="map_2403d2754f5777c069bbff4d108d7b8c" ></div>
+        
+
+<div class="footer">
+    <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+    Store pricing may change without notice and may differ from the information provided on this site. 
+    View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+        
+    </p>
+    <p>For the week of Jun 19<sup>th</sup>, price maps are available for the following products - 
+            <a href="appleton_farms_bite-size_salami.html">Appleton Farms Bite-Size Salami</a>, 
+            <a href="athena_cantaloupe.html">Athena Cantaloupe</a>, 
+            <a href="baker's_treat_peanut_butter_wafers.html">Baker's Treat Peanut Butter Wafers</a>, 
+            <a href="benner_peach_tea_or_peach_zero_tea_6-pack.html">Benner Peach Tea or Peach Zero Tea 6-Pack</a>, 
+            <a href="benton's_caramel_coconut_fudge_cookies.html">Benton's Caramel Coconut Fudge Cookies</a>, 
+            <a href="benton's_lemon_sandwich_cremes.html">Benton's Lemon Sandwich Cremes</a>, 
+            <a href="blackberries.html">Blackberries</a>, 
+            <a href="blueberries.html">Blueberries</a>, 
+            <a href="brussels_sprouts.html">Brussels Sprouts</a>, 
+            <a href="fresh_usda_choice_top_sirloin_steak.html">Fresh USDA Choice Top Sirloin Steak</a>, 
+            <a href="happy_farms_cheddar_or_colby_jack_cheese_cubes.html">Happy Farms Cheddar or Colby Jack Cheese Cubes</a>, 
+            <a href="happy_farms_deli-sliced_provolone_cheese.html">Happy Farms Deli-Sliced Provolone Cheese</a>, 
+            <a href="mangoes.html">Mangoes</a>, 
+            <a href="organic_avocados.html">Organic Avocados</a>, 
+            <a href="park_street_deli_kalamata,_jubilee,_antipasti_or_greek_feta_salad.html">Park Street Deli Kalamata, Jubilee, Antipasti or Greek Feta Salad</a>, 
+            <a href="peaches.html">Peaches</a>, 
+            <a href="puraqua_24-pack_purified_drinking_water.html">PurAqua 24-Pack Purified Drinking Water</a>, 
+            <a href="southern_grove_shelled_pistachios.html">Southern Grove Shelled Pistachios</a>, 
+            <a href="sundae_shoppe_chocolate_or_strawberry_crunch_bars.html">Sundae Shoppe Chocolate or Strawberry Crunch Bars</a>, 
+            <a href="sweet_corn.html">Sweet Corn</a>, 
+            <a href="washington_fuji_apples.html">Washington Fuji Apples</a></p></div></body>
+<script>
+    function countryHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+<script>
+    
+    
+            var map_2403d2754f5777c069bbff4d108d7b8c = L.map(
+                "map_2403d2754f5777c069bbff4d108d7b8c",
+                {
+                    center: [34.820409960199996, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2403d2754f5777c069bbff4d108d7b8c);
+
+            
+
+        
+    
+            var tile_layer_9ab6390fb4009dc95ad09491e8f40156 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9ab6390fb4009dc95ad09491e8f40156.addTo(map_2403d2754f5777c069bbff4d108d7b8c);
+        
+    
+            map_2403d2754f5777c069bbff4d108d7b8c.fitBounds(
+                [[32.8031439625, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_14e60b55fbea22b97e2f247d964a6dbc_styler(feature) {
+            switch(feature.id) {
+                case "53081": case "53274": case "53887": case "55292": case "55702": case "57115": case "59737": case "60337": case "61147": case "62422": case "65362": case "66164": case "66830": case "66960": case "68790": case "79278": case "83984": case "84922": case "95686": case "97223": case "101560": case "105245": case "105911": case "115681": case "120895": case "126922": case "127052": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_14e60b55fbea22b97e2f247d964a6dbc_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_14e60b55fbea22b97e2f247d964a6dbc_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_14e60b55fbea22b97e2f247d964a6dbc_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_14e60b55fbea22b97e2f247d964a6dbc_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_14e60b55fbea22b97e2f247d964a6dbc.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_14e60b55fbea22b97e2f247d964a6dbc_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_14e60b55fbea22b97e2f247d964a6dbc = L.geoJson(null, {
+                onEachFeature: geo_json_14e60b55fbea22b97e2f247d964a6dbc_onEachFeature,
+            
+                style: geo_json_14e60b55fbea22b97e2f247d964a6dbc_styler,
+                pointToLayer: geo_json_14e60b55fbea22b97e2f247d964a6dbc_pointToLayer,
+        });
+
+        function geo_json_14e60b55fbea22b97e2f247d964a6dbc_add (data) {
+            geo_json_14e60b55fbea22b97e2f247d964a6dbc
+                .addData(data);
+        }
+            geo_json_14e60b55fbea22b97e2f247d964a6dbc_add({"bbox": [-120.6013198622, 32.8031439625, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "53081", "properties": {"Current Price": "$4.89", "Location": "Fontana, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "53203", "properties": {"Current Price": "$6.99", "Location": "Menifee, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "53274", "properties": {"Current Price": "$4.89", "Location": "Palmdale, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "53887", "properties": {"Current Price": "$4.89", "Location": "Lancaster, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "55292", "properties": {"Current Price": "$4.89", "Location": "San Bernardino, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "55418", "properties": {"Current Price": "$6.99", "Location": "La Quinta, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "55702", "properties": {"Current Price": "$4.89", "Location": "Lake Elsinore, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "57115", "properties": {"Current Price": "$4.89", "Location": "San Bernardino, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "57170", "properties": {"Current Price": "$6.99", "Location": "Simi Valley, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "59737", "properties": {"Current Price": "$4.89", "Location": "Fountain Valley, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "60337", "properties": {"Current Price": "$4.89", "Location": "Santa Clarita, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "61147", "properties": {"Current Price": "$4.89", "Location": "Beaumont, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "61202", "properties": {"Current Price": "$6.99", "Location": "Palm Desert, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "62422", "properties": {"Current Price": "$4.89", "Location": "Westminster, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "62544", "properties": {"Current Price": "$6.99", "Location": "Yucaipa, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "65362", "properties": {"Current Price": "$4.89", "Location": "La Verne, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "66164", "properties": {"Current Price": "$4.89", "Location": "Rancho Cucamonga, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "66830", "properties": {"Current Price": "$4.89", "Location": "Vista, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "66960", "properties": {"Current Price": "$4.89", "Location": "Altadena, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "68790", "properties": {"Current Price": "$4.89", "Location": "Temecula, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "70131", "properties": {"Current Price": "$6.99", "Location": "Ramona, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "79278", "properties": {"Current Price": "$4.89", "Location": "Monrovia, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "82841", "properties": {"Current Price": "$6.99", "Location": "Laguna Woods, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "83984", "properties": {"Current Price": "$4.89", "Location": "Glendora, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "84922", "properties": {"Current Price": "$4.89", "Location": "Upland, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "85513", "properties": {"Current Price": "$6.99", "Location": "Murrieta, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "90690", "properties": {"Current Price": "$6.99", "Location": "San Diego, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "92303", "properties": {"Current Price": "$6.99", "Location": "Glendale, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "92970", "properties": {"Current Price": "$6.99", "Location": "Tempe, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "93033", "properties": {"Current Price": "$6.99", "Location": "Buckeye, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "93096", "properties": {"Current Price": "$6.99", "Location": "Queen Creek, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "93764", "properties": {"Current Price": "$6.99", "Location": "Chandler, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "93894", "properties": {"Current Price": "$6.99", "Location": "Phoenix, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "94292", "properties": {"Current Price": "$6.99", "Location": "Peoria, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "94355", "properties": {"Current Price": "$6.99", "Location": "Phoenix, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "94819", "properties": {"Current Price": "$6.99", "Location": "Torrance, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "94882", "properties": {"Current Price": "$6.99", "Location": "Arroyo Grande, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "95615", "properties": {"Current Price": "$6.99", "Location": "Clovis, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "95686", "properties": {"Current Price": "$4.89", "Location": "Gardena, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "95742", "properties": {"Current Price": "$6.99", "Location": "Goodyear, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "97223", "properties": {"Current Price": "$4.89", "Location": "Northridge, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "98016", "properties": {"Current Price": "$6.99", "Location": "Gilbert, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "98213", "properties": {"Current Price": "$6.99", "Location": "Mesa, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "99347", "properties": {"Current Price": "$6.99", "Location": "Simi Valley, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "100349", "properties": {"Current Price": "$6.99", "Location": "Encinitas, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "101560", "properties": {"Current Price": "$4.89", "Location": "Bellflower, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "103428", "properties": {"Current Price": "$6.99", "Location": "Thousand Oaks, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "103826", "properties": {"Current Price": "$6.99", "Location": "Redlands, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "105245", "properties": {"Current Price": "$4.89", "Location": "Fresno, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "105911", "properties": {"Current Price": "$4.89", "Location": "Riverside, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "107373", "properties": {"Current Price": "$6.99", "Location": "Oceanside, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "109182", "properties": {"Current Price": "$6.99", "Location": "Poway, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "109312", "properties": {"Current Price": "$6.99", "Location": "Murrieta, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "111586", "properties": {"Current Price": "$6.99", "Location": "Burbank, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "115681", "properties": {"Current Price": "$4.89", "Location": "Visalia, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "115736", "properties": {"Current Price": "$6.99", "Location": "El Cajon, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "117746", "properties": {"Current Price": "$6.99", "Location": "West Hills, CA, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "118077", "properties": {"Current Price": "$6.99", "Location": "Tustin, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "119685", "properties": {"Current Price": "$6.99", "Location": "Yucca Valley, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "120895", "properties": {"Current Price": "$4.89", "Location": "San Marcos, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "122562", "properties": {"Current Price": "$6.99", "Location": "Carson, CA", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "124033", "properties": {"Current Price": "$6.99", "Location": "Phoenix, AZ", "Price": 6.99, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "126922", "properties": {"Current Price": "$4.89", "Location": "Santa Clarita, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "127052", "properties": {"Current Price": "$4.89", "Location": "Temecula, CA", "Price": 4.89, "Product": "Fresh USDA Choice Top Sirloin Steak", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_14e60b55fbea22b97e2f247d964a6dbc.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_14e60b55fbea22b97e2f247d964a6dbc.addTo(map_2403d2754f5777c069bbff4d108d7b8c);
+        
+</script>
+</html>
