@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Mini Seedless Cucumbers</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Mini Seedless Cucumbers cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_309ba6995d16096046530b723ac56eba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+<style>
+                        .header {
+                            
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            background-color: #001f78;
+                            color: #FFF;
+                            padding-left: 20px;
+                        }
+                        .footer{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            background-color: #001f78;
+                            color: #FFF;
+                        }
+                        .banner {
+                            padding-top: 20px;
+                            padding-bottom: 15px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            
+                            background-color: #ffbf45;
+                        }
+
+                        .header option {
+                            font-weight: 800;
+                        }
+                        .header select {
+                            font-weight: 800; 
+                            max-width: 250px;                            
+                        }
+                        .header .main {                            
+                            float: left;
+                        }
+                        .header .sub {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: 	#ffbf45;
+                            float: right;
+                            padding-top: 10px;
+                            padding-right: 20px;
+                        }
+                        .header a, .footer a {
+                            color: 	#ffbf45;
+                        }
+                    </style>
+</head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>0.75</li>
+                <li><span style='background:#ff8c00'></span>1.19</li>
+                <li><span style='background:#b22222'></span>1.89</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+<div class="header">
+                <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                        
+            <option value="baby_bella_mushrooms">Baby Bella Mushrooms</option>
+
+            
+            <option value="belgioioso_fresh_mozzarella_snacking_cheese">BelGioioso Fresh Mozzarella Snacking Cheese</option>
+
+            
+            <option value="blackberries">Blackberries</option>
+
+            
+            <option value="california_nectarines_or_plums">California Nectarines or Plums</option>
+
+            
+            <option value="friendly_farms_light_plain_or_vanilla_nonfat_yogurt">Friendly Farms Light Plain or Vanilla Nonfat Yogurt</option>
+
+            
+            <option value="little_salad_bar_chopped_salad_kit">Little Salad Bar Chopped Salad Kit</option>
+
+            
+            <option value="little_salad_bar_pineapple_or_watermelon_spears">Little Salad Bar Pineapple or Watermelon Spears</option>
+
+            
+            <option value="little_salad_bar_spring_mix">Little Salad Bar Spring Mix</option>
+
+            
+            <option value="lunch_buddies_fruit_cups_in_juice">Lunch Buddies Fruit Cups in Juice</option>
+
+            
+            <option value="mini_cucumbers">Mini Cucumbers</option>
+
+            
+            <option value="mini_seedless_cucumbers" selected>Mini Seedless Cucumbers</option>
+
+            
+            <option value="never_any!_chicken_sausage">NEVER ANY! Chicken Sausage</option>
+
+            
+            <option value="never_any!_fresh_family_pack_ground_lamb">NEVER ANY! Fresh Family Pack Ground Lamb</option>
+
+            
+            <option value="organic_blueberries">Organic Blueberries</option>
+
+            
+            <option value="park_street_deli_classic,_garlic_or_red_pepper_hummus">Park Street Deli Classic, Garlic or Red Pepper Hummus</option>
+
+            
+            <option value="park_street_deli_guacamole_mini_cups">Park Street Deli Guacamole Mini Cups</option>
+
+            
+            <option value="savoritz_sea_salt_or_garlic_chive_pita_crackers">Savoritz Sea Salt or Garlic Chive Pita Crackers</option>
+
+            
+            <option value="season's_choice_berry_medley">Season's Choice Berry Medley</option>
+
+            
+            <option value="season's_choice_blueberries">Season's Choice Blueberries</option>
+
+            
+            <option value="season's_choice_plain_or_garlic_riced_cauliflower">Season's Choice Plain or Garlic Riced Cauliflower</option>
+
+            
+            <option value="season's_choice_steamed_asian_medley_or_broccoli_stir_fry">Season's Choice Steamed Asian Medley or Broccoli Stir Fry</option>
+
+            
+            <option value="simply_nature_brown_whole_or_milled_flax_seeds">Simply Nature Brown Whole or Milled Flax Seeds</option>
+
+            
+            <option value="simply_nature_organic_coconut_oil">Simply Nature Organic Coconut Oil</option>
+
+            
+            <option value="simply_nature_organic_creamy_peanut_butter">Simply Nature Organic Creamy Peanut Butter</option>
+
+            
+            <option value="simply_nature_organic_salsa">Simply Nature Organic Salsa</option>
+
+            
+            <option value="sliced_white_mushrooms">Sliced White Mushrooms</option>
+
+            
+            <option value="strawberries">Strawberries</option>
+
+            
+            <option value="sundae_shoppe_light_ice_cream">Sundae Shoppe Light Ice Cream</option>
+
+            
+            <option value="vitalife_organic_kombucha">VitaLife Organic Kombucha</option>
+
+            </select> &nbsp;cost at Aldi? </div>
+                <div class="sub">Prices valid Jul 17<sup>th</sup> - Jul 23<sup>rd</sup>. New products and next update on Jul 24<sup>th</sup></span>    </div>
+                <div style="clear: both;"></div>           
+            </div>
+<div class="folium-map" id="map_309ba6995d16096046530b723ac56eba" ></div>
+        
+
+<div class="footer">
+    <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+    Store pricing may change without notice and may differ from the information provided on this site. 
+    View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+        
+    </p>
+    <p>For the week of Jul 17<sup>th</sup>, price maps are available for the following products - 
+            <a href="baby_bella_mushrooms.html">Baby Bella Mushrooms</a>, 
+            <a href="belgioioso_fresh_mozzarella_snacking_cheese.html">BelGioioso Fresh Mozzarella Snacking Cheese</a>, 
+            <a href="blackberries.html">Blackberries</a>, 
+            <a href="california_nectarines_or_plums.html">California Nectarines or Plums</a>, 
+            <a href="friendly_farms_light_plain_or_vanilla_nonfat_yogurt.html">Friendly Farms Light Plain or Vanilla Nonfat Yogurt</a>, 
+            <a href="little_salad_bar_chopped_salad_kit.html">Little Salad Bar Chopped Salad Kit</a>, 
+            <a href="little_salad_bar_pineapple_or_watermelon_spears.html">Little Salad Bar Pineapple or Watermelon Spears</a>, 
+            <a href="little_salad_bar_spring_mix.html">Little Salad Bar Spring Mix</a>, 
+            <a href="lunch_buddies_fruit_cups_in_juice.html">Lunch Buddies Fruit Cups in Juice</a>, 
+            <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+            <a href="mini_seedless_cucumbers.html">Mini Seedless Cucumbers</a>, 
+            <a href="never_any!_chicken_sausage.html">NEVER ANY! Chicken Sausage</a>, 
+            <a href="never_any!_fresh_family_pack_ground_lamb.html">NEVER ANY! Fresh Family Pack Ground Lamb</a>, 
+            <a href="organic_blueberries.html">Organic Blueberries</a>, 
+            <a href="park_street_deli_classic,_garlic_or_red_pepper_hummus.html">Park Street Deli Classic, Garlic or Red Pepper Hummus</a>, 
+            <a href="park_street_deli_guacamole_mini_cups.html">Park Street Deli Guacamole Mini Cups</a>, 
+            <a href="savoritz_sea_salt_or_garlic_chive_pita_crackers.html">Savoritz Sea Salt or Garlic Chive Pita Crackers</a>, 
+            <a href="season's_choice_berry_medley.html">Season's Choice Berry Medley</a>, 
+            <a href="season's_choice_blueberries.html">Season's Choice Blueberries</a>, 
+            <a href="season's_choice_plain_or_garlic_riced_cauliflower.html">Season's Choice Plain or Garlic Riced Cauliflower</a>, 
+            <a href="season's_choice_steamed_asian_medley_or_broccoli_stir_fry.html">Season's Choice Steamed Asian Medley or Broccoli Stir Fry</a>, 
+            <a href="simply_nature_brown_whole_or_milled_flax_seeds.html">Simply Nature Brown Whole or Milled Flax Seeds</a>, 
+            <a href="simply_nature_organic_coconut_oil.html">Simply Nature Organic Coconut Oil</a>, 
+            <a href="simply_nature_organic_creamy_peanut_butter.html">Simply Nature Organic Creamy Peanut Butter</a>, 
+            <a href="simply_nature_organic_salsa.html">Simply Nature Organic Salsa</a>, 
+            <a href="sliced_white_mushrooms.html">Sliced White Mushrooms</a>, 
+            <a href="strawberries.html">Strawberries</a>, 
+            <a href="sundae_shoppe_light_ice_cream.html">Sundae Shoppe Light Ice Cream</a>, 
+            <a href="vitalife_organic_kombucha.html">VitaLife Organic Kombucha</a></p></div></body>
+<script>
+    function countryHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+<script>
+    
+    
+            var map_309ba6995d16096046530b723ac56eba = L.map(
+                "map_309ba6995d16096046530b723ac56eba",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_309ba6995d16096046530b723ac56eba);
+
+            
+
+        
+    
+            var tile_layer_c9be1080e990cf9bc7728c1c96fb9919 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c9be1080e990cf9bc7728c1c96fb9919.addTo(map_309ba6995d16096046530b723ac56eba);
+        
+    
+            map_309ba6995d16096046530b723ac56eba.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_7551f1cc064fd643b8cc7ea5333965d6_styler(feature) {
+            switch(feature.id) {
+                case "63327": case "63499": case "63564": case "64277": case "65955": case "66125": case "66424": case "68099": case "68191": case "71209": case "71928": case "72885": case "72977": case "74397": case "74569": case "77914": case "78873": case "79672": case "79831": case "81977": case "83584": case "94436": case "98678": case "99941": case "101058": case "101790": case "107940": case "112878": case "112956": case "113834": case "113899": case "115734": case "118302": case "119500": case "120925": case "123175": case "123653": case "125314": case "126113": case "127885": case "130041": case "130199": case "132917": case "137778": case "137870": case "140265": case "140663": case "142579": case "144004": case "146013": case "151193": case "151352": 
+                    return {"color": "#ff8c00", "fillColor": "#ff8c00", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                case "109854": case "110652": case "110730": case "110808": case "111606": case "111764": case "112242": case "112320": case "113991": case "116706": case "116944": case "147771": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_7551f1cc064fd643b8cc7ea5333965d6_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_7551f1cc064fd643b8cc7ea5333965d6_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_7551f1cc064fd643b8cc7ea5333965d6_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_7551f1cc064fd643b8cc7ea5333965d6_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_7551f1cc064fd643b8cc7ea5333965d6.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_7551f1cc064fd643b8cc7ea5333965d6_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_7551f1cc064fd643b8cc7ea5333965d6 = L.geoJson(null, {
+                onEachFeature: geo_json_7551f1cc064fd643b8cc7ea5333965d6_onEachFeature,
+            
+                style: geo_json_7551f1cc064fd643b8cc7ea5333965d6_styler,
+                pointToLayer: geo_json_7551f1cc064fd643b8cc7ea5333965d6_pointToLayer,
+        });
+
+        function geo_json_7551f1cc064fd643b8cc7ea5333965d6_add (data) {
+            geo_json_7551f1cc064fd643b8cc7ea5333965d6
+                .addData(data);
+        }
+            geo_json_7551f1cc064fd643b8cc7ea5333965d6_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "63327", "properties": {"Current Price": "$1.19", "Location": "Fontana, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "63499", "properties": {"Current Price": "$1.19", "Location": "Menifee, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "63564", "properties": {"Current Price": "$1.19", "Location": "Palmdale, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "63638", "properties": {"Current Price": "75\u00a2", "Location": "Buena Park, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "63716", "properties": {"Current Price": "75\u00a2", "Location": "Covina, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "64114", "properties": {"Current Price": "75\u00a2", "Location": "South Gate, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "64277", "properties": {"Current Price": "$1.19", "Location": "Lancaster, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "65955", "properties": {"Current Price": "$1.19", "Location": "San Bernardino, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "66029", "properties": {"Current Price": "75\u00a2", "Location": "El Centro, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "66125", "properties": {"Current Price": "$1.19", "Location": "La Quinta, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "66185", "properties": {"Current Price": "75\u00a2", "Location": "Bakersfield, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "66263", "properties": {"Current Price": "75\u00a2", "Location": "Escondido, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "66341", "properties": {"Current Price": "75\u00a2", "Location": "Calexico, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "66424", "properties": {"Current Price": "$1.19", "Location": "Lake Elsinore, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "66498", "properties": {"Current Price": "75\u00a2", "Location": "Palm Springs, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "68016", "properties": {"Current Price": "75\u00a2", "Location": "Cerritos, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "68099", "properties": {"Current Price": "$1.19", "Location": "San Bernardino, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "68191", "properties": {"Current Price": "$1.19", "Location": "Simi Valley, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "68251", "properties": {"Current Price": "75\u00a2", "Location": "Anaheim, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "70408", "properties": {"Current Price": "75\u00a2", "Location": "Moreno Valley, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "70486", "properties": {"Current Price": "75\u00a2", "Location": "Long Beach, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "71209", "properties": {"Current Price": "$1.19", "Location": "Fountain Valley, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "71928", "properties": {"Current Price": "$1.19", "Location": "Santa Clarita, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "72482", "properties": {"Current Price": "75\u00a2", "Location": "Arcadia, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "72885", "properties": {"Current Price": "$1.19", "Location": "Beaumont, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "72977", "properties": {"Current Price": "$1.19", "Location": "Palm Desert, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "73197", "properties": {"Current Price": "75\u00a2", "Location": "La Puente, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "74314", "properties": {"Current Price": "75\u00a2", "Location": "Inglewood, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "74397", "properties": {"Current Price": "$1.19", "Location": "Westminster, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "74569", "properties": {"Current Price": "$1.19", "Location": "Yucaipa, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "77914", "properties": {"Current Price": "$1.19", "Location": "La Verne, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "78873", "properties": {"Current Price": "$1.19", "Location": "Rancho Cucamonga, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "79672", "properties": {"Current Price": "$1.19", "Location": "Vista, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "79831", "properties": {"Current Price": "$1.19", "Location": "Altadena, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "80704", "properties": {"Current Price": "75\u00a2", "Location": "Downey, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "81422", "properties": {"Current Price": "75\u00a2", "Location": "Hesperia, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "81500", "properties": {"Current Price": "75\u00a2", "Location": "Oxnard, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "81578", "properties": {"Current Price": "75\u00a2", "Location": "La Habra, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "81656", "properties": {"Current Price": "75\u00a2", "Location": "Garden Grove, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "81814", "properties": {"Current Price": "75\u00a2", "Location": "Chino, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "81977", "properties": {"Current Price": "$1.19", "Location": "Temecula, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "82371", "properties": {"Current Price": "75\u00a2", "Location": "Chula Vista, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "83008", "properties": {"Current Price": "75\u00a2", "Location": "Whittier, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "83584", "properties": {"Current Price": "$1.19", "Location": "Ramona, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "86204", "properties": {"Current Price": "75\u00a2", "Location": "Santa Fe Springs, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "89162", "properties": {"Current Price": "75\u00a2", "Location": "Compton, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "90999", "properties": {"Current Price": "75\u00a2", "Location": "Oxnard, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "93395", "properties": {"Current Price": "75\u00a2", "Location": "Hesperia, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "94353", "properties": {"Current Price": "75\u00a2", "Location": "Bakersfield, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "94436", "properties": {"Current Price": "$1.19", "Location": "Monrovia, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "95710", "properties": {"Current Price": "75\u00a2", "Location": "Santa Ana, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "95788", "properties": {"Current Price": "75\u00a2", "Location": "Panorama City, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "96826", "properties": {"Current Price": "75\u00a2", "Location": "Chula Vista, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "96904", "properties": {"Current Price": "75\u00a2", "Location": "Pico Rivera, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "98582", "properties": {"Current Price": "75\u00a2", "Location": "Rialto, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "98678", "properties": {"Current Price": "$1.19", "Location": "Laguna Woods, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "99941", "properties": {"Current Price": "$1.19", "Location": "Glendora, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "100495", "properties": {"Current Price": "75\u00a2", "Location": "Alhambra, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "101058", "properties": {"Current Price": "$1.19", "Location": "Upland, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "101790", "properties": {"Current Price": "$1.19", "Location": "Murrieta, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "102890", "properties": {"Current Price": "75\u00a2", "Location": "San Jacinto, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "102968", "properties": {"Current Price": "75\u00a2", "Location": "Corona, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "105126", "properties": {"Current Price": "75\u00a2", "Location": "Delano, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "105204", "properties": {"Current Price": "75\u00a2", "Location": "Escondido, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "107940", "properties": {"Current Price": "$1.19", "Location": "San Diego, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "108800", "properties": {"Current Price": "75\u00a2", "Location": "Porterville, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "109678", "properties": {"Current Price": "75\u00a2", "Location": "Hanford, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "109854", "properties": {"Current Price": "$1.89", "Location": "Glendale, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "110652", "properties": {"Current Price": "$1.89", "Location": "Tempe, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "110730", "properties": {"Current Price": "$1.89", "Location": "Buckeye, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "110808", "properties": {"Current Price": "$1.89", "Location": "Queen Creek, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "111606", "properties": {"Current Price": "$1.89", "Location": "Chandler, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "111764", "properties": {"Current Price": "$1.89", "Location": "Phoenix, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "112242", "properties": {"Current Price": "$1.89", "Location": "Peoria, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "112320", "properties": {"Current Price": "$1.89", "Location": "Phoenix, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "112878", "properties": {"Current Price": "$1.19", "Location": "Torrance, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "112956", "properties": {"Current Price": "$1.19", "Location": "Arroyo Grande, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "113834", "properties": {"Current Price": "$1.19", "Location": "Clovis, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "113899", "properties": {"Current Price": "$1.19", "Location": "Gardena, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "113991", "properties": {"Current Price": "$1.89", "Location": "Goodyear, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "114691", "properties": {"Current Price": "75\u00a2", "Location": "San Diego, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "115734", "properties": {"Current Price": "$1.19", "Location": "Northridge, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "116706", "properties": {"Current Price": "$1.89", "Location": "Gilbert, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "116944", "properties": {"Current Price": "$1.89", "Location": "Mesa, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "118302", "properties": {"Current Price": "$1.19", "Location": "Simi Valley, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "119500", "properties": {"Current Price": "$1.19", "Location": "Encinitas, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "120925", "properties": {"Current Price": "$1.19", "Location": "Bellflower, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "120999", "properties": {"Current Price": "75\u00a2", "Location": "Walnut, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "123175", "properties": {"Current Price": "$1.19", "Location": "Thousand Oaks, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "123653", "properties": {"Current Price": "$1.19", "Location": "Redlands, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "123793", "properties": {"Current Price": "75\u00a2", "Location": "Ventura, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "124511", "properties": {"Current Price": "75\u00a2", "Location": "Perris, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "125314", "properties": {"Current Price": "$1.19", "Location": "Fresno, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "126113", "properties": {"Current Price": "$1.19", "Location": "Riverside, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "127885", "properties": {"Current Price": "$1.19", "Location": "Oceanside, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "129545", "properties": {"Current Price": "75\u00a2", "Location": "Long Beach, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "130041", "properties": {"Current Price": "$1.19", "Location": "Poway, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "130199", "properties": {"Current Price": "$1.19", "Location": "Murrieta, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "132917", "properties": {"Current Price": "$1.19", "Location": "Burbank, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "133856", "properties": {"Current Price": "75\u00a2", "Location": "Santa Maria, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "137778", "properties": {"Current Price": "$1.19", "Location": "Visalia, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "137870", "properties": {"Current Price": "$1.19", "Location": "El Cajon, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "139849", "properties": {"Current Price": "75\u00a2", "Location": "Coachella, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "140265", "properties": {"Current Price": "$1.19", "Location": "West Hills, CA, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "140663", "properties": {"Current Price": "$1.19", "Location": "Tustin, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "140723", "properties": {"Current Price": "75\u00a2", "Location": "Lompoc, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "142579", "properties": {"Current Price": "$1.19", "Location": "Yucca Valley, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "144004", "properties": {"Current Price": "$1.19", "Location": "San Marcos, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "145437", "properties": {"Current Price": "75\u00a2", "Location": "Moreno Valley, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "146013", "properties": {"Current Price": "$1.19", "Location": "Carson, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "147771", "properties": {"Current Price": "$1.89", "Location": "Phoenix, AZ", "Price": 1.89, "Product": "Mini Seedless Cucumbers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "148710", "properties": {"Current Price": "75\u00a2", "Location": "Mira Loma, CA", "Price": 0.75, "Product": "Mini Seedless Cucumbers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "151193", "properties": {"Current Price": "$1.19", "Location": "Santa Clarita, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "151352", "properties": {"Current Price": "$1.19", "Location": "Temecula, CA", "Price": 1.19, "Product": "Mini Seedless Cucumbers", "__folium_color": "#ff8c00"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_7551f1cc064fd643b8cc7ea5333965d6.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_7551f1cc064fd643b8cc7ea5333965d6.addTo(map_309ba6995d16096046530b723ac56eba);
+        
+</script>
+</html>
