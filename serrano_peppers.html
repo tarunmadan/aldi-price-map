@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Serrano Peppers</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Serrano Peppers cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d44c1262a00637a7eb190e1986802cba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+<style>
+                        .header {
+                            
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            background-color: #001f78;
+                            color: #FFF;
+                            padding-left: 20px;
+                        }
+                        .footer{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            background-color: #001f78;
+                            color: #FFF;
+                        }
+                        .banner {
+                            padding-top: 20px;
+                            padding-bottom: 15px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            
+                            background-color: #ffbf45;
+                        }
+
+                        .header option {
+                            font-weight: 800;
+                        }
+                        .header select {
+                            font-weight: 800; 
+                            max-width: 250px;                            
+                        }
+                        .header .main {                            
+                            float: left;
+                        }
+                        .header .sub {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: 	#ffbf45;
+                            float: right;
+                            padding-top: 10px;
+                            padding-right: 20px;
+                        }
+                        .header a, .footer a {
+                            color: 	#ffbf45;
+                        }
+                    </style>
+</head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>1.39</li>
+                <li><span style='background:#b22222'></span>1.49</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+<div class="header">
+                <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                        
+            <option value="baby_bella_mushrooms">Baby Bella Mushrooms</option>
+
+            
+            <option value="bake_shop_mini_or_large_croissants">Bake Shop Mini or Large Croissants</option>
+
+            
+            <option value="blueberries">Blueberries</option>
+
+            
+            <option value="california_red_grapes">California Red Grapes</option>
+
+            
+            <option value="cantaloupe">Cantaloupe</option>
+
+            
+            <option value="clancy's_snack_combo_18-count">Clancy's Snack Combo 18-Count</option>
+
+            
+            <option value="emporium_selection_gourmet_snacking_cheese">Emporium Selection Gourmet Snacking Cheese</option>
+
+            
+            <option value="friendly_farms_original_or_lowfat_yogurt">Friendly Farms Original or Lowfat Yogurt</option>
+
+            
+            <option value="happy_farms_american_cheese_singles">Happy Farms American Cheese Singles</option>
+
+            
+            <option value="kirkwood_dino_nuggets">Kirkwood Dino Nuggets</option>
+
+            
+            <option value="l'oven_fresh_honey_wheat_bread">L'oven Fresh Honey Wheat Bread</option>
+
+            
+            <option value="l'oven_fresh_white_bread">L'oven Fresh White Bread</option>
+
+            
+            <option value="mama_cozzi's_pizza_kitchen_turkey_pepperoni">Mama Cozzi's Pizza Kitchen Turkey Pepperoni</option>
+
+            
+            <option value="mini_cucumbers">Mini Cucumbers</option>
+
+            
+            <option value="mini_seedless_cucumbers">Mini Seedless Cucumbers</option>
+
+            
+            <option value="navel_oranges">Navel Oranges</option>
+
+            
+            <option value="park_street_deli_hummus">Park Street Deli Hummus</option>
+
+            
+            <option value="pueblo_lindo_burrito_tortillas_8-count">Pueblo Lindo Burrito Tortillas 8-Count</option>
+
+            
+            <option value="savoritz_golden_rounds">Savoritz Golden Rounds</option>
+
+            
+            <option value="serrano_peppers" selected>Serrano Peppers</option>
+
+            
+            <option value="simply_nature_organic_preserves">Simply Nature Organic Preserves</option>
+
+            </select> &nbsp;cost at Aldi? </div>
+                <div class="sub">Prices valid Aug 7<sup>th</sup> - Aug 13<sup>th</sup>. New products and next update on Aug 14<sup>th</sup></span>    </div>
+                <div style="clear: both;"></div>           
+            </div>
+<div class="folium-map" id="map_d44c1262a00637a7eb190e1986802cba" ></div>
+        
+
+<div class="footer">
+    <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+    Store pricing may change without notice and may differ from the information provided on this site. 
+    View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+        
+    </p>
+    <p>For the week of Aug 7<sup>th</sup>, price maps are available for the following products - 
+            <a href="baby_bella_mushrooms.html">Baby Bella Mushrooms</a>, 
+            <a href="bake_shop_mini_or_large_croissants.html">Bake Shop Mini or Large Croissants</a>, 
+            <a href="blueberries.html">Blueberries</a>, 
+            <a href="california_red_grapes.html">California Red Grapes</a>, 
+            <a href="cantaloupe.html">Cantaloupe</a>, 
+            <a href="clancy's_snack_combo_18-count.html">Clancy's Snack Combo 18-Count</a>, 
+            <a href="emporium_selection_gourmet_snacking_cheese.html">Emporium Selection Gourmet Snacking Cheese</a>, 
+            <a href="friendly_farms_original_or_lowfat_yogurt.html">Friendly Farms Original or Lowfat Yogurt</a>, 
+            <a href="happy_farms_american_cheese_singles.html">Happy Farms American Cheese Singles</a>, 
+            <a href="kirkwood_dino_nuggets.html">Kirkwood Dino Nuggets</a>, 
+            <a href="l'oven_fresh_honey_wheat_bread.html">L'oven Fresh Honey Wheat Bread</a>, 
+            <a href="l'oven_fresh_white_bread.html">L'oven Fresh White Bread</a>, 
+            <a href="mama_cozzi's_pizza_kitchen_turkey_pepperoni.html">Mama Cozzi's Pizza Kitchen Turkey Pepperoni</a>, 
+            <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+            <a href="mini_seedless_cucumbers.html">Mini Seedless Cucumbers</a>, 
+            <a href="navel_oranges.html">Navel Oranges</a>, 
+            <a href="park_street_deli_hummus.html">Park Street Deli Hummus</a>, 
+            <a href="pueblo_lindo_burrito_tortillas_8-count.html">Pueblo Lindo Burrito Tortillas 8-Count</a>, 
+            <a href="savoritz_golden_rounds.html">Savoritz Golden Rounds</a>, 
+            <a href="serrano_peppers.html">Serrano Peppers</a>, 
+            <a href="simply_nature_organic_preserves.html">Simply Nature Organic Preserves</a></p></div></body>
+<script>
+    function countryHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+<script>
+    
+    
+            var map_d44c1262a00637a7eb190e1986802cba = L.map(
+                "map_d44c1262a00637a7eb190e1986802cba",
+                {
+                    center: [34.820409960199996, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d44c1262a00637a7eb190e1986802cba);
+
+            
+
+        
+    
+            var tile_layer_bd87a2daf3b000d5843109a0461a7202 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bd87a2daf3b000d5843109a0461a7202.addTo(map_d44c1262a00637a7eb190e1986802cba);
+        
+    
+            map_d44c1262a00637a7eb190e1986802cba.fitBounds(
+                [[32.8031439625, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_d59662df7c486be1f42b8717f230ec8c_styler(feature) {
+            switch(feature.id) {
+                case "50975": case "53099": case "54771": case "58639": case "59923": case "67179": case "79313": case "81809": case "86750": case "90699": case "90760": case "91461": case "95036": case "95995": case "98939": case "99320": case "102712": case "104438": case "104563": case "106734": case "110700": case "112618": case "112935": case "114469": case "117219": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_d59662df7c486be1f42b8717f230ec8c_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_d59662df7c486be1f42b8717f230ec8c_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_d59662df7c486be1f42b8717f230ec8c_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_d59662df7c486be1f42b8717f230ec8c_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_d59662df7c486be1f42b8717f230ec8c.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_d59662df7c486be1f42b8717f230ec8c_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_d59662df7c486be1f42b8717f230ec8c = L.geoJson(null, {
+                onEachFeature: geo_json_d59662df7c486be1f42b8717f230ec8c_onEachFeature,
+            
+                style: geo_json_d59662df7c486be1f42b8717f230ec8c_styler,
+                pointToLayer: geo_json_d59662df7c486be1f42b8717f230ec8c_pointToLayer,
+        });
+
+        function geo_json_d59662df7c486be1f42b8717f230ec8c_add (data) {
+            geo_json_d59662df7c486be1f42b8717f230ec8c
+                .addData(data);
+        }
+            geo_json_d59662df7c486be1f42b8717f230ec8c_add({"bbox": [-120.6013198622, 32.8031439625, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "50975", "properties": {"Current Price": "$1.49", "Location": "Menifee, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "53099", "properties": {"Current Price": "$1.49", "Location": "La Quinta, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "54771", "properties": {"Current Price": "$1.49", "Location": "Simi Valley, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "58639", "properties": {"Current Price": "$1.49", "Location": "Palm Desert, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "59923", "properties": {"Current Price": "$1.49", "Location": "Yucaipa, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "67179", "properties": {"Current Price": "$1.49", "Location": "Ramona, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "79313", "properties": {"Current Price": "$1.49", "Location": "Laguna Woods, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "81809", "properties": {"Current Price": "$1.49", "Location": "Murrieta, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "86750", "properties": {"Current Price": "$1.49", "Location": "San Diego, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "88278", "properties": {"Current Price": "$1.39", "Location": "Glendale, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "88917", "properties": {"Current Price": "$1.39", "Location": "Tempe, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "88978", "properties": {"Current Price": "$1.39", "Location": "Buckeye, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "89039", "properties": {"Current Price": "$1.39", "Location": "Queen Creek, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "89680", "properties": {"Current Price": "$1.39", "Location": "Chandler, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "89805", "properties": {"Current Price": "$1.39", "Location": "Phoenix, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "90186", "properties": {"Current Price": "$1.39", "Location": "Peoria, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "90247", "properties": {"Current Price": "$1.39", "Location": "Phoenix, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "90699", "properties": {"Current Price": "$1.49", "Location": "Torrance, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "90760", "properties": {"Current Price": "$1.49", "Location": "Arroyo Grande, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "91461", "properties": {"Current Price": "$1.49", "Location": "Clovis, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "91580", "properties": {"Current Price": "$1.39", "Location": "Goodyear, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "93755", "properties": {"Current Price": "$1.39", "Location": "Gilbert, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "93944", "properties": {"Current Price": "$1.39", "Location": "Mesa, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "95036", "properties": {"Current Price": "$1.49", "Location": "Simi Valley, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "95995", "properties": {"Current Price": "$1.49", "Location": "Encinitas, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "98939", "properties": {"Current Price": "$1.49", "Location": "Thousand Oaks, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "99320", "properties": {"Current Price": "$1.49", "Location": "Redlands, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "102712", "properties": {"Current Price": "$1.49", "Location": "Oceanside, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "104438", "properties": {"Current Price": "$1.49", "Location": "Poway, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "104563", "properties": {"Current Price": "$1.49", "Location": "Murrieta, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "106734", "properties": {"Current Price": "$1.49", "Location": "Burbank, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "110700", "properties": {"Current Price": "$1.49", "Location": "El Cajon, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "112618", "properties": {"Current Price": "$1.49", "Location": "West Hills, CA, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "112935", "properties": {"Current Price": "$1.49", "Location": "Tustin, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "114469", "properties": {"Current Price": "$1.49", "Location": "Yucca Valley, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "117219", "properties": {"Current Price": "$1.49", "Location": "Carson, CA", "Price": 1.49, "Product": "Serrano Peppers", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "118617", "properties": {"Current Price": "$1.39", "Location": "Phoenix, AZ", "Price": 1.39, "Product": "Serrano Peppers", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_d59662df7c486be1f42b8717f230ec8c.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_d59662df7c486be1f42b8717f230ec8c.addTo(map_d44c1262a00637a7eb190e1986802cba);
+        
+</script>
+</html>
