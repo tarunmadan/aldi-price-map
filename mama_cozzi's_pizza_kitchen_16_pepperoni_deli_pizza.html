@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Mama Cozzi's Pizza Kitchen 16" Pepperoni Deli Pizza</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Mama Cozzi's Pizza Kitchen 16" Pepperoni Deli Pizza cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c343b216a6559cc8dd81d5e2f47d9377 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+<style>
+                        .header {
+                            
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            background-color: #001f78;
+                            color: #FFF;
+                            padding-left: 20px;
+                        }
+                        .footer{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            background-color: #001f78;
+                            color: #FFF;
+                        }
+                        .banner {
+                            padding-top: 20px;
+                            padding-bottom: 15px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            
+                            background-color: #ffbf45;
+                        }
+
+                        .header option {
+                            font-weight: 800;
+                        }
+                        .header select {
+                            font-weight: 800; 
+                            max-width: 250px;                            
+                        }
+                        .header .main {                            
+                            float: left;
+                        }
+                        .header .sub {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: 	#ffbf45;
+                            float: right;
+                            padding-top: 10px;
+                            padding-right: 20px;
+                        }
+                        .header a, .footer a {
+                            color: 	#ffbf45;
+                        }
+                    </style>
+</head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>6.69</li>
+                <li><span style='background:#b22222'></span>7.19</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+<div class="header">
+                <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                        
+            <option value="avocados">Avocados</option>
+
+            
+            <option value="benton's_mini_bear_grahams_snack_packs">Benton's Mini Bear Grahams Snack Packs</option>
+
+            
+            <option value="breakfast_best_biscuit_or_muffin_sandwiches">Breakfast Best Biscuit or Muffin Sandwiches</option>
+
+            
+            <option value="breakfast_best_homestyle_waffles">Breakfast Best Homestyle Waffles</option>
+
+            
+            <option value="california_red_grapes">California Red Grapes</option>
+
+            
+            <option value="driscoll's_organic_blackberries">Driscoll's Organic Blackberries</option>
+
+            
+            <option value="french_green_beans">French Green Beans</option>
+
+            
+            <option value="friendly_farms_original_oatmilk">Friendly Farms Original Oatmilk</option>
+
+            
+            <option value="l'oven_fresh_cinnamon_raisin_bread">L'oven Fresh Cinnamon Raisin Bread</option>
+
+            
+            <option value="l'oven_fresh_cinnamon_raisin_or_cinnamon_swirl_bread">L'oven Fresh Cinnamon Raisin or Cinnamon Swirl Bread</option>
+
+            
+            <option value="lunch_buddies_assorted_fruit_snacks">Lunch Buddies Assorted Fruit Snacks</option>
+
+            
+            <option value="mama_cozzi's_pizza_kitchen_16_pepperoni_deli_pizza" selected>Mama Cozzi's Pizza Kitchen 16" Pepperoni Deli Pizza</option>
+
+            
+            <option value="mini_cucumbers">Mini Cucumbers</option>
+
+            
+            <option value="nature's_nectar_juice_pouches">Nature's Nectar Juice Pouches</option>
+
+            
+            <option value="organic_yellow_potatoes">Organic Yellow Potatoes</option>
+
+            
+            <option value="park_street_deli_original_snack_selects_3-pack">Park Street Deli Original Snack Selects 3-Pack</option>
+
+            
+            <option value="peaches">Peaches</option>
+
+            
+            <option value="savoritz_thin_wheat_crackers">Savoritz Thin Wheat Crackers</option>
+
+            
+            <option value="strawberries">Strawberries</option>
+
+            </select> &nbsp;cost at Aldi? </div>
+                <div class="sub">Prices valid Aug 21<sup>st</sup> - Aug 27<sup>th</sup>. New products and next update on Aug 28<sup>th</sup></span>    </div>
+                <div style="clear: both;"></div>           
+            </div>
+<div class="folium-map" id="map_c343b216a6559cc8dd81d5e2f47d9377" ></div>
+        
+
+<div class="footer">
+    <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+    Store pricing may change without notice and may differ from the information provided on this site. 
+    View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+        
+    </p>
+    <p>For the week of Aug 21<sup>st</sup>, price maps are available for the following products - 
+            <a href="avocados.html">Avocados</a>, 
+            <a href="benton's_mini_bear_grahams_snack_packs.html">Benton's Mini Bear Grahams Snack Packs</a>, 
+            <a href="breakfast_best_biscuit_or_muffin_sandwiches.html">Breakfast Best Biscuit or Muffin Sandwiches</a>, 
+            <a href="breakfast_best_homestyle_waffles.html">Breakfast Best Homestyle Waffles</a>, 
+            <a href="california_red_grapes.html">California Red Grapes</a>, 
+            <a href="driscoll's_organic_blackberries.html">Driscoll's Organic Blackberries</a>, 
+            <a href="french_green_beans.html">French Green Beans</a>, 
+            <a href="friendly_farms_original_oatmilk.html">Friendly Farms Original Oatmilk</a>, 
+            <a href="l'oven_fresh_cinnamon_raisin_bread.html">L'oven Fresh Cinnamon Raisin Bread</a>, 
+            <a href="l'oven_fresh_cinnamon_raisin_or_cinnamon_swirl_bread.html">L'oven Fresh Cinnamon Raisin or Cinnamon Swirl Bread</a>, 
+            <a href="lunch_buddies_assorted_fruit_snacks.html">Lunch Buddies Assorted Fruit Snacks</a>, 
+            <a href="mama_cozzi's_pizza_kitchen_16_pepperoni_deli_pizza.html">Mama Cozzi's Pizza Kitchen 16" Pepperoni Deli Pizza</a>, 
+            <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+            <a href="nature's_nectar_juice_pouches.html">Nature's Nectar Juice Pouches</a>, 
+            <a href="organic_yellow_potatoes.html">Organic Yellow Potatoes</a>, 
+            <a href="park_street_deli_original_snack_selects_3-pack.html">Park Street Deli Original Snack Selects 3-Pack</a>, 
+            <a href="peaches.html">Peaches</a>, 
+            <a href="savoritz_thin_wheat_crackers.html">Savoritz Thin Wheat Crackers</a>, 
+            <a href="strawberries.html">Strawberries</a></p></div></body>
+<script>
+    function countryHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+<script>
+    
+    
+            var map_c343b216a6559cc8dd81d5e2f47d9377 = L.map(
+                "map_c343b216a6559cc8dd81d5e2f47d9377",
+                {
+                    center: [32.7912759625, -96.80177400865],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_c343b216a6559cc8dd81d5e2f47d9377);
+
+            
+
+        
+    
+            var tile_layer_22f02eecf971b8a7530d33e9827cc8c4 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_22f02eecf971b8a7530d33e9827cc8c4.addTo(map_c343b216a6559cc8dd81d5e2f47d9377);
+        
+    
+            map_c343b216a6559cc8dd81d5e2f47d9377.fitBounds(
+                [[28.844063967, -99.789300886], [36.738487958, -93.8142471313]],
+                {}
+            );
+        
+    
+        function geo_json_f237171a9132c23d5499c3673604ab02_styler(feature) {
+            switch(feature.id) {
+                case "15889": case "17518": case "29049": case "34435": case "37762": case "37831": case "41584": case "41653": case "41722": case "41791": case "43627": case "43696": case "43905": case "43974": case "44043": case "44112": case "44181": case "44250": case "44319": case "44459": case "44528": case "44597": case "45660": case "45729": case "49198": case "50119": case "50326": case "53367": case "53507": case "53718": case "54992": case "55201": case "56512": case "57344": case "57413": case "61078": case "61857": case "63107": case "63665": case "63876": case "64148": case "64217": case "64286": case "64485": case "65327": case "69486": case "70523": case "72727": case "72796": case "73354": case "73565": case "74766": case "74906": case "74975": case "75044": case "75184": case "80552": case "80621": case "80974": case "81822": case "85042": case "86373": case "91285": case "91567": case "92133": case "97410": case "104850": case "105483": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_f237171a9132c23d5499c3673604ab02_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_f237171a9132c23d5499c3673604ab02_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_f237171a9132c23d5499c3673604ab02_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_f237171a9132c23d5499c3673604ab02_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_f237171a9132c23d5499c3673604ab02.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_f237171a9132c23d5499c3673604ab02_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_f237171a9132c23d5499c3673604ab02 = L.geoJson(null, {
+                onEachFeature: geo_json_f237171a9132c23d5499c3673604ab02_onEachFeature,
+            
+                style: geo_json_f237171a9132c23d5499c3673604ab02_styler,
+                pointToLayer: geo_json_f237171a9132c23d5499c3673604ab02_pointToLayer,
+        });
+
+        function geo_json_f237171a9132c23d5499c3673604ab02_add (data) {
+            geo_json_f237171a9132c23d5499c3673604ab02
+                .addData(data);
+        }
+            geo_json_f237171a9132c23d5499c3673604ab02_add({"bbox": [-99.789300886, 28.844063967, -93.8142471313, 36.738487958], "features": [{"bbox": [-97.5495868885, 35.6052189593, -97.5495868885, 35.6052189593], "geometry": {"coordinates": [-97.5495868885, 35.6052189593], "type": "Point"}, "id": "963", "properties": {"Current Price": "$7.19", "Location": "Oklahoma City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4063598887, 35.4596879595, -97.4063598887, 35.4596879595], "geometry": {"coordinates": [-97.4063598887, 35.4596879595], "type": "Point"}, "id": "1103", "properties": {"Current Price": "$7.19", "Location": "Midwest City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.6362298884, 35.5572739594, -97.6362298884, 35.5572739594], "geometry": {"coordinates": [-97.6362298884, 35.5572739594], "type": "Point"}, "id": "1456", "properties": {"Current Price": "$7.19", "Location": "Oklahoma City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.0721278891, 36.738487958, -97.0721278891, 36.738487958], "geometry": {"coordinates": [-97.0721278891, 36.738487958], "type": "Point"}, "id": "1525", "properties": {"Current Price": "$7.19", "Location": "Ponca City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.6227008884, 35.4931659594, -97.6227008884, 35.4931659594], "geometry": {"coordinates": [-97.6227008884, 35.4931659594], "type": "Point"}, "id": "2943", "properties": {"Current Price": "$7.19", "Location": "Oklahoma City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.9394208881, 36.3905369584, -97.9394208881, 36.3905369584], "geometry": {"coordinates": [-97.9394208881, 36.3905369584], "type": "Point"}, "id": "3438", "properties": {"Current Price": "$7.19", "Location": "Enid, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8542088893, 32.9967819623, -96.8542088893, 32.9967819623], "geometry": {"coordinates": [-96.8542088893, 32.9967819623], "type": "Point"}, "id": "15889", "properties": {"Current Price": "$6.69", "Location": "Dallas, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.6967618895, 32.9455629624, -96.6967618895, 32.9455629624], "geometry": {"coordinates": [-96.6967618895, 32.9455629624], "type": "Point"}, "id": "17422", "properties": {"Current Price": "$7.19", "Location": "Richardson, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.6988918895, 33.0303669623, -96.6988918895, 33.0303669623], "geometry": {"coordinates": [-96.6988918895, 33.0303669623], "type": "Point"}, "id": "17518", "properties": {"Current Price": "$6.69", "Location": "Plano, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.6355448896, 32.8142559625, -96.6355448896, 32.8142559625], "geometry": {"coordinates": [-96.6355448896, 32.8142559625], "type": "Point"}, "id": "18199", "properties": {"Current Price": "$7.19", "Location": "Mesquite, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.3746398887, 32.8724839624, -97.3746398887, 32.8724839624], "geometry": {"coordinates": [-97.3746398887, 32.8724839624], "type": "Point"}, "id": "18410", "properties": {"Current Price": "$7.19", "Location": "Saginaw, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.6521958896, 32.8643159624, -96.6521958896, 32.8643159624], "geometry": {"coordinates": [-96.6521958896, 32.8643159624], "type": "Point"}, "id": "18479", "properties": {"Current Price": "$7.19", "Location": "Garland, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.1859958889, 32.8425159625, -97.1859958889, 32.8425159625], "geometry": {"coordinates": [-97.1859958889, 32.8425159625], "type": "Point"}, "id": "18548", "properties": {"Current Price": "$7.19", "Location": "Hurst, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4860988886, 32.7629949626, -97.4860988886, 32.7629949626], "geometry": {"coordinates": [-97.4860988886, 32.7629949626], "type": "Point"}, "id": "18617", "properties": {"Current Price": "$7.19", "Location": "Fort Worth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8587898893, 32.7200729626, -96.8587898893, 32.7200729626], "geometry": {"coordinates": [-96.8587898893, 32.7200729626], "type": "Point"}, "id": "19751", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.2068838889, 32.9018819624, -97.2068838889, 32.9018819624], "geometry": {"coordinates": [-97.2068838889, 32.9018819624], "type": "Point"}, "id": "19820", "properties": {"Current Price": "$7.19", "Location": "Fort Worth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.7189368895, 32.9096859624, -96.7189368895, 32.9096859624], "geometry": {"coordinates": [-96.7189368895, 32.9096859624], "type": "Point"}, "id": "21309", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4341098887, 32.7501329626, -97.4341098887, 32.7501329626], "geometry": {"coordinates": [-97.4341098887, 32.7501329626], "type": "Point"}, "id": "21378", "properties": {"Current Price": "$7.19", "Location": "White Settlement, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.7766158894, 32.7939149625, -96.7766158894, 32.7939149625], "geometry": {"coordinates": [-96.7766158894, 32.7939149625], "type": "Point"}, "id": "21447", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.5691148897, 32.9073719624, -96.5691148897, 32.9073719624], "geometry": {"coordinates": [-96.5691148897, 32.9073719624], "type": "Point"}, "id": "21516", "properties": {"Current Price": "$7.19", "Location": "Rowlett, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.6824728895, 32.7620639626, -96.6824728895, 32.7620639626], "geometry": {"coordinates": [-96.6824728895, 32.7620639626], "type": "Point"}, "id": "24141", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.3999268887, 32.6680069627, -97.3999268887, 32.6680069627], "geometry": {"coordinates": [-97.3999268887, 32.6680069627], "type": "Point"}, "id": "24636", "properties": {"Current Price": "$7.19", "Location": "Fort Worth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.101535889, 32.8371339625, -97.101535889, 32.8371339625], "geometry": {"coordinates": [-97.101535889, 32.8371339625], "type": "Point"}, "id": "25415", "properties": {"Current Price": "$7.19", "Location": "Euless, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.6503588896, 32.9304639624, -96.6503588896, 32.9304639624], "geometry": {"coordinates": [-96.6503588896, 32.9304639624], "type": "Point"}, "id": "26194", "properties": {"Current Price": "$7.19", "Location": "Garland, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8591518893, 32.6493629627, -96.8591518893, 32.6493629627], "geometry": {"coordinates": [-96.8591518893, 32.6493629627], "type": "Point"}, "id": "26263", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.147961889, 32.7214689626, -97.147961889, 32.7214689626], "geometry": {"coordinates": [-97.147961889, 32.7214689626], "type": "Point"}, "id": "26403", "properties": {"Current Price": "$7.19", "Location": "Pantego, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9994578892, 32.7096999626, -96.9994578892, 32.7096999626], "geometry": {"coordinates": [-96.9994578892, 32.7096999626], "type": "Point"}, "id": "27963", "properties": {"Current Price": "$7.19", "Location": "Grand Prairie, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8033258894, 32.9323409624, -96.8033258894, 32.9323409624], "geometry": {"coordinates": [-96.8033258894, 32.9323409624], "type": "Point"}, "id": "28671", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.115960889, 32.6077469627, -97.115960889, 32.6077469627], "geometry": {"coordinates": [-97.115960889, 32.6077469627], "type": "Point"}, "id": "28740", "properties": {"Current Price": "$7.19", "Location": "Mansfield, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8045008894, 33.1359639621, -96.8045008894, 33.1359639621], "geometry": {"coordinates": [-96.8045008894, 33.1359639621], "type": "Point"}, "id": "29049", "properties": {"Current Price": "$6.69", "Location": "Frisco, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.9921008892, 32.8464219625, -96.9921008892, 32.8464219625], "geometry": {"coordinates": [-96.9921008892, 32.8464219625], "type": "Point"}, "id": "29517", "properties": {"Current Price": "$7.19", "Location": "Irving, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9095718893, 32.9973459623, -96.9095718893, 32.9973459623], "geometry": {"coordinates": [-96.9095718893, 32.9973459623], "type": "Point"}, "id": "29586", "properties": {"Current Price": "$7.19", "Location": "Carrollton, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9257598892, 32.6481639627, -96.9257598892, 32.6481639627], "geometry": {"coordinates": [-96.9257598892, 32.6481639627], "type": "Point"}, "id": "29655", "properties": {"Current Price": "$7.19", "Location": "Duncanville, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.7503968894, 32.8558959625, -96.7503968894, 32.8558959625], "geometry": {"coordinates": [-96.7503968894, 32.8558959625], "type": "Point"}, "id": "29724", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.3441038888, 32.5245809628, -97.3441038888, 32.5245809628], "geometry": {"coordinates": [-97.3441038888, 32.5245809628], "type": "Point"}, "id": "34435", "properties": {"Current Price": "$6.69", "Location": "Burleson, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.8627208893, 32.7593989626, -96.8627208893, 32.7593989626], "geometry": {"coordinates": [-96.8627208893, 32.7593989626], "type": "Point"}, "id": "34477", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.131940889, 32.6552459627, -97.131940889, 32.6552459627], "geometry": {"coordinates": [-97.131940889, 32.6552459627], "type": "Point"}, "id": "34546", "properties": {"Current Price": "$7.19", "Location": "Arlington, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9353258892, 32.8118149625, -96.9353258892, 32.8118149625], "geometry": {"coordinates": [-96.9353258892, 32.8118149625], "type": "Point"}, "id": "35183", "properties": {"Current Price": "$7.19", "Location": "Irving, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8712578893, 32.9094899624, -96.8712578893, 32.9094899624], "geometry": {"coordinates": [-96.8712578893, 32.9094899624], "type": "Point"}, "id": "36601", "properties": {"Current Price": "$7.19", "Location": "Dallas, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8925968893, 33.1690119621, -96.8925968893, 33.1690119621], "geometry": {"coordinates": [-96.8925968893, 33.1690119621], "type": "Point"}, "id": "37762", "properties": {"Current Price": "$6.69", "Location": "Little Elm, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.7698168894, 33.0283149623, -96.7698168894, 33.0283149623], "geometry": {"coordinates": [-96.7698168894, 33.0283149623], "type": "Point"}, "id": "37831", "properties": {"Current Price": "$6.69", "Location": "Plano, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.5917118896, 33.0114759623, -96.5917118896, 33.0114759623], "geometry": {"coordinates": [-96.5917118896, 33.0114759623], "type": "Point"}, "id": "37873", "properties": {"Current Price": "$7.19", "Location": "Wylie, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-98.5397298874, 33.8783939613, -98.5397298874, 33.8783939613], "geometry": {"coordinates": [-98.5397298874, 33.8783939613], "type": "Point"}, "id": "37942", "properties": {"Current Price": "$7.19", "Location": "Wichita Falls, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9236938892, 32.5900969628, -96.9236938892, 32.5900969628], "geometry": {"coordinates": [-96.9236938892, 32.5900969628], "type": "Point"}, "id": "39289", "properties": {"Current Price": "$7.19", "Location": "Cedar Hill, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.0343078891, 33.0424989622, -97.0343078891, 33.0424989622], "geometry": {"coordinates": [-97.0343078891, 33.0424989622], "type": "Point"}, "id": "39358", "properties": {"Current Price": "$7.19", "Location": "Lewisville, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.7511818906, 29.750991966, -95.7511818906, 29.750991966], "geometry": {"coordinates": [-95.7511818906, 29.750991966], "type": "Point"}, "id": "41584", "properties": {"Current Price": "$6.69", "Location": "Katy, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4533938909, 30.0706009656, -95.4533938909, 30.0706009656], "geometry": {"coordinates": [-95.4533938909, 30.0706009656], "type": "Point"}, "id": "41653", "properties": {"Current Price": "$6.69", "Location": "Spring, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.398320891, 29.5554419662, -95.398320891, 29.5554419662], "geometry": {"coordinates": [-95.398320891, 29.5554419662], "type": "Point"}, "id": "41722", "properties": {"Current Price": "$6.69", "Location": "Pearland, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.1808698912, 29.6506159661, -95.1808698912, 29.6506159661], "geometry": {"coordinates": [-95.1808698912, 29.6506159661], "type": "Point"}, "id": "41791", "properties": {"Current Price": "$6.69", "Location": "Pasadena, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.142644889, 34.1804409609, -97.142644889, 34.1804409609], "geometry": {"coordinates": [-97.142644889, 34.1804409609], "type": "Point"}, "id": "42826", "properties": {"Current Price": "$7.19", "Location": "Ardmore, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.4735888898, 32.8870619624, -96.4735888898, 32.8870619624], "geometry": {"coordinates": [-96.4735888898, 32.8870619624], "type": "Point"}, "id": "42896", "properties": {"Current Price": "$7.19", "Location": "Rockwall, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.0909888891, 33.1992769621, -97.0909888891, 33.1992769621], "geometry": {"coordinates": [-97.0909888891, 33.1992769621], "type": "Point"}, "id": "42965", "properties": {"Current Price": "$7.19", "Location": "Denton, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.6090478896, 33.6716869615, -96.6090478896, 33.6716869615], "geometry": {"coordinates": [-96.6090478896, 33.6716869615], "type": "Point"}, "id": "43034", "properties": {"Current Price": "$7.19", "Location": "Sherman, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.1891898889, 31.530806964, -97.1891898889, 31.530806964], "geometry": {"coordinates": [-97.1891898889, 31.530806964], "type": "Point"}, "id": "43627", "properties": {"Current Price": "$6.69", "Location": "Waco, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.3700928887, 31.0682659645, -97.3700928887, 31.0682659645], "geometry": {"coordinates": [-97.3700928887, 31.0682659645], "type": "Point"}, "id": "43696", "properties": {"Current Price": "$6.69", "Location": "Temple, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-98.4220418875, 34.6191489604, -98.4220418875, 34.6191489604], "geometry": {"coordinates": [-98.4220418875, 34.6191489604], "type": "Point"}, "id": "43737", "properties": {"Current Price": "$7.19", "Location": "Lawton, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.1741938912, 29.9982839657, -95.1741938912, 29.9982839657], "geometry": {"coordinates": [-95.1741938912, 29.9982839657], "type": "Point"}, "id": "43905", "properties": {"Current Price": "$6.69", "Location": "Humble, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6434968907, 29.6636409661, -95.6434968907, 29.6636409661], "geometry": {"coordinates": [-95.6434968907, 29.6636409661], "type": "Point"}, "id": "43974", "properties": {"Current Price": "$6.69", "Location": "Sugar Land, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.1599368913, 29.5226509663, -95.1599368913, 29.5226509663], "geometry": {"coordinates": [-95.1599368913, 29.5226509663], "type": "Point"}, "id": "44043", "properties": {"Current Price": "$6.69", "Location": "Webster, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6453668907, 29.8629849659, -95.6453668907, 29.8629849659], "geometry": {"coordinates": [-95.6453668907, 29.8629849659], "type": "Point"}, "id": "44112", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4863658909, 29.9153689658, -95.4863658909, 29.9153689658], "geometry": {"coordinates": [-95.4863658909, 29.9153689658], "type": "Point"}, "id": "44181", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4851658909, 29.9949389657, -95.4851658909, 29.9949389657], "geometry": {"coordinates": [-95.4851658909, 29.9949389657], "type": "Point"}, "id": "44250", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2934398911, 30.0051249657, -95.2934398911, 30.0051249657], "geometry": {"coordinates": [-95.2934398911, 30.0051249657], "type": "Point"}, "id": "44319", "properties": {"Current Price": "$6.69", "Location": "Humble, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.7188388906, 29.8579909659, -95.7188388906, 29.8579909659], "geometry": {"coordinates": [-95.7188388906, 29.8579909659], "type": "Point"}, "id": "44459", "properties": {"Current Price": "$6.69", "Location": "Katy, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5472998908, 29.5428079662, -95.5472998908, 29.5428079662], "geometry": {"coordinates": [-95.5472998908, 29.5428079662], "type": "Point"}, "id": "44528", "properties": {"Current Price": "$6.69", "Location": "Missouri City, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4900178909, 30.3303869653, -95.4900178909, 30.3303869653], "geometry": {"coordinates": [-95.4900178909, 30.3303869653], "type": "Point"}, "id": "44597", "properties": {"Current Price": "$6.69", "Location": "Conroe, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5848398908, 29.9075499658, -95.5848398908, 29.9075499658], "geometry": {"coordinates": [-95.5848398908, 29.9075499658], "type": "Point"}, "id": "45660", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.0210178914, 29.5362899662, -95.0210178914, 29.5362899662], "geometry": {"coordinates": [-95.0210178914, 29.5362899662], "type": "Point"}, "id": "45729", "properties": {"Current Price": "$6.69", "Location": "Kemah, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.169253889, 32.7556789626, -97.169253889, 32.7556789626], "geometry": {"coordinates": [-97.169253889, 32.7556789626], "type": "Point"}, "id": "46836", "properties": {"Current Price": "$7.19", "Location": "Ft. Worth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.7604478883, 35.4780189595, -97.7604478883, 35.4780189595], "geometry": {"coordinates": [-97.7604478883, 35.4780189595], "type": "Point"}, "id": "47330", "properties": {"Current Price": "$7.19", "Location": "Oklahoma City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.0516958891, 36.1335169587, -97.0516958891, 36.1335169587], "geometry": {"coordinates": [-97.0516958891, 36.1335169587], "type": "Point"}, "id": "47399", "properties": {"Current Price": "$7.19", "Location": "Stillwater, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4978438886, 35.6530749593, -97.4978438886, 35.6530749593], "geometry": {"coordinates": [-97.4978438886, 35.6530749593], "type": "Point"}, "id": "47539", "properties": {"Current Price": "$7.19", "Location": "Edmond, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.7610918906, 29.5442599662, -95.7610918906, 29.5442599662], "geometry": {"coordinates": [-95.7610918906, 29.5442599662], "type": "Point"}, "id": "49198", "properties": {"Current Price": "$6.69", "Location": "Rosenberg, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.6051808885, 30.4499809652, -97.6051808885, 30.4499809652], "geometry": {"coordinates": [-97.6051808885, 30.4499809652], "type": "Point"}, "id": "50119", "properties": {"Current Price": "$6.69", "Location": "Pflugerville, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.7964728883, 32.7366179626, -97.7964728883, 32.7366179626], "geometry": {"coordinates": [-97.7964728883, 32.7366179626], "type": "Point"}, "id": "50161", "properties": {"Current Price": "$7.19", "Location": "Weatherford, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.1905168889, 32.9084669624, -97.1905168889, 32.9084669624], "geometry": {"coordinates": [-97.1905168889, 32.9084669624], "type": "Point"}, "id": "50230", "properties": {"Current Price": "$7.19", "Location": "North Richland Hills, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.301272, 32.041578, -96.301272, 32.041578], "geometry": {"coordinates": [-96.301272, 32.041578], "type": "Point"}, "id": "50326", "properties": {"Current Price": "$6.69", "Location": "Corsicana, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.2196571, 33.0165102, -97.2196571, 33.0165102], "geometry": {"coordinates": [-97.2196571, 33.0165102], "type": "Point"}, "id": "50368", "properties": {"Current Price": "$7.19", "Location": "Roanoke, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4787769, 35.2175529, -97.4787769, 35.2175529], "geometry": {"coordinates": [-97.4787769, 35.2175529], "type": "Point"}, "id": "50436", "properties": {"Current Price": "$7.19", "Location": "Norman, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.4440148898, 32.7508649626, -96.4440148898, 32.7508649626], "geometry": {"coordinates": [-96.4440148898, 32.7508649626], "type": "Point"}, "id": "51216", "properties": {"Current Price": "$7.19", "Location": "Forney, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8577318893, 32.6039799627, -96.8577318893, 32.6039799627], "geometry": {"coordinates": [-96.8577318893, 32.6039799627], "type": "Point"}, "id": "51640", "properties": {"Current Price": "$7.19", "Location": "DeSoto, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.2647548889, 32.8054689625, -97.2647548889, 32.8054689625], "geometry": {"coordinates": [-97.2647548889, 32.8054689625], "type": "Point"}, "id": "52064", "properties": {"Current Price": "$7.19", "Location": "Haltom City, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.2371808912, 29.6273649661, -95.2371808912, 29.6273649661], "geometry": {"coordinates": [-95.2371808912, 29.6273649661], "type": "Point"}, "id": "53367", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.767923, 32.4357014, -97.767923, 32.4357014], "geometry": {"coordinates": [-97.767923, 32.4357014], "type": "Point"}, "id": "53507", "properties": {"Current Price": "$6.69", "Location": "Granbury, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5280308908, 30.0739139656, -95.5280308908, 30.0739139656], "geometry": {"coordinates": [-95.5280308908, 30.0739139656], "type": "Point"}, "id": "53718", "properties": {"Current Price": "$6.69", "Location": "Spring, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.9299788892, 35.3797949596, -96.9299788892, 35.3797949596], "geometry": {"coordinates": [-96.9299788892, 35.3797949596], "type": "Point"}, "id": "54895", "properties": {"Current Price": "$7.19", "Location": "Shawnee, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8639658893, 32.2668699631, -96.8639658893, 32.2668699631], "geometry": {"coordinates": [-96.8639658893, 32.2668699631], "type": "Point"}, "id": "54992", "properties": {"Current Price": "$6.69", "Location": "Waxahachie, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.6588158896, 34.7908649602, -96.6588158896, 34.7908649602], "geometry": {"coordinates": [-96.6588158896, 34.7908649602], "type": "Point"}, "id": "55104", "properties": {"Current Price": "$7.19", "Location": "Ada, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.6440308907, 29.718250966, -95.6440308907, 29.718250966], "geometry": {"coordinates": [-95.6440308907, 29.718250966], "type": "Point"}, "id": "55201", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.6459058896, 33.1274809621, -96.6459058896, 33.1274809621], "geometry": {"coordinates": [-96.6459058896, 33.1274809621], "type": "Point"}, "id": "56512", "properties": {"Current Price": "$6.69", "Location": "Allen, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-98.9862998869, 31.7292449637, -98.9862998869, 31.7292449637], "geometry": {"coordinates": [-98.9862998869, 31.7292449637], "type": "Point"}, "id": "56554", "properties": {"Current Price": "$7.19", "Location": "Brownwood, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.0631918914, 29.8922109658, -95.0631918914, 29.8922109658], "geometry": {"coordinates": [-95.0631918914, 29.8922109658], "type": "Point"}, "id": "57344", "properties": {"Current Price": "$6.69", "Location": "Crosby, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2360778912, 29.4040529664, -95.2360778912, 29.4040529664], "geometry": {"coordinates": [-95.2360778912, 29.4040529664], "type": "Point"}, "id": "57413", "properties": {"Current Price": "$6.69", "Location": "Alvin, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.0446228891, 32.6722389627, -97.0446228891, 32.6722389627], "geometry": {"coordinates": [-97.0446228891, 32.6722389627], "type": "Point"}, "id": "59170", "properties": {"Current Price": "$7.19", "Location": "Grand Prairie, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.3420715332, 32.3116722107, -95.3420715332, 32.3116722107], "geometry": {"coordinates": [-95.3420715332, 32.3116722107], "type": "Point"}, "id": "59310", "properties": {"Current Price": "$7.19", "Location": "Tyler, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.7808068917, 32.5262389628, -94.7808068917, 32.5262389628], "geometry": {"coordinates": [-94.7808068917, 32.5262389628], "type": "Point"}, "id": "60558", "properties": {"Current Price": "$7.19", "Location": "Longview, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5114658909, 33.6610619615, -95.5114658909, 33.6610619615], "geometry": {"coordinates": [-95.5114658909, 33.6610619615], "type": "Point"}, "id": "60627", "properties": {"Current Price": "$7.19", "Location": "Paris, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5597458908, 30.0015589657, -95.5597458908, 30.0015589657], "geometry": {"coordinates": [-95.5597458908, 30.0015589657], "type": "Point"}, "id": "61078", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.7297168895, 33.1519289621, -96.7297168895, 33.1519289621], "geometry": {"coordinates": [-96.7297168895, 33.1519289621], "type": "Point"}, "id": "61857", "properties": {"Current Price": "$6.69", "Location": "McKinney, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.0485848891, 33.1301749621, -97.0485848891, 33.1301749621], "geometry": {"coordinates": [-97.0485848891, 33.1301749621], "type": "Point"}, "id": "62309", "properties": {"Current Price": "$7.19", "Location": "Corinth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.9791048915, 29.784301966, -94.9791048915, 29.784301966], "geometry": {"coordinates": [-94.9791048915, 29.784301966], "type": "Point"}, "id": "63107", "properties": {"Current Price": "$6.69", "Location": "Baytown, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5021218909, 29.6899609661, -95.5021218909, 29.6899609661], "geometry": {"coordinates": [-95.5021218909, 29.6899609661], "type": "Point"}, "id": "63665", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6852, 29.9035, -95.6852, 29.9035], "geometry": {"coordinates": [-95.6852, 29.9035], "type": "Point"}, "id": "63876", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.1098358902, 33.1029669622, -96.1098358902, 33.1029669622], "geometry": {"coordinates": [-96.1098358902, 33.1029669622], "type": "Point"}, "id": "64052", "properties": {"Current Price": "$7.19", "Location": "Greenville, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.7176098883, 31.0890189645, -97.7176098883, 31.0890189645], "geometry": {"coordinates": [-97.7176098883, 31.0890189645], "type": "Point"}, "id": "64148", "properties": {"Current Price": "$6.69", "Location": "Killeen, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.9607688892, 33.222040962, -96.9607688892, 33.222040962], "geometry": {"coordinates": [-96.9607688892, 33.222040962], "type": "Point"}, "id": "64217", "properties": {"Current Price": "$6.69", "Location": "Providence Village, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.410294891, 29.8225109659, -95.410294891, 29.8225109659], "geometry": {"coordinates": [-95.410294891, 29.8225109659], "type": "Point"}, "id": "64286", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.0975638913, 29.6639889661, -95.0975638913, 29.6639889661], "geometry": {"coordinates": [-95.0975638913, 29.6639889661], "type": "Point"}, "id": "64485", "properties": {"Current Price": "$6.69", "Location": "La Porte, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.8858568893, 33.0608209622, -96.8858568893, 33.0608209622], "geometry": {"coordinates": [-96.8858568893, 33.0608209622], "type": "Point"}, "id": "65327", "properties": {"Current Price": "$6.69", "Location": "Lewisville, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-98.2324678878, 32.2065849632, -98.2324678878, 32.2065849632], "geometry": {"coordinates": [-98.2324678878, 32.2065849632], "type": "Point"}, "id": "69486", "properties": {"Current Price": "$6.69", "Location": "Stephenville, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.2054498889, 32.6659729627, -97.2054498889, 32.6659729627], "geometry": {"coordinates": [-97.2054498889, 32.6659729627], "type": "Point"}, "id": "69528", "properties": {"Current Price": "$7.19", "Location": "Arlingon, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.363533891, 29.7018489661, -95.363533891, 29.7018489661], "geometry": {"coordinates": [-95.363533891, 29.7018489661], "type": "Point"}, "id": "70523", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.3225728888, 32.9034929624, -97.3225728888, 32.9034929624], "geometry": {"coordinates": [-97.3225728888, 32.9034929624], "type": "Point"}, "id": "72355", "properties": {"Current Price": "$7.19", "Location": "Fort Worth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.7405368906, 29.6624509661, -95.7405368906, 29.6624509661], "geometry": {"coordinates": [-95.7405368906, 29.6624509661], "type": "Point"}, "id": "72727", "properties": {"Current Price": "$6.69", "Location": "Richmond, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.8462638905, 29.7084859661, -95.8462638905, 29.7084859661], "geometry": {"coordinates": [-95.8462638905, 29.7084859661], "type": "Point"}, "id": "72796", "properties": {"Current Price": "$6.69", "Location": "Fulshear, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.9998238892, 28.844063967, -96.9998238892, 28.844063967], "geometry": {"coordinates": [-96.9998238892, 28.844063967], "type": "Point"}, "id": "73354", "properties": {"Current Price": "$6.69", "Location": "Victoria, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.3382728899, 30.653446965, -96.3382728899, 30.653446965], "geometry": {"coordinates": [-96.3382728899, 30.653446965], "type": "Point"}, "id": "73565", "properties": {"Current Price": "$6.69", "Location": "Bryan, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.1212778913, 29.5561849662, -95.1212778913, 29.5561849662], "geometry": {"coordinates": [-95.1212778913, 29.5561849662], "type": "Point"}, "id": "74766", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2768778911, 29.5615939662, -95.2768778911, 29.5615939662], "geometry": {"coordinates": [-95.2768778911, 29.5615939662], "type": "Point"}, "id": "74906", "properties": {"Current Price": "$6.69", "Location": "Pearland, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4550028909, 29.0433589668, -95.4550028909, 29.0433589668], "geometry": {"coordinates": [-95.4550028909, 29.0433589668], "type": "Point"}, "id": "74975", "properties": {"Current Price": "$6.69", "Location": "Lake Jackson, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5698678908, 30.7168159649, -95.5698678908, 30.7168159649], "geometry": {"coordinates": [-95.5698678908, 30.7168159649], "type": "Point"}, "id": "75044", "properties": {"Current Price": "$6.69", "Location": "Huntsville, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5559418908, 30.1312929656, -95.5559418908, 30.1312929656], "geometry": {"coordinates": [-95.5559418908, 30.1312929656], "type": "Point"}, "id": "75184", "properties": {"Current Price": "$6.69", "Location": "Tomball, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.4649218898, 32.9666279623, -96.4649218898, 32.9666279623], "geometry": {"coordinates": [-96.4649218898, 32.9666279623], "type": "Point"}, "id": "75936", "properties": {"Current Price": "$7.19", "Location": "Rockwall, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5340848908, 29.737018966, -95.5340848908, 29.737018966], "geometry": {"coordinates": [-95.5340848908, 29.737018966], "type": "Point"}, "id": "80552", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5824728908, 29.6476259661, -95.5824728908, 29.6476259661], "geometry": {"coordinates": [-95.5824728908, 29.6476259661], "type": "Point"}, "id": "80621", "properties": {"Current Price": "$6.69", "Location": "Meadows Place, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5622038908, 30.2232719655, -95.5622038908, 30.2232719655], "geometry": {"coordinates": [-95.5622038908, 30.2232719655], "type": "Point"}, "id": "80974", "properties": {"Current Price": "$6.69", "Location": "Magnolia, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.155063889, 33.229094962, -97.155063889, 33.229094962], "geometry": {"coordinates": [-97.155063889, 33.229094962], "type": "Point"}, "id": "81726", "properties": {"Current Price": "$7.19", "Location": "Denton, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.409235891, 29.9149769658, -95.409235891, 29.9149769658], "geometry": {"coordinates": [-95.409235891, 29.9149769658], "type": "Point"}, "id": "81822", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.5658198885, 35.5197499594, -97.5658198885, 35.5197499594], "geometry": {"coordinates": [-97.5658198885, 35.5197499594], "type": "Point"}, "id": "83969", "properties": {"Current Price": "$7.19", "Location": "Oklahoma City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.2680798911, 32.347556963, -95.2680798911, 32.347556963], "geometry": {"coordinates": [-95.2680798911, 32.347556963], "type": "Point"}, "id": "84733", "properties": {"Current Price": "$7.19", "Location": "Tyler, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.2359788912, 30.0500619657, -95.2359788912, 30.0500619657], "geometry": {"coordinates": [-95.2359788912, 30.0500619657], "type": "Point"}, "id": "85042", "properties": {"Current Price": "$6.69", "Location": "Kingwood, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5449988908, 29.8187379659, -95.5449988908, 29.8187379659], "geometry": {"coordinates": [-95.5449988908, 29.8187379659], "type": "Point"}, "id": "86373", "properties": {"Current Price": "$6.69", "Location": "Houston, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-94.9478078915, 29.3954599664, -94.9478078915, 29.3954599664], "geometry": {"coordinates": [-94.9478078915, 29.3954599664], "type": "Point"}, "id": "91285", "properties": {"Current Price": "$6.69", "Location": "Texas City, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.404828891, 30.1229449656, -95.404828891, 30.1229449656], "geometry": {"coordinates": [-95.404828891, 30.1229449656], "type": "Point"}, "id": "91567", "properties": {"Current Price": "$6.69", "Location": "Spring, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.4240018887, 32.3347989631, -97.4240018887, 32.3347989631], "geometry": {"coordinates": [-97.4240018887, 32.3347989631], "type": "Point"}, "id": "92133", "properties": {"Current Price": "$6.69", "Location": "Cleburne, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.2659508889, 32.9344539624, -97.2659508889, 32.9344539624], "geometry": {"coordinates": [-97.2659508889, 32.9344539624], "type": "Point"}, "id": "92388", "properties": {"Current Price": "$7.19", "Location": "Fort Worth, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9961718892, 32.4621939629, -96.9961718892, 32.4621939629], "geometry": {"coordinates": [-96.9961718892, 32.4621939629], "type": "Point"}, "id": "94287", "properties": {"Current Price": "$7.19", "Location": "Midlothian, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4162768887, 35.1811589598, -97.4162768887, 35.1811589598], "geometry": {"coordinates": [-97.4162768887, 35.1811589598], "type": "Point"}, "id": "94426", "properties": {"Current Price": "$7.19", "Location": "Norman, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.7875298883, 31.0864709645, -97.7875298883, 31.0864709645], "geometry": {"coordinates": [-97.7875298883, 31.0864709645], "type": "Point"}, "id": "97410", "properties": {"Current Price": "$6.69", "Location": "Killeen, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-94.9683428915, 33.1358139621, -94.9683428915, 33.1358139621], "geometry": {"coordinates": [-94.9683428915, 33.1358139621], "type": "Point"}, "id": "97937", "properties": {"Current Price": "$7.19", "Location": "Mt. Pleasant, TX", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.9353008881, 35.02690496, -97.9353008881, 35.02690496], "geometry": {"coordinates": [-97.9353008881, 35.02690496], "type": "Point"}, "id": "98005", "properties": {"Current Price": "$7.19", "Location": "Chickasha, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-99.789300886, 32.405513963, -99.789300886, 32.405513963], "geometry": {"coordinates": [-99.789300886, 32.405513963], "type": "Point"}, "id": "104850", "properties": {"Current Price": "$6.69", "Location": "Abilene, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.6870803833, 30.6330795288, -97.6870803833, 30.6330795288], "geometry": {"coordinates": [-97.6870803833, 30.6330795288], "type": "Point"}, "id": "105483", "properties": {"Current Price": "$6.69", "Location": "Georgetown, TX", "Price": 6.69, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-93.8142471313, 32.3902015686, -93.8142471313, 32.3902015686], "geometry": {"coordinates": [-93.8142471313, 32.3902015686], "type": "Point"}, "id": "131004", "properties": {"Current Price": "$7.19", "Location": "Shreveport, LA", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.4959278886, 35.3199499596, -97.4959278886, 35.3199499596], "geometry": {"coordinates": [-97.4959278886, 35.3199499596], "type": "Point"}, "id": "164063", "properties": {"Current Price": "$7.19", "Location": "Moore, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.5510868885, 35.4060469595, -97.5510868885, 35.4060469595], "geometry": {"coordinates": [-97.5510868885, 35.4060469595], "type": "Point"}, "id": "164274", "properties": {"Current Price": "$7.19", "Location": "Oklahoma City, OK", "Price": 7.19, "Product": "Mama Cozzi\u0027s Pizza Kitchen 16\" Pepperoni Deli Pizza", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_f237171a9132c23d5499c3673604ab02.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_f237171a9132c23d5499c3673604ab02.addTo(map_c343b216a6559cc8dd81d5e2f47d9377);
+        
+</script>
+</html>
