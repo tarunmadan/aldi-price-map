@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Happy Harvest Mushrooms</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Happy Harvest Mushrooms cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2006065159b0684f755d2598017d9790 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+<style>
+                        .header {
+                            
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            background-color: #001f78;
+                            color: #FFF;
+                            padding-left: 20px;
+                        }
+                        .footer{
+                            width: 100%;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            background-color: #001f78;
+                            color: #FFF;
+                        }
+                        .banner {
+                            padding-top: 20px;
+                            padding-bottom: 15px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                            
+                            background-color: #ffbf45;
+                        }
+
+                        .header option {
+                            font-weight: 800;
+                        }
+                        .header select {
+                            font-weight: 800; 
+                            max-width: 250px;                            
+                        }
+                        .header .main {                            
+                            float: left;
+                        }
+                        .header .sub {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: 	#ffbf45;
+                            float: right;
+                            padding-top: 10px;
+                            padding-right: 20px;
+                        }
+                        .header a, .footer a {
+                            color: 	#ffbf45;
+                        }
+                    </style>
+</head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>1.25</li>
+                <li><span style='background:#b22222'></span>1.29</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+<div class="header">
+                <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                        
+            <option value="1-2-3_vegetable_oil">1-2-3 Vegetable Oil</option>
+
+            
+            <option value="aldi_guacamole">ALDI Guacamole</option>
+
+            
+            <option value="barissimo_southwest_pecan_or_southwest_praline_coffee_cups">Barissimo Southwest Pecan or Southwest Praline Coffee Cups</option>
+
+            
+            <option value="beefsteak_tomatoes">Beefsteak Tomatoes</option>
+
+            
+            <option value="burman's_hot_sauce">Burman's Hot Sauce</option>
+
+            
+            <option value="california_peaches">California Peaches</option>
+
+            
+            <option value="clancy's_barbecue_potato_chips">Clancy's Barbecue Potato Chips</option>
+
+            
+            <option value="clancy's_restaurant_style_tortilla_chips">Clancy's Restaurant Style Tortilla Chips</option>
+
+            
+            <option value="clancy's_texas_seasoned_tortilla_chips">Clancy's Texas Seasoned Tortilla Chips</option>
+
+            
+            <option value="electrolit_strawberry_kiwi">Electrolit Strawberry Kiwi</option>
+
+            
+            <option value="fiora_12-roll_scented_bath_tissue">Fiora 12-Roll Scented Bath Tissue</option>
+
+            
+            <option value="fresh_93_lean_ground_beef">Fresh 93% Lean Ground Beef</option>
+
+            
+            <option value="frito_lay_fiery_mix_variety_pack">Frito Lay Fiery Mix Variety Pack</option>
+
+            
+            <option value="happy_farms_deli-sliced_provolone_cheese">Happy Farms Deli-Sliced Provolone Cheese</option>
+
+            
+            <option value="happy_harvest_mushrooms" selected>Happy Harvest Mushrooms</option>
+
+            
+            <option value="helados_mexico_strawberry_paletas">Helados Mexico Strawberry Paletas</option>
+
+            
+            <option value="herdez_salsa_verde">Herdez Salsa Verde</option>
+
+            
+            <option value="iceberg_lettuce">Iceberg Lettuce</option>
+
+            
+            <option value="jarritos_mandarin">Jarritos Mandarin</option>
+
+            
+            <option value="kirkwood_chicken_wings">Kirkwood Chicken Wings</option>
+
+            
+            <option value="klass_aguas_frescas_drink_mix">Klass Aguas Frescas Drink Mix</option>
+
+            
+            <option value="l'oven_fresh_deli_rolls">L'oven Fresh Deli Rolls</option>
+
+            
+            <option value="l'oven_fresh_hawaiian_sweet_rolls">L'oven Fresh Hawaiian Sweet Rolls</option>
+
+            
+            <option value="marinela_barritas_fresa">Marinela Barritas Fresa</option>
+
+            
+            <option value="mexican_calabaza_squash">Mexican Calabaza Squash</option>
+
+            
+            <option value="park_street_deli_fresh_salsa">Park Street Deli Fresh Salsa</option>
+
+            
+            <option value="seedless_cucumbers">Seedless Cucumbers</option>
+
+            
+            <option value="sliced_white_mushrooms">Sliced White Mushrooms</option>
+
+            
+            <option value="specially_selected_california_perfect_pairing_grapes">Specially Selected California Perfect Pairing Grapes</option>
+
+            
+            <option value="strawberries">Strawberries</option>
+
+            
+            <option value="sun_vista_pinto_beans">Sun Vista Pinto Beans</option>
+
+            
+            <option value="sundae_shoppe_strawberry_or_mango_fruit_bars">Sundae Shoppe Strawberry or Mango Fruit Bars</option>
+
+            
+            <option value="sundae_shoppe_vanilla_bars">Sundae Shoppe Vanilla Bars</option>
+
+            
+            <option value="sundae_shoppe_vanilla_bars_or_crunch_bars">Sundae Shoppe Vanilla Bars or Crunch Bars</option>
+
+            
+            <option value="sunnyd_tangy_original">SunnyD Tangy Original</option>
+
+            </select> &nbsp;cost at Aldi? </div>
+                <div class="sub">Prices valid Sep 4<sup>th</sup> - Sep 10<sup>th</sup>. New products and next update on Sep 11<sup>th</sup></span>    </div>
+                <div style="clear: both;"></div>           
+            </div>
+<div class="folium-map" id="map_2006065159b0684f755d2598017d9790" ></div>
+        
+
+<div class="footer">
+    <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+    Store pricing may change without notice and may differ from the information provided on this site. 
+    View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+        
+    </p>
+    <p>For the week of Sep 4<sup>th</sup>, price maps are available for the following products - 
+            <a href="1-2-3_vegetable_oil.html">1-2-3 Vegetable Oil</a>, 
+            <a href="aldi_guacamole.html">ALDI Guacamole</a>, 
+            <a href="barissimo_southwest_pecan_or_southwest_praline_coffee_cups.html">Barissimo Southwest Pecan or Southwest Praline Coffee Cups</a>, 
+            <a href="beefsteak_tomatoes.html">Beefsteak Tomatoes</a>, 
+            <a href="burman's_hot_sauce.html">Burman's Hot Sauce</a>, 
+            <a href="california_peaches.html">California Peaches</a>, 
+            <a href="clancy's_barbecue_potato_chips.html">Clancy's Barbecue Potato Chips</a>, 
+            <a href="clancy's_restaurant_style_tortilla_chips.html">Clancy's Restaurant Style Tortilla Chips</a>, 
+            <a href="clancy's_texas_seasoned_tortilla_chips.html">Clancy's Texas Seasoned Tortilla Chips</a>, 
+            <a href="electrolit_strawberry_kiwi.html">Electrolit Strawberry Kiwi</a>, 
+            <a href="fiora_12-roll_scented_bath_tissue.html">Fiora 12-Roll Scented Bath Tissue</a>, 
+            <a href="fresh_93_lean_ground_beef.html">Fresh 93% Lean Ground Beef</a>, 
+            <a href="frito_lay_fiery_mix_variety_pack.html">Frito Lay Fiery Mix Variety Pack</a>, 
+            <a href="happy_farms_deli-sliced_provolone_cheese.html">Happy Farms Deli-Sliced Provolone Cheese</a>, 
+            <a href="happy_harvest_mushrooms.html">Happy Harvest Mushrooms</a>, 
+            <a href="helados_mexico_strawberry_paletas.html">Helados Mexico Strawberry Paletas</a>, 
+            <a href="herdez_salsa_verde.html">Herdez Salsa Verde</a>, 
+            <a href="iceberg_lettuce.html">Iceberg Lettuce</a>, 
+            <a href="jarritos_mandarin.html">Jarritos Mandarin</a>, 
+            <a href="kirkwood_chicken_wings.html">Kirkwood Chicken Wings</a>, 
+            <a href="klass_aguas_frescas_drink_mix.html">Klass Aguas Frescas Drink Mix</a>, 
+            <a href="l'oven_fresh_deli_rolls.html">L'oven Fresh Deli Rolls</a>, 
+            <a href="l'oven_fresh_hawaiian_sweet_rolls.html">L'oven Fresh Hawaiian Sweet Rolls</a>, 
+            <a href="marinela_barritas_fresa.html">Marinela Barritas Fresa</a>, 
+            <a href="mexican_calabaza_squash.html">Mexican Calabaza Squash</a>, 
+            <a href="park_street_deli_fresh_salsa.html">Park Street Deli Fresh Salsa</a>, 
+            <a href="seedless_cucumbers.html">Seedless Cucumbers</a>, 
+            <a href="sliced_white_mushrooms.html">Sliced White Mushrooms</a>, 
+            <a href="specially_selected_california_perfect_pairing_grapes.html">Specially Selected California Perfect Pairing Grapes</a>, 
+            <a href="strawberries.html">Strawberries</a>, 
+            <a href="sun_vista_pinto_beans.html">Sun Vista Pinto Beans</a>, 
+            <a href="sundae_shoppe_strawberry_or_mango_fruit_bars.html">Sundae Shoppe Strawberry or Mango Fruit Bars</a>, 
+            <a href="sundae_shoppe_vanilla_bars.html">Sundae Shoppe Vanilla Bars</a>, 
+            <a href="sundae_shoppe_vanilla_bars_or_crunch_bars.html">Sundae Shoppe Vanilla Bars or Crunch Bars</a>, 
+            <a href="sunnyd_tangy_original.html">SunnyD Tangy Original</a></p></div></body>
+<script>
+    function countryHandler(value) {
+        window.location.assign(`${value}.html`);
+    }
+</script>
+
+<script>
+    
+    
+            var map_2006065159b0684f755d2598017d9790 = L.map(
+                "map_2006065159b0684f755d2598017d9790",
+                {
+                    center: [32.84086996245, -107.77456387685001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2006065159b0684f755d2598017d9790);
+
+            
+
+        
+    
+            var tile_layer_86f9bf19b5b76d6f024635a4c507140a = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_86f9bf19b5b76d6f024635a4c507140a.addTo(map_2006065159b0684f755d2598017d9790);
+        
+    
+            map_2006065159b0684f755d2598017d9790.fitBounds(
+                [[28.844063967, -120.6013198622], [36.8376759579, -94.9478078915]],
+                {}
+            );
+        
+    
+        function geo_json_6009264452cee768863eed67ad200daa_styler(feature) {
+            switch(feature.id) {
+                case "15797": case "17403": case "28746": case "34077": case "37357": case "37419": case "41117": case "41179": case "41242": case "41305": case "43110": case "43163": case "43358": case "43421": case "43484": case "43547": case "43609": case "43672": case "43735": case "43869": case "43932": case "43996": case "45050": case "45113": case "48537": case "49449": case "49645": case "52619": case "52763": case "52957": case "54219": case "54405": case "55782": case "56618": case "56681": case "60473": case "61252": case "62519": case "63085": case "63291": case "63564": case "63636": case "63689": case "63906": case "64763": case "68963": case "70019": case "72321": case "72384": case "72948": case "73153": case "74352": case "74485": case "74548": case "74611": case "74745": case "80122": case "80184": case "80531": case "81364": case "84630": case "85979": case "90977": case "91252": case "91820": case "97120": case "104713": case "105340": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_6009264452cee768863eed67ad200daa_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_6009264452cee768863eed67ad200daa_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_6009264452cee768863eed67ad200daa_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_6009264452cee768863eed67ad200daa_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_6009264452cee768863eed67ad200daa.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_6009264452cee768863eed67ad200daa_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_6009264452cee768863eed67ad200daa = L.geoJson(null, {
+                onEachFeature: geo_json_6009264452cee768863eed67ad200daa_onEachFeature,
+            
+                style: geo_json_6009264452cee768863eed67ad200daa_styler,
+                pointToLayer: geo_json_6009264452cee768863eed67ad200daa_pointToLayer,
+        });
+
+        function geo_json_6009264452cee768863eed67ad200daa_add (data) {
+            geo_json_6009264452cee768863eed67ad200daa
+                .addData(data);
+        }
+            geo_json_6009264452cee768863eed67ad200daa_add({"bbox": [-120.6013198622, 28.844063967, -94.9478078915, 36.8376759579], "features": [{"bbox": [-96.8542088893, 32.9967819623, -96.8542088893, 32.9967819623], "geometry": {"coordinates": [-96.8542088893, 32.9967819623], "type": "Point"}, "id": "15797", "properties": {"Current Price": "$1.25", "Location": "Dallas, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.6988918895, 33.0303669623, -96.6988918895, 33.0303669623], "geometry": {"coordinates": [-96.6988918895, 33.0303669623], "type": "Point"}, "id": "17403", "properties": {"Current Price": "$1.25", "Location": "Plano, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.8045008894, 33.1359639621, -96.8045008894, 33.1359639621], "geometry": {"coordinates": [-96.8045008894, 33.1359639621], "type": "Point"}, "id": "28746", "properties": {"Current Price": "$1.25", "Location": "Frisco, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.3441038888, 32.5245809628, -97.3441038888, 32.5245809628], "geometry": {"coordinates": [-97.3441038888, 32.5245809628], "type": "Point"}, "id": "34077", "properties": {"Current Price": "$1.25", "Location": "Burleson, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.8925968893, 33.1690119621, -96.8925968893, 33.1690119621], "geometry": {"coordinates": [-96.8925968893, 33.1690119621], "type": "Point"}, "id": "37357", "properties": {"Current Price": "$1.25", "Location": "Little Elm, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.7698168894, 33.0283149623, -96.7698168894, 33.0283149623], "geometry": {"coordinates": [-96.7698168894, 33.0283149623], "type": "Point"}, "id": "37419", "properties": {"Current Price": "$1.25", "Location": "Plano, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.7511818906, 29.750991966, -95.7511818906, 29.750991966], "geometry": {"coordinates": [-95.7511818906, 29.750991966], "type": "Point"}, "id": "41117", "properties": {"Current Price": "$1.25", "Location": "Katy, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4533938909, 30.0706009656, -95.4533938909, 30.0706009656], "geometry": {"coordinates": [-95.4533938909, 30.0706009656], "type": "Point"}, "id": "41179", "properties": {"Current Price": "$1.25", "Location": "Spring, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.398320891, 29.5554419662, -95.398320891, 29.5554419662], "geometry": {"coordinates": [-95.398320891, 29.5554419662], "type": "Point"}, "id": "41242", "properties": {"Current Price": "$1.25", "Location": "Pearland, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.1808698912, 29.6506159661, -95.1808698912, 29.6506159661], "geometry": {"coordinates": [-95.1808698912, 29.6506159661], "type": "Point"}, "id": "41305", "properties": {"Current Price": "$1.25", "Location": "Pasadena, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.1891898889, 31.530806964, -97.1891898889, 31.530806964], "geometry": {"coordinates": [-97.1891898889, 31.530806964], "type": "Point"}, "id": "43110", "properties": {"Current Price": "$1.25", "Location": "Waco, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.3700928887, 31.0682659645, -97.3700928887, 31.0682659645], "geometry": {"coordinates": [-97.3700928887, 31.0682659645], "type": "Point"}, "id": "43163", "properties": {"Current Price": "$1.25", "Location": "Temple, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.1741938912, 29.9982839657, -95.1741938912, 29.9982839657], "geometry": {"coordinates": [-95.1741938912, 29.9982839657], "type": "Point"}, "id": "43358", "properties": {"Current Price": "$1.25", "Location": "Humble, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6434968907, 29.6636409661, -95.6434968907, 29.6636409661], "geometry": {"coordinates": [-95.6434968907, 29.6636409661], "type": "Point"}, "id": "43421", "properties": {"Current Price": "$1.25", "Location": "Sugar Land, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.1599368913, 29.5226509663, -95.1599368913, 29.5226509663], "geometry": {"coordinates": [-95.1599368913, 29.5226509663], "type": "Point"}, "id": "43484", "properties": {"Current Price": "$1.25", "Location": "Webster, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6453668907, 29.8629849659, -95.6453668907, 29.8629849659], "geometry": {"coordinates": [-95.6453668907, 29.8629849659], "type": "Point"}, "id": "43547", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4863658909, 29.9153689658, -95.4863658909, 29.9153689658], "geometry": {"coordinates": [-95.4863658909, 29.9153689658], "type": "Point"}, "id": "43609", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4851658909, 29.9949389657, -95.4851658909, 29.9949389657], "geometry": {"coordinates": [-95.4851658909, 29.9949389657], "type": "Point"}, "id": "43672", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2934398911, 30.0051249657, -95.2934398911, 30.0051249657], "geometry": {"coordinates": [-95.2934398911, 30.0051249657], "type": "Point"}, "id": "43735", "properties": {"Current Price": "$1.25", "Location": "Humble, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.7188388906, 29.8579909659, -95.7188388906, 29.8579909659], "geometry": {"coordinates": [-95.7188388906, 29.8579909659], "type": "Point"}, "id": "43869", "properties": {"Current Price": "$1.25", "Location": "Katy, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5472998908, 29.5428079662, -95.5472998908, 29.5428079662], "geometry": {"coordinates": [-95.5472998908, 29.5428079662], "type": "Point"}, "id": "43932", "properties": {"Current Price": "$1.25", "Location": "Missouri City, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4900178909, 30.3303869653, -95.4900178909, 30.3303869653], "geometry": {"coordinates": [-95.4900178909, 30.3303869653], "type": "Point"}, "id": "43996", "properties": {"Current Price": "$1.25", "Location": "Conroe, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5848398908, 29.9075499658, -95.5848398908, 29.9075499658], "geometry": {"coordinates": [-95.5848398908, 29.9075499658], "type": "Point"}, "id": "45050", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.0210178914, 29.5362899662, -95.0210178914, 29.5362899662], "geometry": {"coordinates": [-95.0210178914, 29.5362899662], "type": "Point"}, "id": "45113", "properties": {"Current Price": "$1.25", "Location": "Kemah, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.7610918906, 29.5442599662, -95.7610918906, 29.5442599662], "geometry": {"coordinates": [-95.7610918906, 29.5442599662], "type": "Point"}, "id": "48537", "properties": {"Current Price": "$1.25", "Location": "Rosenberg, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.6051808885, 30.4499809652, -97.6051808885, 30.4499809652], "geometry": {"coordinates": [-97.6051808885, 30.4499809652], "type": "Point"}, "id": "49449", "properties": {"Current Price": "$1.25", "Location": "Pflugerville, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.301272, 32.041578, -96.301272, 32.041578], "geometry": {"coordinates": [-96.301272, 32.041578], "type": "Point"}, "id": "49645", "properties": {"Current Price": "$1.25", "Location": "Corsicana, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2371808912, 29.6273649661, -95.2371808912, 29.6273649661], "geometry": {"coordinates": [-95.2371808912, 29.6273649661], "type": "Point"}, "id": "52619", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.767923, 32.4357014, -97.767923, 32.4357014], "geometry": {"coordinates": [-97.767923, 32.4357014], "type": "Point"}, "id": "52763", "properties": {"Current Price": "$1.25", "Location": "Granbury, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5280308908, 30.0739139656, -95.5280308908, 30.0739139656], "geometry": {"coordinates": [-95.5280308908, 30.0739139656], "type": "Point"}, "id": "52957", "properties": {"Current Price": "$1.25", "Location": "Spring, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.8639658893, 32.2668699631, -96.8639658893, 32.2668699631], "geometry": {"coordinates": [-96.8639658893, 32.2668699631], "type": "Point"}, "id": "54219", "properties": {"Current Price": "$1.25", "Location": "Waxahachie, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6440308907, 29.718250966, -95.6440308907, 29.718250966], "geometry": {"coordinates": [-95.6440308907, 29.718250966], "type": "Point"}, "id": "54405", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "55246", "properties": {"Current Price": "$1.29", "Location": "Fontana, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "55386", "properties": {"Current Price": "$1.29", "Location": "Menifee, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "55472", "properties": {"Current Price": "$1.29", "Location": "Palmdale, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "55550", "properties": {"Current Price": "$1.29", "Location": "Buena Park, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "55628", "properties": {"Current Price": "$1.29", "Location": "Covina, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.6459058896, 33.1274809621, -96.6459058896, 33.1274809621], "geometry": {"coordinates": [-96.6459058896, 33.1274809621], "type": "Point"}, "id": "55782", "properties": {"Current Price": "$1.25", "Location": "Allen, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "55971", "properties": {"Current Price": "$1.29", "Location": "South Gate, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "56120", "properties": {"Current Price": "$1.29", "Location": "Lancaster, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.0631918914, 29.8922109658, -95.0631918914, 29.8922109658], "geometry": {"coordinates": [-95.0631918914, 29.8922109658], "type": "Point"}, "id": "56618", "properties": {"Current Price": "$1.25", "Location": "Crosby, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2360778912, 29.4040529664, -95.2360778912, 29.4040529664], "geometry": {"coordinates": [-95.2360778912, 29.4040529664], "type": "Point"}, "id": "56681", "properties": {"Current Price": "$1.25", "Location": "Alvin, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "57599", "properties": {"Current Price": "$1.29", "Location": "San Bernardino, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "57677", "properties": {"Current Price": "$1.29", "Location": "El Centro, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "57746", "properties": {"Current Price": "$1.29", "Location": "La Quinta, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "57832", "properties": {"Current Price": "$1.29", "Location": "Bakersfield, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "57910", "properties": {"Current Price": "$1.29", "Location": "Escondido, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "57988", "properties": {"Current Price": "$1.29", "Location": "Calexico, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "58066", "properties": {"Current Price": "$1.29", "Location": "Lake Elsinore, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "58144", "properties": {"Current Price": "$1.29", "Location": "Palm Springs, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "59477", "properties": {"Current Price": "$1.29", "Location": "Cerritos, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "59555", "properties": {"Current Price": "$1.29", "Location": "San Bernardino, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "59624", "properties": {"Current Price": "$1.29", "Location": "Simi Valley, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "59710", "properties": {"Current Price": "$1.29", "Location": "Anaheim, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5597458908, 30.0015589657, -95.5597458908, 30.0015589657], "geometry": {"coordinates": [-95.5597458908, 30.0015589657], "type": "Point"}, "id": "60473", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.7297168895, 33.1519289621, -96.7297168895, 33.1519289621], "geometry": {"coordinates": [-96.7297168895, 33.1519289621], "type": "Point"}, "id": "61252", "properties": {"Current Price": "$1.25", "Location": "McKinney, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "61591", "properties": {"Current Price": "$1.29", "Location": "Moreno Valley, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "61669", "properties": {"Current Price": "$1.29", "Location": "Long Beach, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "62304", "properties": {"Current Price": "$1.29", "Location": "Fountain Valley, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.9791048915, 29.784301966, -94.9791048915, 29.784301966], "geometry": {"coordinates": [-94.9791048915, 29.784301966], "type": "Point"}, "id": "62519", "properties": {"Current Price": "$1.25", "Location": "Baytown, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "62940", "properties": {"Current Price": "$1.29", "Location": "Santa Clarita, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5021218909, 29.6899609661, -95.5021218909, 29.6899609661], "geometry": {"coordinates": [-95.5021218909, 29.6899609661], "type": "Point"}, "id": "63085", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.6852, 29.9035, -95.6852, 29.9035], "geometry": {"coordinates": [-95.6852, 29.9035], "type": "Point"}, "id": "63291", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "63427", "properties": {"Current Price": "$1.29", "Location": "Arcadia, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.7176098883, 31.0890189645, -97.7176098883, 31.0890189645], "geometry": {"coordinates": [-97.7176098883, 31.0890189645], "type": "Point"}, "id": "63564", "properties": {"Current Price": "$1.25", "Location": "Killeen, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.9607688892, 33.222040962, -96.9607688892, 33.222040962], "geometry": {"coordinates": [-96.9607688892, 33.222040962], "type": "Point"}, "id": "63636", "properties": {"Current Price": "$1.25", "Location": "Providence Village, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.410294891, 29.8225109659, -95.410294891, 29.8225109659], "geometry": {"coordinates": [-95.410294891, 29.8225109659], "type": "Point"}, "id": "63689", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "63755", "properties": {"Current Price": "$1.29", "Location": "Beaumont, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "63824", "properties": {"Current Price": "$1.29", "Location": "Palm Desert, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.0975638913, 29.6639889661, -95.0975638913, 29.6639889661], "geometry": {"coordinates": [-95.0975638913, 29.6639889661], "type": "Point"}, "id": "63906", "properties": {"Current Price": "$1.25", "Location": "La Porte, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "64043", "properties": {"Current Price": "$1.29", "Location": "La Puente, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.8858568893, 33.0608209622, -96.8858568893, 33.0608209622], "geometry": {"coordinates": [-96.8858568893, 33.0608209622], "type": "Point"}, "id": "64763", "properties": {"Current Price": "$1.25", "Location": "Lewisville, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "65029", "properties": {"Current Price": "$1.29", "Location": "Inglewood, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "65107", "properties": {"Current Price": "$1.29", "Location": "Westminster, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "65247", "properties": {"Current Price": "$1.29", "Location": "Yucaipa, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "68241", "properties": {"Current Price": "$1.29", "Location": "La Verne, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-98.2324678878, 32.2065849632, -98.2324678878, 32.2065849632], "geometry": {"coordinates": [-98.2324678878, 32.2065849632], "type": "Point"}, "id": "68963", "properties": {"Current Price": "$1.25", "Location": "Stephenville, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "69081", "properties": {"Current Price": "$1.29", "Location": "Rancho Cucamonga, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "69796", "properties": {"Current Price": "$1.29", "Location": "Vista, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "69945", "properties": {"Current Price": "$1.29", "Location": "Altadena, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.363533891, 29.7018489661, -95.363533891, 29.7018489661], "geometry": {"coordinates": [-95.363533891, 29.7018489661], "type": "Point"}, "id": "70019", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "70721", "properties": {"Current Price": "$1.29", "Location": "Downey, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "71364", "properties": {"Current Price": "$1.29", "Location": "Hesperia, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "71442", "properties": {"Current Price": "$1.29", "Location": "Oxnard, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "71520", "properties": {"Current Price": "$1.29", "Location": "La Habra, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "71598", "properties": {"Current Price": "$1.29", "Location": "Garden Grove, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "71746", "properties": {"Current Price": "$1.29", "Location": "Chino, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "71895", "properties": {"Current Price": "$1.29", "Location": "Temecula, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "72246", "properties": {"Current Price": "$1.29", "Location": "Chula Vista, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.7405368906, 29.6624509661, -95.7405368906, 29.6624509661], "geometry": {"coordinates": [-95.7405368906, 29.6624509661], "type": "Point"}, "id": "72321", "properties": {"Current Price": "$1.25", "Location": "Richmond, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.8462638905, 29.7084859661, -95.8462638905, 29.7084859661], "geometry": {"coordinates": [-95.8462638905, 29.7084859661], "type": "Point"}, "id": "72384", "properties": {"Current Price": "$1.25", "Location": "Fulshear, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "72802", "properties": {"Current Price": "$1.29", "Location": "Whittier, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.9998238892, 28.844063967, -96.9998238892, 28.844063967], "geometry": {"coordinates": [-96.9998238892, 28.844063967], "type": "Point"}, "id": "72948", "properties": {"Current Price": "$1.25", "Location": "Victoria, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-96.3382728899, 30.653446965, -96.3382728899, 30.653446965], "geometry": {"coordinates": [-96.3382728899, 30.653446965], "type": "Point"}, "id": "73153", "properties": {"Current Price": "$1.25", "Location": "Bryan, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "73281", "properties": {"Current Price": "$1.29", "Location": "Ramona, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.1212778913, 29.5561849662, -95.1212778913, 29.5561849662], "geometry": {"coordinates": [-95.1212778913, 29.5561849662], "type": "Point"}, "id": "74352", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.2768778911, 29.5615939662, -95.2768778911, 29.5615939662], "geometry": {"coordinates": [-95.2768778911, 29.5615939662], "type": "Point"}, "id": "74485", "properties": {"Current Price": "$1.25", "Location": "Pearland, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.4550028909, 29.0433589668, -95.4550028909, 29.0433589668], "geometry": {"coordinates": [-95.4550028909, 29.0433589668], "type": "Point"}, "id": "74548", "properties": {"Current Price": "$1.25", "Location": "Lake Jackson, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5698678908, 30.7168159649, -95.5698678908, 30.7168159649], "geometry": {"coordinates": [-95.5698678908, 30.7168159649], "type": "Point"}, "id": "74611", "properties": {"Current Price": "$1.25", "Location": "Huntsville, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5559418908, 30.1312929656, -95.5559418908, 30.1312929656], "geometry": {"coordinates": [-95.5559418908, 30.1312929656], "type": "Point"}, "id": "74745", "properties": {"Current Price": "$1.25", "Location": "Tomball, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "75581", "properties": {"Current Price": "$1.29", "Location": "Santa Fe Springs, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "78203", "properties": {"Current Price": "$1.29", "Location": "Compton, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "79835", "properties": {"Current Price": "$1.29", "Location": "Oxnard, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5340848908, 29.737018966, -95.5340848908, 29.737018966], "geometry": {"coordinates": [-95.5340848908, 29.737018966], "type": "Point"}, "id": "80122", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5824728908, 29.6476259661, -95.5824728908, 29.6476259661], "geometry": {"coordinates": [-95.5824728908, 29.6476259661], "type": "Point"}, "id": "80184", "properties": {"Current Price": "$1.25", "Location": "Meadows Place, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.5622038908, 30.2232719655, -95.5622038908, 30.2232719655], "geometry": {"coordinates": [-95.5622038908, 30.2232719655], "type": "Point"}, "id": "80531", "properties": {"Current Price": "$1.25", "Location": "Magnolia, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.409235891, 29.9149769658, -95.409235891, 29.9149769658], "geometry": {"coordinates": [-95.409235891, 29.9149769658], "type": "Point"}, "id": "81364", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "81927", "properties": {"Current Price": "$1.29", "Location": "Hesperia, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "82782", "properties": {"Current Price": "$1.29", "Location": "Bakersfield, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "82860", "properties": {"Current Price": "$1.29", "Location": "Monrovia, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "83991", "properties": {"Current Price": "$1.29", "Location": "Santa Ana, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "84069", "properties": {"Current Price": "$1.29", "Location": "Panorama City, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.2359788912, 30.0500619657, -95.2359788912, 30.0500619657], "geometry": {"coordinates": [-95.2359788912, 30.0500619657], "type": "Point"}, "id": "84630", "properties": {"Current Price": "$1.25", "Location": "Kingwood, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "84979", "properties": {"Current Price": "$1.29", "Location": "Chula Vista, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "85057", "properties": {"Current Price": "$1.29", "Location": "Pico Rivera, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5449988908, 29.8187379659, -95.5449988908, 29.8187379659], "geometry": {"coordinates": [-95.5449988908, 29.8187379659], "type": "Point"}, "id": "85979", "properties": {"Current Price": "$1.25", "Location": "Houston, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "86540", "properties": {"Current Price": "$1.29", "Location": "Rialto, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "86609", "properties": {"Current Price": "$1.29", "Location": "Laguna Woods, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "87755", "properties": {"Current Price": "$1.29", "Location": "Glendora, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "88256", "properties": {"Current Price": "$1.29", "Location": "Alhambra, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "88760", "properties": {"Current Price": "$1.29", "Location": "Upland, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "89392", "properties": {"Current Price": "$1.29", "Location": "Murrieta, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "90398", "properties": {"Current Price": "$1.29", "Location": "San Jacinto, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "90476", "properties": {"Current Price": "$1.29", "Location": "Corona, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.9478078915, 29.3954599664, -94.9478078915, 29.3954599664], "geometry": {"coordinates": [-94.9478078915, 29.3954599664], "type": "Point"}, "id": "90977", "properties": {"Current Price": "$1.25", "Location": "Texas City, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-95.404828891, 30.1229449656, -95.404828891, 30.1229449656], "geometry": {"coordinates": [-95.404828891, 30.1229449656], "type": "Point"}, "id": "91252", "properties": {"Current Price": "$1.25", "Location": "Spring, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-97.4240018887, 32.3347989631, -97.4240018887, 32.3347989631], "geometry": {"coordinates": [-97.4240018887, 32.3347989631], "type": "Point"}, "id": "91820", "properties": {"Current Price": "$1.25", "Location": "Cleburne, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "92362", "properties": {"Current Price": "$1.29", "Location": "Delano, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "92440", "properties": {"Current Price": "$1.29", "Location": "Escondido, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "94822", "properties": {"Current Price": "$1.29", "Location": "San Diego, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "95614", "properties": {"Current Price": "$1.29", "Location": "Porterville, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "96402", "properties": {"Current Price": "$1.29", "Location": "Hanford, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "96542", "properties": {"Current Price": "$1.29", "Location": "Glendale, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.7875298883, 31.0864709645, -97.7875298883, 31.0864709645], "geometry": {"coordinates": [-97.7875298883, 31.0864709645], "type": "Point"}, "id": "97120", "properties": {"Current Price": "$1.25", "Location": "Killeen, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "97248", "properties": {"Current Price": "$1.29", "Location": "Tempe, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "97325", "properties": {"Current Price": "$1.29", "Location": "Buckeye, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "97402", "properties": {"Current Price": "$1.29", "Location": "Queen Creek, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "98099", "properties": {"Current Price": "$1.29", "Location": "Chandler, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "98247", "properties": {"Current Price": "$1.29", "Location": "Phoenix, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "98679", "properties": {"Current Price": "$1.29", "Location": "Peoria, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "98756", "properties": {"Current Price": "$1.29", "Location": "Phoenix, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "99258", "properties": {"Current Price": "$1.29", "Location": "Torrance, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "99335", "properties": {"Current Price": "$1.29", "Location": "Arroyo Grande, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "100121", "properties": {"Current Price": "$1.29", "Location": "Clovis, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "100207", "properties": {"Current Price": "$1.29", "Location": "Gardena, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "100276", "properties": {"Current Price": "$1.29", "Location": "Goodyear, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "100928", "properties": {"Current Price": "$1.29", "Location": "San Diego, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "101850", "properties": {"Current Price": "$1.29", "Location": "Northridge, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "102696", "properties": {"Current Price": "$1.29", "Location": "Gilbert, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "102915", "properties": {"Current Price": "$1.29", "Location": "Mesa, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "104125", "properties": {"Current Price": "$1.29", "Location": "Simi Valley, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-99.789300886, 32.405513963, -99.789300886, 32.405513963], "geometry": {"coordinates": [-99.789300886, 32.405513963], "type": "Point"}, "id": "104713", "properties": {"Current Price": "$1.25", "Location": "Abilene, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "105186", "properties": {"Current Price": "$1.29", "Location": "Encinitas, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-97.6870803833, 30.6330795288, -97.6870803833, 30.6330795288], "geometry": {"coordinates": [-97.6870803833, 30.6330795288], "type": "Point"}, "id": "105340", "properties": {"Current Price": "$1.25", "Location": "Georgetown, TX", "Price": 1.25, "Product": "Happy Harvest Mushrooms", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "106467", "properties": {"Current Price": "$1.29", "Location": "Bellflower, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "106545", "properties": {"Current Price": "$1.29", "Location": "Walnut, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "108451", "properties": {"Current Price": "$1.29", "Location": "Thousand Oaks, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "108883", "properties": {"Current Price": "$1.29", "Location": "Redlands, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "109040", "properties": {"Current Price": "$1.29", "Location": "Ventura, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "109681", "properties": {"Current Price": "$1.29", "Location": "Perris, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "110394", "properties": {"Current Price": "$1.29", "Location": "Fresno, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "111108", "properties": {"Current Price": "$1.29", "Location": "Riverside, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "112661", "properties": {"Current Price": "$1.29", "Location": "Oceanside, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "114156", "properties": {"Current Price": "$1.29", "Location": "Long Beach, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "114579", "properties": {"Current Price": "$1.29", "Location": "Poway, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "114727", "properties": {"Current Price": "$1.29", "Location": "Murrieta, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "117131", "properties": {"Current Price": "$1.29", "Location": "Burbank, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "117995", "properties": {"Current Price": "$1.29", "Location": "Santa Maria, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "121461", "properties": {"Current Price": "$1.29", "Location": "Visalia, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "121530", "properties": {"Current Price": "$1.29", "Location": "El Cajon, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "123316", "properties": {"Current Price": "$1.29", "Location": "Coachella, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "123669", "properties": {"Current Price": "$1.29", "Location": "West Hills, CA, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "124029", "properties": {"Current Price": "$1.29", "Location": "Tustin, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "124115", "properties": {"Current Price": "$1.29", "Location": "Lompoc, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "125736", "properties": {"Current Price": "$1.29", "Location": "Yucca Valley, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "127022", "properties": {"Current Price": "$1.29", "Location": "San Marcos, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "128302", "properties": {"Current Price": "$1.29", "Location": "Moreno Valley, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "128793", "properties": {"Current Price": "$1.29", "Location": "Carson, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "130355", "properties": {"Current Price": "$1.29", "Location": "Phoenix, AZ", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "131209", "properties": {"Current Price": "$1.29", "Location": "Mira Loma, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "133410", "properties": {"Current Price": "$1.29", "Location": "Santa Clarita, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "133559", "properties": {"Current Price": "$1.29", "Location": "Temecula, CA", "Price": 1.29, "Product": "Happy Harvest Mushrooms", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_6009264452cee768863eed67ad200daa.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_6009264452cee768863eed67ad200daa.addTo(map_2006065159b0684f755d2598017d9790);
+        
+</script>
+</html>
