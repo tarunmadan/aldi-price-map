@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Senor Rico Rice Pudding 4-Pack</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Senor Rico Rice Pudding 4-Pack cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7743370e94eaf272b04db9e9ae1c582d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>2.65</li>
+                <li><span style='background:#b22222'></span>2.79</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="appetitos_mac_&_cheese_bites_or_loaded_potato_skins">Appetitos Mac & Cheese Bites or Loaded Potato Skins</option>
+
+                
+                <option value="bagged_mini_avocados">Bagged Mini Avocados</option>
+
+                
+                <option value="baker's_corner_melting_wafers">Baker's Corner Melting Wafers</option>
+
+                
+                <option value="beaumont_hot_cocoa_mix">Beaumont Hot Cocoa Mix</option>
+
+                
+                <option value="belmont_24-count_mini_cheesecake_bites">Belmont 24-Count Mini Cheesecake Bites</option>
+
+                
+                <option value="bite-size_medley_potatoes">Bite-Size Medley Potatoes</option>
+
+                
+                <option value="blackberries">Blackberries</option>
+
+                
+                <option value="bremer_shepherd's_pie">Bremer Shepherd's Pie</option>
+
+                
+                <option value="cholula_sauce">Cholula Sauce</option>
+
+                
+                <option value="driscoll's_raspberries">Driscoll's Raspberries</option>
+
+                
+                <option value="earthly_grains_long_grain_white_rice">Earthly Grains Long Grain White Rice</option>
+
+                
+                <option value="fremont_fish_market_seafood_mix">Fremont Fish Market Seafood Mix</option>
+
+                
+                <option value="happy_farms_asadero,_oaxaca_or_muenster_shredded_cheese">Happy Farms Asadero, Oaxaca or Muenster Shredded Cheese</option>
+
+                
+                <option value="herdez_salsa_verde">Herdez Salsa Verde</option>
+
+                
+                <option value="idahoan_flavored_mashed_potatoes">Idahoan Flavored Mashed Potatoes</option>
+
+                
+                <option value="michigan_honeycrisp_apple_tote">Michigan Honeycrisp Apple Tote</option>
+
+                
+                <option value="mini_cucumbers">Mini Cucumbers</option>
+
+                
+                <option value="mini_seedless_cucumbers">Mini Seedless Cucumbers</option>
+
+                
+                <option value="organic_zucchini">Organic Zucchini</option>
+
+                
+                <option value="poblano_peppers">Poblano Peppers</option>
+
+                
+                <option value="priano_lobster_or_crab_ravioli">Priano Lobster or Crab Ravioli</option>
+
+                
+                <option value="pumpkins">Pumpkins</option>
+
+                
+                <option value="raspberries">Raspberries</option>
+
+                
+                <option value="romero's_yellow_corn_king_tortillas">Romero's Yellow Corn King Tortillas</option>
+
+                
+                <option value="senor_rico_rice_pudding_4-pack" selected>Senor Rico Rice Pudding 4-Pack</option>
+
+                
+                <option value="simply_nature_fresh_family_pack_organic_grass-fed_937_ground_beef">Simply Nature Fresh Family Pack Organic Grass-Fed 93/7 Ground Beef</option>
+
+                
+                <option value="specially_selected_stuffed_picante,_honey_or_pepperoncini">Specially Selected Stuffed Picante, Honey or Pepperoncini</option>
+
+                
+                <option value="tajin_fruit_seasoning">Tajin Fruit Seasoning</option>
+
+                
+                <option value="washington_organic_pears">Washington Organic Pears</option>
+
+                
+                <option value="white_onions">White Onions</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Oct 9<sup>th</sup> - Oct 15<sup>th</sup>. New products and next update on Oct 16<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_7743370e94eaf272b04db9e9ae1c582d" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Oct 9<sup>th</sup>, price maps are available for the following products - 
+                <a href="appetitos_mac_&_cheese_bites_or_loaded_potato_skins.html">Appetitos Mac & Cheese Bites or Loaded Potato Skins</a>, 
+                <a href="bagged_mini_avocados.html">Bagged Mini Avocados</a>, 
+                <a href="baker's_corner_melting_wafers.html">Baker's Corner Melting Wafers</a>, 
+                <a href="beaumont_hot_cocoa_mix.html">Beaumont Hot Cocoa Mix</a>, 
+                <a href="belmont_24-count_mini_cheesecake_bites.html">Belmont 24-Count Mini Cheesecake Bites</a>, 
+                <a href="bite-size_medley_potatoes.html">Bite-Size Medley Potatoes</a>, 
+                <a href="blackberries.html">Blackberries</a>, 
+                <a href="bremer_shepherd's_pie.html">Bremer Shepherd's Pie</a>, 
+                <a href="cholula_sauce.html">Cholula Sauce</a>, 
+                <a href="driscoll's_raspberries.html">Driscoll's Raspberries</a>, 
+                <a href="earthly_grains_long_grain_white_rice.html">Earthly Grains Long Grain White Rice</a>, 
+                <a href="fremont_fish_market_seafood_mix.html">Fremont Fish Market Seafood Mix</a>, 
+                <a href="happy_farms_asadero,_oaxaca_or_muenster_shredded_cheese.html">Happy Farms Asadero, Oaxaca or Muenster Shredded Cheese</a>, 
+                <a href="herdez_salsa_verde.html">Herdez Salsa Verde</a>, 
+                <a href="idahoan_flavored_mashed_potatoes.html">Idahoan Flavored Mashed Potatoes</a>, 
+                <a href="michigan_honeycrisp_apple_tote.html">Michigan Honeycrisp Apple Tote</a>, 
+                <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+                <a href="mini_seedless_cucumbers.html">Mini Seedless Cucumbers</a>, 
+                <a href="organic_zucchini.html">Organic Zucchini</a>, 
+                <a href="poblano_peppers.html">Poblano Peppers</a>, 
+                <a href="priano_lobster_or_crab_ravioli.html">Priano Lobster or Crab Ravioli</a>, 
+                <a href="pumpkins.html">Pumpkins</a>, 
+                <a href="raspberries.html">Raspberries</a>, 
+                <a href="romero's_yellow_corn_king_tortillas.html">Romero's Yellow Corn King Tortillas</a>, 
+                <a href="senor_rico_rice_pudding_4-pack.html">Senor Rico Rice Pudding 4-Pack</a>, 
+                <a href="simply_nature_fresh_family_pack_organic_grass-fed_937_ground_beef.html">Simply Nature Fresh Family Pack Organic Grass-Fed 93/7 Ground Beef</a>, 
+                <a href="specially_selected_stuffed_picante,_honey_or_pepperoncini.html">Specially Selected Stuffed Picante, Honey or Pepperoncini</a>, 
+                <a href="tajin_fruit_seasoning.html">Tajin Fruit Seasoning</a>, 
+                <a href="washington_organic_pears.html">Washington Organic Pears</a>, 
+                <a href="white_onions.html">White Onions</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_7743370e94eaf272b04db9e9ae1c582d = L.map(
+                "map_7743370e94eaf272b04db9e9ae1c582d",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_7743370e94eaf272b04db9e9ae1c582d);
+
+            
+
+        
+    
+            var tile_layer_2d9ba0dd85efccaaf93b16db5843d703 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2d9ba0dd85efccaaf93b16db5843d703.addTo(map_7743370e94eaf272b04db9e9ae1c582d);
+        
+    
+            map_7743370e94eaf272b04db9e9ae1c582d.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_c7ae0913b1eebe97fa9d11685b4647e9_styler(feature) {
+            switch(feature.id) {
+                case "49456": case "49588": case "49657": case "49726": case "49795": case "50106": case "50238": case "51557": case "51626": case "51695": case "51764": case "51833": case "51902": case "51971": case "52040": case "53233": case "53302": case "53371": case "53440": case "55127": case "55196": case "55764": case "56332": case "56769": case "57070": case "57131": case "57328": case "58211": case "58280": case "58412": case "61001": case "61753": case "62389": case "62521": case "63215": case "63788": case "63857": case "63926": case "63995": case "64127": case "64259": case "64575": case "65075": case "65504": case "67566": case "69903": case "71358": case "73229": case "73991": case "74060": case "75069": case "75138": case "75953": case "76022": case "77346": case "77415": case "78429": case "78876": case "79323": case "79896": case "80784": case "80853": case "82540": case "82609": case "84739": case "85445": case "86144": case "88695": case "88756": case "89462": case "89531": case "90172": case "90997": case "93029": case "93967": case "95109": case "95178": case "96885": case "97269": case "97401": case "97974": case "98610": case "99246": case "100638": case "101967": case "102351": case "102483": case "104631": case "105393": case "108486": case "108555": case "110136": case "110457": case "110778": case "110847": case "112294": case "113441": case "114581": case "115028": case "117176": case "119135": case "119267": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_c7ae0913b1eebe97fa9d11685b4647e9_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_c7ae0913b1eebe97fa9d11685b4647e9_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_c7ae0913b1eebe97fa9d11685b4647e9_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_c7ae0913b1eebe97fa9d11685b4647e9_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_c7ae0913b1eebe97fa9d11685b4647e9.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_c7ae0913b1eebe97fa9d11685b4647e9_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_c7ae0913b1eebe97fa9d11685b4647e9 = L.geoJson(null, {
+                onEachFeature: geo_json_c7ae0913b1eebe97fa9d11685b4647e9_onEachFeature,
+            
+                style: geo_json_c7ae0913b1eebe97fa9d11685b4647e9_styler,
+                pointToLayer: geo_json_c7ae0913b1eebe97fa9d11685b4647e9_pointToLayer,
+        });
+
+        function geo_json_c7ae0913b1eebe97fa9d11685b4647e9_add (data) {
+            geo_json_c7ae0913b1eebe97fa9d11685b4647e9
+                .addData(data);
+        }
+            geo_json_c7ae0913b1eebe97fa9d11685b4647e9_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "49456", "properties": {"Current Price": "$2.65", "Location": "Fontana, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "49588", "properties": {"Current Price": "$2.65", "Location": "Menifee, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "49657", "properties": {"Current Price": "$2.65", "Location": "Palmdale, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "49726", "properties": {"Current Price": "$2.65", "Location": "Buena Park, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "49795", "properties": {"Current Price": "$2.65", "Location": "Covina, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "50106", "properties": {"Current Price": "$2.65", "Location": "South Gate, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "50238", "properties": {"Current Price": "$2.65", "Location": "Lancaster, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "51557", "properties": {"Current Price": "$2.65", "Location": "San Bernardino, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "51626", "properties": {"Current Price": "$2.65", "Location": "El Centro, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "51695", "properties": {"Current Price": "$2.65", "Location": "La Quinta, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "51764", "properties": {"Current Price": "$2.65", "Location": "Bakersfield, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "51833", "properties": {"Current Price": "$2.65", "Location": "Escondido, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "51902", "properties": {"Current Price": "$2.65", "Location": "Calexico, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "51971", "properties": {"Current Price": "$2.65", "Location": "Lake Elsinore, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "52040", "properties": {"Current Price": "$2.65", "Location": "Palm Springs, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "53233", "properties": {"Current Price": "$2.65", "Location": "Cerritos, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "53302", "properties": {"Current Price": "$2.65", "Location": "San Bernardino, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "53371", "properties": {"Current Price": "$2.65", "Location": "Simi Valley, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "53440", "properties": {"Current Price": "$2.65", "Location": "Anaheim, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "55127", "properties": {"Current Price": "$2.65", "Location": "Moreno Valley, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "55196", "properties": {"Current Price": "$2.65", "Location": "Long Beach, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "55764", "properties": {"Current Price": "$2.65", "Location": "Fountain Valley, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "56332", "properties": {"Current Price": "$2.65", "Location": "Santa Clarita, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "56769", "properties": {"Current Price": "$2.65", "Location": "Arcadia, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "57070", "properties": {"Current Price": "$2.65", "Location": "Beaumont, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "57131", "properties": {"Current Price": "$2.65", "Location": "Palm Desert, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "57328", "properties": {"Current Price": "$2.65", "Location": "La Puente, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "58211", "properties": {"Current Price": "$2.65", "Location": "Inglewood, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "58280", "properties": {"Current Price": "$2.65", "Location": "Westminster, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "58412", "properties": {"Current Price": "$2.65", "Location": "Yucaipa, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "61001", "properties": {"Current Price": "$2.65", "Location": "La Verne, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "61753", "properties": {"Current Price": "$2.65", "Location": "Rancho Cucamonga, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "62389", "properties": {"Current Price": "$2.65", "Location": "Vista, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "62521", "properties": {"Current Price": "$2.65", "Location": "Altadena, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "63215", "properties": {"Current Price": "$2.65", "Location": "Downey, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "63788", "properties": {"Current Price": "$2.65", "Location": "Hesperia, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "63857", "properties": {"Current Price": "$2.65", "Location": "Oxnard, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "63926", "properties": {"Current Price": "$2.65", "Location": "La Habra, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "63995", "properties": {"Current Price": "$2.65", "Location": "Garden Grove, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "64127", "properties": {"Current Price": "$2.65", "Location": "Chino, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "64259", "properties": {"Current Price": "$2.65", "Location": "Temecula, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "64575", "properties": {"Current Price": "$2.65", "Location": "Chula Vista, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "65075", "properties": {"Current Price": "$2.65", "Location": "Whittier, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "65504", "properties": {"Current Price": "$2.65", "Location": "Ramona, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "67566", "properties": {"Current Price": "$2.65", "Location": "Santa Fe Springs, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "69903", "properties": {"Current Price": "$2.65", "Location": "Compton, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "71358", "properties": {"Current Price": "$2.65", "Location": "Oxnard, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "73229", "properties": {"Current Price": "$2.65", "Location": "Hesperia, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "73991", "properties": {"Current Price": "$2.65", "Location": "Bakersfield, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "74060", "properties": {"Current Price": "$2.65", "Location": "Monrovia, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "75069", "properties": {"Current Price": "$2.65", "Location": "Santa Ana, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "75138", "properties": {"Current Price": "$2.65", "Location": "Panorama City, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "75953", "properties": {"Current Price": "$2.65", "Location": "Chula Vista, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "76022", "properties": {"Current Price": "$2.65", "Location": "Pico Rivera, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "77346", "properties": {"Current Price": "$2.65", "Location": "Rialto, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "77415", "properties": {"Current Price": "$2.65", "Location": "Laguna Woods, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "78429", "properties": {"Current Price": "$2.65", "Location": "Glendora, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "78876", "properties": {"Current Price": "$2.65", "Location": "Alhambra, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "79323", "properties": {"Current Price": "$2.65", "Location": "Upland, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "79896", "properties": {"Current Price": "$2.65", "Location": "Murrieta, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "80784", "properties": {"Current Price": "$2.65", "Location": "San Jacinto, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "80853", "properties": {"Current Price": "$2.65", "Location": "Corona, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "82540", "properties": {"Current Price": "$2.65", "Location": "Delano, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "82609", "properties": {"Current Price": "$2.65", "Location": "Escondido, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "84739", "properties": {"Current Price": "$2.65", "Location": "San Diego, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "85445", "properties": {"Current Price": "$2.65", "Location": "Porterville, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "86144", "properties": {"Current Price": "$2.65", "Location": "Hanford, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "86275", "properties": {"Current Price": "$2.79", "Location": "Glendale, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "86905", "properties": {"Current Price": "$2.79", "Location": "Tempe, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "86973", "properties": {"Current Price": "$2.79", "Location": "Buckeye, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "87041", "properties": {"Current Price": "$2.79", "Location": "Queen Creek, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "87666", "properties": {"Current Price": "$2.79", "Location": "Chandler, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "87797", "properties": {"Current Price": "$2.79", "Location": "Phoenix, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "88180", "properties": {"Current Price": "$2.79", "Location": "Peoria, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "88248", "properties": {"Current Price": "$2.79", "Location": "Phoenix, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "88695", "properties": {"Current Price": "$2.65", "Location": "Torrance, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "88756", "properties": {"Current Price": "$2.65", "Location": "Arroyo Grande, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "89462", "properties": {"Current Price": "$2.65", "Location": "Clovis, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "89531", "properties": {"Current Price": "$2.65", "Location": "Gardena, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "89599", "properties": {"Current Price": "$2.79", "Location": "Goodyear, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "90172", "properties": {"Current Price": "$2.65", "Location": "San Diego, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "90997", "properties": {"Current Price": "$2.65", "Location": "Northridge, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "91758", "properties": {"Current Price": "$2.79", "Location": "Gilbert, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "91952", "properties": {"Current Price": "$2.79", "Location": "Mesa, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "93029", "properties": {"Current Price": "$2.65", "Location": "Simi Valley, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "93967", "properties": {"Current Price": "$2.65", "Location": "Encinitas, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "95109", "properties": {"Current Price": "$2.65", "Location": "Bellflower, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "95178", "properties": {"Current Price": "$2.65", "Location": "Walnut, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "96885", "properties": {"Current Price": "$2.65", "Location": "Thousand Oaks, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "97269", "properties": {"Current Price": "$2.65", "Location": "Redlands, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "97401", "properties": {"Current Price": "$2.65", "Location": "Ventura, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "97974", "properties": {"Current Price": "$2.65", "Location": "Perris, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "98610", "properties": {"Current Price": "$2.65", "Location": "Fresno, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "99246", "properties": {"Current Price": "$2.65", "Location": "Riverside, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "100638", "properties": {"Current Price": "$2.65", "Location": "Oceanside, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "101967", "properties": {"Current Price": "$2.65", "Location": "Long Beach, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "102351", "properties": {"Current Price": "$2.65", "Location": "Poway, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "102483", "properties": {"Current Price": "$2.65", "Location": "Murrieta, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "104631", "properties": {"Current Price": "$2.65", "Location": "Burbank, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "105393", "properties": {"Current Price": "$2.65", "Location": "Santa Maria, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "108486", "properties": {"Current Price": "$2.65", "Location": "Visalia, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "108555", "properties": {"Current Price": "$2.65", "Location": "El Cajon, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "110136", "properties": {"Current Price": "$2.65", "Location": "Coachella, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "110457", "properties": {"Current Price": "$2.65", "Location": "West Hills, CA, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "110778", "properties": {"Current Price": "$2.65", "Location": "Tustin, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "110847", "properties": {"Current Price": "$2.65", "Location": "Lompoc, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "112294", "properties": {"Current Price": "$2.65", "Location": "Yucca Valley, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "113441", "properties": {"Current Price": "$2.65", "Location": "San Marcos, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "114581", "properties": {"Current Price": "$2.65", "Location": "Moreno Valley, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "115028", "properties": {"Current Price": "$2.65", "Location": "Carson, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "116419", "properties": {"Current Price": "$2.79", "Location": "Phoenix, AZ", "Price": 2.79, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "117176", "properties": {"Current Price": "$2.65", "Location": "Mira Loma, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "119135", "properties": {"Current Price": "$2.65", "Location": "Santa Clarita, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "119267", "properties": {"Current Price": "$2.65", "Location": "Temecula, CA", "Price": 2.65, "Product": "Se\u00f1or Rico Rice Pudding 4-Pack", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_c7ae0913b1eebe97fa9d11685b4647e9.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_c7ae0913b1eebe97fa9d11685b4647e9.addTo(map_7743370e94eaf272b04db9e9ae1c582d);
+        
+</script>
+</html>

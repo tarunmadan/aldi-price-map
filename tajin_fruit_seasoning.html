@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Tajin Fruit Seasoning</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Tajin Fruit Seasoning cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_08eb7c39172a087dd3413b43f47b8f1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>2.45</li>
+                <li><span style='background:#b22222'></span>2.75</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="appetitos_mac_&_cheese_bites_or_loaded_potato_skins">Appetitos Mac & Cheese Bites or Loaded Potato Skins</option>
+
+                
+                <option value="bagged_mini_avocados">Bagged Mini Avocados</option>
+
+                
+                <option value="baker's_corner_melting_wafers">Baker's Corner Melting Wafers</option>
+
+                
+                <option value="beaumont_hot_cocoa_mix">Beaumont Hot Cocoa Mix</option>
+
+                
+                <option value="belmont_24-count_mini_cheesecake_bites">Belmont 24-Count Mini Cheesecake Bites</option>
+
+                
+                <option value="bite-size_medley_potatoes">Bite-Size Medley Potatoes</option>
+
+                
+                <option value="blackberries">Blackberries</option>
+
+                
+                <option value="bremer_shepherd's_pie">Bremer Shepherd's Pie</option>
+
+                
+                <option value="cholula_sauce">Cholula Sauce</option>
+
+                
+                <option value="driscoll's_raspberries">Driscoll's Raspberries</option>
+
+                
+                <option value="earthly_grains_long_grain_white_rice">Earthly Grains Long Grain White Rice</option>
+
+                
+                <option value="fremont_fish_market_seafood_mix">Fremont Fish Market Seafood Mix</option>
+
+                
+                <option value="happy_farms_asadero,_oaxaca_or_muenster_shredded_cheese">Happy Farms Asadero, Oaxaca or Muenster Shredded Cheese</option>
+
+                
+                <option value="herdez_salsa_verde">Herdez Salsa Verde</option>
+
+                
+                <option value="idahoan_flavored_mashed_potatoes">Idahoan Flavored Mashed Potatoes</option>
+
+                
+                <option value="michigan_honeycrisp_apple_tote">Michigan Honeycrisp Apple Tote</option>
+
+                
+                <option value="mini_cucumbers">Mini Cucumbers</option>
+
+                
+                <option value="mini_seedless_cucumbers">Mini Seedless Cucumbers</option>
+
+                
+                <option value="organic_zucchini">Organic Zucchini</option>
+
+                
+                <option value="poblano_peppers">Poblano Peppers</option>
+
+                
+                <option value="priano_lobster_or_crab_ravioli">Priano Lobster or Crab Ravioli</option>
+
+                
+                <option value="pumpkins">Pumpkins</option>
+
+                
+                <option value="raspberries">Raspberries</option>
+
+                
+                <option value="romero's_yellow_corn_king_tortillas">Romero's Yellow Corn King Tortillas</option>
+
+                
+                <option value="senor_rico_rice_pudding_4-pack">Senor Rico Rice Pudding 4-Pack</option>
+
+                
+                <option value="simply_nature_fresh_family_pack_organic_grass-fed_937_ground_beef">Simply Nature Fresh Family Pack Organic Grass-Fed 93/7 Ground Beef</option>
+
+                
+                <option value="specially_selected_stuffed_picante,_honey_or_pepperoncini">Specially Selected Stuffed Picante, Honey or Pepperoncini</option>
+
+                
+                <option value="tajin_fruit_seasoning" selected>Tajin Fruit Seasoning</option>
+
+                
+                <option value="washington_organic_pears">Washington Organic Pears</option>
+
+                
+                <option value="white_onions">White Onions</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Oct 9<sup>th</sup> - Oct 15<sup>th</sup>. New products and next update on Oct 16<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_08eb7c39172a087dd3413b43f47b8f1e" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Oct 9<sup>th</sup>, price maps are available for the following products - 
+                <a href="appetitos_mac_&_cheese_bites_or_loaded_potato_skins.html">Appetitos Mac & Cheese Bites or Loaded Potato Skins</a>, 
+                <a href="bagged_mini_avocados.html">Bagged Mini Avocados</a>, 
+                <a href="baker's_corner_melting_wafers.html">Baker's Corner Melting Wafers</a>, 
+                <a href="beaumont_hot_cocoa_mix.html">Beaumont Hot Cocoa Mix</a>, 
+                <a href="belmont_24-count_mini_cheesecake_bites.html">Belmont 24-Count Mini Cheesecake Bites</a>, 
+                <a href="bite-size_medley_potatoes.html">Bite-Size Medley Potatoes</a>, 
+                <a href="blackberries.html">Blackberries</a>, 
+                <a href="bremer_shepherd's_pie.html">Bremer Shepherd's Pie</a>, 
+                <a href="cholula_sauce.html">Cholula Sauce</a>, 
+                <a href="driscoll's_raspberries.html">Driscoll's Raspberries</a>, 
+                <a href="earthly_grains_long_grain_white_rice.html">Earthly Grains Long Grain White Rice</a>, 
+                <a href="fremont_fish_market_seafood_mix.html">Fremont Fish Market Seafood Mix</a>, 
+                <a href="happy_farms_asadero,_oaxaca_or_muenster_shredded_cheese.html">Happy Farms Asadero, Oaxaca or Muenster Shredded Cheese</a>, 
+                <a href="herdez_salsa_verde.html">Herdez Salsa Verde</a>, 
+                <a href="idahoan_flavored_mashed_potatoes.html">Idahoan Flavored Mashed Potatoes</a>, 
+                <a href="michigan_honeycrisp_apple_tote.html">Michigan Honeycrisp Apple Tote</a>, 
+                <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+                <a href="mini_seedless_cucumbers.html">Mini Seedless Cucumbers</a>, 
+                <a href="organic_zucchini.html">Organic Zucchini</a>, 
+                <a href="poblano_peppers.html">Poblano Peppers</a>, 
+                <a href="priano_lobster_or_crab_ravioli.html">Priano Lobster or Crab Ravioli</a>, 
+                <a href="pumpkins.html">Pumpkins</a>, 
+                <a href="raspberries.html">Raspberries</a>, 
+                <a href="romero's_yellow_corn_king_tortillas.html">Romero's Yellow Corn King Tortillas</a>, 
+                <a href="senor_rico_rice_pudding_4-pack.html">Senor Rico Rice Pudding 4-Pack</a>, 
+                <a href="simply_nature_fresh_family_pack_organic_grass-fed_937_ground_beef.html">Simply Nature Fresh Family Pack Organic Grass-Fed 93/7 Ground Beef</a>, 
+                <a href="specially_selected_stuffed_picante,_honey_or_pepperoncini.html">Specially Selected Stuffed Picante, Honey or Pepperoncini</a>, 
+                <a href="tajin_fruit_seasoning.html">Tajin Fruit Seasoning</a>, 
+                <a href="washington_organic_pears.html">Washington Organic Pears</a>, 
+                <a href="white_onions.html">White Onions</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_08eb7c39172a087dd3413b43f47b8f1e = L.map(
+                "map_08eb7c39172a087dd3413b43f47b8f1e",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_08eb7c39172a087dd3413b43f47b8f1e);
+
+            
+
+        
+    
+            var tile_layer_6405bb01203fce85c180b7c0d83d7103 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6405bb01203fce85c180b7c0d83d7103.addTo(map_08eb7c39172a087dd3413b43f47b8f1e);
+        
+    
+            map_08eb7c39172a087dd3413b43f47b8f1e.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_07f7ba60f8bd59a1a907156cbe877cf2_styler(feature) {
+            switch(feature.id) {
+                case "49453": case "49585": case "49654": case "49723": case "49792": case "50103": case "50235": case "51554": case "51623": case "51692": case "51761": case "51830": case "51899": case "51968": case "52037": case "53230": case "53299": case "53368": case "53437": case "55124": case "55193": case "55761": case "56329": case "56766": case "57067": case "57128": case "57325": case "58208": case "58277": case "58409": case "60998": case "61750": case "62386": case "62518": case "63212": case "63785": case "63854": case "63923": case "63992": case "64124": case "64256": case "64572": case "65072": case "65501": case "67563": case "69900": case "71355": case "73226": case "73988": case "74057": case "75066": case "75135": case "75950": case "76019": case "77343": case "77412": case "78426": case "78873": case "79320": case "79893": case "80781": case "80850": case "82537": case "82606": case "84736": case "85442": case "86141": case "88692": case "88753": case "89459": case "89528": case "90169": case "90994": case "93026": case "93964": case "95106": case "95175": case "96882": case "97266": case "97398": case "97971": case "98607": case "99243": case "100635": case "101964": case "102348": case "102480": case "104628": case "105390": case "108483": case "108552": case "110133": case "110454": case "110775": case "110844": case "112291": case "113438": case "114578": case "115025": case "117173": case "119132": case "119264": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_07f7ba60f8bd59a1a907156cbe877cf2_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_07f7ba60f8bd59a1a907156cbe877cf2_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_07f7ba60f8bd59a1a907156cbe877cf2_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_07f7ba60f8bd59a1a907156cbe877cf2_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_07f7ba60f8bd59a1a907156cbe877cf2.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_07f7ba60f8bd59a1a907156cbe877cf2_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_07f7ba60f8bd59a1a907156cbe877cf2 = L.geoJson(null, {
+                onEachFeature: geo_json_07f7ba60f8bd59a1a907156cbe877cf2_onEachFeature,
+            
+                style: geo_json_07f7ba60f8bd59a1a907156cbe877cf2_styler,
+                pointToLayer: geo_json_07f7ba60f8bd59a1a907156cbe877cf2_pointToLayer,
+        });
+
+        function geo_json_07f7ba60f8bd59a1a907156cbe877cf2_add (data) {
+            geo_json_07f7ba60f8bd59a1a907156cbe877cf2
+                .addData(data);
+        }
+            geo_json_07f7ba60f8bd59a1a907156cbe877cf2_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "49453", "properties": {"Current Price": "$2.45", "Location": "Fontana, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "49585", "properties": {"Current Price": "$2.45", "Location": "Menifee, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "49654", "properties": {"Current Price": "$2.45", "Location": "Palmdale, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "49723", "properties": {"Current Price": "$2.45", "Location": "Buena Park, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "49792", "properties": {"Current Price": "$2.45", "Location": "Covina, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "50103", "properties": {"Current Price": "$2.45", "Location": "South Gate, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "50235", "properties": {"Current Price": "$2.45", "Location": "Lancaster, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "51554", "properties": {"Current Price": "$2.45", "Location": "San Bernardino, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "51623", "properties": {"Current Price": "$2.45", "Location": "El Centro, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "51692", "properties": {"Current Price": "$2.45", "Location": "La Quinta, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "51761", "properties": {"Current Price": "$2.45", "Location": "Bakersfield, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "51830", "properties": {"Current Price": "$2.45", "Location": "Escondido, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "51899", "properties": {"Current Price": "$2.45", "Location": "Calexico, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "51968", "properties": {"Current Price": "$2.45", "Location": "Lake Elsinore, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "52037", "properties": {"Current Price": "$2.45", "Location": "Palm Springs, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "53230", "properties": {"Current Price": "$2.45", "Location": "Cerritos, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "53299", "properties": {"Current Price": "$2.45", "Location": "San Bernardino, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "53368", "properties": {"Current Price": "$2.45", "Location": "Simi Valley, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "53437", "properties": {"Current Price": "$2.45", "Location": "Anaheim, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "55124", "properties": {"Current Price": "$2.45", "Location": "Moreno Valley, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "55193", "properties": {"Current Price": "$2.45", "Location": "Long Beach, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "55761", "properties": {"Current Price": "$2.45", "Location": "Fountain Valley, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "56329", "properties": {"Current Price": "$2.45", "Location": "Santa Clarita, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "56766", "properties": {"Current Price": "$2.45", "Location": "Arcadia, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "57067", "properties": {"Current Price": "$2.45", "Location": "Beaumont, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "57128", "properties": {"Current Price": "$2.45", "Location": "Palm Desert, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "57325", "properties": {"Current Price": "$2.45", "Location": "La Puente, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "58208", "properties": {"Current Price": "$2.45", "Location": "Inglewood, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "58277", "properties": {"Current Price": "$2.45", "Location": "Westminster, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "58409", "properties": {"Current Price": "$2.45", "Location": "Yucaipa, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "60998", "properties": {"Current Price": "$2.45", "Location": "La Verne, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "61750", "properties": {"Current Price": "$2.45", "Location": "Rancho Cucamonga, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "62386", "properties": {"Current Price": "$2.45", "Location": "Vista, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "62518", "properties": {"Current Price": "$2.45", "Location": "Altadena, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "63212", "properties": {"Current Price": "$2.45", "Location": "Downey, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "63785", "properties": {"Current Price": "$2.45", "Location": "Hesperia, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "63854", "properties": {"Current Price": "$2.45", "Location": "Oxnard, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "63923", "properties": {"Current Price": "$2.45", "Location": "La Habra, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "63992", "properties": {"Current Price": "$2.45", "Location": "Garden Grove, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "64124", "properties": {"Current Price": "$2.45", "Location": "Chino, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "64256", "properties": {"Current Price": "$2.45", "Location": "Temecula, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "64572", "properties": {"Current Price": "$2.45", "Location": "Chula Vista, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "65072", "properties": {"Current Price": "$2.45", "Location": "Whittier, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "65501", "properties": {"Current Price": "$2.45", "Location": "Ramona, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "67563", "properties": {"Current Price": "$2.45", "Location": "Santa Fe Springs, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "69900", "properties": {"Current Price": "$2.45", "Location": "Compton, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "71355", "properties": {"Current Price": "$2.45", "Location": "Oxnard, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "73226", "properties": {"Current Price": "$2.45", "Location": "Hesperia, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "73988", "properties": {"Current Price": "$2.45", "Location": "Bakersfield, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "74057", "properties": {"Current Price": "$2.45", "Location": "Monrovia, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "75066", "properties": {"Current Price": "$2.45", "Location": "Santa Ana, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "75135", "properties": {"Current Price": "$2.45", "Location": "Panorama City, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "75950", "properties": {"Current Price": "$2.45", "Location": "Chula Vista, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "76019", "properties": {"Current Price": "$2.45", "Location": "Pico Rivera, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "77343", "properties": {"Current Price": "$2.45", "Location": "Rialto, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "77412", "properties": {"Current Price": "$2.45", "Location": "Laguna Woods, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "78426", "properties": {"Current Price": "$2.45", "Location": "Glendora, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "78873", "properties": {"Current Price": "$2.45", "Location": "Alhambra, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "79320", "properties": {"Current Price": "$2.45", "Location": "Upland, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "79893", "properties": {"Current Price": "$2.45", "Location": "Murrieta, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "80781", "properties": {"Current Price": "$2.45", "Location": "San Jacinto, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "80850", "properties": {"Current Price": "$2.45", "Location": "Corona, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "82537", "properties": {"Current Price": "$2.45", "Location": "Delano, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "82606", "properties": {"Current Price": "$2.45", "Location": "Escondido, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "84736", "properties": {"Current Price": "$2.45", "Location": "San Diego, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "85442", "properties": {"Current Price": "$2.45", "Location": "Porterville, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "86141", "properties": {"Current Price": "$2.45", "Location": "Hanford, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "86272", "properties": {"Current Price": "$2.75", "Location": "Glendale, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "86902", "properties": {"Current Price": "$2.75", "Location": "Tempe, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "86970", "properties": {"Current Price": "$2.75", "Location": "Buckeye, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "87038", "properties": {"Current Price": "$2.75", "Location": "Queen Creek, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "87663", "properties": {"Current Price": "$2.75", "Location": "Chandler, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "87794", "properties": {"Current Price": "$2.75", "Location": "Phoenix, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "88177", "properties": {"Current Price": "$2.75", "Location": "Peoria, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "88245", "properties": {"Current Price": "$2.75", "Location": "Phoenix, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "88692", "properties": {"Current Price": "$2.45", "Location": "Torrance, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "88753", "properties": {"Current Price": "$2.45", "Location": "Arroyo Grande, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "89459", "properties": {"Current Price": "$2.45", "Location": "Clovis, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "89528", "properties": {"Current Price": "$2.45", "Location": "Gardena, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "89596", "properties": {"Current Price": "$2.75", "Location": "Goodyear, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "90169", "properties": {"Current Price": "$2.45", "Location": "San Diego, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "90994", "properties": {"Current Price": "$2.45", "Location": "Northridge, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "91755", "properties": {"Current Price": "$2.75", "Location": "Gilbert, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "91949", "properties": {"Current Price": "$2.75", "Location": "Mesa, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "93026", "properties": {"Current Price": "$2.45", "Location": "Simi Valley, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "93964", "properties": {"Current Price": "$2.45", "Location": "Encinitas, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "95106", "properties": {"Current Price": "$2.45", "Location": "Bellflower, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "95175", "properties": {"Current Price": "$2.45", "Location": "Walnut, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "96882", "properties": {"Current Price": "$2.45", "Location": "Thousand Oaks, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "97266", "properties": {"Current Price": "$2.45", "Location": "Redlands, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "97398", "properties": {"Current Price": "$2.45", "Location": "Ventura, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "97971", "properties": {"Current Price": "$2.45", "Location": "Perris, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "98607", "properties": {"Current Price": "$2.45", "Location": "Fresno, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "99243", "properties": {"Current Price": "$2.45", "Location": "Riverside, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "100635", "properties": {"Current Price": "$2.45", "Location": "Oceanside, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "101964", "properties": {"Current Price": "$2.45", "Location": "Long Beach, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "102348", "properties": {"Current Price": "$2.45", "Location": "Poway, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "102480", "properties": {"Current Price": "$2.45", "Location": "Murrieta, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "104628", "properties": {"Current Price": "$2.45", "Location": "Burbank, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "105390", "properties": {"Current Price": "$2.45", "Location": "Santa Maria, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "108483", "properties": {"Current Price": "$2.45", "Location": "Visalia, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "108552", "properties": {"Current Price": "$2.45", "Location": "El Cajon, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "110133", "properties": {"Current Price": "$2.45", "Location": "Coachella, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "110454", "properties": {"Current Price": "$2.45", "Location": "West Hills, CA, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "110775", "properties": {"Current Price": "$2.45", "Location": "Tustin, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "110844", "properties": {"Current Price": "$2.45", "Location": "Lompoc, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "112291", "properties": {"Current Price": "$2.45", "Location": "Yucca Valley, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "113438", "properties": {"Current Price": "$2.45", "Location": "San Marcos, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "114578", "properties": {"Current Price": "$2.45", "Location": "Moreno Valley, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "115025", "properties": {"Current Price": "$2.45", "Location": "Carson, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "116416", "properties": {"Current Price": "$2.75", "Location": "Phoenix, AZ", "Price": 2.75, "Product": "Tajin Fruit Seasoning", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "117173", "properties": {"Current Price": "$2.45", "Location": "Mira Loma, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "119132", "properties": {"Current Price": "$2.45", "Location": "Santa Clarita, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "119264", "properties": {"Current Price": "$2.45", "Location": "Temecula, CA", "Price": 2.45, "Product": "Tajin Fruit Seasoning", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_07f7ba60f8bd59a1a907156cbe877cf2.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_07f7ba60f8bd59a1a907156cbe877cf2.addTo(map_08eb7c39172a087dd3413b43f47b8f1e);
+        
+</script>
+</html>
