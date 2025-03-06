@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Pink Lady Apples</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Pink Lady Apples cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42c105b6c567502d9cee284ee838d5ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>3.29</li>
+                <li><span style='background:#b22222'></span>3.49</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="bagged_mini_avocados">Bagged Mini Avocados</option>
+
+                
+                <option value="cilantro">Cilantro</option>
+
+                
+                <option value="emporium_selection_fresh_mozzarella_ball_or_pre-sliced_log">Emporium Selection Fresh Mozzarella Ball or Pre-Sliced Log</option>
+
+                
+                <option value="fremont_fish_market_medium_ez_peel_raw_shrimp">Fremont Fish Market Medium EZ Peel Raw Shrimp</option>
+
+                
+                <option value="fresh_atlantic_salmon_side">Fresh Atlantic Salmon Side</option>
+
+                
+                <option value="green_peppers">Green Peppers</option>
+
+                
+                <option value="happy_farms_deli-sliced_mild_or_medium_cheddar_cheese">Happy Farms Deli-Sliced Mild or Medium Cheddar Cheese</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_12_veggie_cauliflower_crust_deli_pizza">Mama Cozzi's Pizza Kitchen 12" Veggie Cauliflower Crust Deli Pizza</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_garlic_breadsticks">Mama Cozzi's Pizza Kitchen Garlic Breadsticks</option>
+
+                
+                <option value="mandies_california_mandarins">Mandies California Mandarins</option>
+
+                
+                <option value="organic_zucchini">Organic Zucchini</option>
+
+                
+                <option value="pink_lady_apples" selected>Pink Lady Apples</option>
+
+                
+                <option value="priano_classic_cheese_or_spinach_&_mozzarella_ravioli">Priano Classic Cheese or Spinach & Mozzarella Ravioli</option>
+
+                
+                <option value="reggano_traditional_pizza_sauce">Reggano Traditional Pizza Sauce</option>
+
+                
+                <option value="season's_choice_extra_fine_green_beans">Season's Choice Extra Fine Green Beans</option>
+
+                
+                <option value="season's_choice_steak_cut_fries">Season's Choice Steak Cut Fries</option>
+
+                
+                <option value="season's_choice_steamable_edamame_or_shelled_edamame">Season's Choice Steamable Edamame or Shelled Edamame</option>
+
+                
+                <option value="simply_nature_organic_100_apple_juice">Simply Nature Organic 100% Apple Juice</option>
+
+                
+                <option value="simply_nature_organic_creamy_peanut_butter">Simply Nature Organic Creamy Peanut Butter</option>
+
+                
+                <option value="simply_nature_organic_oven_roasted_or_smoked_turkey">Simply Nature Organic Oven Roasted or Smoked Turkey</option>
+
+                
+                <option value="simply_nature_organic_pasta">Simply Nature Organic Pasta</option>
+
+                
+                <option value="simply_nature_organic_salsa">Simply Nature Organic Salsa</option>
+
+                
+                <option value="specially_selected_autumncrisp_grapes">Specially Selected Autumncrisp Grapes</option>
+
+                
+                <option value="specially_selected_sesame_seed_brioche_buns">Specially Selected Sesame Seed Brioche Buns</option>
+
+                
+                <option value="livegfree_chicken_bites_or_general_tso's_chicken">liveGfree Chicken Bites or General Tso's Chicken</option>
+
+                
+                <option value="livegfree_gluten_free_cheddar_biscuit_or_cornbread_mix">liveGfree Gluten Free Cheddar Biscuit or Cornbread Mix</option>
+
+                
+                <option value="livegfree_wide_pan_white_or_whole_grain_gluten_free_bread">liveGfree Wide Pan White or Whole Grain Gluten Free Bread</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Mar 5<sup>th</sup> - Mar 11<sup>th</sup>. New products and next update on Mar 12<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_42c105b6c567502d9cee284ee838d5ec" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Mar 5<sup>th</sup>, price maps are available for the following products - 
+                <a href="bagged_mini_avocados.html">Bagged Mini Avocados</a>, 
+                <a href="cilantro.html">Cilantro</a>, 
+                <a href="emporium_selection_fresh_mozzarella_ball_or_pre-sliced_log.html">Emporium Selection Fresh Mozzarella Ball or Pre-Sliced Log</a>, 
+                <a href="fremont_fish_market_medium_ez_peel_raw_shrimp.html">Fremont Fish Market Medium EZ Peel Raw Shrimp</a>, 
+                <a href="fresh_atlantic_salmon_side.html">Fresh Atlantic Salmon Side</a>, 
+                <a href="green_peppers.html">Green Peppers</a>, 
+                <a href="happy_farms_deli-sliced_mild_or_medium_cheddar_cheese.html">Happy Farms Deli-Sliced Mild or Medium Cheddar Cheese</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_12_veggie_cauliflower_crust_deli_pizza.html">Mama Cozzi's Pizza Kitchen 12" Veggie Cauliflower Crust Deli Pizza</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_garlic_breadsticks.html">Mama Cozzi's Pizza Kitchen Garlic Breadsticks</a>, 
+                <a href="mandies_california_mandarins.html">Mandies California Mandarins</a>, 
+                <a href="organic_zucchini.html">Organic Zucchini</a>, 
+                <a href="pink_lady_apples.html">Pink Lady Apples</a>, 
+                <a href="priano_classic_cheese_or_spinach_&_mozzarella_ravioli.html">Priano Classic Cheese or Spinach & Mozzarella Ravioli</a>, 
+                <a href="reggano_traditional_pizza_sauce.html">Reggano Traditional Pizza Sauce</a>, 
+                <a href="season's_choice_extra_fine_green_beans.html">Season's Choice Extra Fine Green Beans</a>, 
+                <a href="season's_choice_steak_cut_fries.html">Season's Choice Steak Cut Fries</a>, 
+                <a href="season's_choice_steamable_edamame_or_shelled_edamame.html">Season's Choice Steamable Edamame or Shelled Edamame</a>, 
+                <a href="simply_nature_organic_100_apple_juice.html">Simply Nature Organic 100% Apple Juice</a>, 
+                <a href="simply_nature_organic_creamy_peanut_butter.html">Simply Nature Organic Creamy Peanut Butter</a>, 
+                <a href="simply_nature_organic_oven_roasted_or_smoked_turkey.html">Simply Nature Organic Oven Roasted or Smoked Turkey</a>, 
+                <a href="simply_nature_organic_pasta.html">Simply Nature Organic Pasta</a>, 
+                <a href="simply_nature_organic_salsa.html">Simply Nature Organic Salsa</a>, 
+                <a href="specially_selected_autumncrisp_grapes.html">Specially Selected Autumncrisp Grapes</a>, 
+                <a href="specially_selected_sesame_seed_brioche_buns.html">Specially Selected Sesame Seed Brioche Buns</a>, 
+                <a href="livegfree_chicken_bites_or_general_tso's_chicken.html">liveGfree Chicken Bites or General Tso's Chicken</a>, 
+                <a href="livegfree_gluten_free_cheddar_biscuit_or_cornbread_mix.html">liveGfree Gluten Free Cheddar Biscuit or Cornbread Mix</a>, 
+                <a href="livegfree_wide_pan_white_or_whole_grain_gluten_free_bread.html">liveGfree Wide Pan White or Whole Grain Gluten Free Bread</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_42c105b6c567502d9cee284ee838d5ec = L.map(
+                "map_42c105b6c567502d9cee284ee838d5ec",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_42c105b6c567502d9cee284ee838d5ec);
+
+            
+
+        
+    
+            var tile_layer_0dfd0f636f3219068e4894e1367891c5 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0dfd0f636f3219068e4894e1367891c5.addTo(map_42c105b6c567502d9cee284ee838d5ec);
+        
+    
+            map_42c105b6c567502d9cee284ee838d5ec.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_28952afe891cf6e78d80e281f5ac52c7_styler(feature) {
+            switch(feature.id) {
+                case "57598": case "57740": case "57800": case "57866": case "57932": case "58325": case "58461": case "59983": case "60049": case "60115": case "60181": case "60247": case "60313": case "60379": case "60445": case "61817": case "61883": case "61955": case "62015": case "63999": case "64065": case "64714": case "65367": case "65908": case "66357": case "66429": case "66656": case "67656": case "67722": case "67864": case "70724": case "71608": case "72304": case "72440": case "73233": case "73859": case "73925": case "73991": case "74057": case "74193": case "74329": case "74699": case "75311": case "75859": case "78322": case "80908": case "82514": case "84743": case "85579": case "85645": case "86788": case "86854": case "87811": case "87877": case "89370": case "89442": case "90552": case "91038": case "91524": case "92156": case "93126": case "93192": case "95182": case "95248": case "97680": case "98440": case "99206": case "102048": case "102120": case "102886": case "102946": case "103638": case "104544": case "106778": case "107848": case "109126": case "109192": case "111084": case "111494": case "111630": case "112256": case "112952": case "113648": case "115184": case "116650": case "117072": case "117208": case "119584": case "120414": case "123840": case "123912": case "125652": case "126004": case "126344": case "126410": case "128022": case "129272": case "130528": case "131014": case "133409": case "135575": case "135711": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_28952afe891cf6e78d80e281f5ac52c7_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_28952afe891cf6e78d80e281f5ac52c7_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_28952afe891cf6e78d80e281f5ac52c7_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_28952afe891cf6e78d80e281f5ac52c7_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_28952afe891cf6e78d80e281f5ac52c7.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_28952afe891cf6e78d80e281f5ac52c7_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_28952afe891cf6e78d80e281f5ac52c7 = L.geoJson(null, {
+                onEachFeature: geo_json_28952afe891cf6e78d80e281f5ac52c7_onEachFeature,
+            
+                style: geo_json_28952afe891cf6e78d80e281f5ac52c7_styler,
+                pointToLayer: geo_json_28952afe891cf6e78d80e281f5ac52c7_pointToLayer,
+        });
+
+        function geo_json_28952afe891cf6e78d80e281f5ac52c7_add (data) {
+            geo_json_28952afe891cf6e78d80e281f5ac52c7
+                .addData(data);
+        }
+            geo_json_28952afe891cf6e78d80e281f5ac52c7_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "57598", "properties": {"Current Price": "$3.29", "Location": "Fontana, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "57740", "properties": {"Current Price": "$3.29", "Location": "Menifee, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "57800", "properties": {"Current Price": "$3.29", "Location": "Palmdale, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "57866", "properties": {"Current Price": "$3.29", "Location": "Buena Park, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "57932", "properties": {"Current Price": "$3.29", "Location": "Covina, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "58325", "properties": {"Current Price": "$3.29", "Location": "South Gate, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "58461", "properties": {"Current Price": "$3.29", "Location": "Lancaster, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "59983", "properties": {"Current Price": "$3.29", "Location": "San Bernardino, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "60049", "properties": {"Current Price": "$3.29", "Location": "El Centro, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "60115", "properties": {"Current Price": "$3.29", "Location": "La Quinta, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "60181", "properties": {"Current Price": "$3.29", "Location": "Bakersfield, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "60247", "properties": {"Current Price": "$3.29", "Location": "Escondido, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "60313", "properties": {"Current Price": "$3.29", "Location": "Calexico, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "60379", "properties": {"Current Price": "$3.29", "Location": "Lake Elsinore, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "60445", "properties": {"Current Price": "$3.29", "Location": "Palm Springs, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "61817", "properties": {"Current Price": "$3.29", "Location": "Cerritos, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "61883", "properties": {"Current Price": "$3.29", "Location": "San Bernardino, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "61955", "properties": {"Current Price": "$3.29", "Location": "Simi Valley, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "62015", "properties": {"Current Price": "$3.29", "Location": "Anaheim, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "63999", "properties": {"Current Price": "$3.29", "Location": "Moreno Valley, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "64065", "properties": {"Current Price": "$3.29", "Location": "Long Beach, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "64714", "properties": {"Current Price": "$3.29", "Location": "Fountain Valley, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "65367", "properties": {"Current Price": "$3.29", "Location": "Santa Clarita, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "65908", "properties": {"Current Price": "$3.29", "Location": "Arcadia, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "66357", "properties": {"Current Price": "$3.29", "Location": "Beaumont, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "66429", "properties": {"Current Price": "$3.29", "Location": "Palm Desert, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "66656", "properties": {"Current Price": "$3.29", "Location": "La Puente, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "67656", "properties": {"Current Price": "$3.29", "Location": "Inglewood, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "67722", "properties": {"Current Price": "$3.29", "Location": "Westminster, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "67864", "properties": {"Current Price": "$3.29", "Location": "Yucaipa, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "70724", "properties": {"Current Price": "$3.29", "Location": "La Verne, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "71608", "properties": {"Current Price": "$3.29", "Location": "Rancho Cucamonga, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "72304", "properties": {"Current Price": "$3.29", "Location": "Vista, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "72440", "properties": {"Current Price": "$3.29", "Location": "Altadena, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "73233", "properties": {"Current Price": "$3.29", "Location": "Downey, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "73859", "properties": {"Current Price": "$3.29", "Location": "Hesperia, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "73925", "properties": {"Current Price": "$3.29", "Location": "Oxnard, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "73991", "properties": {"Current Price": "$3.29", "Location": "La Habra, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "74057", "properties": {"Current Price": "$3.29", "Location": "Garden Grove, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "74193", "properties": {"Current Price": "$3.29", "Location": "Chino, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "74329", "properties": {"Current Price": "$3.29", "Location": "Temecula, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "74699", "properties": {"Current Price": "$3.29", "Location": "Chula Vista, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "75311", "properties": {"Current Price": "$3.29", "Location": "Whittier, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "75859", "properties": {"Current Price": "$3.29", "Location": "Ramona, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "78322", "properties": {"Current Price": "$3.29", "Location": "Santa Fe Springs, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "80908", "properties": {"Current Price": "$3.29", "Location": "Compton, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "82514", "properties": {"Current Price": "$3.29", "Location": "Oxnard, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "84743", "properties": {"Current Price": "$3.29", "Location": "Hesperia, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "85579", "properties": {"Current Price": "$3.29", "Location": "Bakersfield, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "85645", "properties": {"Current Price": "$3.29", "Location": "Monrovia, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "86788", "properties": {"Current Price": "$3.29", "Location": "Santa Ana, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "86854", "properties": {"Current Price": "$3.29", "Location": "Panorama City, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "87811", "properties": {"Current Price": "$3.29", "Location": "Chula Vista, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "87877", "properties": {"Current Price": "$3.29", "Location": "Pico Rivera, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "89370", "properties": {"Current Price": "$3.29", "Location": "Rialto, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "89442", "properties": {"Current Price": "$3.29", "Location": "Laguna Woods, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "90552", "properties": {"Current Price": "$3.29", "Location": "Glendora, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "91038", "properties": {"Current Price": "$3.29", "Location": "Alhambra, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "91524", "properties": {"Current Price": "$3.29", "Location": "Upland, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "92156", "properties": {"Current Price": "$3.29", "Location": "Murrieta, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "93126", "properties": {"Current Price": "$3.29", "Location": "San Jacinto, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "93192", "properties": {"Current Price": "$3.29", "Location": "Corona, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "95182", "properties": {"Current Price": "$3.29", "Location": "Delano, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "95248", "properties": {"Current Price": "$3.29", "Location": "Escondido, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "97680", "properties": {"Current Price": "$3.29", "Location": "San Diego, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "98440", "properties": {"Current Price": "$3.29", "Location": "Porterville, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "99206", "properties": {"Current Price": "$3.29", "Location": "Hanford, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "99346", "properties": {"Current Price": "$3.49", "Location": "Glendale, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "100070", "properties": {"Current Price": "$3.49", "Location": "Tempe, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "100136", "properties": {"Current Price": "$3.49", "Location": "Buckeye, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "100202", "properties": {"Current Price": "$3.49", "Location": "Queen Creek, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "100948", "properties": {"Current Price": "$3.49", "Location": "Chandler, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "101084", "properties": {"Current Price": "$3.49", "Location": "Phoenix, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "101500", "properties": {"Current Price": "$3.49", "Location": "Peoria, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "101566", "properties": {"Current Price": "$3.49", "Location": "Phoenix, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "102048", "properties": {"Current Price": "$3.29", "Location": "Torrance, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "102120", "properties": {"Current Price": "$3.29", "Location": "Arroyo Grande, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "102886", "properties": {"Current Price": "$3.29", "Location": "Clovis, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "102946", "properties": {"Current Price": "$3.29", "Location": "Gardena, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "103016", "properties": {"Current Price": "$3.49", "Location": "Goodyear, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "103638", "properties": {"Current Price": "$3.29", "Location": "San Diego, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "104544", "properties": {"Current Price": "$3.29", "Location": "Northridge, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "105384", "properties": {"Current Price": "$3.49", "Location": "Gilbert, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "105590", "properties": {"Current Price": "$3.49", "Location": "Mesa, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "106778", "properties": {"Current Price": "$3.29", "Location": "Simi Valley, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "107848", "properties": {"Current Price": "$3.29", "Location": "Encinitas, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "109126", "properties": {"Current Price": "$3.29", "Location": "Bellflower, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "109192", "properties": {"Current Price": "$3.29", "Location": "Walnut, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "111084", "properties": {"Current Price": "$3.29", "Location": "Thousand Oaks, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "111494", "properties": {"Current Price": "$3.29", "Location": "Redlands, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "111630", "properties": {"Current Price": "$3.29", "Location": "Ventura, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "112256", "properties": {"Current Price": "$3.29", "Location": "Perris, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "112952", "properties": {"Current Price": "$3.29", "Location": "Fresno, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "113648", "properties": {"Current Price": "$3.29", "Location": "Riverside, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "115184", "properties": {"Current Price": "$3.29", "Location": "Oceanside, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "116650", "properties": {"Current Price": "$3.29", "Location": "Long Beach, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "117072", "properties": {"Current Price": "$3.29", "Location": "Poway, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "117208", "properties": {"Current Price": "$3.29", "Location": "Murrieta, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "119584", "properties": {"Current Price": "$3.29", "Location": "Burbank, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "120414", "properties": {"Current Price": "$3.29", "Location": "Santa Maria, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "123840", "properties": {"Current Price": "$3.29", "Location": "Visalia, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "123912", "properties": {"Current Price": "$3.29", "Location": "El Cajon, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "125652", "properties": {"Current Price": "$3.29", "Location": "Coachella, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "126004", "properties": {"Current Price": "$3.29", "Location": "West Hills, CA, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "126344", "properties": {"Current Price": "$3.29", "Location": "Tustin, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "126410", "properties": {"Current Price": "$3.29", "Location": "Lompoc, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "128022", "properties": {"Current Price": "$3.29", "Location": "Yucca Valley, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "129272", "properties": {"Current Price": "$3.29", "Location": "San Marcos, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "130528", "properties": {"Current Price": "$3.29", "Location": "Moreno Valley, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "131014", "properties": {"Current Price": "$3.29", "Location": "Carson, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "132554", "properties": {"Current Price": "$3.49", "Location": "Phoenix, AZ", "Price": 3.49, "Product": "Pink Lady Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "133409", "properties": {"Current Price": "$3.29", "Location": "Mira Loma, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "135575", "properties": {"Current Price": "$3.29", "Location": "Santa Clarita, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "135711", "properties": {"Current Price": "$3.29", "Location": "Temecula, CA", "Price": 3.29, "Product": "Pink Lady Apples", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_28952afe891cf6e78d80e281f5ac52c7.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_28952afe891cf6e78d80e281f5ac52c7.addTo(map_42c105b6c567502d9cee284ee838d5ec);
+        
+</script>
+</html>
