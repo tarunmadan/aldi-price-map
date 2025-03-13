@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Little Salad Bar Caesar Salad</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Little Salad Bar Caesar Salad cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f534523a6d81409ff5869f3650a5896a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>2.69</li>
+                <li><span style='background:#ff8c00'></span>2.79</li>
+                <li><span style='background:#b22222'></span>2.99</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="baker's_treat_confetti_brownies">Baker's Treat Confetti Brownies</option>
+
+                
+                <option value="benton's_fudge_mint_striped_shortbread_cookies">Benton's Fudge Mint Striped Shortbread Cookies</option>
+
+                
+                <option value="broccoli_crowns">Broccoli Crowns</option>
+
+                
+                <option value="burman's_hot_sauce">Burman's Hot Sauce</option>
+
+                
+                <option value="cabbage">Cabbage</option>
+
+                
+                <option value="chef's_cupboard_instant_mashed_potatoes">Chef's Cupboard Instant Mashed Potatoes</option>
+
+                
+                <option value="clancy's_pretzel_rods_or_honey_wheat_pretzels">Clancy's Pretzel Rods or Honey Wheat Pretzels</option>
+
+                
+                <option value="emporium_selection_irish_cheddar">Emporium Selection Irish Cheddar</option>
+
+                
+                <option value="fresh_7327_ground_beef_roll">Fresh 73/27 Ground Beef Roll</option>
+
+                
+                <option value="fresh_80_lean_ground_beef">Fresh 80% Lean Ground Beef</option>
+
+                
+                <option value="fresh_family_pack_chicken_breasts">Fresh Family Pack Chicken Breasts</option>
+
+                
+                <option value="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</option>
+
+                
+                <option value="l'oven_fresh_hawaiian_sweet_rolls">L'oven Fresh Hawaiian Sweet Rolls</option>
+
+                
+                <option value="little_salad_bar_caesar_salad" selected>Little Salad Bar Caesar Salad</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_pizza_snacks">Mama Cozzi's Pizza Kitchen Pizza Snacks</option>
+
+                
+                <option value="red_potatoes">Red Potatoes</option>
+
+                
+                <option value="savoritz_golden_rounds">Savoritz Golden Rounds</option>
+
+                
+                <option value="season's_choice_steamed_mixed_vegetables">Season's Choice Steamed Mixed Vegetables</option>
+
+                
+                <option value="simply_nature_organic_salsa">Simply Nature Organic Salsa</option>
+
+                
+                <option value="strawberries">Strawberries</option>
+
+                
+                <option value="sundae_shoppe_mint_chocolate_chip_or_chocolate_ice_cream">Sundae Shoppe Mint Chocolate Chip or Chocolate Ice Cream</option>
+
+                
+                <option value="tuscan_garden_ranch_dressing_and_dip">Tuscan Garden Ranch Dressing and Dip</option>
+
+                
+                <option value="yellow_onions">Yellow Onions</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Mar 12<sup>th</sup> - Mar 18<sup>th</sup>. New products and next update on Mar 19<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_f534523a6d81409ff5869f3650a5896a" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Mar 12<sup>th</sup>, price maps are available for the following products - 
+                <a href="baker's_treat_confetti_brownies.html">Baker's Treat Confetti Brownies</a>, 
+                <a href="benton's_fudge_mint_striped_shortbread_cookies.html">Benton's Fudge Mint Striped Shortbread Cookies</a>, 
+                <a href="broccoli_crowns.html">Broccoli Crowns</a>, 
+                <a href="burman's_hot_sauce.html">Burman's Hot Sauce</a>, 
+                <a href="cabbage.html">Cabbage</a>, 
+                <a href="chef's_cupboard_instant_mashed_potatoes.html">Chef's Cupboard Instant Mashed Potatoes</a>, 
+                <a href="clancy's_pretzel_rods_or_honey_wheat_pretzels.html">Clancy's Pretzel Rods or Honey Wheat Pretzels</a>, 
+                <a href="emporium_selection_irish_cheddar.html">Emporium Selection Irish Cheddar</a>, 
+                <a href="fresh_7327_ground_beef_roll.html">Fresh 73/27 Ground Beef Roll</a>, 
+                <a href="fresh_80_lean_ground_beef.html">Fresh 80% Lean Ground Beef</a>, 
+                <a href="fresh_family_pack_chicken_breasts.html">Fresh Family Pack Chicken Breasts</a>, 
+                <a href="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts.html">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</a>, 
+                <a href="l'oven_fresh_hawaiian_sweet_rolls.html">L'oven Fresh Hawaiian Sweet Rolls</a>, 
+                <a href="little_salad_bar_caesar_salad.html">Little Salad Bar Caesar Salad</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_pizza_snacks.html">Mama Cozzi's Pizza Kitchen Pizza Snacks</a>, 
+                <a href="red_potatoes.html">Red Potatoes</a>, 
+                <a href="savoritz_golden_rounds.html">Savoritz Golden Rounds</a>, 
+                <a href="season's_choice_steamed_mixed_vegetables.html">Season's Choice Steamed Mixed Vegetables</a>, 
+                <a href="simply_nature_organic_salsa.html">Simply Nature Organic Salsa</a>, 
+                <a href="strawberries.html">Strawberries</a>, 
+                <a href="sundae_shoppe_mint_chocolate_chip_or_chocolate_ice_cream.html">Sundae Shoppe Mint Chocolate Chip or Chocolate Ice Cream</a>, 
+                <a href="tuscan_garden_ranch_dressing_and_dip.html">Tuscan Garden Ranch Dressing and Dip</a>, 
+                <a href="yellow_onions.html">Yellow Onions</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_f534523a6d81409ff5869f3650a5896a = L.map(
+                "map_f534523a6d81409ff5869f3650a5896a",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f534523a6d81409ff5869f3650a5896a);
+
+            
+
+        
+    
+            var tile_layer_371e64a38e4c449c15809d9ff63a6ec7 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_371e64a38e4c449c15809d9ff63a6ec7.addTo(map_f534523a6d81409ff5869f3650a5896a);
+        
+    
+            map_f534523a6d81409ff5869f3650a5896a.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_fa9313374dda2d919a6ee860bee54b7b_styler(feature) {
+            switch(feature.id) {
+                case "57590": case "57731": case "57797": case "58473": case "59992": case "60130": case "60406": case "61923": case "61994": case "64772": case "65426": case "66414": case "66485": case "67789": case "67930": case "70796": case "71685": case "72384": case "72523": case "74431": case "75955": case "85741": case "89547": case "90663": case "91641": case "92272": case "97806": case "102199": case "102270": case "103038": case "103104": case "104710": case "106947": case "108020": case "109301": case "111261": case "111677": case "113144": case "113843": case "115382": case "117272": case "117410": case "119788": case "124053": case "124124": case "126221": case "126567": case "128247": case "129503": case "135822": case "135961": 
+                    return {"color": "#ff8c00", "fillColor": "#ff8c00", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                case "57867": case "57936": case "58335": case "60062": case "60200": case "60269": case "60338": case "60476": case "61855": case "62061": case "64050": case "64119": case "65966": case "66717": case "67721": case "73318": case "73947": case "74016": case "74085": case "74154": case "74293": case "74806": case "75415": case "78412": case "81001": case "82610": case "84834": case "85673": case "86886": case "86955": case "87914": case "87983": case "89477": case "91153": case "93249": case "93318": case "95307": case "95376": case "98573": case "99342": case "103802": case "109371": case "111817": case "112446": case "116852": case "120625": case "125871": case "126637": case "130763": case "131252": case "133654": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_fa9313374dda2d919a6ee860bee54b7b_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_fa9313374dda2d919a6ee860bee54b7b_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_fa9313374dda2d919a6ee860bee54b7b_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_fa9313374dda2d919a6ee860bee54b7b_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_fa9313374dda2d919a6ee860bee54b7b.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_fa9313374dda2d919a6ee860bee54b7b_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_fa9313374dda2d919a6ee860bee54b7b = L.geoJson(null, {
+                onEachFeature: geo_json_fa9313374dda2d919a6ee860bee54b7b_onEachFeature,
+            
+                style: geo_json_fa9313374dda2d919a6ee860bee54b7b_styler,
+                pointToLayer: geo_json_fa9313374dda2d919a6ee860bee54b7b_pointToLayer,
+        });
+
+        function geo_json_fa9313374dda2d919a6ee860bee54b7b_add (data) {
+            geo_json_fa9313374dda2d919a6ee860bee54b7b
+                .addData(data);
+        }
+            geo_json_fa9313374dda2d919a6ee860bee54b7b_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "57590", "properties": {"Current Price": "$2.79", "Location": "Fontana, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "57731", "properties": {"Current Price": "$2.79", "Location": "Menifee, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "57797", "properties": {"Current Price": "$2.79", "Location": "Palmdale, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "57867", "properties": {"Current Price": "$2.99", "Location": "Buena Park, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "57936", "properties": {"Current Price": "$2.99", "Location": "Covina, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "58335", "properties": {"Current Price": "$2.99", "Location": "South Gate, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "58473", "properties": {"Current Price": "$2.79", "Location": "Lancaster, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "59992", "properties": {"Current Price": "$2.79", "Location": "San Bernardino, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "60062", "properties": {"Current Price": "$2.99", "Location": "El Centro, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "60130", "properties": {"Current Price": "$2.79", "Location": "La Quinta, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "60200", "properties": {"Current Price": "$2.99", "Location": "Bakersfield, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "60269", "properties": {"Current Price": "$2.99", "Location": "Escondido, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "60338", "properties": {"Current Price": "$2.99", "Location": "Calexico, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "60406", "properties": {"Current Price": "$2.79", "Location": "Lake Elsinore, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "60476", "properties": {"Current Price": "$2.99", "Location": "Palm Springs, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "61855", "properties": {"Current Price": "$2.99", "Location": "Cerritos, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "61923", "properties": {"Current Price": "$2.79", "Location": "San Bernardino, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "61994", "properties": {"Current Price": "$2.79", "Location": "Simi Valley, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "62061", "properties": {"Current Price": "$2.99", "Location": "Anaheim, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "64050", "properties": {"Current Price": "$2.99", "Location": "Moreno Valley, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "64119", "properties": {"Current Price": "$2.99", "Location": "Long Beach, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "64772", "properties": {"Current Price": "$2.79", "Location": "Fountain Valley, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "65426", "properties": {"Current Price": "$2.79", "Location": "Santa Clarita, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "65966", "properties": {"Current Price": "$2.99", "Location": "Arcadia, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "66414", "properties": {"Current Price": "$2.79", "Location": "Beaumont, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "66485", "properties": {"Current Price": "$2.79", "Location": "Palm Desert, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "66717", "properties": {"Current Price": "$2.99", "Location": "La Puente, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "67721", "properties": {"Current Price": "$2.99", "Location": "Inglewood, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "67789", "properties": {"Current Price": "$2.79", "Location": "Westminster, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "67930", "properties": {"Current Price": "$2.79", "Location": "Yucaipa, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "70796", "properties": {"Current Price": "$2.79", "Location": "La Verne, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "71685", "properties": {"Current Price": "$2.79", "Location": "Rancho Cucamonga, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "72384", "properties": {"Current Price": "$2.79", "Location": "Vista, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "72523", "properties": {"Current Price": "$2.79", "Location": "Altadena, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "73318", "properties": {"Current Price": "$2.99", "Location": "Downey, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "73947", "properties": {"Current Price": "$2.99", "Location": "Hesperia, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "74016", "properties": {"Current Price": "$2.99", "Location": "Oxnard, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "74085", "properties": {"Current Price": "$2.99", "Location": "La Habra, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "74154", "properties": {"Current Price": "$2.99", "Location": "Garden Grove, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "74293", "properties": {"Current Price": "$2.99", "Location": "Chino, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "74431", "properties": {"Current Price": "$2.79", "Location": "Temecula, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "74806", "properties": {"Current Price": "$2.99", "Location": "Chula Vista, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "75415", "properties": {"Current Price": "$2.99", "Location": "Whittier, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "75955", "properties": {"Current Price": "$2.79", "Location": "Ramona, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "78412", "properties": {"Current Price": "$2.99", "Location": "Santa Fe Springs, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "81001", "properties": {"Current Price": "$2.99", "Location": "Compton, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "82610", "properties": {"Current Price": "$2.99", "Location": "Oxnard, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "84834", "properties": {"Current Price": "$2.99", "Location": "Hesperia, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "85673", "properties": {"Current Price": "$2.99", "Location": "Bakersfield, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "85741", "properties": {"Current Price": "$2.79", "Location": "Monrovia, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "86886", "properties": {"Current Price": "$2.99", "Location": "Santa Ana, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "86955", "properties": {"Current Price": "$2.99", "Location": "Panorama City, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "87914", "properties": {"Current Price": "$2.99", "Location": "Chula Vista, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "87983", "properties": {"Current Price": "$2.99", "Location": "Pico Rivera, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "89477", "properties": {"Current Price": "$2.99", "Location": "Rialto, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "89547", "properties": {"Current Price": "$2.79", "Location": "Laguna Woods, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "90663", "properties": {"Current Price": "$2.79", "Location": "Glendora, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "91153", "properties": {"Current Price": "$2.99", "Location": "Alhambra, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "91641", "properties": {"Current Price": "$2.79", "Location": "Upland, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "92272", "properties": {"Current Price": "$2.79", "Location": "Murrieta, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "93249", "properties": {"Current Price": "$2.99", "Location": "San Jacinto, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "93318", "properties": {"Current Price": "$2.99", "Location": "Corona, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "95307", "properties": {"Current Price": "$2.99", "Location": "Delano, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "95376", "properties": {"Current Price": "$2.99", "Location": "Escondido, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "97806", "properties": {"Current Price": "$2.79", "Location": "San Diego, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "98573", "properties": {"Current Price": "$2.99", "Location": "Porterville, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "99342", "properties": {"Current Price": "$2.99", "Location": "Hanford, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "99481", "properties": {"Current Price": "$2.69", "Location": "Glendale, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "100204", "properties": {"Current Price": "$2.69", "Location": "Tempe, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "100272", "properties": {"Current Price": "$2.69", "Location": "Buckeye, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "100340", "properties": {"Current Price": "$2.69", "Location": "Queen Creek, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "101088", "properties": {"Current Price": "$2.69", "Location": "Chandler, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "101226", "properties": {"Current Price": "$2.69", "Location": "Phoenix, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "101644", "properties": {"Current Price": "$2.69", "Location": "Peoria, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "101712", "properties": {"Current Price": "$2.69", "Location": "Phoenix, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "102199", "properties": {"Current Price": "$2.79", "Location": "Torrance, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "102270", "properties": {"Current Price": "$2.79", "Location": "Arroyo Grande, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "103038", "properties": {"Current Price": "$2.79", "Location": "Clovis, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "103104", "properties": {"Current Price": "$2.79", "Location": "Gardena, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "103174", "properties": {"Current Price": "$2.69", "Location": "Goodyear, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "103802", "properties": {"Current Price": "$2.99", "Location": "San Diego, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "104710", "properties": {"Current Price": "$2.79", "Location": "Northridge, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "105550", "properties": {"Current Price": "$2.69", "Location": "Gilbert, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "105758", "properties": {"Current Price": "$2.69", "Location": "Mesa, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "106947", "properties": {"Current Price": "$2.79", "Location": "Simi Valley, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "108020", "properties": {"Current Price": "$2.79", "Location": "Encinitas, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "109301", "properties": {"Current Price": "$2.79", "Location": "Bellflower, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "109371", "properties": {"Current Price": "$2.99", "Location": "Walnut, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "111261", "properties": {"Current Price": "$2.79", "Location": "Thousand Oaks, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "111677", "properties": {"Current Price": "$2.79", "Location": "Redlands, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "111817", "properties": {"Current Price": "$2.99", "Location": "Ventura, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "112446", "properties": {"Current Price": "$2.99", "Location": "Perris, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "113144", "properties": {"Current Price": "$2.79", "Location": "Fresno, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "113843", "properties": {"Current Price": "$2.79", "Location": "Riverside, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "115382", "properties": {"Current Price": "$2.79", "Location": "Oceanside, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "116852", "properties": {"Current Price": "$2.99", "Location": "Long Beach, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "117272", "properties": {"Current Price": "$2.79", "Location": "Poway, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "117410", "properties": {"Current Price": "$2.79", "Location": "Murrieta, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "119788", "properties": {"Current Price": "$2.79", "Location": "Burbank, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "120625", "properties": {"Current Price": "$2.99", "Location": "Santa Maria, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "124053", "properties": {"Current Price": "$2.79", "Location": "Visalia, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "124124", "properties": {"Current Price": "$2.79", "Location": "El Cajon, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "125871", "properties": {"Current Price": "$2.99", "Location": "Coachella, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "126221", "properties": {"Current Price": "$2.79", "Location": "West Hills, CA, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "126567", "properties": {"Current Price": "$2.79", "Location": "Tustin, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "126637", "properties": {"Current Price": "$2.99", "Location": "Lompoc, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "128247", "properties": {"Current Price": "$2.79", "Location": "Yucca Valley, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "129503", "properties": {"Current Price": "$2.79", "Location": "San Marcos, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "130763", "properties": {"Current Price": "$2.99", "Location": "Moreno Valley, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "131252", "properties": {"Current Price": "$2.99", "Location": "Carson, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "132791", "properties": {"Current Price": "$2.69", "Location": "Phoenix, AZ", "Price": 2.69, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "133654", "properties": {"Current Price": "$2.99", "Location": "Mira Loma, CA", "Price": 2.99, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "135822", "properties": {"Current Price": "$2.79", "Location": "Santa Clarita, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "135961", "properties": {"Current Price": "$2.79", "Location": "Temecula, CA", "Price": 2.79, "Product": "Little Salad Bar Caesar Salad", "__folium_color": "#ff8c00"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_fa9313374dda2d919a6ee860bee54b7b.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_fa9313374dda2d919a6ee860bee54b7b.addTo(map_f534523a6d81409ff5869f3650a5896a);
+        
+</script>
+</html>
