@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Bake Shop Sliced Loaf Cake Banana Nut or Lemon</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Bake Shop Sliced Loaf Cake Banana Nut or Lemon cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6f2815a8c30582fb25e491732597fe97 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>3.99</li>
+                <li><span style='background:#b22222'></span>4.99</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="appleton_farms_thick_cut_bacon">Appleton Farms Thick Cut Bacon</option>
+
+                
+                <option value="appleton_farms_thick_sliced_applewood">Appleton Farms Thick Sliced Applewood</option>
+
+                
+                <option value="bake_shop_banana_nut_or_chocolate_chip_muffins">Bake Shop Banana Nut or Chocolate Chip Muffins</option>
+
+                
+                <option value="bake_shop_mini_or_large_croissants">Bake Shop Mini or Large Croissants</option>
+
+                
+                <option value="bake_shop_sliced_loaf_cake_banana_nut_or_lemon" selected>Bake Shop Sliced Loaf Cake Banana Nut or Lemon</option>
+
+                
+                <option value="cucumbers">Cucumbers</option>
+
+                
+                <option value="driscoll's_raspberries">Driscoll's Raspberries</option>
+
+                
+                <option value="emporium_selection_specialty_shreds">Emporium Selection Specialty Shreds</option>
+
+                
+                <option value="friendly_farms_half_&_half">Friendly Farms Half & Half</option>
+
+                
+                <option value="green_peppers">Green Peppers</option>
+
+                
+                <option value="happy_farms_whipped_cream_cheese">Happy Farms Whipped Cream Cheese</option>
+
+                
+                <option value="l'oven_fresh_artisanal_bread">L'oven Fresh Artisanal Bread</option>
+
+                
+                <option value="l'oven_fresh_plain_bagels">L'oven Fresh Plain Bagels</option>
+
+                
+                <option value="mandies_california_mandarins">Mandies California Mandarins</option>
+
+                
+                <option value="mexican_calabaza_squash">Mexican Calabaza Squash</option>
+
+                
+                <option value="millville_buttermilk_pancake_mix">Millville Buttermilk Pancake Mix</option>
+
+                
+                <option value="nature's_nectar_orange_juice_not_from_concentrate_no_pulp">Nature's Nectar Orange Juice Not from Concentrate No Pulp</option>
+
+                
+                <option value="nature's_nectar_pineapple_juice">Nature's Nectar Pineapple Juice</option>
+
+                
+                <option value="organic_baby_peeled_carrots">Organic Baby Peeled Carrots</option>
+
+                
+                <option value="simply_nature_organic_blueberries_or_strawberries">Simply Nature Organic Blueberries or Strawberries</option>
+
+                
+                <option value="simply_nature_unsweetened_applesauce">Simply Nature Unsweetened Applesauce</option>
+
+                
+                <option value="specially_selected_autumncrisp_grapes">Specially Selected Autumncrisp Grapes</option>
+
+                
+                <option value="whole_white_mushrooms">Whole White Mushrooms</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Apr 2<sup>nd</sup> - Apr 8<sup>th</sup>. New products and next update on Apr 9<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_6f2815a8c30582fb25e491732597fe97" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Apr 2<sup>nd</sup>, price maps are available for the following products - 
+                <a href="appleton_farms_thick_cut_bacon.html">Appleton Farms Thick Cut Bacon</a>, 
+                <a href="appleton_farms_thick_sliced_applewood.html">Appleton Farms Thick Sliced Applewood</a>, 
+                <a href="bake_shop_banana_nut_or_chocolate_chip_muffins.html">Bake Shop Banana Nut or Chocolate Chip Muffins</a>, 
+                <a href="bake_shop_mini_or_large_croissants.html">Bake Shop Mini or Large Croissants</a>, 
+                <a href="bake_shop_sliced_loaf_cake_banana_nut_or_lemon.html">Bake Shop Sliced Loaf Cake Banana Nut or Lemon</a>, 
+                <a href="cucumbers.html">Cucumbers</a>, 
+                <a href="driscoll's_raspberries.html">Driscoll's Raspberries</a>, 
+                <a href="emporium_selection_specialty_shreds.html">Emporium Selection Specialty Shreds</a>, 
+                <a href="friendly_farms_half_&_half.html">Friendly Farms Half & Half</a>, 
+                <a href="green_peppers.html">Green Peppers</a>, 
+                <a href="happy_farms_whipped_cream_cheese.html">Happy Farms Whipped Cream Cheese</a>, 
+                <a href="l'oven_fresh_artisanal_bread.html">L'oven Fresh Artisanal Bread</a>, 
+                <a href="l'oven_fresh_plain_bagels.html">L'oven Fresh Plain Bagels</a>, 
+                <a href="mandies_california_mandarins.html">Mandies California Mandarins</a>, 
+                <a href="mexican_calabaza_squash.html">Mexican Calabaza Squash</a>, 
+                <a href="millville_buttermilk_pancake_mix.html">Millville Buttermilk Pancake Mix</a>, 
+                <a href="nature's_nectar_orange_juice_not_from_concentrate_no_pulp.html">Nature's Nectar Orange Juice Not from Concentrate No Pulp</a>, 
+                <a href="nature's_nectar_pineapple_juice.html">Nature's Nectar Pineapple Juice</a>, 
+                <a href="organic_baby_peeled_carrots.html">Organic Baby Peeled Carrots</a>, 
+                <a href="simply_nature_organic_blueberries_or_strawberries.html">Simply Nature Organic Blueberries or Strawberries</a>, 
+                <a href="simply_nature_unsweetened_applesauce.html">Simply Nature Unsweetened Applesauce</a>, 
+                <a href="specially_selected_autumncrisp_grapes.html">Specially Selected Autumncrisp Grapes</a>, 
+                <a href="whole_white_mushrooms.html">Whole White Mushrooms</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_6f2815a8c30582fb25e491732597fe97 = L.map(
+                "map_6f2815a8c30582fb25e491732597fe97",
+                {
+                    center: [39.43641845495, -82.45726094795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6f2815a8c30582fb25e491732597fe97);
+
+            
+
+        
+    
+            var tile_layer_f2cd38f526c12c8b799507172b750ccf = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f2cd38f526c12c8b799507172b750ccf.addTo(map_6f2815a8c30582fb25e491732597fe97);
+        
+    
+            map_6f2815a8c30582fb25e491732597fe97.fitBounds(
+                [[33.239633962, -91.1227128959], [45.6332029479, -73.791809]],
+                {}
+            );
+        
+    
+        function geo_json_a28ea5d37c108d7e56aa3e89437f913a_styler(feature) {
+            switch(feature.id) {
+                case "477": case "769": case "2358": case "2736": case "5770": case "6062": case "6160": case "8393": case "9062": case "9159": case "11584": case "11789": case "12081": case "12276": case "13053": case "14402": case "15189": case "15664": case "18488": case "19157": case "21297": case "21395": case "22070": case "23621": case "25997": case "27658": case "29618": case "36421": case "37400": case "37595": case "41022": case "42478": case "42682": case "42974": case "43072": case "43170": case "44031": case "44225": case "45884": case "46844": case "52518": case "53779": case "54576": case "63039": case "63137": case "65672": case "66169": case "67530": case "71854": case "74877": case "77831": case "78533": case "79697": case "82181": case "82484": case "82582": case "82777": case "86713": case "87205": case "88279": case "93090": case "97894": case "98284": case "102532": case "104485": case "105478": case "107023": case "108868": case "109662": case "109760": case "111819": case "113766": case "115240": case "116224": case "122971": case "124055": case "124251": case "126289": case "132259": case "134392": case "138573": case "141581": case "141883": case "141981": case "143618": case "143715": case "144694": case "146437": case "147419": case "147517": case "147701": case "150438": case "152982": case "154255": case "155312": case "159011": case "159213": case "159311": case "161547": case "174673": case "177796": case "178283": case "180413": case "183726": case "183823": case "185387": case "186174": case "187133": case "187424": case "191898": case "193150": case "193258": case "193636": case "194036": case "194706": case "195202": case "195494": case "195775": case "196648": case "196842": case "197036": case "198588": case "198685": case "201013": case "201110": case "201692": case "203147": case "203244": case "204702": case "205480": case "206647": case "207229": case "207424": case "207812": case "208688": case "209076": case "209661": case "214616": case "214713": case "215210": case "215880": case "216172": case "217338": case "221909": case "223184": case "223282": case "223855": case "227576": case "228439": case "228547": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_a28ea5d37c108d7e56aa3e89437f913a_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_a28ea5d37c108d7e56aa3e89437f913a_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_a28ea5d37c108d7e56aa3e89437f913a_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_a28ea5d37c108d7e56aa3e89437f913a_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_a28ea5d37c108d7e56aa3e89437f913a.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_a28ea5d37c108d7e56aa3e89437f913a_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_a28ea5d37c108d7e56aa3e89437f913a = L.geoJson(null, {
+                onEachFeature: geo_json_a28ea5d37c108d7e56aa3e89437f913a_onEachFeature,
+            
+                style: geo_json_a28ea5d37c108d7e56aa3e89437f913a_styler,
+                pointToLayer: geo_json_a28ea5d37c108d7e56aa3e89437f913a_pointToLayer,
+        });
+
+        function geo_json_a28ea5d37c108d7e56aa3e89437f913a_add (data) {
+            geo_json_a28ea5d37c108d7e56aa3e89437f913a
+                .addData(data);
+        }
+            geo_json_a28ea5d37c108d7e56aa3e89437f913a_add({"bbox": [-91.1227128959, 33.239633962, -73.791809, 45.6332029479], "features": [{"bbox": [-88.1424318993, 43.1922809506, -88.1424318993, 43.1922809506], "geometry": {"coordinates": [-88.1424318993, 43.1922809506], "type": "Point"}, "id": "477", "properties": {"Current Price": "$3.99", "Location": "Germantown, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.8659678996, 42.6973179512, -87.8659678996, 42.6973179512], "geometry": {"coordinates": [-87.8659678996, 42.6973179512], "type": "Point"}, "id": "769", "properties": {"Current Price": "$3.99", "Location": "Racine, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.2970589014, 36.1895289586, -86.2970589014, 36.1895289586], "geometry": {"coordinates": [-86.2970589014, 36.1895289586], "type": "Point"}, "id": "2358", "properties": {"Current Price": "$3.99", "Location": "Lebanon, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-90.159682897, 44.6894779489, -90.159682897, 44.6894779489], "geometry": {"coordinates": [-90.159682897, 44.6894779489], "type": "Point"}, "id": "2736", "properties": {"Current Price": "$3.99", "Location": "Marshfield, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.2046219026, 35.01832496, -85.2046219026, 35.01832496], "geometry": {"coordinates": [-85.2046219026, 35.01832496], "type": "Point"}, "id": "5770", "properties": {"Current Price": "$3.99", "Location": "Chattanooga, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7331799009, 36.0898429588, -86.7331799009, 36.0898429588], "geometry": {"coordinates": [-86.7331799009, 36.0898429588], "type": "Point"}, "id": "6062", "properties": {"Current Price": "$3.99", "Location": "Nashville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.4323749012, 35.853724959, -86.4323749012, 35.853724959], "geometry": {"coordinates": [-86.4323749012, 35.853724959], "type": "Point"}, "id": "6160", "properties": {"Current Price": "$3.99", "Location": "Murfreesboro, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.2488499026, 35.1435219598, -85.2488499026, 35.1435219598], "geometry": {"coordinates": [-85.2488499026, 35.1435219598], "type": "Point"}, "id": "8393", "properties": {"Current Price": "$3.99", "Location": "Hixson, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.6124268987, 42.6279499513, -88.6124268987, 42.6279499513], "geometry": {"coordinates": [-88.6124268987, 42.6279499513], "type": "Point"}, "id": "9062", "properties": {"Current Price": "$3.99", "Location": "Delavan, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9861668995, 42.9882189509, -87.9861668995, 42.9882189509], "geometry": {"coordinates": [-87.9861668995, 42.9882189509], "type": "Point"}, "id": "9159", "properties": {"Current Price": "$3.99", "Location": "Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0464448994, 43.0114239509, -88.0464448994, 43.0114239509], "geometry": {"coordinates": [-88.0464448994, 43.0114239509], "type": "Point"}, "id": "11584", "properties": {"Current Price": "$3.99", "Location": "West Allis, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.6399468999, 34.8419019602, -87.6399468999, 34.8419019602], "geometry": {"coordinates": [-87.6399468999, 34.8419019602], "type": "Point"}, "id": "11789", "properties": {"Current Price": "$3.99", "Location": "Florence, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.9927079017, 34.0106029611, -85.9927079017, 34.0106029611], "geometry": {"coordinates": [-85.9927079017, 34.0106029611], "type": "Point"}, "id": "12081", "properties": {"Current Price": "$3.99", "Location": "Gadsden, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7353229009, 34.7551919603, -86.7353229009, 34.7551919603], "geometry": {"coordinates": [-86.7353229009, 34.7551919603], "type": "Point"}, "id": "12276", "properties": {"Current Price": "$3.99", "Location": "Madison, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.2320589026, 34.9471949601, -85.2320589026, 34.9471949601], "geometry": {"coordinates": [-85.2320589026, 34.9471949601], "type": "Point"}, "id": "13053", "properties": {"Current Price": "$3.99", "Location": "Fort Oglethorpe, GA", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9644888995, 43.1143439507, -87.9644888995, 43.1143439507], "geometry": {"coordinates": [-87.9644888995, 43.1143439507], "type": "Point"}, "id": "14402", "properties": {"Current Price": "$3.99", "Location": "Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.9988749006, 33.3609289619, -86.9988749006, 33.3609289619], "geometry": {"coordinates": [-86.9988749006, 33.3609289619], "type": "Point"}, "id": "15189", "properties": {"Current Price": "$3.99", "Location": "Bessemer, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9729748995, 42.9591959509, -87.9729748995, 42.9591959509], "geometry": {"coordinates": [-87.9729748995, 42.9591959509], "type": "Point"}, "id": "15664", "properties": {"Current Price": "$3.99", "Location": "Greenfield, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.5003529023, 36.1537149587, -85.5003529023, 36.1537149587], "geometry": {"coordinates": [-85.5003529023, 36.1537149587], "type": "Point"}, "id": "18488", "properties": {"Current Price": "$3.99", "Location": "Cookeville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.2480838992, 42.7029089512, -88.2480838992, 42.7029089512], "geometry": {"coordinates": [-88.2480838992, 42.7029089512], "type": "Point"}, "id": "19157", "properties": {"Current Price": "$3.99", "Location": "Burlington, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.022084904, 36.0035269589, -84.022084904, 36.0035269589], "geometry": {"coordinates": [-84.022084904, 36.0035269589], "type": "Point"}, "id": "21297", "properties": {"Current Price": "$3.99", "Location": "Knoxville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8206059008, 33.4641389618, -86.8206059008, 33.4641389618], "geometry": {"coordinates": [-86.8206059008, 33.4641389618], "type": "Point"}, "id": "21395", "properties": {"Current Price": "$3.99", "Location": "Homewood, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.4714964, 43.082821, -88.4714964, 43.082821], "geometry": {"coordinates": [-88.4714964, 43.082821], "type": "Point"}, "id": "22070", "properties": {"Current Price": "$3.99", "Location": "Oconomowoc, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.8653578996, 42.900384951, -87.8653578996, 42.900384951], "geometry": {"coordinates": [-87.8653578996, 42.900384951], "type": "Point"}, "id": "23621", "properties": {"Current Price": "$3.99", "Location": "South Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.6945259009, 33.5974269616, -86.6945259009, 33.5974269616], "geometry": {"coordinates": [-86.6945259009, 33.5974269616], "type": "Point"}, "id": "25997", "properties": {"Current Price": "$3.99", "Location": "Birmingham, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8303949008, 35.913729959, -86.8303949008, 35.913729959], "geometry": {"coordinates": [-86.8303949008, 35.913729959], "type": "Point"}, "id": "27658", "properties": {"Current Price": "$3.99", "Location": "Franklin, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.5127289011, 36.1761619587, -86.5127289011, 36.1761619587], "geometry": {"coordinates": [-86.5127289011, 36.1761619587], "type": "Point"}, "id": "29618", "properties": {"Current Price": "$3.99", "Location": "Mt. Juliet, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.1547178993, 43.0358669508, -88.1547178993, 43.0358669508], "geometry": {"coordinates": [-88.1547178993, 43.0358669508], "type": "Point"}, "id": "36421", "properties": {"Current Price": "$3.99", "Location": "Brookfield, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7473732, 36.1832036, -86.7473732, 36.1832036], "geometry": {"coordinates": [-86.7473732, 36.1832036], "type": "Point"}, "id": "37400", "properties": {"Current Price": "$3.99", "Location": "Nashville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7240149009, 33.5304559617, -86.7240149009, 33.5304559617], "geometry": {"coordinates": [-86.7240149009, 33.5304559617], "type": "Point"}, "id": "37595", "properties": {"Current Price": "$3.99", "Location": "Birmingham, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9527718995, 43.3200709505, -87.9527718995, 43.3200709505], "geometry": {"coordinates": [-87.9527718995, 43.3200709505], "type": "Point"}, "id": "41022", "properties": {"Current Price": "$3.99", "Location": "Grafton, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0641868994, 43.0747069508, -88.0641868994, 43.0747069508], "geometry": {"coordinates": [-88.0641868994, 43.0747069508], "type": "Point"}, "id": "42478", "properties": {"Current Price": "$3.99", "Location": "Wauwatosa, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7950644, 33.3438645, -86.7950644, 33.3438645], "geometry": {"coordinates": [-86.7950644, 33.3438645], "type": "Point"}, "id": "42682", "properties": {"Current Price": "$3.99", "Location": "Pelham, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.990523904, 35.7730309591, -83.990523904, 35.7730309591], "geometry": {"coordinates": [-83.990523904, 35.7730309591], "type": "Point"}, "id": "42974", "properties": {"Current Price": "$3.99", "Location": "Alcoa, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.0906379039, 35.910076959, -84.0906379039, 35.910076959], "geometry": {"coordinates": [-84.0906379039, 35.910076959], "type": "Point"}, "id": "43072", "properties": {"Current Price": "$3.99", "Location": "Knoxville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.9332119041, 36.0841269588, -83.9332119041, 36.0841269588], "geometry": {"coordinates": [-83.9332119041, 36.0841269588], "type": "Point"}, "id": "43170", "properties": {"Current Price": "$3.99", "Location": "Knoxville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.7000949, 44.0771899, -87.7000949, 44.0771899], "geometry": {"coordinates": [-87.7000949, 44.0771899], "type": "Point"}, "id": "44031", "properties": {"Current Price": "$3.99", "Location": "Manitowoc, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.4831538978, 43.0155679508, -89.4831538978, 43.0155679508], "geometry": {"coordinates": [-89.4831538978, 43.0155679508], "type": "Point"}, "id": "44225", "properties": {"Current Price": "$3.99", "Location": "Fitchburg, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.932016903, 34.7619969603, -84.932016903, 34.7619969603], "geometry": {"coordinates": [-84.932016903, 34.7619969603], "type": "Point"}, "id": "45884", "properties": {"Current Price": "$3.99", "Location": "Dalton, GA", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9290658995, 42.9954279509, -87.9290658995, 42.9954279509], "geometry": {"coordinates": [-87.9290658995, 42.9954279509], "type": "Point"}, "id": "46844", "properties": {"Current Price": "$3.99", "Location": "Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.8635839156, 40.7326549535, -73.8635839156, 40.7326549535], "geometry": {"coordinates": [-73.8635839156, 40.7326549535], "type": "Point"}, "id": "49292", "properties": {"Current Price": "$4.99", "Location": "Rego Park, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.2395998992, 43.0844629508, -88.2395998992, 43.0844629508], "geometry": {"coordinates": [-88.2395998992, 43.0844629508], "type": "Point"}, "id": "52518", "properties": {"Current Price": "$3.99", "Location": "Pewaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0480588994, 42.9672199509, -88.0480588994, 42.9672199509], "geometry": {"coordinates": [-88.0480588994, 42.9672199509], "type": "Point"}, "id": "53779", "properties": {"Current Price": "$3.99", "Location": "Greenfield, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.647271901, 34.7358509603, -86.647271901, 34.7358509603], "geometry": {"coordinates": [-86.647271901, 34.7358509603], "type": "Point"}, "id": "54576", "properties": {"Current Price": "$3.99", "Location": "Huntsville, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9322489155, 40.7957199534, -73.9322489155, 40.7957199534], "geometry": {"coordinates": [-73.9322489155, 40.7957199534], "type": "Point"}, "id": "59266", "properties": {"Current Price": "$4.99", "Location": "New York, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.8412299008, 34.153507961, -86.8412299008, 34.153507961], "geometry": {"coordinates": [-86.8412299008, 34.153507961], "type": "Point"}, "id": "63039", "properties": {"Current Price": "$3.99", "Location": "Cullman, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.5667119011, 34.6128199604, -86.5667119011, 34.6128199604], "geometry": {"coordinates": [-86.5667119011, 34.6128199604], "type": "Point"}, "id": "63137", "properties": {"Current Price": "$3.99", "Location": "Huntsville, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9399379155, 40.5915689536, -73.9399379155, 40.5915689536], "geometry": {"coordinates": [-73.9399379155, 40.5915689536], "type": "Point"}, "id": "63323", "properties": {"Current Price": "$4.99", "Location": "Brooklyn, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.351305899, 43.3174109505, -88.351305899, 43.3174109505], "geometry": {"coordinates": [-88.351305899, 43.3174109505], "type": "Point"}, "id": "65672", "properties": {"Current Price": "$3.99", "Location": "Hartford, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8022819008, 33.6090339616, -86.8022819008, 33.6090339616], "geometry": {"coordinates": [-86.8022819008, 33.6090339616], "type": "Point"}, "id": "66169", "properties": {"Current Price": "$3.99", "Location": "Fultondale, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.2470599037, 36.0039489589, -84.2470599037, 36.0039489589], "geometry": {"coordinates": [-84.2470599037, 36.0039489589], "type": "Point"}, "id": "67530", "properties": {"Current Price": "$3.99", "Location": "Oak Ridge, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9052989156, 40.8777489533, -73.9052989156, 40.8777489533], "geometry": {"coordinates": [-73.9052989156, 40.8777489533], "type": "Point"}, "id": "70180", "properties": {"Current Price": "$4.99", "Location": "Bronx, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.8326999019, 33.6033999616, -85.8326999019, 33.6033999616], "geometry": {"coordinates": [-85.8326999019, 33.6033999616], "type": "Point"}, "id": "71854", "properties": {"Current Price": "$3.99", "Location": "Oxford, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.6689548998, 34.7447039603, -87.6689548998, 34.7447039603], "geometry": {"coordinates": [-87.6689548998, 34.7447039603], "type": "Point"}, "id": "74877", "properties": {"Current Price": "$3.99", "Location": "Muscle Shoals, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8147149008, 33.239633962, -86.8147149008, 33.239633962], "geometry": {"coordinates": [-86.8147149008, 33.239633962], "type": "Point"}, "id": "77831", "properties": {"Current Price": "$3.99", "Location": "Alabaster, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.9699119006, 33.4528129618, -86.9699119006, 33.4528129618], "geometry": {"coordinates": [-86.9699119006, 33.4528129618], "type": "Point"}, "id": "78533", "properties": {"Current Price": "$3.99", "Location": "Hueytown, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.9800468983, 42.7167079512, -88.9800468983, 42.7167079512], "geometry": {"coordinates": [-88.9800468983, 42.7167079512], "type": "Point"}, "id": "79697", "properties": {"Current Price": "$3.99", "Location": "Janesville, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.265850898, 43.1677569507, -89.265850898, 43.1677569507], "geometry": {"coordinates": [-89.265850898, 43.1677569507], "type": "Point"}, "id": "82181", "properties": {"Current Price": "$3.99", "Location": "Sun Prairie, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.9158779007, 35.7759269591, -86.9158779007, 35.7759269591], "geometry": {"coordinates": [-86.9158779007, 35.7759269591], "type": "Point"}, "id": "82484", "properties": {"Current Price": "$3.99", "Location": "Spring Hill, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.989145904, 35.9381649589, -83.989145904, 35.9381649589], "geometry": {"coordinates": [-83.989145904, 35.9381649589], "type": "Point"}, "id": "82582", "properties": {"Current Price": "$3.99", "Location": "Knoxville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.2667429014, 34.2981199608, -86.2667429014, 34.2981199608], "geometry": {"coordinates": [-86.2667429014, 34.2981199608], "type": "Point"}, "id": "82777", "properties": {"Current Price": "$3.99", "Location": "Guntersville, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.3153999048, 36.2237999586, -83.3153999048, 36.2237999586], "geometry": {"coordinates": [-83.3153999048, 36.2237999586], "type": "Point"}, "id": "86713", "properties": {"Current Price": "$3.99", "Location": "Morristown, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.9681739006, 34.7898289602, -86.9681739006, 34.7898289602], "geometry": {"coordinates": [-86.9681739006, 34.7898289602], "type": "Point"}, "id": "87205", "properties": {"Current Price": "$3.99", "Location": "Athens, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.4852278989, 44.1751289495, -88.4852278989, 44.1751289495], "geometry": {"coordinates": [-88.4852278989, 44.1751289495], "type": "Point"}, "id": "88279", "properties": {"Current Price": "$3.99", "Location": "Neenah, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.3175148991, 42.849816951, -88.3175148991, 42.849816951], "geometry": {"coordinates": [-88.3175148991, 42.849816951], "type": "Point"}, "id": "93090", "properties": {"Current Price": "$3.99", "Location": "Mukwonago, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7120829009, 36.2620429586, -86.7120829009, 36.2620429586], "geometry": {"coordinates": [-86.7120829009, 36.2620429586], "type": "Point"}, "id": "97894", "properties": {"Current Price": "$3.99", "Location": "Madison, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.0398999028, 35.1030999599, -85.0398999028, 35.1030999599], "geometry": {"coordinates": [-85.0398999028, 35.1030999599], "type": "Point"}, "id": "98284", "properties": {"Current Price": "$3.99", "Location": "Ooltewah, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.5718819045, 35.876648959, -83.5718819045, 35.876648959], "geometry": {"coordinates": [-83.5718819045, 35.876648959], "type": "Point"}, "id": "102532", "properties": {"Current Price": "$3.99", "Location": "Sevierville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9935938995, 43.1780099507, -87.9935938995, 43.1780099507], "geometry": {"coordinates": [-87.9935938995, 43.1780099507], "type": "Point"}, "id": "104485", "properties": {"Current Price": "$3.99", "Location": "Brown Deer, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.2367289015, 35.3894769596, -86.2367289015, 35.3894769596], "geometry": {"coordinates": [-86.2367289015, 35.3894769596], "type": "Point"}, "id": "105478", "properties": {"Current Price": "$3.99", "Location": "Tullahoma, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.414435899, 42.5914789513, -88.414435899, 42.5914789513], "geometry": {"coordinates": [-88.414435899, 42.5914789513], "type": "Point"}, "id": "107023", "properties": {"Current Price": "$3.99", "Location": "Lake Geneva, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.4693048978, 43.5712039502, -89.4693048978, 43.5712039502], "geometry": {"coordinates": [-89.4693048978, 43.5712039502], "type": "Point"}, "id": "108868", "properties": {"Current Price": "$3.99", "Location": "Portage, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.8688789042, 36.0348639588, -83.8688789042, 36.0348639588], "geometry": {"coordinates": [-83.8688789042, 36.0348639588], "type": "Point"}, "id": "109662", "properties": {"Current Price": "$3.99", "Location": "Knoxville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.9183759007, 36.0751559588, -86.9183759007, 36.0751559588], "geometry": {"coordinates": [-86.9183759007, 36.0751559588], "type": "Point"}, "id": "109760", "properties": {"Current Price": "$3.99", "Location": "Nashville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.2631019037, 35.8112719591, -84.2631019037, 35.8112719591], "geometry": {"coordinates": [-84.2631019037, 35.8112719591], "type": "Point"}, "id": "111819", "properties": {"Current Price": "$3.99", "Location": "Lenoir City, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.8770978996, 42.6045959513, -87.8770978996, 42.6045959513], "geometry": {"coordinates": [-87.8770978996, 42.6045959513], "type": "Point"}, "id": "113766", "properties": {"Current Price": "$3.99", "Location": "Kenosha, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.2585019003, 33.8464849613, -87.2585019003, 33.8464849613], "geometry": {"coordinates": [-87.2585019003, 33.8464849613], "type": "Point"}, "id": "115240", "properties": {"Current Price": "$3.99", "Location": "Jasper, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.3838559013, 35.905031959, -86.3838559013, 35.905031959], "geometry": {"coordinates": [-86.3838559013, 35.905031959], "type": "Point"}, "id": "116224", "properties": {"Current Price": "$3.99", "Location": "Murfreesboro, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0824998994, 44.4500999492, -88.0824998994, 44.4500999492], "geometry": {"coordinates": [-88.0824998994, 44.4500999492], "type": "Point"}, "id": "122971", "properties": {"Current Price": "$3.99", "Location": "De Pere, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.3252382, 35.0982656, -85.3252382, 35.0982656], "geometry": {"coordinates": [-85.3252382, 35.0982656], "type": "Point"}, "id": "124055", "properties": {"Current Price": "$3.99", "Location": "Chattanooga, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.4954439012, 34.8167219602, -86.4954439012, 34.8167219602], "geometry": {"coordinates": [-86.4954439012, 34.8167219602], "type": "Point"}, "id": "124251", "properties": {"Current Price": "$3.99", "Location": "Huntsville, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.250692898, 42.922306951, -89.250692898, 42.922306951], "geometry": {"coordinates": [-89.250692898, 42.922306951], "type": "Point"}, "id": "126289", "properties": {"Current Price": "$3.99", "Location": "Stoughton, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7039049009, 33.4257029618, -86.7039049009, 33.4257029618], "geometry": {"coordinates": [-86.7039049009, 33.4257029618], "type": "Point"}, "id": "132259", "properties": {"Current Price": "$3.99", "Location": "Birmingham, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.359621899, 44.2408509494, -88.359621899, 44.2408509494], "geometry": {"coordinates": [-88.359621899, 44.2408509494], "type": "Point"}, "id": "134392", "properties": {"Current Price": "$3.99", "Location": "Appleton, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8155999008, 33.3591999619, -86.8155999008, 33.3591999619], "geometry": {"coordinates": [-86.8155999008, 33.3591999619], "type": "Point"}, "id": "138573", "properties": {"Current Price": "$3.99", "Location": "Hoover, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.2642848991, 42.9920329509, -88.2642848991, 42.9920329509], "geometry": {"coordinates": [-88.2642848991, 42.9920329509], "type": "Point"}, "id": "141581", "properties": {"Current Price": "$3.99", "Location": "Waukesha, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.4064639001, 36.5722859582, -87.4064639001, 36.5722859582], "geometry": {"coordinates": [-87.4064639001, 36.5722859582], "type": "Point"}, "id": "141883", "properties": {"Current Price": "$3.99", "Location": "Clarksville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.5896299011, 34.7065599603, -86.5896299011, 34.7065599603], "geometry": {"coordinates": [-86.5896299011, 34.7065599603], "type": "Point"}, "id": "141981", "properties": {"Current Price": "$3.99", "Location": "Huntsville, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0698428994, 44.4830219492, -88.0698428994, 44.4830219492], "geometry": {"coordinates": [-88.0698428994, 44.4830219492], "type": "Point"}, "id": "143618", "properties": {"Current Price": "$3.99", "Location": "Ashwaubenon, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9191388995, 42.901543951, -87.9191388995, 42.901543951], "geometry": {"coordinates": [-87.9191388995, 42.901543951], "type": "Point"}, "id": "143715", "properties": {"Current Price": "$3.99", "Location": "Oak Creek, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.7492999009, 36.0097999589, -86.7492999009, 36.0097999589], "geometry": {"coordinates": [-86.7492999009, 36.0097999589], "type": "Point"}, "id": "144694", "properties": {"Current Price": "$3.99", "Location": "Brentwood, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0704998994, 43.1651999507, -88.0704998994, 43.1651999507], "geometry": {"coordinates": [-88.0704998994, 43.1651999507], "type": "Point"}, "id": "146437", "properties": {"Current Price": "$3.99", "Location": "Menomonee Fall, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.0098569006, 34.5639159605, -87.0098569006, 34.5639159605], "geometry": {"coordinates": [-87.0098569006, 34.5639159605], "type": "Point"}, "id": "147419", "properties": {"Current Price": "$3.99", "Location": "Decatur, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.625034901, 33.6100249616, -86.625034901, 33.6100249616], "geometry": {"coordinates": [-86.625034901, 33.6100249616], "type": "Point"}, "id": "147517", "properties": {"Current Price": "$3.99", "Location": "Birmingham, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9131848995, 43.1408709507, -87.9131848995, 43.1408709507], "geometry": {"coordinates": [-87.9131848995, 43.1408709507], "type": "Point"}, "id": "147701", "properties": {"Current Price": "$3.99", "Location": "Glendale, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.4012832642, 35.7789916992, -86.4012832642, 35.7789916992], "geometry": {"coordinates": [-86.4012832642, 35.7789916992], "type": "Point"}, "id": "150438", "properties": {"Current Price": "$3.99", "Location": "Murfreesboro, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.599825901, 36.3209359585, -86.599825901, 36.3209359585], "geometry": {"coordinates": [-86.599825901, 36.3209359585], "type": "Point"}, "id": "152982", "properties": {"Current Price": "$3.99", "Location": "Hendersonville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-85.1520849, 35.0316601, -85.1520849, 35.0316601], "geometry": {"coordinates": [-85.1520849, 35.0316601], "type": "Point"}, "id": "154255", "properties": {"Current Price": "$3.99", "Location": "Chattanooga, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9674118995, 43.0106069509, -87.9674118995, 43.0106069509], "geometry": {"coordinates": [-87.9674118995, 43.0106069509], "type": "Point"}, "id": "155312", "properties": {"Current Price": "$3.99", "Location": "West Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.415582899, 44.2860439494, -88.415582899, 44.2860439494], "geometry": {"coordinates": [-88.415582899, 44.2860439494], "type": "Point"}, "id": "159011", "properties": {"Current Price": "$3.99", "Location": "Appleton, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.1554336548, 35.8807182312, -84.1554336548, 35.8807182312], "geometry": {"coordinates": [-84.1554336548, 35.8807182312], "type": "Point"}, "id": "159213", "properties": {"Current Price": "$3.99", "Location": "Farragut, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.850510903, 35.2055159598, -84.850510903, 35.2055159598], "geometry": {"coordinates": [-84.850510903, 35.2055159598], "type": "Point"}, "id": "159311", "properties": {"Current Price": "$3.99", "Location": "Cleveland, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8141799008, 35.9659649589, -86.8141799008, 35.9659649589], "geometry": {"coordinates": [-86.8141799008, 35.9659649589], "type": "Point"}, "id": "161547", "properties": {"Current Price": "$3.99", "Location": "Brentwood, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9456962, 40.6307019, -73.9456962, 40.6307019], "geometry": {"coordinates": [-73.9456962, 40.6307019], "type": "Point"}, "id": "162894", "properties": {"Current Price": "$4.99", "Location": "Brooklyn, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-73.791809, 40.7053608, -73.791809, 40.7053608], "geometry": {"coordinates": [-73.791809, 40.7053608], "type": "Point"}, "id": "168238", "properties": {"Current Price": "$4.99", "Location": "Jamaica, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.8189926147, 33.7141799927, -85.8189926147, 33.7141799927], "geometry": {"coordinates": [-85.8189926147, 33.7141799927], "type": "Point"}, "id": "174673", "properties": {"Current Price": "$3.99", "Location": "Anniston, AL", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.6212581, 35.451196, -84.6212581, 35.451196], "geometry": {"coordinates": [-84.6212581, 35.451196], "type": "Point"}, "id": "177796", "properties": {"Current Price": "$3.99", "Location": "Athens, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.4855059, 35.8430794, -86.4855059, 35.8430794], "geometry": {"coordinates": [-86.4855059, 35.8430794], "type": "Point"}, "id": "178283", "properties": {"Current Price": "$3.99", "Location": "Murfreesboro, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.8589977, 40.8230291, -73.8589977, 40.8230291], "geometry": {"coordinates": [-73.8589977, 40.8230291], "type": "Point"}, "id": "180124", "properties": {"Current Price": "$4.99", "Location": "Bronx, NY", "Price": 4.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.5817933, 44.9045183, -89.5817933, 44.9045183], "geometry": {"coordinates": [-89.5817933, 44.9045183], "type": "Point"}, "id": "180413", "properties": {"Current Price": "$3.99", "Location": "Weston, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.6514368976, 42.6033079513, -89.6514368976, 42.6033079513], "geometry": {"coordinates": [-89.6514368976, 42.6033079513], "type": "Point"}, "id": "183726", "properties": {"Current Price": "$3.99", "Location": "Monroe, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0735092163, 44.591178894, -88.0735092163, 44.591178894], "geometry": {"coordinates": [-88.0735092163, 44.591178894], "type": "Point"}, "id": "183823", "properties": {"Current Price": "$3.99", "Location": "Suamico, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-90.700457, 42.4909396, -90.700457, 42.4909396], "geometry": {"coordinates": [-90.700457, 42.4909396], "type": "Point"}, "id": "185387", "properties": {"Current Price": "$3.99", "Location": "Dubuque, IA", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.8655395508, 35.1287689209, -84.8655395508, 35.1287689209], "geometry": {"coordinates": [-84.8655395508, 35.1287689209], "type": "Point"}, "id": "186174", "properties": {"Current Price": "$3.99", "Location": "Cleveland, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-90.4503908966, 42.7331639512, -90.4503908966, 42.7331639512], "geometry": {"coordinates": [-90.4503908966, 42.7331639512], "type": "Point"}, "id": "187133", "properties": {"Current Price": "$3.99", "Location": "Platteville, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-90.8343619, 43.9390603, -90.8343619, 43.9390603], "geometry": {"coordinates": [-90.8343619, 43.9390603], "type": "Point"}, "id": "187424", "properties": {"Current Price": "$3.99", "Location": "Sparta, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.4427359012, 36.9525639578, -86.4427359012, 36.9525639578], "geometry": {"coordinates": [-86.4427359012, 36.9525639578], "type": "Point"}, "id": "191898", "properties": {"Current Price": "$3.99", "Location": "Bowling Green, KY", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.433254899, 44.2621349494, -88.433254899, 44.2621349494], "geometry": {"coordinates": [-88.433254899, 44.2621349494], "type": "Point"}, "id": "193150", "properties": {"Current Price": "$3.99", "Location": "Appleton, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.5085829011, 35.9710989589, -86.5085829011, 35.9710989589], "geometry": {"coordinates": [-86.5085829011, 35.9710989589], "type": "Point"}, "id": "193258", "properties": {"Current Price": "$3.99", "Location": "Smyrna, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.0618268994, 44.5262469491, -88.0618268994, 44.5262469491], "geometry": {"coordinates": [-88.0618268994, 44.5262469491], "type": "Point"}, "id": "193636", "properties": {"Current Price": "$3.99", "Location": "Green Bay, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.5919559011, 36.2148459586, -86.5919559011, 36.2148459586], "geometry": {"coordinates": [-86.5919559011, 36.2148459586], "type": "Point"}, "id": "194036", "properties": {"Current Price": "$3.99", "Location": "Hermitage, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-91.1227128959, 43.0248609508, -91.1227128959, 43.0248609508], "geometry": {"coordinates": [-91.1227128959, 43.0248609508], "type": "Point"}, "id": "194706", "properties": {"Current Price": "$3.99", "Location": "Prairie du Chien, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.4848869, 36.8450729579, -87.4848869, 36.8450729579], "geometry": {"coordinates": [-87.4848869, 36.8450729579], "type": "Point"}, "id": "195202", "properties": {"Current Price": "$3.99", "Location": "Hopkinsville, KY", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.650519901, 36.0887569588, -86.650519901, 36.0887569588], "geometry": {"coordinates": [-86.650519901, 36.0887569588], "type": "Point"}, "id": "195494", "properties": {"Current Price": "$3.99", "Location": "Nashville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9577338995, 43.0161829508, -87.9577338995, 43.0161829508], "geometry": {"coordinates": [-87.9577338995, 43.0161829508], "type": "Point"}, "id": "195775", "properties": {"Current Price": "$3.99", "Location": "Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.1813578992, 43.4061449504, -88.1813578992, 43.4061449504], "geometry": {"coordinates": [-88.1813578992, 43.4061449504], "type": "Point"}, "id": "196648", "properties": {"Current Price": "$3.99", "Location": "West Bend, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.5792128988, 43.9972419497, -88.5792128988, 43.9972419497], "geometry": {"coordinates": [-88.5792128988, 43.9972419497], "type": "Point"}, "id": "196842", "properties": {"Current Price": "$3.99", "Location": "Oshkosh, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.5067448977, 44.5236749491, -89.5067448977, 44.5236749491], "geometry": {"coordinates": [-89.5067448977, 44.5236749491], "type": "Point"}, "id": "197036", "properties": {"Current Price": "$3.99", "Location": "Stevens Point, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.7453738997, 43.74753495, -87.7453738997, 43.74753495], "geometry": {"coordinates": [-87.7453738997, 43.74753495], "type": "Point"}, "id": "198588", "properties": {"Current Price": "$3.99", "Location": "Sheboygan, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.8854878996, 42.5669579514, -87.8854878996, 42.5669579514], "geometry": {"coordinates": [-87.8854878996, 42.5669579514], "type": "Point"}, "id": "198685", "properties": {"Current Price": "$3.99", "Location": "Kenosha, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.8006788997, 42.7578189511, -87.8006788997, 42.7578189511], "geometry": {"coordinates": [-87.8006788997, 42.7578189511], "type": "Point"}, "id": "201013", "properties": {"Current Price": "$3.99", "Location": "Racine, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.9849398983, 42.5232629514, -88.9849398983, 42.5232629514], "geometry": {"coordinates": [-88.9849398983, 42.5232629514], "type": "Point"}, "id": "201110", "properties": {"Current Price": "$3.99", "Location": "Beloit, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9960128994, 43.0901759508, -87.9960128994, 43.0901759508], "geometry": {"coordinates": [-87.9960128994, 43.0901759508], "type": "Point"}, "id": "201692", "properties": {"Current Price": "$3.99", "Location": "Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.4830828989, 43.77789095, -88.4830828989, 43.77789095], "geometry": {"coordinates": [-88.4830828989, 43.77789095], "type": "Point"}, "id": "203147", "properties": {"Current Price": "$3.99", "Location": "Fond du Lac, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.6488053, 44.9172665, -89.6488053, 44.9172665], "geometry": {"coordinates": [-89.6488053, 44.9172665], "type": "Point"}, "id": "203244", "properties": {"Current Price": "$3.99", "Location": "Wausau, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9493968995, 42.922135951, -87.9493968995, 42.922135951], "geometry": {"coordinates": [-87.9493968995, 42.922135951], "type": "Point"}, "id": "204702", "properties": {"Current Price": "$3.99", "Location": "Oak Creek, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.8169148974, 44.3813329493, -89.8169148974, 44.3813329493], "geometry": {"coordinates": [-89.8169148974, 44.3813329493], "type": "Point"}, "id": "205480", "properties": {"Current Price": "$3.99", "Location": "Wisconsin Rapids, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9083058996, 43.0890679508, -87.9083058996, 43.0890679508], "geometry": {"coordinates": [-87.9083058996, 43.0890679508], "type": "Point"}, "id": "206647", "properties": {"Current Price": "$3.99", "Location": "Milwaukee, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.3165468979, 43.1208659507, -89.3165468979, 43.1208659507], "geometry": {"coordinates": [-89.3165468979, 43.1208659507], "type": "Point"}, "id": "207229", "properties": {"Current Price": "$3.99", "Location": "Madison, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.6596908998, 45.0727889485, -87.6596908998, 45.0727889485], "geometry": {"coordinates": [-87.6596908998, 45.0727889485], "type": "Point"}, "id": "207424", "properties": {"Current Price": "$3.99", "Location": "Marinette, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.7686498974, 43.4756469503, -89.7686498974, 43.4756469503], "geometry": {"coordinates": [-89.7686498974, 43.4756469503], "type": "Point"}, "id": "207812", "properties": {"Current Price": "$3.99", "Location": "Baraboo, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.9607818995, 44.4872419492, -87.9607818995, 44.4872419492], "geometry": {"coordinates": [-87.9607818995, 44.4872419492], "type": "Point"}, "id": "208688", "properties": {"Current Price": "$3.99", "Location": "Green Bay, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-90.7425008963, 42.5129249514, -90.7425008963, 42.5129249514], "geometry": {"coordinates": [-90.7425008963, 42.5129249514], "type": "Point"}, "id": "209076", "properties": {"Current Price": "$3.99", "Location": "Dubuque, IA", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.5261688977, 43.0557679508, -89.5261688977, 43.0557679508], "geometry": {"coordinates": [-89.5261688977, 43.0557679508], "type": "Point"}, "id": "209661", "properties": {"Current Price": "$3.99", "Location": "Madison, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-90.5054118966, 44.0154649497, -90.5054118966, 44.0154649497], "geometry": {"coordinates": [-90.5054118966, 44.0154649497], "type": "Point"}, "id": "214616", "properties": {"Current Price": "$3.99", "Location": "Tomah, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.2018148992, 43.0136399508, -88.2018148992, 43.0136399508], "geometry": {"coordinates": [-88.2018148992, 43.0136399508], "type": "Point"}, "id": "214713", "properties": {"Current Price": "$3.99", "Location": "Waukesha, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8735759007, 36.1453429587, -86.8735759007, 36.1453429587], "geometry": {"coordinates": [-86.8735759007, 36.1453429587], "type": "Point"}, "id": "215210", "properties": {"Current Price": "$3.99", "Location": "Nashville, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.7314958986, 43.1786819507, -88.7314958986, 43.1786819507], "geometry": {"coordinates": [-88.7314958986, 43.1786819507], "type": "Point"}, "id": "215880", "properties": {"Current Price": "$3.99", "Location": "Watertown, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.3902668979, 45.6332029479, -89.3902668979, 45.6332029479], "geometry": {"coordinates": [-89.3902668979, 45.6332029479], "type": "Point"}, "id": "216172", "properties": {"Current Price": "$3.99", "Location": "Rhinelander, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.8218658985, 43.4782859503, -88.8218658985, 43.4782859503], "geometry": {"coordinates": [-88.8218658985, 43.4782859503], "type": "Point"}, "id": "217338", "properties": {"Current Price": "$3.99", "Location": "Beaver Dam, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.5797838988, 44.7819649488, -88.5797838988, 44.7819649488], "geometry": {"coordinates": [-88.5797838988, 44.7819649488], "type": "Point"}, "id": "221909", "properties": {"Current Price": "$3.99", "Location": "Shawano, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.8839829007, 36.4864069583, -86.8839829007, 36.4864069583], "geometry": {"coordinates": [-86.8839829007, 36.4864069583], "type": "Point"}, "id": "223184", "properties": {"Current Price": "$3.99", "Location": "Springfield, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.0478649005, 35.5906489593, -87.0478649005, 35.5906489593], "geometry": {"coordinates": [-87.0478649005, 35.5906489593], "type": "Point"}, "id": "223282", "properties": {"Current Price": "$3.99", "Location": "Columbia, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.1097298982, 44.3568119493, -89.1097298982, 44.3568119493], "geometry": {"coordinates": [-89.1097298982, 44.3568119493], "type": "Point"}, "id": "223855", "properties": {"Current Price": "$3.99", "Location": "Waupaca, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.4742759012, 36.3772129584, -86.4742759012, 36.3772129584], "geometry": {"coordinates": [-86.4742759012, 36.3772129584], "type": "Point"}, "id": "227576", "properties": {"Current Price": "$3.99", "Location": "Gallatin, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-88.1079548993, 42.919076951, -88.1079548993, 42.919076951], "geometry": {"coordinates": [-88.1079548993, 42.919076951], "type": "Point"}, "id": "228439", "properties": {"Current Price": "$3.99", "Location": "Muskego, WI", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-87.3629089002, 36.0489719588, -87.3629089002, 36.0489719588], "geometry": {"coordinates": [-87.3629089002, 36.0489719588], "type": "Point"}, "id": "228547", "properties": {"Current Price": "$3.99", "Location": "Dickson, TN", "Price": 3.99, "Product": "Bake Shop Sliced Loaf Cake Banana Nut or Lemon", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_a28ea5d37c108d7e56aa3e89437f913a.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_a28ea5d37c108d7e56aa3e89437f913a.addTo(map_6f2815a8c30582fb25e491732597fe97);
+        
+</script>
+</html>

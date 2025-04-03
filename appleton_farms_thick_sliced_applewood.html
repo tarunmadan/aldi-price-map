@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Appleton Farms Thick Sliced Applewood</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Appleton Farms Thick Sliced Applewood cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_77f8e49ab60559868025709b50b079bb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>6.29</li>
+                <li><span style='background:#ff8c00'></span>8.39</li>
+                <li><span style='background:#b22222'></span>9.35</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="appleton_farms_thick_cut_bacon">Appleton Farms Thick Cut Bacon</option>
+
+                
+                <option value="appleton_farms_thick_sliced_applewood" selected>Appleton Farms Thick Sliced Applewood</option>
+
+                
+                <option value="bake_shop_banana_nut_or_chocolate_chip_muffins">Bake Shop Banana Nut or Chocolate Chip Muffins</option>
+
+                
+                <option value="bake_shop_mini_or_large_croissants">Bake Shop Mini or Large Croissants</option>
+
+                
+                <option value="bake_shop_sliced_loaf_cake_banana_nut_or_lemon">Bake Shop Sliced Loaf Cake Banana Nut or Lemon</option>
+
+                
+                <option value="cucumbers">Cucumbers</option>
+
+                
+                <option value="driscoll's_raspberries">Driscoll's Raspberries</option>
+
+                
+                <option value="emporium_selection_specialty_shreds">Emporium Selection Specialty Shreds</option>
+
+                
+                <option value="friendly_farms_half_&_half">Friendly Farms Half & Half</option>
+
+                
+                <option value="green_peppers">Green Peppers</option>
+
+                
+                <option value="happy_farms_whipped_cream_cheese">Happy Farms Whipped Cream Cheese</option>
+
+                
+                <option value="l'oven_fresh_artisanal_bread">L'oven Fresh Artisanal Bread</option>
+
+                
+                <option value="l'oven_fresh_plain_bagels">L'oven Fresh Plain Bagels</option>
+
+                
+                <option value="mandies_california_mandarins">Mandies California Mandarins</option>
+
+                
+                <option value="mexican_calabaza_squash">Mexican Calabaza Squash</option>
+
+                
+                <option value="millville_buttermilk_pancake_mix">Millville Buttermilk Pancake Mix</option>
+
+                
+                <option value="nature's_nectar_orange_juice_not_from_concentrate_no_pulp">Nature's Nectar Orange Juice Not from Concentrate No Pulp</option>
+
+                
+                <option value="nature's_nectar_pineapple_juice">Nature's Nectar Pineapple Juice</option>
+
+                
+                <option value="organic_baby_peeled_carrots">Organic Baby Peeled Carrots</option>
+
+                
+                <option value="simply_nature_organic_blueberries_or_strawberries">Simply Nature Organic Blueberries or Strawberries</option>
+
+                
+                <option value="simply_nature_unsweetened_applesauce">Simply Nature Unsweetened Applesauce</option>
+
+                
+                <option value="specially_selected_autumncrisp_grapes">Specially Selected Autumncrisp Grapes</option>
+
+                
+                <option value="whole_white_mushrooms">Whole White Mushrooms</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Apr 2<sup>nd</sup> - Apr 8<sup>th</sup>. New products and next update on Apr 9<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_77f8e49ab60559868025709b50b079bb" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Apr 2<sup>nd</sup>, price maps are available for the following products - 
+                <a href="appleton_farms_thick_cut_bacon.html">Appleton Farms Thick Cut Bacon</a>, 
+                <a href="appleton_farms_thick_sliced_applewood.html">Appleton Farms Thick Sliced Applewood</a>, 
+                <a href="bake_shop_banana_nut_or_chocolate_chip_muffins.html">Bake Shop Banana Nut or Chocolate Chip Muffins</a>, 
+                <a href="bake_shop_mini_or_large_croissants.html">Bake Shop Mini or Large Croissants</a>, 
+                <a href="bake_shop_sliced_loaf_cake_banana_nut_or_lemon.html">Bake Shop Sliced Loaf Cake Banana Nut or Lemon</a>, 
+                <a href="cucumbers.html">Cucumbers</a>, 
+                <a href="driscoll's_raspberries.html">Driscoll's Raspberries</a>, 
+                <a href="emporium_selection_specialty_shreds.html">Emporium Selection Specialty Shreds</a>, 
+                <a href="friendly_farms_half_&_half.html">Friendly Farms Half & Half</a>, 
+                <a href="green_peppers.html">Green Peppers</a>, 
+                <a href="happy_farms_whipped_cream_cheese.html">Happy Farms Whipped Cream Cheese</a>, 
+                <a href="l'oven_fresh_artisanal_bread.html">L'oven Fresh Artisanal Bread</a>, 
+                <a href="l'oven_fresh_plain_bagels.html">L'oven Fresh Plain Bagels</a>, 
+                <a href="mandies_california_mandarins.html">Mandies California Mandarins</a>, 
+                <a href="mexican_calabaza_squash.html">Mexican Calabaza Squash</a>, 
+                <a href="millville_buttermilk_pancake_mix.html">Millville Buttermilk Pancake Mix</a>, 
+                <a href="nature's_nectar_orange_juice_not_from_concentrate_no_pulp.html">Nature's Nectar Orange Juice Not from Concentrate No Pulp</a>, 
+                <a href="nature's_nectar_pineapple_juice.html">Nature's Nectar Pineapple Juice</a>, 
+                <a href="organic_baby_peeled_carrots.html">Organic Baby Peeled Carrots</a>, 
+                <a href="simply_nature_organic_blueberries_or_strawberries.html">Simply Nature Organic Blueberries or Strawberries</a>, 
+                <a href="simply_nature_unsweetened_applesauce.html">Simply Nature Unsweetened Applesauce</a>, 
+                <a href="specially_selected_autumncrisp_grapes.html">Specially Selected Autumncrisp Grapes</a>, 
+                <a href="whole_white_mushrooms.html">Whole White Mushrooms</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_77f8e49ab60559868025709b50b079bb = L.map(
+                "map_77f8e49ab60559868025709b50b079bb",
+                {
+                    center: [42.09084222680001, -72.69894891695],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_77f8e49ab60559868025709b50b079bb);
+
+            
+
+        
+    
+            var tile_layer_e98f6a73bf600e90bd21c61dd915d365 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e98f6a73bf600e90bd21c61dd915d365.addTo(map_77f8e49ab60559868025709b50b079bb);
+        
+    
+            map_77f8e49ab60559868025709b50b079bb.fitBounds(
+                [[40.5915689536, -74.6829599147], [43.5901155, -70.7149379192]],
+                {}
+            );
+        
+    
+        function geo_json_387cf0a69404bf0674bf33fe8d6d51d3_styler(feature) {
+            switch(feature.id) {
+                case "49288": case "59262": case "63319": case "70176": case "162890": case "168234": case "180120": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                case "50174": case "51732": case "56131": case "58769": case "59565": case "65877": case "66460": case "70091": case "84942": case "151017": case "155710": case "159505": case "169801": case "173996": case "174964": case "178185": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#ff8c00", "fillColor": "#ff8c00", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_387cf0a69404bf0674bf33fe8d6d51d3_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_387cf0a69404bf0674bf33fe8d6d51d3_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_387cf0a69404bf0674bf33fe8d6d51d3_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_387cf0a69404bf0674bf33fe8d6d51d3_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_387cf0a69404bf0674bf33fe8d6d51d3.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_387cf0a69404bf0674bf33fe8d6d51d3_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_387cf0a69404bf0674bf33fe8d6d51d3 = L.geoJson(null, {
+                onEachFeature: geo_json_387cf0a69404bf0674bf33fe8d6d51d3_onEachFeature,
+            
+                style: geo_json_387cf0a69404bf0674bf33fe8d6d51d3_styler,
+                pointToLayer: geo_json_387cf0a69404bf0674bf33fe8d6d51d3_pointToLayer,
+        });
+
+        function geo_json_387cf0a69404bf0674bf33fe8d6d51d3_add (data) {
+            geo_json_387cf0a69404bf0674bf33fe8d6d51d3
+                .addData(data);
+        }
+            geo_json_387cf0a69404bf0674bf33fe8d6d51d3_add({"bbox": [-74.6829599147, 40.5915689536, -70.7149379192, 43.5901155], "features": [{"bbox": [-74.6829599147, 41.6538149524, -74.6829599147, 41.6538149524], "geometry": {"coordinates": [-74.6829599147, 41.6538149524], "type": "Point"}, "id": "876", "properties": {"Current Price": "$8.39", "Location": "Monticello, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.8683509167, 41.3204619528, -72.8683509167, 41.3204619528], "geometry": {"coordinates": [-72.8683509167, 41.3204619528], "type": "Point"}, "id": "18683", "properties": {"Current Price": "$8.39", "Location": "New Haven, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.7122969169, 41.6791479524, -72.7122969169, 41.6791479524], "geometry": {"coordinates": [-72.7122969169, 41.6791479524], "type": "Point"}, "id": "18780", "properties": {"Current Price": "$8.39", "Location": "Newington, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.608764917, 41.7644089523, -72.608764917, 41.7644089523], "geometry": {"coordinates": [-72.608764917, 41.7644089523], "type": "Point"}, "id": "20229", "properties": {"Current Price": "$8.39", "Location": "East Hartford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.4882769172, 41.8425429522, -72.4882769172, 41.8425429522], "geometry": {"coordinates": [-72.4882769172, 41.8425429522], "type": "Point"}, "id": "21103", "properties": {"Current Price": "$8.39", "Location": "Vernon, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4496549184, 41.7531299523, -71.4496549184, 41.7531299523], "geometry": {"coordinates": [-71.4496549184, 41.7531299523], "type": "Point"}, "id": "21590", "properties": {"Current Price": "$8.39", "Location": "Cranston, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.7909229168, 41.6966769524, -72.7909229168, 41.6966769524], "geometry": {"coordinates": [-72.7909229168, 41.6966769524], "type": "Point"}, "id": "21687", "properties": {"Current Price": "$8.39", "Location": "New Britain, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.1791519175, 41.7390689523, -72.1791519175, 41.7390689523], "geometry": {"coordinates": [-72.1791519175, 41.7390689523], "type": "Point"}, "id": "24516", "properties": {"Current Price": "$8.39", "Location": "North Windham, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.674318917, 41.5546019525, -72.674318917, 41.5546019525], "geometry": {"coordinates": [-72.674318917, 41.5546019525], "type": "Point"}, "id": "24613", "properties": {"Current Price": "$8.39", "Location": "Middletown, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.5004759183, 41.6844299524, -71.5004759183, 41.6844299524], "geometry": {"coordinates": [-71.5004759183, 41.6844299524], "type": "Point"}, "id": "24710", "properties": {"Current Price": "$8.39", "Location": "Warwick, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.649627917, 41.6758979524, -72.649627917, 41.6758979524], "geometry": {"coordinates": [-72.649627917, 41.6758979524], "type": "Point"}, "id": "29911", "properties": {"Current Price": "$8.39", "Location": "Rocky Hill, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4286199184, 41.8362939522, -71.4286199184, 41.8362939522], "geometry": {"coordinates": [-71.4286199184, 41.8362939522], "type": "Point"}, "id": "30008", "properties": {"Current Price": "$8.39", "Location": "Providence, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.9779869166, 41.2682399528, -72.9779869166, 41.2682399528], "geometry": {"coordinates": [-72.9779869166, 41.2682399528], "type": "Point"}, "id": "30105", "properties": {"Current Price": "$8.39", "Location": "West Haven, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.0745612, 41.2218377, -73.0745612, 41.2218377], "geometry": {"coordinates": [-73.0745612, 41.2218377], "type": "Point"}, "id": "30202", "properties": {"Current Price": "$8.39", "Location": "Milford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.7194329169, 41.7393269523, -72.7194329169, 41.7393269523], "geometry": {"coordinates": [-72.7194329169, 41.7393269523], "type": "Point"}, "id": "30299", "properties": {"Current Price": "$8.39", "Location": "West Hartford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.9972799166, 41.5393129525, -72.9972799166, 41.5393129525], "geometry": {"coordinates": [-72.9972799166, 41.5393129525], "type": "Point"}, "id": "30493", "properties": {"Current Price": "$8.39", "Location": "Waterbury, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.3542489185, 41.8563999522, -71.3542489185, 41.8563999522], "geometry": {"coordinates": [-71.3542489185, 41.8563999522], "type": "Point"}, "id": "30687", "properties": {"Current Price": "$8.39", "Location": "Rumford, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4477469184, 41.7992639522, -71.4477469184, 41.7992639522], "geometry": {"coordinates": [-71.4477469184, 41.7992639522], "type": "Point"}, "id": "33688", "properties": {"Current Price": "$8.39", "Location": "Cranston, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.0466259188, 41.9047429521, -71.0466259188, 41.9047429521], "geometry": {"coordinates": [-71.0466259188, 41.9047429521], "type": "Point"}, "id": "38763", "properties": {"Current Price": "$8.39", "Location": "Raynham, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.8747179179, 41.8403919522, -71.8747179179, 41.8403919522], "geometry": {"coordinates": [-71.8747179179, 41.8403919522], "type": "Point"}, "id": "41907", "properties": {"Current Price": "$8.39", "Location": "Dayville, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4967779183, 42.1508149518, -71.4967779183, 42.1508149518], "geometry": {"coordinates": [-71.4967779183, 42.1508149518], "type": "Point"}, "id": "42004", "properties": {"Current Price": "$8.39", "Location": "Milford, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.4160856, 41.5571851, -73.4160856, 41.5571851], "geometry": {"coordinates": [-73.4160856, 41.5571851], "type": "Point"}, "id": "42391", "properties": {"Current Price": "$8.39", "Location": "New Milford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.9934219177, 41.5855909525, -71.9934219177, 41.5855909525], "geometry": {"coordinates": [-71.9934219177, 41.5855909525], "type": "Point"}, "id": "42779", "properties": {"Current Price": "$8.39", "Location": "Lisbon, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.5011149172, 42.1406119518, -72.5011149172, 42.1406119518], "geometry": {"coordinates": [-72.5011149172, 42.1406119518], "type": "Point"}, "id": "42876", "properties": {"Current Price": "$8.39", "Location": "Springfield, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.5818969171, 41.990129952, -72.5818969171, 41.990129952], "geometry": {"coordinates": [-72.5818969171, 41.990129952], "type": "Point"}, "id": "44332", "properties": {"Current Price": "$8.39", "Location": "Enfield, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.5522249171, 42.3573469516, -72.5522249171, 42.3573469516], "geometry": {"coordinates": [-72.5522249171, 42.3573469516], "type": "Point"}, "id": "44429", "properties": {"Current Price": "$8.39", "Location": "Hadley, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.774015918, 42.2951919517, -71.774015918, 42.2951919517], "geometry": {"coordinates": [-71.774015918, 42.2951919517], "type": "Point"}, "id": "49203", "properties": {"Current Price": "$8.39", "Location": "Worcester, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.8635839156, 40.7326549535, -73.8635839156, 40.7326549535], "geometry": {"coordinates": [-73.8635839156, 40.7326549535], "type": "Point"}, "id": "49288", "properties": {"Current Price": "$9.35", "Location": "Rego Park, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-73.2350439163, 40.7387399534, -73.2350439163, 40.7387399534], "geometry": {"coordinates": [-73.2350439163, 40.7387399534], "type": "Point"}, "id": "50174", "properties": {"Current Price": "$6.29", "Location": "Bay Shore, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.729064918, 42.4947599514, -71.729064918, 42.4947599514], "geometry": {"coordinates": [-71.729064918, 42.4947599514], "type": "Point"}, "id": "51151", "properties": {"Current Price": "$8.39", "Location": "Leominster, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.5768319171, 42.1714409518, -72.5768319171, 42.1714409518], "geometry": {"coordinates": [-72.5768319171, 42.1714409518], "type": "Point"}, "id": "51248", "properties": {"Current Price": "$8.39", "Location": "Chicopee, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.8351239156, 40.8644779533, -73.8351239156, 40.8644779533], "geometry": {"coordinates": [-73.8351239156, 40.8644779533], "type": "Point"}, "id": "51732", "properties": {"Current Price": "$6.29", "Location": "Bronx, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.0825439188, 42.4066529515, -71.0825439188, 42.4066529515], "geometry": {"coordinates": [-71.0825439188, 42.4066529515], "type": "Point"}, "id": "52334", "properties": {"Current Price": "$8.39", "Location": "Medford, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.9694241, 43.5901155, -72.9694241, 43.5901155], "geometry": {"coordinates": [-72.9694241, 43.5901155], "type": "Point"}, "id": "53595", "properties": {"Current Price": "$8.39", "Location": "Rutland, VT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.1975469186, 42.7410349512, -71.1975469186, 42.7410349512], "geometry": {"coordinates": [-71.1975469186, 42.7410349512], "type": "Point"}, "id": "54478", "properties": {"Current Price": "$8.39", "Location": "Salem, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.1346299164, 40.8656109533, -73.1346299164, 40.8656109533], "geometry": {"coordinates": [-73.1346299164, 40.8656109533], "type": "Point"}, "id": "56131", "properties": {"Current Price": "$6.29", "Location": "Lake Grove, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.0510768, 42.092264, -71.0510768, 42.092264], "geometry": {"coordinates": [-71.0510768, 42.092264], "type": "Point"}, "id": "56228", "properties": {"Current Price": "$8.39", "Location": "Brockton, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.4194609161, 41.4055829527, -73.4194609161, 41.4055829527], "geometry": {"coordinates": [-73.4194609161, 41.4055829527], "type": "Point"}, "id": "56422", "properties": {"Current Price": "$8.39", "Location": "Danbury, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.9141979155, 41.6146169524, -73.9141979155, 41.6146169524], "geometry": {"coordinates": [-73.9141979155, 41.6146169524], "type": "Point"}, "id": "58672", "properties": {"Current Price": "$8.39", "Location": "Wappingers Falls, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.3528119162, 40.6860439535, -73.3528119162, 40.6860439535], "geometry": {"coordinates": [-73.3528119162, 40.6860439535], "type": "Point"}, "id": "58769", "properties": {"Current Price": "$6.29", "Location": "Lindenhurst, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9322489155, 40.7957199534, -73.9322489155, 40.7957199534], "geometry": {"coordinates": [-73.9322489155, 40.7957199534], "type": "Point"}, "id": "59262", "properties": {"Current Price": "$9.35", "Location": "New York, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-73.8728636, 40.651725, -73.8728636, 40.651725], "geometry": {"coordinates": [-73.8728636, 40.651725], "type": "Point"}, "id": "59565", "properties": {"Current Price": "$6.29", "Location": "Brooklyn, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.5079929183, 41.978781952, -71.5079929183, 41.978781952], "geometry": {"coordinates": [-71.5079929183, 41.978781952], "type": "Point"}, "id": "62252", "properties": {"Current Price": "$8.39", "Location": "North Smithfield, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.626369917, 42.1288839519, -72.626369917, 42.1288839519], "geometry": {"coordinates": [-72.626369917, 42.1288839519], "type": "Point"}, "id": "62349", "properties": {"Current Price": "$8.39", "Location": "West Springfield, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.5603499171, 42.874834951, -72.5603499171, 42.874834951], "geometry": {"coordinates": [-72.5603499171, 42.874834951], "type": "Point"}, "id": "62446", "properties": {"Current Price": "$8.39", "Location": "Brattleboro, VT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.9399379155, 40.5915689536, -73.9399379155, 40.5915689536], "geometry": {"coordinates": [-73.9399379155, 40.5915689536], "type": "Point"}, "id": "63319", "properties": {"Current Price": "$9.35", "Location": "Brooklyn, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-73.9862359155, 41.2181879529, -73.9862359155, 41.2181879529], "geometry": {"coordinates": [-73.9862359155, 41.2181879529], "type": "Point"}, "id": "64598", "properties": {"Current Price": "$8.39", "Location": "Stony Point, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.7041719169, 40.9240459532, -72.7041719169, 40.9240459532], "geometry": {"coordinates": [-72.7041719169, 40.9240459532], "type": "Point"}, "id": "65877", "properties": {"Current Price": "$6.29", "Location": "Riverhead, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9132489155, 40.8196269534, -73.9132489155, 40.8196269534], "geometry": {"coordinates": [-73.9132489155, 40.8196269534], "type": "Point"}, "id": "66460", "properties": {"Current Price": "$6.29", "Location": "Bronx, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.0319319165, 40.7779179534, -73.0319319165, 40.7779179534], "geometry": {"coordinates": [-73.0319319165, 40.7779179534], "type": "Point"}, "id": "70091", "properties": {"Current Price": "$6.29", "Location": "Patchogue, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9052989156, 40.8777489533, -73.9052989156, 40.8777489533], "geometry": {"coordinates": [-73.9052989156, 40.8777489533], "type": "Point"}, "id": "70176", "properties": {"Current Price": "$9.35", "Location": "Bronx, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-71.1030299188, 42.8174299511, -71.1030299188, 42.8174299511], "geometry": {"coordinates": [-71.1030299188, 42.8174299511], "type": "Point"}, "id": "70285", "properties": {"Current Price": "$8.39", "Location": "Plaistow, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.0840669165, 41.3321839528, -73.0840669165, 41.3321839528], "geometry": {"coordinates": [-73.0840669165, 41.3321839528], "type": "Point"}, "id": "70382", "properties": {"Current Price": "$8.39", "Location": "Derby, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.2973839185, 41.5262369525, -71.2973839185, 41.5262369525], "geometry": {"coordinates": [-71.2973839185, 41.5262369525], "type": "Point"}, "id": "70479", "properties": {"Current Price": "$8.39", "Location": "Middletown, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.2056719164, 42.4677069515, -73.2056719164, 42.4677069515], "geometry": {"coordinates": [-73.2056719164, 42.4677069515], "type": "Point"}, "id": "74585", "properties": {"Current Price": "$8.39", "Location": "Pittsfield, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.2970749174, 42.9334789509, -72.2970749174, 42.9334789509], "geometry": {"coordinates": [-72.2970749174, 42.9334789509], "type": "Point"}, "id": "75859", "properties": {"Current Price": "$8.39", "Location": "Keene, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4973899183, 42.7784999511, -71.4973899183, 42.7784999511], "geometry": {"coordinates": [-71.4973899183, 42.7784999511], "type": "Point"}, "id": "81307", "properties": {"Current Price": "$8.39", "Location": "Nashua, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.3337799185, 42.897994951, -71.3337799185, 42.897994951], "geometry": {"coordinates": [-71.3337799185, 42.897994951], "type": "Point"}, "id": "84845", "properties": {"Current Price": "$8.39", "Location": "Derry, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.0332459165, 40.8667129533, -73.0332459165, 40.8667129533], "geometry": {"coordinates": [-73.0332459165, 40.8667129533], "type": "Point"}, "id": "84942", "properties": {"Current Price": "$6.29", "Location": "Selden, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.8115849179, 41.3610629527, -71.8115849179, 41.3610629527], "geometry": {"coordinates": [-71.8115849179, 41.3610629527], "type": "Point"}, "id": "87107", "properties": {"Current Price": "$8.39", "Location": "Westerly, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.0555519177, 41.3499379528, -72.0555519177, 41.3499379528], "geometry": {"coordinates": [-72.0555519177, 41.3499379528], "type": "Point"}, "id": "98088", "properties": {"Current Price": "$8.39", "Location": "Groton, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.1255619176, 41.3420149528, -72.1255619176, 41.3420149528], "geometry": {"coordinates": [-72.1255619176, 41.3420149528], "type": "Point"}, "id": "98381", "properties": {"Current Price": "$8.39", "Location": "Waterford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-70.7149379192, 41.9537419521, -70.7149379192, 41.9537419521], "geometry": {"coordinates": [-70.7149379192, 41.9537419521], "type": "Point"}, "id": "98873", "properties": {"Current Price": "$8.39", "Location": "Plymouth, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4389849184, 42.9612079509, -71.4389849184, 42.9612079509], "geometry": {"coordinates": [-71.4389849184, 42.9612079509], "type": "Point"}, "id": "100963", "properties": {"Current Price": "$8.39", "Location": "Manchester, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-70.7430759192, 41.7793309523, -70.7430759192, 41.7793309523], "geometry": {"coordinates": [-70.7430759192, 41.7793309523], "type": "Point"}, "id": "101753", "properties": {"Current Price": "$8.39", "Location": "Wareham, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.8737359167, 41.6387249524, -72.8737359167, 41.6387249524], "geometry": {"coordinates": [-72.8737359167, 41.6387249524], "type": "Point"}, "id": "103403", "properties": {"Current Price": "$8.39", "Location": "Southington, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4872979183, 43.2258879506, -71.4872979183, 43.2258879506], "geometry": {"coordinates": [-71.4872979183, 43.2258879506], "type": "Point"}, "id": "116812", "properties": {"Current Price": "$8.39", "Location": "Concord, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.9176669167, 41.3719769527, -72.9176669167, 41.3719769527], "geometry": {"coordinates": [-72.9176669167, 41.3719769527], "type": "Point"}, "id": "119657", "properties": {"Current Price": "$8.39", "Location": "Hamden, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-70.7959669191, 43.0958269508, -70.7959669191, 43.0958269508], "geometry": {"coordinates": [-70.7959669191, 43.0958269508], "type": "Point"}, "id": "135662", "properties": {"Current Price": "$8.39", "Location": "Newington, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.4963129183, 41.8155119522, -71.4963129183, 41.8155119522], "geometry": {"coordinates": [-71.4963129183, 41.8155119522], "type": "Point"}, "id": "136542", "properties": {"Current Price": "$8.39", "Location": "Johnston, RI", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-74.0019182, 41.0916547, -74.0019182, 41.0916547], "geometry": {"coordinates": [-74.0019182, 41.0916547], "type": "Point"}, "id": "139446", "properties": {"Current Price": "$8.39", "Location": "Nanuet, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.7630006, 42.2645529, -73.7630006, 42.2645529], "geometry": {"coordinates": [-73.7630006, 42.2645529], "type": "Point"}, "id": "144307", "properties": {"Current Price": "$8.39", "Location": "Greenport, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-70.880009919, 43.2156389506, -70.880009919, 43.2156389506], "geometry": {"coordinates": [-70.880009919, 43.2156389506], "type": "Point"}, "id": "144888", "properties": {"Current Price": "$8.39", "Location": "Dover, NH", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.1611799187, 41.6716309524, -71.1611799187, 41.6716309524], "geometry": {"coordinates": [-71.1611799187, 41.6716309524], "type": "Point"}, "id": "148303", "properties": {"Current Price": "$8.39", "Location": "Fall River, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.7265249158, 40.6652419535, -73.7265249158, 40.6652419535], "geometry": {"coordinates": [-73.7265249158, 40.6652419535], "type": "Point"}, "id": "151017", "properties": {"Current Price": "$6.29", "Location": "Valley Stream, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.8833469167, 41.8241389522, -72.8833469167, 41.8241389522], "geometry": {"coordinates": [-72.8833469167, 41.8241389522], "type": "Point"}, "id": "153376", "properties": {"Current Price": "$8.39", "Location": "Canton, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-74.1327729153, 41.3128449528, -74.1327729153, 41.3128449528], "geometry": {"coordinates": [-74.1327729153, 41.3128449528], "type": "Point"}, "id": "154352", "properties": {"Current Price": "$8.39", "Location": "Central Valley, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.7290878296, 42.1145095825, -72.7290878296, 42.1145095825], "geometry": {"coordinates": [-72.7290878296, 42.1145095825], "type": "Point"}, "id": "155031", "properties": {"Current Price": "$8.39", "Location": "Westfield, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.3203579162, 40.7383899534, -73.3203579162, 40.7383899534], "geometry": {"coordinates": [-73.3203579162, 40.7383899534], "type": "Point"}, "id": "155710", "properties": {"Current Price": "$6.29", "Location": "North Babylon, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.5527999171, 41.8193999522, -72.5527999171, 41.8193999522], "geometry": {"coordinates": [-72.5527999171, 41.8193999522], "type": "Point"}, "id": "157661", "properties": {"Current Price": "$8.39", "Location": "South Windsor, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.8670883, 40.8026633, -72.8670883, 40.8026633], "geometry": {"coordinates": [-72.8670883, 40.8026633], "type": "Point"}, "id": "159505", "properties": {"Current Price": "$6.29", "Location": "Shirley, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.3811649184, 42.3035369517, -71.3811649184, 42.3035369517], "geometry": {"coordinates": [-71.3811649184, 42.3035369517], "type": "Point"}, "id": "160572", "properties": {"Current Price": "$8.39", "Location": "Natick, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-71.2015764, 42.1557654, -71.2015764, 42.1557654], "geometry": {"coordinates": [-71.2015764, 42.1557654], "type": "Point"}, "id": "162129", "properties": {"Current Price": "$8.39", "Location": "Walpole, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.9456962, 40.6307019, -73.9456962, 40.6307019], "geometry": {"coordinates": [-73.9456962, 40.6307019], "type": "Point"}, "id": "162890", "properties": {"Current Price": "$9.35", "Location": "Brooklyn, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-72.8277015, 41.2764047, -72.8277015, 41.2764047], "geometry": {"coordinates": [-72.8277015, 41.2764047], "type": "Point"}, "id": "163782", "properties": {"Current Price": "$8.39", "Location": "Branford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-70.9912493, 41.6414146, -70.9912493, 41.6414146], "geometry": {"coordinates": [-70.9912493, 41.6414146], "type": "Point"}, "id": "164753", "properties": {"Current Price": "$8.39", "Location": "Dartmouth, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.2284326, 41.177486, -73.2284326, 41.177486], "geometry": {"coordinates": [-73.2284326, 41.177486], "type": "Point"}, "id": "167178", "properties": {"Current Price": "$8.39", "Location": "Fairfield, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.791809, 40.7053608, -73.791809, 40.7053608], "geometry": {"coordinates": [-73.791809, 40.7053608], "type": "Point"}, "id": "168234", "properties": {"Current Price": "$9.35", "Location": "Jamaica, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-73.0945731, 40.7641522, -73.0945731, 40.7641522], "geometry": {"coordinates": [-73.0945731, 40.7641522], "type": "Point"}, "id": "169801", "properties": {"Current Price": "$6.29", "Location": "Bohemia, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.811389, 41.5519698, -72.811389, 41.5519698], "geometry": {"coordinates": [-72.811389, 41.5519698], "type": "Point"}, "id": "173899", "properties": {"Current Price": "$8.39", "Location": "Meriden, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.6241013, 40.7056217, -73.6241013, 40.7056217], "geometry": {"coordinates": [-73.6241013, 40.7056217], "type": "Point"}, "id": "173996", "properties": {"Current Price": "$6.29", "Location": "Hempstead, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.617332, 40.7481171, -73.617332, 40.7481171], "geometry": {"coordinates": [-73.617332, 40.7481171], "type": "Point"}, "id": "174964", "properties": {"Current Price": "$6.29", "Location": "Carle Place, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.9401907, 42.5528479, -70.9401907, 42.5528479], "geometry": {"coordinates": [-70.9401907, 42.5528479], "type": "Point"}, "id": "177498", "properties": {"Current Price": "$8.39", "Location": "Danvers, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.9589287, 40.9458761, -72.9589287, 40.9458761], "geometry": {"coordinates": [-72.9589287, 40.9458761], "type": "Point"}, "id": "178185", "properties": {"Current Price": "$6.29", "Location": "Rocky Point, NY", "Price": 6.29, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.8589977, 40.8230291, -73.8589977, 40.8230291], "geometry": {"coordinates": [-73.8589977, 40.8230291], "type": "Point"}, "id": "180120", "properties": {"Current Price": "$9.35", "Location": "Bronx, NY", "Price": 9.35, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-72.6353053, 42.3339185, -72.6353053, 42.3339185], "geometry": {"coordinates": [-72.6353053, 42.3339185], "type": "Point"}, "id": "183249", "properties": {"Current Price": "$8.39", "Location": "Northampton, MA", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-74.0508279154, 41.5027609526, -74.0508279154, 41.5027609526], "geometry": {"coordinates": [-74.0508279154, 41.5027609526], "type": "Point"}, "id": "199277", "properties": {"Current Price": "$8.39", "Location": "Newburgh, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.0295309166, 41.5792399525, -73.0295309166, 41.5792399525], "geometry": {"coordinates": [-73.0295309166, 41.5792399525], "type": "Point"}, "id": "199665", "properties": {"Current Price": "$8.39", "Location": "Waterbury, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.8095919168, 41.5061719526, -72.8095919168, 41.5061719526], "geometry": {"coordinates": [-72.8095919168, 41.5061719526], "type": "Point"}, "id": "200150", "properties": {"Current Price": "$8.39", "Location": "Wallingford, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-72.9220149167, 41.6661449524, -72.9220149167, 41.6661449524], "geometry": {"coordinates": [-72.9220149167, 41.6661449524], "type": "Point"}, "id": "200247", "properties": {"Current Price": "$8.39", "Location": "Bristol, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.1152689165, 41.8077769522, -73.1152689165, 41.8077769522], "geometry": {"coordinates": [-73.1152689165, 41.8077769522], "type": "Point"}, "id": "200538", "properties": {"Current Price": "$8.39", "Location": "Torrington, CT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.9909379155, 41.9582239521, -73.9909379155, 41.9582239521], "geometry": {"coordinates": [-73.9909379155, 41.9582239521], "type": "Point"}, "id": "203448", "properties": {"Current Price": "$8.39", "Location": "Kingston, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-73.2028659164, 42.895100951, -73.2028659164, 42.895100951], "geometry": {"coordinates": [-73.2028659164, 42.895100951], "type": "Point"}, "id": "216959", "properties": {"Current Price": "$8.39", "Location": "Bennington, VT", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-74.397343915, 41.4551299526, -74.397343915, 41.4551299526], "geometry": {"coordinates": [-74.397343915, 41.4551299526], "type": "Point"}, "id": "226401", "properties": {"Current Price": "$8.39", "Location": "Middletown, NY", "Price": 8.39, "Product": "Appleton Farms Thick Sliced Applewood", "__folium_color": "#ff8c00"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_387cf0a69404bf0674bf33fe8d6d51d3.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_387cf0a69404bf0674bf33fe8d6d51d3.addTo(map_77f8e49ab60559868025709b50b079bb);
+        
+</script>
+</html>
