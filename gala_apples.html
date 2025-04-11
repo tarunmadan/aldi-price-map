@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Gala Apples</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Gala Apples cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fef99ec498d6a9e1166a31e28e688ffa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>2.99</li>
+                <li><span style='background:#b22222'></span>3.29</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="all_play_cocktail_variety_pack">All Play Cocktail Variety Pack</option>
+
+                
+                <option value="all_play_hard_iced_tea_variety_pack">All Play Hard Iced Tea Variety Pack</option>
+
+                
+                <option value="appleton_farms_prosciutto">Appleton Farms Prosciutto</option>
+
+                
+                <option value="appleton_farms_thick_cut_bacon">Appleton Farms Thick Cut Bacon</option>
+
+                
+                <option value="assorted_herbs">Assorted Herbs</option>
+
+                
+                <option value="bake_shop_cheesecake_sampler">Bake Shop Cheesecake Sampler</option>
+
+                
+                <option value="barissimo_mocha_or_caramel_macchiato_iced_coffee">Barissimo Mocha or Caramel Macchiato Iced Coffee</option>
+
+                
+                <option value="bear_bros._rose">Bear Bros. Rose</option>
+
+                
+                <option value="bear_bros._sauvignon_blanc">Bear Bros. Sauvignon Blanc</option>
+
+                
+                <option value="belletti_prosecco_doc">Belletti Prosecco DOC</option>
+
+                
+                <option value="belletti_sparkling_moscato_rose">Belletti Sparkling Moscato Rose</option>
+
+                
+                <option value="bimbo_assorted_bimbo_&_marinela_single_serve_items">Bimbo Assorted Bimbo & Marinela Single Serve Items</option>
+
+                
+                <option value="cantaloupe_melon">Cantaloupe Melon</option>
+
+                
+                <option value="chef's_cupboard_scalloped_or_au_gratin_potatoes">Chef's Cupboard Scalloped or Au Gratin Potatoes</option>
+
+                
+                <option value="choceur_milk_or_dark_chocolate_covered_almonds">Choceur Milk or Dark Chocolate Covered Almonds</option>
+
+                
+                <option value="countryside_creamery_butter_quarters">Countryside Creamery Butter Quarters</option>
+
+                
+                <option value="don't_mind_if_i_do_sauvignon_blanc">Don't Mind If I Do Sauvignon Blanc</option>
+
+                
+                <option value="emporium_selection_aged_reserve_white_cheddar">Emporium Selection Aged Reserve White Cheddar</option>
+
+                
+                <option value="emporium_selection_imported_brie_assortment">Emporium Selection Imported Brie Assortment</option>
+
+                
+                <option value="emporium_selection_specialty_shreds">Emporium Selection Specialty Shreds</option>
+
+                
+                <option value="exquisite_collection_chardonnay">Exquisite Collection Chardonnay</option>
+
+                
+                <option value="friendly_farms_half_&_half">Friendly Farms Half & Half</option>
+
+                
+                <option value="gala_apples" selected>Gala Apples</option>
+
+                
+                <option value="goya_sazon_seasoning">Goya Sazon Seasoning</option>
+
+                
+                <option value="happy_farms_cream_cheese_or_neufchatel_cheese">Happy Farms Cream Cheese or Neufchatel Cheese</option>
+
+                
+                <option value="happy_farms_whipped_cream_cheese">Happy Farms Whipped Cream Cheese</option>
+
+                
+                <option value="intermingle_buttery_chardonnay">Intermingle Buttery Chardonnay</option>
+
+                
+                <option value="landkastel_mosel_riesling">LandKastel Mosel Riesling</option>
+
+                
+                <option value="mark_hill_pinot_noir">Mark Hill Pinot Noir</option>
+
+                
+                <option value="nature's_nectar_orange_juice_not_from_concentrate_no_pulp">Nature's Nectar Orange Juice Not from Concentrate No Pulp</option>
+
+                
+                <option value="oh_me,_oh_my!_mimosa">Oh Me, Oh My! Mimosa</option>
+
+                
+                <option value="peaks_&_tides_sonoma_county_chardonnay">Peaks & Tides Sonoma County Chardonnay</option>
+
+                
+                <option value="pueblo_lindo_pinto_beans">Pueblo Lindo Pinto Beans</option>
+
+                
+                <option value="red_grapes">Red Grapes</option>
+
+                
+                <option value="rolling_mist_cabernet_sauvignon">Rolling Mist Cabernet Sauvignon</option>
+
+                
+                <option value="savoritz_entertainment_crackers">Savoritz Entertainment Crackers</option>
+
+                
+                <option value="season's_choice_steamed_brussels_sprouts">Season's Choice Steamed Brussels Sprouts</option>
+
+                
+                <option value="season's_choice_steamed_frozen_peas">Season's Choice Steamed Frozen Peas</option>
+
+                
+                <option value="simply_nature_organic_macaroni_&_cheese_or_shells_&_white_cheddar">Simply Nature Organic Macaroni & Cheese or Shells & White Cheddar</option>
+
+                
+                <option value="simply_nature_raw_mixed_nuts">Simply Nature Raw Mixed Nuts</option>
+
+                
+                <option value="sliced_white_mushrooms">Sliced White Mushrooms</option>
+
+                
+                <option value="southern_grove_dried_mediterranean_apricots">Southern Grove Dried Mediterranean Apricots</option>
+
+                
+                <option value="specially_selected_double_chocolate_premium_brownie_mix">Specially Selected Double Chocolate Premium Brownie Mix</option>
+
+                
+                <option value="specially_selected_pinot_grigio">Specially Selected Pinot Grigio</option>
+
+                
+                <option value="specially_selected_rose">Specially Selected Rose</option>
+
+                
+                <option value="specially_selected_sauvignon_blanc">Specially Selected Sauvignon Blanc</option>
+
+                
+                <option value="specially_selected_sea_salt_caramel_or_premium_chocolate_chip_cookies">Specially Selected Sea Salt Caramel or Premium Chocolate Chip Cookies</option>
+
+                
+                <option value="vista_bay_hard_seltzer_lemonade_variety_pack">Vista Bay Hard Seltzer Lemonade Variety Pack</option>
+
+                
+                <option value="vista_bay_hard_seltzer_variety_pack">Vista Bay Hard Seltzer Variety Pack</option>
+
+                
+                <option value="vista_bay_variety_pack_no._2">Vista Bay Variety Pack No. 2</option>
+
+                
+                <option value="washington_cosmic_crisp_apples">Washington Cosmic Crisp Apples</option>
+
+                
+                <option value="zucchini">Zucchini</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Apr 9<sup>th</sup> - Apr 15<sup>th</sup>. New products and next update on Apr 16<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_fef99ec498d6a9e1166a31e28e688ffa" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Apr 9<sup>th</sup>, price maps are available for the following products - 
+                <a href="all_play_cocktail_variety_pack.html">All Play Cocktail Variety Pack</a>, 
+                <a href="all_play_hard_iced_tea_variety_pack.html">All Play Hard Iced Tea Variety Pack</a>, 
+                <a href="appleton_farms_prosciutto.html">Appleton Farms Prosciutto</a>, 
+                <a href="appleton_farms_thick_cut_bacon.html">Appleton Farms Thick Cut Bacon</a>, 
+                <a href="assorted_herbs.html">Assorted Herbs</a>, 
+                <a href="bake_shop_cheesecake_sampler.html">Bake Shop Cheesecake Sampler</a>, 
+                <a href="barissimo_mocha_or_caramel_macchiato_iced_coffee.html">Barissimo Mocha or Caramel Macchiato Iced Coffee</a>, 
+                <a href="bear_bros._rose.html">Bear Bros. Rose</a>, 
+                <a href="bear_bros._sauvignon_blanc.html">Bear Bros. Sauvignon Blanc</a>, 
+                <a href="belletti_prosecco_doc.html">Belletti Prosecco DOC</a>, 
+                <a href="belletti_sparkling_moscato_rose.html">Belletti Sparkling Moscato Rose</a>, 
+                <a href="bimbo_assorted_bimbo_&_marinela_single_serve_items.html">Bimbo Assorted Bimbo & Marinela Single Serve Items</a>, 
+                <a href="cantaloupe_melon.html">Cantaloupe Melon</a>, 
+                <a href="chef's_cupboard_scalloped_or_au_gratin_potatoes.html">Chef's Cupboard Scalloped or Au Gratin Potatoes</a>, 
+                <a href="choceur_milk_or_dark_chocolate_covered_almonds.html">Choceur Milk or Dark Chocolate Covered Almonds</a>, 
+                <a href="countryside_creamery_butter_quarters.html">Countryside Creamery Butter Quarters</a>, 
+                <a href="don't_mind_if_i_do_sauvignon_blanc.html">Don't Mind If I Do Sauvignon Blanc</a>, 
+                <a href="emporium_selection_aged_reserve_white_cheddar.html">Emporium Selection Aged Reserve White Cheddar</a>, 
+                <a href="emporium_selection_imported_brie_assortment.html">Emporium Selection Imported Brie Assortment</a>, 
+                <a href="emporium_selection_specialty_shreds.html">Emporium Selection Specialty Shreds</a>, 
+                <a href="exquisite_collection_chardonnay.html">Exquisite Collection Chardonnay</a>, 
+                <a href="friendly_farms_half_&_half.html">Friendly Farms Half & Half</a>, 
+                <a href="gala_apples.html">Gala Apples</a>, 
+                <a href="goya_sazon_seasoning.html">Goya Sazon Seasoning</a>, 
+                <a href="happy_farms_cream_cheese_or_neufchatel_cheese.html">Happy Farms Cream Cheese or Neufchatel Cheese</a>, 
+                <a href="happy_farms_whipped_cream_cheese.html">Happy Farms Whipped Cream Cheese</a>, 
+                <a href="intermingle_buttery_chardonnay.html">Intermingle Buttery Chardonnay</a>, 
+                <a href="landkastel_mosel_riesling.html">LandKastel Mosel Riesling</a>, 
+                <a href="mark_hill_pinot_noir.html">Mark Hill Pinot Noir</a>, 
+                <a href="nature's_nectar_orange_juice_not_from_concentrate_no_pulp.html">Nature's Nectar Orange Juice Not from Concentrate No Pulp</a>, 
+                <a href="oh_me,_oh_my!_mimosa.html">Oh Me, Oh My! Mimosa</a>, 
+                <a href="peaks_&_tides_sonoma_county_chardonnay.html">Peaks & Tides Sonoma County Chardonnay</a>, 
+                <a href="pueblo_lindo_pinto_beans.html">Pueblo Lindo Pinto Beans</a>, 
+                <a href="red_grapes.html">Red Grapes</a>, 
+                <a href="rolling_mist_cabernet_sauvignon.html">Rolling Mist Cabernet Sauvignon</a>, 
+                <a href="savoritz_entertainment_crackers.html">Savoritz Entertainment Crackers</a>, 
+                <a href="season's_choice_steamed_brussels_sprouts.html">Season's Choice Steamed Brussels Sprouts</a>, 
+                <a href="season's_choice_steamed_frozen_peas.html">Season's Choice Steamed Frozen Peas</a>, 
+                <a href="simply_nature_organic_macaroni_&_cheese_or_shells_&_white_cheddar.html">Simply Nature Organic Macaroni & Cheese or Shells & White Cheddar</a>, 
+                <a href="simply_nature_raw_mixed_nuts.html">Simply Nature Raw Mixed Nuts</a>, 
+                <a href="sliced_white_mushrooms.html">Sliced White Mushrooms</a>, 
+                <a href="southern_grove_dried_mediterranean_apricots.html">Southern Grove Dried Mediterranean Apricots</a>, 
+                <a href="specially_selected_double_chocolate_premium_brownie_mix.html">Specially Selected Double Chocolate Premium Brownie Mix</a>, 
+                <a href="specially_selected_pinot_grigio.html">Specially Selected Pinot Grigio</a>, 
+                <a href="specially_selected_rose.html">Specially Selected Rose</a>, 
+                <a href="specially_selected_sauvignon_blanc.html">Specially Selected Sauvignon Blanc</a>, 
+                <a href="specially_selected_sea_salt_caramel_or_premium_chocolate_chip_cookies.html">Specially Selected Sea Salt Caramel or Premium Chocolate Chip Cookies</a>, 
+                <a href="vista_bay_hard_seltzer_lemonade_variety_pack.html">Vista Bay Hard Seltzer Lemonade Variety Pack</a>, 
+                <a href="vista_bay_hard_seltzer_variety_pack.html">Vista Bay Hard Seltzer Variety Pack</a>, 
+                <a href="vista_bay_variety_pack_no._2.html">Vista Bay Variety Pack No. 2</a>, 
+                <a href="washington_cosmic_crisp_apples.html">Washington Cosmic Crisp Apples</a>, 
+                <a href="zucchini.html">Zucchini</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_fef99ec498d6a9e1166a31e28e688ffa = L.map(
+                "map_fef99ec498d6a9e1166a31e28e688ffa",
+                {
+                    center: [34.820409960199996, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_fef99ec498d6a9e1166a31e28e688ffa);
+
+            
+
+        
+    
+            var tile_layer_82744e82ed049635141fba1f2d495f17 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_82744e82ed049635141fba1f2d495f17.addTo(map_fef99ec498d6a9e1166a31e28e688ffa);
+        
+    
+            map_fef99ec498d6a9e1166a31e28e688ffa.fitBounds(
+                [[32.8031439625, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_styler(feature) {
+            switch(feature.id) {
+                case "55735": case "60275": case "64617": case "66113": case "74129": case "87647": case "90460": case "95973": case "100485": case "101318": case "105396": case "106432": case "109798": case "116106": case "116273": case "118643": case "123097": case "125292": case "127457": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_adb2fc3e8e6b4d5e103f27487a080c0d.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_adb2fc3e8e6b4d5e103f27487a080c0d = L.geoJson(null, {
+                onEachFeature: geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_onEachFeature,
+            
+                style: geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_styler,
+                pointToLayer: geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_pointToLayer,
+        });
+
+        function geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_add (data) {
+            geo_json_adb2fc3e8e6b4d5e103f27487a080c0d
+                .addData(data);
+        }
+            geo_json_adb2fc3e8e6b4d5e103f27487a080c0d_add({"bbox": [-120.6013198622, 32.8031439625, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "55735", "properties": {"Current Price": "$2.99", "Location": "Menifee, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "60275", "properties": {"Current Price": "$2.99", "Location": "Simi Valley, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "64617", "properties": {"Current Price": "$2.99", "Location": "Palm Desert, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "66113", "properties": {"Current Price": "$2.99", "Location": "Yucaipa, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "74129", "properties": {"Current Price": "$2.99", "Location": "Ramona, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "87647", "properties": {"Current Price": "$2.99", "Location": "Laguna Woods, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "90460", "properties": {"Current Price": "$2.99", "Location": "Murrieta, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "95973", "properties": {"Current Price": "$2.99", "Location": "San Diego, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "97663", "properties": {"Current Price": "$3.29", "Location": "Glendale, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "98371", "properties": {"Current Price": "$3.29", "Location": "Tempe, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "98452", "properties": {"Current Price": "$3.29", "Location": "Buckeye, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "98533", "properties": {"Current Price": "$3.29", "Location": "Queen Creek, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "99235", "properties": {"Current Price": "$3.29", "Location": "Chandler, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "99380", "properties": {"Current Price": "$3.29", "Location": "Phoenix, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "99797", "properties": {"Current Price": "$3.29", "Location": "Peoria, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "99878", "properties": {"Current Price": "$3.29", "Location": "Phoenix, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "100485", "properties": {"Current Price": "$2.99", "Location": "Arroyo Grande, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "101318", "properties": {"Current Price": "$2.99", "Location": "Clovis, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "101475", "properties": {"Current Price": "$3.29", "Location": "Goodyear, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "103976", "properties": {"Current Price": "$3.29", "Location": "Gilbert, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "104197", "properties": {"Current Price": "$3.29", "Location": "Mesa, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "105396", "properties": {"Current Price": "$2.99", "Location": "Simi Valley, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "106432", "properties": {"Current Price": "$2.99", "Location": "Encinitas, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "109798", "properties": {"Current Price": "$2.99", "Location": "Thousand Oaks, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "116106", "properties": {"Current Price": "$2.99", "Location": "Poway, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "116273", "properties": {"Current Price": "$2.99", "Location": "Murrieta, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "118643", "properties": {"Current Price": "$2.99", "Location": "Burbank, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "123097", "properties": {"Current Price": "$2.99", "Location": "El Cajon, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "125292", "properties": {"Current Price": "$2.99", "Location": "West Hills, CA, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "127457", "properties": {"Current Price": "$2.99", "Location": "Yucca Valley, CA", "Price": 2.99, "Product": "Gala Apples", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "132155", "properties": {"Current Price": "$3.29", "Location": "Phoenix, AZ", "Price": 3.29, "Product": "Gala Apples", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_adb2fc3e8e6b4d5e103f27487a080c0d.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_adb2fc3e8e6b4d5e103f27487a080c0d.addTo(map_fef99ec498d6a9e1166a31e28e688ffa);
+        
+</script>
+</html>
