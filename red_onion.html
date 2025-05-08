@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Red Onion</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Red Onion cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_693557e2e43874ac170cef60cdccf48c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>59.0</li>
+                <li><span style='background:#b22222'></span>99.0</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="appleton_farms_premium_sliced_bacon">Appleton Farms Premium Sliced Bacon</option>
+
+                
+                <option value="baby_bella_mushrooms">Baby Bella Mushrooms</option>
+
+                
+                <option value="barissimo_fair_trade_single_origin_ground_coffee">Barissimo Fair Trade Single Origin Ground Coffee</option>
+
+                
+                <option value="barissimo_sweet_vanilla_or_caramel_macchiato_barista_cold_foam">Barissimo Sweet Vanilla or Caramel Macchiato Barista Cold Foam</option>
+
+                
+                <option value="barissimo_vanilla_or_oatmeal_cookie_oatmilk_creamer">Barissimo Vanilla or Oatmeal Cookie Oatmilk Creamer</option>
+
+                
+                <option value="berryhill_grape_jelly">Berryhill Grape Jelly</option>
+
+                
+                <option value="blueberries">Blueberries</option>
+
+                
+                <option value="breakfast_best_original_or_cinnamon_french_toast_sticks">Breakfast Best Original or Cinnamon French Toast Sticks</option>
+
+                
+                <option value="cotton_candy_grapes">Cotton Candy Grapes</option>
+
+                
+                <option value="happy_farms_soft_spread_cream_cheese">Happy Farms Soft Spread Cream Cheese</option>
+
+                
+                <option value="kalanchoe_in_mug">Kalanchoe in Mug</option>
+
+                
+                <option value="l'oven_fresh_bagel_skinnys">L'oven Fresh Bagel Skinnys</option>
+
+                
+                <option value="l'oven_fresh_hawaiian_or_maple_french_toast_bagels">L'oven Fresh Hawaiian or Maple French Toast Bagels</option>
+
+                
+                <option value="mexican_calabaza_squash">Mexican Calabaza Squash</option>
+
+                
+                <option value="millville_buttermilk_pancake_mix">Millville Buttermilk Pancake Mix</option>
+
+                
+                <option value="millville_old_fashioned_oats">Millville Old Fashioned Oats</option>
+
+                
+                <option value="mother's_day_10-stem_tulip_bouquet">Mother's Day 10-Stem Tulip Bouquet</option>
+
+                
+                <option value="never_any!_breakfast_chicken_sausage">NEVER ANY! Breakfast Chicken Sausage</option>
+
+                
+                <option value="organic_zucchini">Organic Zucchini</option>
+
+                
+                <option value="red_onion" selected>Red Onion</option>
+
+                
+                <option value="simply_nature_organic_granola">Simply Nature Organic Granola</option>
+
+                
+                <option value="simply_nature_organic_wildflower_honey">Simply Nature Organic Wildflower Honey</option>
+
+                
+                <option value="specially_selected_artisan_flatbread">Specially Selected Artisan Flatbread</option>
+
+                
+                <option value="specially_selected_double_chocolate_premium_brownie_mix">Specially Selected Double Chocolate Premium Brownie Mix</option>
+
+                
+                <option value="specially_selected_jumbo_scallops">Specially Selected Jumbo Scallops</option>
+
+                
+                <option value="specially_selected_original_or_garlic_mini_naan_bread">Specially Selected Original or Garlic Mini Naan Bread</option>
+
+                
+                <option value="specially_selected_premium_flavored_salsa">Specially Selected Premium Flavored Salsa</option>
+
+                
+                <option value="specially_selected_pure_maple_syrup">Specially Selected Pure Maple Syrup</option>
+
+                
+                <option value="specially_selected_raw_honey">Specially Selected Raw Honey</option>
+
+                
+                <option value="specially_selected_stuffed_queen_olives">Specially Selected Stuffed Queen Olives</option>
+
+                
+                <option value="specially_selected_vinaigrette_dressing">Specially Selected Vinaigrette Dressing</option>
+
+                
+                <option value="stonemill_everything_bagel_seasoning">Stonemill Everything Bagel Seasoning</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid May 7<sup>th</sup> - May 13<sup>th</sup>. New products and next update on May 14<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_693557e2e43874ac170cef60cdccf48c" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of May 7<sup>th</sup>, price maps are available for the following products - 
+                <a href="appleton_farms_premium_sliced_bacon.html">Appleton Farms Premium Sliced Bacon</a>, 
+                <a href="baby_bella_mushrooms.html">Baby Bella Mushrooms</a>, 
+                <a href="barissimo_fair_trade_single_origin_ground_coffee.html">Barissimo Fair Trade Single Origin Ground Coffee</a>, 
+                <a href="barissimo_sweet_vanilla_or_caramel_macchiato_barista_cold_foam.html">Barissimo Sweet Vanilla or Caramel Macchiato Barista Cold Foam</a>, 
+                <a href="barissimo_vanilla_or_oatmeal_cookie_oatmilk_creamer.html">Barissimo Vanilla or Oatmeal Cookie Oatmilk Creamer</a>, 
+                <a href="berryhill_grape_jelly.html">Berryhill Grape Jelly</a>, 
+                <a href="blueberries.html">Blueberries</a>, 
+                <a href="breakfast_best_original_or_cinnamon_french_toast_sticks.html">Breakfast Best Original or Cinnamon French Toast Sticks</a>, 
+                <a href="cotton_candy_grapes.html">Cotton Candy Grapes</a>, 
+                <a href="happy_farms_soft_spread_cream_cheese.html">Happy Farms Soft Spread Cream Cheese</a>, 
+                <a href="kalanchoe_in_mug.html">Kalanchoe in Mug</a>, 
+                <a href="l'oven_fresh_bagel_skinnys.html">L'oven Fresh Bagel Skinnys</a>, 
+                <a href="l'oven_fresh_hawaiian_or_maple_french_toast_bagels.html">L'oven Fresh Hawaiian or Maple French Toast Bagels</a>, 
+                <a href="mexican_calabaza_squash.html">Mexican Calabaza Squash</a>, 
+                <a href="millville_buttermilk_pancake_mix.html">Millville Buttermilk Pancake Mix</a>, 
+                <a href="millville_old_fashioned_oats.html">Millville Old Fashioned Oats</a>, 
+                <a href="mother's_day_10-stem_tulip_bouquet.html">Mother's Day 10-Stem Tulip Bouquet</a>, 
+                <a href="never_any!_breakfast_chicken_sausage.html">NEVER ANY! Breakfast Chicken Sausage</a>, 
+                <a href="organic_zucchini.html">Organic Zucchini</a>, 
+                <a href="red_onion.html">Red Onion</a>, 
+                <a href="simply_nature_organic_granola.html">Simply Nature Organic Granola</a>, 
+                <a href="simply_nature_organic_wildflower_honey.html">Simply Nature Organic Wildflower Honey</a>, 
+                <a href="specially_selected_artisan_flatbread.html">Specially Selected Artisan Flatbread</a>, 
+                <a href="specially_selected_double_chocolate_premium_brownie_mix.html">Specially Selected Double Chocolate Premium Brownie Mix</a>, 
+                <a href="specially_selected_jumbo_scallops.html">Specially Selected Jumbo Scallops</a>, 
+                <a href="specially_selected_original_or_garlic_mini_naan_bread.html">Specially Selected Original or Garlic Mini Naan Bread</a>, 
+                <a href="specially_selected_premium_flavored_salsa.html">Specially Selected Premium Flavored Salsa</a>, 
+                <a href="specially_selected_pure_maple_syrup.html">Specially Selected Pure Maple Syrup</a>, 
+                <a href="specially_selected_raw_honey.html">Specially Selected Raw Honey</a>, 
+                <a href="specially_selected_stuffed_queen_olives.html">Specially Selected Stuffed Queen Olives</a>, 
+                <a href="specially_selected_vinaigrette_dressing.html">Specially Selected Vinaigrette Dressing</a>, 
+                <a href="stonemill_everything_bagel_seasoning.html">Stonemill Everything Bagel Seasoning</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_693557e2e43874ac170cef60cdccf48c = L.map(
+                "map_693557e2e43874ac170cef60cdccf48c",
+                {
+                    center: [34.71590946035, -116.10136870184999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_693557e2e43874ac170cef60cdccf48c);
+
+            
+
+        
+    
+            var tile_layer_637c505c9eb09ae72c1a5bd432cf3ecb = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_637c505c9eb09ae72c1a5bd432cf3ecb.addTo(map_693557e2e43874ac170cef60cdccf48c);
+        
+    
+            map_693557e2e43874ac170cef60cdccf48c.fitBounds(
+                [[32.5941429628, -120.6013198622], [36.8376759579, -111.6014175415]],
+                {}
+            );
+        
+    
+        function geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_styler(feature) {
+            switch(feature.id) {
+                case "78651": case "78943": case "79040": case "79137": case "79629": case "79825": case "81915": case "82012": case "82109": case "82206": case "82303": case "82400": case "82497": case "82594": case "84476": case "84573": case "84766": case "87456": case "87553": case "88448": case "89342": case "90030": case "90519": case "90908": case "92296": case "92393": case "96677": case "97876": case "98870": case "99067": case "100161": case "101057": case "101154": case "101251": case "101348": case "101544": case "101740": case "102231": case "103020": case "106973": case "110654": case "112932": case "115927": case "117114": case "117211": case "118801": case "118898": case "120189": case "120286": case "122369": case "124056": case "124748": case "125442": case "127724": case "127821": case "130518": case "130615": case "135082": case "136183": case "140152": case "141436": case "142426": case "143710": case "150173": case "150270": case "153555": case "153751": case "154642": case "155637": case "156628": case "158814": case "160895": case "166258": case "171127": case "173714": case "174707": case "174804": case "178879": case "180669": case "181364": case "184743": case "187827": case "188024": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_9bc4a41ef266e2fe3daa4be4c06c9521.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_9bc4a41ef266e2fe3daa4be4c06c9521 = L.geoJson(null, {
+                onEachFeature: geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_onEachFeature,
+            
+                style: geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_styler,
+                pointToLayer: geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_pointToLayer,
+        });
+
+        function geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_add (data) {
+            geo_json_9bc4a41ef266e2fe3daa4be4c06c9521
+                .addData(data);
+        }
+            geo_json_9bc4a41ef266e2fe3daa4be4c06c9521_add({"bbox": [-120.6013198622, 32.5941429628, -111.6014175415, 36.8376759579], "features": [{"bbox": [-117.4752278658, 34.148479961, -117.4752278658, 34.148479961], "geometry": {"coordinates": [-117.4752278658, 34.148479961], "type": "Point"}, "id": "78651", "properties": {"Current Price": "59\u00a2", "Location": "Fontana, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1757278661, 33.6839079615, -117.1757278661, 33.6839079615], "geometry": {"coordinates": [-117.1757278661, 33.6839079615], "type": "Point"}, "id": "78853", "properties": {"Current Price": "99\u00a2", "Location": "Menifee, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145386865, 34.6016069605, -118.145386865, 34.6016069605], "geometry": {"coordinates": [-118.145386865, 34.6016069605], "type": "Point"}, "id": "78943", "properties": {"Current Price": "59\u00a2", "Location": "Palmdale, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9872478652, 33.8469359613, -117.9872478652, 33.8469359613], "geometry": {"coordinates": [-117.9872478652, 33.8469359613], "type": "Point"}, "id": "79040", "properties": {"Current Price": "59\u00a2", "Location": "Buena Park, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9074278653, 34.104422961, -117.9074278653, 34.104422961], "geometry": {"coordinates": [-117.9074278653, 34.104422961], "type": "Point"}, "id": "79137", "properties": {"Current Price": "59\u00a2", "Location": "Covina, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.164126865, 33.9488439612, -118.164126865, 33.9488439612], "geometry": {"coordinates": [-118.164126865, 33.9488439612], "type": "Point"}, "id": "79629", "properties": {"Current Price": "59\u00a2", "Location": "South Gate, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0942288651, 34.6894869604, -118.0942288651, 34.6894869604], "geometry": {"coordinates": [-118.0942288651, 34.6894869604], "type": "Point"}, "id": "79825", "properties": {"Current Price": "59\u00a2", "Location": "Lancaster, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1983068661, 34.135943961, -117.1983068661, 34.135943961], "geometry": {"coordinates": [-117.1983068661, 34.135943961], "type": "Point"}, "id": "81915", "properties": {"Current Price": "59\u00a2", "Location": "San Bernardino, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.5701628679, 32.8142339625, -115.5701628679, 32.8142339625], "geometry": {"coordinates": [-115.5701628679, 32.8142339625], "type": "Point"}, "id": "82012", "properties": {"Current Price": "59\u00a2", "Location": "El Centro, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.2929148671, 33.7132209615, -116.2929148671, 33.7132209615], "geometry": {"coordinates": [-116.2929148671, 33.7132209615], "type": "Point"}, "id": "82109", "properties": {"Current Price": "59\u00a2", "Location": "La Quinta, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.025658864, 35.2960529597, -119.025658864, 35.2960529597], "geometry": {"coordinates": [-119.025658864, 35.2960529597], "type": "Point"}, "id": "82206", "properties": {"Current Price": "59\u00a2", "Location": "Bakersfield, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0660188662, 33.1311619621, -117.0660188662, 33.1311619621], "geometry": {"coordinates": [-117.0660188662, 33.1311619621], "type": "Point"}, "id": "82303", "properties": {"Current Price": "59\u00a2", "Location": "Escondido, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-115.496118868, 32.6934949626, -115.496118868, 32.6934949626], "geometry": {"coordinates": [-115.496118868, 32.6934949626], "type": "Point"}, "id": "82400", "properties": {"Current Price": "59\u00a2", "Location": "Calexico, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3405838659, 33.6908439615, -117.3405838659, 33.6908439615], "geometry": {"coordinates": [-117.3405838659, 33.6908439615], "type": "Point"}, "id": "82497", "properties": {"Current Price": "59\u00a2", "Location": "Lake Elsinore, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4901558669, 33.8160339614, -116.4901558669, 33.8160339614], "geometry": {"coordinates": [-116.4901558669, 33.8160339614], "type": "Point"}, "id": "82594", "properties": {"Current Price": "59\u00a2", "Location": "Palm Springs, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0875868651, 33.8582219613, -118.0875868651, 33.8582219613], "geometry": {"coordinates": [-118.0875868651, 33.8582219613], "type": "Point"}, "id": "84476", "properties": {"Current Price": "59\u00a2", "Location": "Cerritos, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.272570866, 34.0656319611, -117.272570866, 34.0656319611], "geometry": {"coordinates": [-117.272570866, 34.0656319611], "type": "Point"}, "id": "84573", "properties": {"Current Price": "59\u00a2", "Location": "San Bernardino, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.7897568643, 34.2809369608, -118.7897568643, 34.2809369608], "geometry": {"coordinates": [-118.7897568643, 34.2809369608], "type": "Point"}, "id": "84676", "properties": {"Current Price": "99\u00a2", "Location": "Simi Valley, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9416588652, 33.8296429613, -117.9416588652, 33.8296429613], "geometry": {"coordinates": [-117.9416588652, 33.8296429613], "type": "Point"}, "id": "84766", "properties": {"Current Price": "59\u00a2", "Location": "Anaheim, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.278563866, 33.9360839612, -117.278563866, 33.9360839612], "geometry": {"coordinates": [-117.278563866, 33.9360839612], "type": "Point"}, "id": "87456", "properties": {"Current Price": "59\u00a2", "Location": "Moreno Valley, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.184533865, 33.8422139613, -118.184533865, 33.8422139613], "geometry": {"coordinates": [-118.184533865, 33.8422139613], "type": "Point"}, "id": "87553", "properties": {"Current Price": "59\u00a2", "Location": "Long Beach, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9716188652, 33.7149449615, -117.9716188652, 33.7149449615], "geometry": {"coordinates": [-117.9716188652, 33.7149449615], "type": "Point"}, "id": "88448", "properties": {"Current Price": "59\u00a2", "Location": "Fountain Valley, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5411288645, 34.3811519607, -118.5411288645, 34.3811519607], "geometry": {"coordinates": [-118.5411288645, 34.3811519607], "type": "Point"}, "id": "89342", "properties": {"Current Price": "59\u00a2", "Location": "Santa Clarita, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0551628651, 34.123927961, -118.0551628651, 34.123927961], "geometry": {"coordinates": [-118.0551628651, 34.123927961], "type": "Point"}, "id": "90030", "properties": {"Current Price": "59\u00a2", "Location": "Arcadia, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9477228664, 33.9238639612, -116.9477228664, 33.9238639612], "geometry": {"coordinates": [-116.9477228664, 33.9238639612], "type": "Point"}, "id": "90519", "properties": {"Current Price": "59\u00a2", "Location": "Beaumont, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.400811867, 33.7253299615, -116.400811867, 33.7253299615], "geometry": {"coordinates": [-116.400811867, 33.7253299615], "type": "Point"}, "id": "90622", "properties": {"Current Price": "99\u00a2", "Location": "Palm Desert, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.9476912, 34.0480828, -117.9476912, 34.0480828], "geometry": {"coordinates": [-117.9476912, 34.0480828], "type": "Point"}, "id": "90908", "properties": {"Current Price": "59\u00a2", "Location": "La Puente, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3295348648, 33.9453229612, -118.3295348648, 33.9453229612], "geometry": {"coordinates": [-118.3295348648, 33.9453229612], "type": "Point"}, "id": "92296", "properties": {"Current Price": "59\u00a2", "Location": "Inglewood, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0069488652, 33.7603989614, -118.0069488652, 33.7603989614], "geometry": {"coordinates": [-118.0069488652, 33.7603989614], "type": "Point"}, "id": "92393", "properties": {"Current Price": "59\u00a2", "Location": "Westminster, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0624488662, 34.0340649611, -117.0624488662, 34.0340649611], "geometry": {"coordinates": [-117.0624488662, 34.0340649611], "type": "Point"}, "id": "92599", "properties": {"Current Price": "99\u00a2", "Location": "Yucaipa, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7625208654, 34.112233961, -117.7625208654, 34.112233961], "geometry": {"coordinates": [-117.7625208654, 34.112233961], "type": "Point"}, "id": "96677", "properties": {"Current Price": "59\u00a2", "Location": "La Verne, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5623718657, 34.106706961, -117.5623718657, 34.106706961], "geometry": {"coordinates": [-117.5623718657, 34.106706961], "type": "Point"}, "id": "97876", "properties": {"Current Price": "59\u00a2", "Location": "Rancho Cucamonga, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2148538661, 33.1705699621, -117.2148538661, 33.1705699621], "geometry": {"coordinates": [-117.2148538661, 33.1705699621], "type": "Point"}, "id": "98870", "properties": {"Current Price": "59\u00a2", "Location": "Vista, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.131399865, 34.1843269609, -118.131399865, 34.1843269609], "geometry": {"coordinates": [-118.131399865, 34.1843269609], "type": "Point"}, "id": "99067", "properties": {"Current Price": "59\u00a2", "Location": "Altadena, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.124272865, 33.9354899612, -118.124272865, 33.9354899612], "geometry": {"coordinates": [-118.124272865, 33.9354899612], "type": "Point"}, "id": "100161", "properties": {"Current Price": "59\u00a2", "Location": "Downey, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3713718659, 34.4268749607, -117.3713718659, 34.4268749607], "geometry": {"coordinates": [-117.3713718659, 34.4268749607], "type": "Point"}, "id": "101057", "properties": {"Current Price": "59\u00a2", "Location": "Hesperia, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1950078638, 34.1959169609, -119.1950078638, 34.1959169609], "geometry": {"coordinates": [-119.1950078638, 34.1959169609], "type": "Point"}, "id": "101154", "properties": {"Current Price": "59\u00a2", "Location": "Oxnard, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9349648652, 33.9175709612, -117.9349648652, 33.9175709612], "geometry": {"coordinates": [-117.9349648652, 33.9175709612], "type": "Point"}, "id": "101251", "properties": {"Current Price": "59\u00a2", "Location": "La Habra, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.960114, 33.790066, -117.960114, 33.790066], "geometry": {"coordinates": [-117.960114, 33.790066], "type": "Point"}, "id": "101348", "properties": {"Current Price": "59\u00a2", "Location": "Garden Grove, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7206878655, 34.0001719611, -117.7206878655, 34.0001719611], "geometry": {"coordinates": [-117.7206878655, 34.0001719611], "type": "Point"}, "id": "101544", "properties": {"Current Price": "59\u00a2", "Location": "Chino, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1424168661, 33.5065189617, -117.1424168661, 33.5065189617], "geometry": {"coordinates": [-117.1424168661, 33.5065189617], "type": "Point"}, "id": "101740", "properties": {"Current Price": "59\u00a2", "Location": "Temecula, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0886718662, 32.6515889627, -117.0886718662, 32.6515889627], "geometry": {"coordinates": [-117.0886718662, 32.6515889627], "type": "Point"}, "id": "102231", "properties": {"Current Price": "59\u00a2", "Location": "Chula Vista, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9961278652, 33.9456169612, -117.9961278652, 33.9456169612], "geometry": {"coordinates": [-117.9961278652, 33.9456169612], "type": "Point"}, "id": "103020", "properties": {"Current Price": "59\u00a2", "Location": "Whittier, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.878035, 33.036799, -116.878035, 33.036799], "geometry": {"coordinates": [-116.878035, 33.036799], "type": "Point"}, "id": "103718", "properties": {"Current Price": "99\u00a2", "Location": "Ramona, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.0511538651, 33.9416649612, -118.0511538651, 33.9416649612], "geometry": {"coordinates": [-118.0511538651, 33.9416649612], "type": "Point"}, "id": "106973", "properties": {"Current Price": "59\u00a2", "Location": "Santa Fe Springs, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2202478649, 33.8785509613, -118.2202478649, 33.8785509613], "geometry": {"coordinates": [-118.2202478649, 33.8785509613], "type": "Point"}, "id": "110654", "properties": {"Current Price": "59\u00a2", "Location": "Compton, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.1596288638, 34.2186889609, -119.1596288638, 34.2186889609], "geometry": {"coordinates": [-119.1596288638, 34.2186889609], "type": "Point"}, "id": "112932", "properties": {"Current Price": "59\u00a2", "Location": "Oxnard, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.256077866, 34.4708039606, -117.256077866, 34.4708039606], "geometry": {"coordinates": [-117.256077866, 34.4708039606], "type": "Point"}, "id": "115927", "properties": {"Current Price": "59\u00a2", "Location": "Hesperia, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.058813864, 35.3544029596, -119.058813864, 35.3544029596], "geometry": {"coordinates": [-119.058813864, 35.3544029596], "type": "Point"}, "id": "117114", "properties": {"Current Price": "59\u00a2", "Location": "Bakersfield, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.9888638652, 34.140412961, -117.9888638652, 34.140412961], "geometry": {"coordinates": [-117.9888638652, 34.140412961], "type": "Point"}, "id": "117211", "properties": {"Current Price": "59\u00a2", "Location": "Monrovia, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8856048653, 33.7089519615, -117.8856048653, 33.7089519615], "geometry": {"coordinates": [-117.8856048653, 33.7089519615], "type": "Point"}, "id": "118801", "properties": {"Current Price": "59\u00a2", "Location": "Santa Ana, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4508058647, 34.2213849609, -118.4508058647, 34.2213849609], "geometry": {"coordinates": [-118.4508058647, 34.2213849609], "type": "Point"}, "id": "118898", "properties": {"Current Price": "59\u00a2", "Location": "Panorama City, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0338538663, 32.5941429628, -117.0338538663, 32.5941429628], "geometry": {"coordinates": [-117.0338538663, 32.5941429628], "type": "Point"}, "id": "120189", "properties": {"Current Price": "59\u00a2", "Location": "Chula Vista, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.0980158651, 33.9834779612, -118.0980158651, 33.9834779612], "geometry": {"coordinates": [-118.0980158651, 33.9834779612], "type": "Point"}, "id": "120286", "properties": {"Current Price": "59\u00a2", "Location": "Pico Rivera, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.3819018659, 34.106878961, -117.3819018659, 34.106878961], "geometry": {"coordinates": [-117.3819018659, 34.106878961], "type": "Point"}, "id": "122369", "properties": {"Current Price": "59\u00a2", "Location": "Rialto, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7236538655, 33.6108109616, -117.7236538655, 33.6108109616], "geometry": {"coordinates": [-117.7236538655, 33.6108109616], "type": "Point"}, "id": "122472", "properties": {"Current Price": "99\u00a2", "Location": "Laguna Woods, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8291688654, 34.116580961, -117.8291688654, 34.116580961], "geometry": {"coordinates": [-117.8291688654, 34.116580961], "type": "Point"}, "id": "124056", "properties": {"Current Price": "59\u00a2", "Location": "Glendora, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.146126865, 34.091989961, -118.146126865, 34.091989961], "geometry": {"coordinates": [-118.146126865, 34.091989961], "type": "Point"}, "id": "124748", "properties": {"Current Price": "59\u00a2", "Location": "Alhambra, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6703858655, 34.090218961, -117.6703858655, 34.090218961], "geometry": {"coordinates": [-117.6703858655, 34.090218961], "type": "Point"}, "id": "125442", "properties": {"Current Price": "59\u00a2", "Location": "Upland, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141367, 33.55237, -117.141367, 33.55237], "geometry": {"coordinates": [-117.141367, 33.55237], "type": "Point"}, "id": "126340", "properties": {"Current Price": "99\u00a2", "Location": "Murrieta, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9585358664, 33.7704809614, -116.9585358664, 33.7704809614], "geometry": {"coordinates": [-116.9585358664, 33.7704809614], "type": "Point"}, "id": "127724", "properties": {"Current Price": "59\u00a2", "Location": "San Jacinto, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.5638198657, 33.8905199613, -117.5638198657, 33.8905199613], "geometry": {"coordinates": [-117.5638198657, 33.8905199613], "type": "Point"}, "id": "127821", "properties": {"Current Price": "59\u00a2", "Location": "Corona, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2535018637, 35.7467969592, -119.2535018637, 35.7467969592], "geometry": {"coordinates": [-119.2535018637, 35.7467969592], "type": "Point"}, "id": "130518", "properties": {"Current Price": "59\u00a2", "Location": "Delano, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1028898662, 33.1120799622, -117.1028898662, 33.1120799622], "geometry": {"coordinates": [-117.1028898662, 33.1120799622], "type": "Point"}, "id": "130615", "properties": {"Current Price": "59\u00a2", "Location": "Escondido, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0086968663, 32.8031439625, -117.0086968663, 32.8031439625], "geometry": {"coordinates": [-117.0086968663, 32.8031439625], "type": "Point"}, "id": "133997", "properties": {"Current Price": "99\u00a2", "Location": "San Diego, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.025985864, 36.0518239588, -119.025985864, 36.0518239588], "geometry": {"coordinates": [-119.025985864, 36.0518239588], "type": "Point"}, "id": "135082", "properties": {"Current Price": "59\u00a2", "Location": "Porterville, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.6752138633, 36.3278689585, -119.6752138633, 36.3278689585], "geometry": {"coordinates": [-119.6752138633, 36.3278689585], "type": "Point"}, "id": "136183", "properties": {"Current Price": "59\u00a2", "Location": "Hanford, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.1885427, 33.6379411, -112.1885427, 33.6379411], "geometry": {"coordinates": [-112.1885427, 33.6379411], "type": "Point"}, "id": "136389", "properties": {"Current Price": "99\u00a2", "Location": "Glendale, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102839, 33.3920431, -111.9102839, 33.3920431], "geometry": {"coordinates": [-111.9102839, 33.3920431], "type": "Point"}, "id": "137384", "properties": {"Current Price": "99\u00a2", "Location": "Tempe, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.5561599731, 33.4357299805, -112.5561599731, 33.4357299805], "geometry": {"coordinates": [-112.5561599731, 33.4357299805], "type": "Point"}, "id": "137480", "properties": {"Current Price": "99\u00a2", "Location": "Buckeye, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6340866089, 33.1216201782, -111.6340866089, 33.1216201782], "geometry": {"coordinates": [-111.6340866089, 33.1216201782], "type": "Point"}, "id": "137576", "properties": {"Current Price": "99\u00a2", "Location": "Queen Creek, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.8592281, 33.264263, -111.8592281, 33.264263], "geometry": {"coordinates": [-111.8592281, 33.264263], "type": "Point"}, "id": "138567", "properties": {"Current Price": "99\u00a2", "Location": "Chandler, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.185256958, 33.377571106, -112.185256958, 33.377571106], "geometry": {"coordinates": [-112.185256958, 33.377571106], "type": "Point"}, "id": "138763", "properties": {"Current Price": "99\u00a2", "Location": "Phoenix, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2722908717, 33.7072989615, -112.2722908717, 33.7072989615], "geometry": {"coordinates": [-112.2722908717, 33.7072989615], "type": "Point"}, "id": "139364", "properties": {"Current Price": "99\u00a2", "Location": "Peoria, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0520617, 33.6398797, -112.0520617, 33.6398797], "geometry": {"coordinates": [-112.0520617, 33.6398797], "type": "Point"}, "id": "139460", "properties": {"Current Price": "99\u00a2", "Location": "Phoenix, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3280181885, 33.8016891479, -118.3280181885, 33.8016891479], "geometry": {"coordinates": [-118.3280181885, 33.8016891479], "type": "Point"}, "id": "140152", "properties": {"Current Price": "59\u00a2", "Location": "Torrance, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.6013198622, 35.1203969599, -120.6013198622, 35.1203969599], "geometry": {"coordinates": [-120.6013198622, 35.1203969599], "type": "Point"}, "id": "140255", "properties": {"Current Price": "99\u00a2", "Location": "Arroyo Grande, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.6862668632, 36.8376759579, -119.6862668632, 36.8376759579], "geometry": {"coordinates": [-119.6862668632, 36.8376759579], "type": "Point"}, "id": "141346", "properties": {"Current Price": "99\u00a2", "Location": "Clovis, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036938648, 33.8901369613, -118.3036938648, 33.8901369613], "geometry": {"coordinates": [-118.3036938648, 33.8901369613], "type": "Point"}, "id": "141436", "properties": {"Current Price": "59\u00a2", "Location": "Gardena, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.3920119, 33.4560674, -112.3920119, 33.4560674], "geometry": {"coordinates": [-112.3920119, 33.4560674], "type": "Point"}, "id": "141542", "properties": {"Current Price": "99\u00a2", "Location": "Goodyear, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1734078661, 32.9069929624, -117.1734078661, 32.9069929624], "geometry": {"coordinates": [-117.1734078661, 32.9069929624], "type": "Point"}, "id": "142426", "properties": {"Current Price": "59\u00a2", "Location": "San Diego, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.5553458645, 34.2353889609, -118.5553458645, 34.2353889609], "geometry": {"coordinates": [-118.5553458645, 34.2353889609], "type": "Point"}, "id": "143710", "properties": {"Current Price": "59\u00a2", "Location": "Northridge, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7514218723, 33.296008962, -111.7514218723, 33.296008962], "geometry": {"coordinates": [-111.7514218723, 33.296008962], "type": "Point"}, "id": "144915", "properties": {"Current Price": "99\u00a2", "Location": "Gilbert, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6014175415, 33.3652915955, -111.6014175415, 33.3652915955], "geometry": {"coordinates": [-111.6014175415, 33.3652915955], "type": "Point"}, "id": "145209", "properties": {"Current Price": "99\u00a2", "Location": "Mesa, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.7188158643, 34.2792349608, -118.7188158643, 34.2792349608], "geometry": {"coordinates": [-118.7188158643, 34.2792349608], "type": "Point"}, "id": "146901", "properties": {"Current Price": "99\u00a2", "Location": "Simi Valley, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.261861866, 33.0555199622, -117.261861866, 33.0555199622], "geometry": {"coordinates": [-117.261861866, 33.0555199622], "type": "Point"}, "id": "148393", "properties": {"Current Price": "99\u00a2", "Location": "Encinitas, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1264404, 33.8876474, -118.1264404, 33.8876474], "geometry": {"coordinates": [-118.1264404, 33.8876474], "type": "Point"}, "id": "150173", "properties": {"Current Price": "59\u00a2", "Location": "Bellflower, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8369308654, 34.0262549611, -117.8369308654, 34.0262549611], "geometry": {"coordinates": [-117.8369308654, 34.0262549611], "type": "Point"}, "id": "150270", "properties": {"Current Price": "59\u00a2", "Location": "Walnut, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8761278642, 34.1816899609, -118.8761278642, 34.1816899609], "geometry": {"coordinates": [-118.8761278642, 34.1816899609], "type": "Point"}, "id": "152965", "properties": {"Current Price": "99\u00a2", "Location": "Thousand Oaks, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2024368661, 34.0772409611, -117.2024368661, 34.0772409611], "geometry": {"coordinates": [-117.2024368661, 34.0772409611], "type": "Point"}, "id": "153555", "properties": {"Current Price": "59\u00a2", "Location": "Redlands, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.2343673706, 34.2606201172, -119.2343673706, 34.2606201172], "geometry": {"coordinates": [-119.2343673706, 34.2606201172], "type": "Point"}, "id": "153751", "properties": {"Current Price": "59\u00a2", "Location": "Ventura, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1912384033, 33.8084716797, -117.1912384033, 33.8084716797], "geometry": {"coordinates": [-117.1912384033, 33.8084716797], "type": "Point"}, "id": "154642", "properties": {"Current Price": "59\u00a2", "Location": "Perris, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.8281438631, 36.8084799579, -119.8281438631, 36.8084799579], "geometry": {"coordinates": [-119.8281438631, 36.8084799579], "type": "Point"}, "id": "155637", "properties": {"Current Price": "59\u00a2", "Location": "Fresno, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4610768658, 33.9111309613, -117.4610768658, 33.9111309613], "geometry": {"coordinates": [-117.4610768658, 33.9111309613], "type": "Point"}, "id": "156628", "properties": {"Current Price": "59\u00a2", "Location": "Riverside, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281789866, 33.2082159621, -117.281789866, 33.2082159621], "geometry": {"coordinates": [-117.281789866, 33.2082159621], "type": "Point"}, "id": "158814", "properties": {"Current Price": "59\u00a2", "Location": "Oceanside, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.7827909, -118.1809026, 33.7827909], "geometry": {"coordinates": [-118.1809026, 33.7827909], "type": "Point"}, "id": "160895", "properties": {"Current Price": "59\u00a2", "Location": "Long Beach, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0391048663, 32.9566259623, -117.0391048663, 32.9566259623], "geometry": {"coordinates": [-117.0391048663, 32.9566259623], "type": "Point"}, "id": "161497", "properties": {"Current Price": "99\u00a2", "Location": "Poway, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1674626, 33.5988294, -117.1674626, 33.5988294], "geometry": {"coordinates": [-117.1674626, 33.5988294], "type": "Point"}, "id": "161692", "properties": {"Current Price": "99\u00a2", "Location": "Murrieta, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3199028648, 34.1802039609, -118.3199028648, 34.1802039609], "geometry": {"coordinates": [-118.3199028648, 34.1802039609], "type": "Point"}, "id": "165071", "properties": {"Current Price": "99\u00a2", "Location": "Burbank, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.4283905029, 34.9236183167, -120.4283905029, 34.9236183167], "geometry": {"coordinates": [-120.4283905029, 34.9236183167], "type": "Point"}, "id": "166258", "properties": {"Current Price": "59\u00a2", "Location": "Santa Maria, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3134918213, 36.2911987305, -119.3134918213, 36.2911987305], "geometry": {"coordinates": [-119.3134918213, 36.2911987305], "type": "Point"}, "id": "171127", "properties": {"Current Price": "59\u00a2", "Location": "Visalia, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9632669, 32.8067308, -116.9632669, 32.8067308], "geometry": {"coordinates": [-116.9632669, 32.8067308], "type": "Point"}, "id": "171230", "properties": {"Current Price": "99\u00a2", "Location": "El Cajon, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.1816864014, 33.6723899841, -116.1816864014, 33.6723899841], "geometry": {"coordinates": [-116.1816864014, 33.6723899841], "type": "Point"}, "id": "173714", "properties": {"Current Price": "59\u00a2", "Location": "Coachella, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.6225591, 34.1873582, -118.6225591, 34.1873582], "geometry": {"coordinates": [-118.6225591, 34.1873582], "type": "Point"}, "id": "174219", "properties": {"Current Price": "99\u00a2", "Location": "West Hills, CA, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8090698, 33.7491814, -117.8090698, 33.7491814], "geometry": {"coordinates": [-117.8090698, 33.7491814], "type": "Point"}, "id": "174707", "properties": {"Current Price": "59\u00a2", "Location": "Tustin, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.4592285156, 34.6496887207, -120.4592285156, 34.6496887207], "geometry": {"coordinates": [-120.4592285156, 34.6496887207], "type": "Point"}, "id": "174804", "properties": {"Current Price": "59\u00a2", "Location": "Lompoc, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.4056278, 34.1253199, -116.4056278, 34.1253199], "geometry": {"coordinates": [-116.4056278, 34.1253199], "type": "Point"}, "id": "177099", "properties": {"Current Price": "99\u00a2", "Location": "Yucca Valley, CA", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205909729, 33.1324195862, -117.205909729, 33.1324195862], "geometry": {"coordinates": [-117.205909729, 33.1324195862], "type": "Point"}, "id": "178879", "properties": {"Current Price": "59\u00a2", "Location": "San Marcos, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2276877, 33.8874801, -117.2276877, 33.8874801], "geometry": {"coordinates": [-117.2276877, 33.8874801], "type": "Point"}, "id": "180669", "properties": {"Current Price": "59\u00a2", "Location": "Moreno Valley, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.2607717, 33.8434174, -118.2607717, 33.8434174], "geometry": {"coordinates": [-118.2607717, 33.8434174], "type": "Point"}, "id": "181364", "properties": {"Current Price": "59\u00a2", "Location": "Carson, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9848527, 33.5984068, -111.9848527, 33.5984068], "geometry": {"coordinates": [-111.9848527, 33.5984068], "type": "Point"}, "id": "183562", "properties": {"Current Price": "99\u00a2", "Location": "Phoenix, AZ", "Price": 99.0, "Product": "Red Onion", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.5462123, 33.9733319, -117.5462123, 33.9733319], "geometry": {"coordinates": [-117.5462123, 33.9733319], "type": "Point"}, "id": "184743", "properties": {"Current Price": "59\u00a2", "Location": "Mira Loma, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4733505249, 34.4158287048, -118.4733505249, 34.4158287048], "geometry": {"coordinates": [-118.4733505249, 34.4158287048], "type": "Point"}, "id": "187827", "properties": {"Current Price": "59\u00a2", "Location": "Santa Clarita, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.0968170166, 33.4828605652, -117.0968170166, 33.4828605652], "geometry": {"coordinates": [-117.0968170166, 33.4828605652], "type": "Point"}, "id": "188024", "properties": {"Current Price": "59\u00a2", "Location": "Temecula, CA", "Price": 59.0, "Product": "Red Onion", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_9bc4a41ef266e2fe3daa4be4c06c9521.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_9bc4a41ef266e2fe3daa4be4c06c9521.addTo(map_693557e2e43874ac170cef60cdccf48c);
+        
+</script>
+</html>
