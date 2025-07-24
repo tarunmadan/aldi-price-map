@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Benner Iced Tea</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Benner Iced Tea cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9345d1bd3edb24d4f70123be275bdb39 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>1.95</li>
+                <li><span style='background:#b22222'></span>2.79</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="avocados">Avocados</option>
+
+                
+                <option value="barissimo_german_ground_coffee">Barissimo German Ground Coffee</option>
+
+                
+                <option value="benner_6-pack_peach_tea_or_peach_zero_tea">Benner 6-Pack Peach Tea or Peach Zero Tea</option>
+
+                
+                <option value="benner_iced_tea" selected>Benner Iced Tea</option>
+
+                
+                <option value="benner_iced_tea_sweet_tea_or_half_and_half_tea">Benner Iced Tea Sweet Tea or Half and Half Tea</option>
+
+                
+                <option value="blueberries">Blueberries</option>
+
+                
+                <option value="bremer_original_or_italian_meatballs">Bremer Original or Italian Meatballs</option>
+
+                
+                <option value="burman's_indian_sauce">Burman's Indian Sauce</option>
+
+                
+                <option value="cantaloupe">Cantaloupe</option>
+
+                
+                <option value="casa_mamita_8-pack_burritos">Casa Mamita 8-Pack Burritos</option>
+
+                
+                <option value="casa_mamita_crunchy_or_soft_taco_dinner_kit">Casa Mamita Crunchy or Soft Taco Dinner Kit</option>
+
+                
+                <option value="casa_mamita_flavored_salsa">Casa Mamita Flavored Salsa</option>
+
+                
+                <option value="clancy's_barbecue_potato_chips">Clancy's Barbecue Potato Chips</option>
+
+                
+                <option value="clancy's_original_or_jalapeno_kettle_chips">Clancy's Original or Jalapeno Kettle Chips</option>
+
+                
+                <option value="earthly_grains_white_or_brown_basmati_rice">Earthly Grains White or Brown Basmati Rice</option>
+
+                
+                <option value="fresh_baby_back_pork_ribs">Fresh Baby Back Pork Ribs</option>
+
+                
+                <option value="fresh_family_pack_937_organic_grass-fed_ground_beef">Fresh Family Pack 93/7 Organic Grass-Fed Ground Beef</option>
+
+                
+                <option value="happy_farms_deli-sliced_pepper_jack_cheese">Happy Farms Deli-Sliced Pepper Jack Cheese</option>
+
+                
+                <option value="kirkwood_seasoned_turkey_burgers">Kirkwood Seasoned Turkey Burgers</option>
+
+                
+                <option value="l'oven_fresh_potato_sandwich_rolls">L'oven Fresh Potato Sandwich Rolls</option>
+
+                
+                <option value="nature's_nectar_canned_coconut_water">Nature's Nectar Canned Coconut Water</option>
+
+                
+                <option value="organic_baby_peeled_carrots">Organic Baby Peeled Carrots</option>
+
+                
+                <option value="organic_baby_spinach">Organic Baby Spinach</option>
+
+                
+                <option value="park_street_deli_pineapple_jalapeno_or_sweet_chili_mango_dip">Park Street Deli Pineapple Jalapeno or Sweet Chili Mango Dip</option>
+
+                
+                <option value="priano_alfredo_sauce">Priano Alfredo Sauce</option>
+
+                
+                <option value="pulmuone_beef_bulgogi_udon_or_chicken_pad_thai_meal_kit">Pulmuone Beef Bulgogi Udon or Chicken Pad Thai Meal Kit</option>
+
+                
+                <option value="puraqua_hydration_drink_mix_sticks">PurAqua Hydration Drink Mix Sticks</option>
+
+                
+                <option value="red_onions">Red Onions</option>
+
+                
+                <option value="reggano_pasta_salad">Reggano Pasta Salad</option>
+
+                
+                <option value="season's_choice_steamed_asian_medley_or_broccoli_stir_fry">Season's Choice Steamed Asian Medley or Broccoli Stir Fry</option>
+
+                
+                <option value="simply_nature_organic_baby_spinach">Simply Nature Organic Baby Spinach</option>
+
+                
+                <option value="simply_nature_organic_chicken_or_chicken_cheddar_bratwurst">Simply Nature Organic Chicken or Chicken Cheddar Bratwurst</option>
+
+                
+                <option value="simply_nature_organic_marinara_or_tomato_basil_pasta_sauce">Simply Nature Organic Marinara or Tomato Basil Pasta Sauce</option>
+
+                
+                <option value="simply_nature_organic_pasta">Simply Nature Organic Pasta</option>
+
+                
+                <option value="specially_selected_6-count_brioche_buns">Specially Selected 6-Count Brioche Buns</option>
+
+                
+                <option value="specially_selected_summer_salsa">Specially Selected Summer Salsa</option>
+
+                
+                <option value="stonemill_grilling_blends">Stonemill Grilling Blends</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Jul 23<sup>rd</sup> - Jul 29<sup>th</sup>. New products and next update on Jul 30<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_9345d1bd3edb24d4f70123be275bdb39" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Jul 23<sup>rd</sup>, price maps are available for the following products - 
+                <a href="avocados.html">Avocados</a>, 
+                <a href="barissimo_german_ground_coffee.html">Barissimo German Ground Coffee</a>, 
+                <a href="benner_6-pack_peach_tea_or_peach_zero_tea.html">Benner 6-Pack Peach Tea or Peach Zero Tea</a>, 
+                <a href="benner_iced_tea.html">Benner Iced Tea</a>, 
+                <a href="benner_iced_tea_sweet_tea_or_half_and_half_tea.html">Benner Iced Tea Sweet Tea or Half and Half Tea</a>, 
+                <a href="blueberries.html">Blueberries</a>, 
+                <a href="bremer_original_or_italian_meatballs.html">Bremer Original or Italian Meatballs</a>, 
+                <a href="burman's_indian_sauce.html">Burman's Indian Sauce</a>, 
+                <a href="cantaloupe.html">Cantaloupe</a>, 
+                <a href="casa_mamita_8-pack_burritos.html">Casa Mamita 8-Pack Burritos</a>, 
+                <a href="casa_mamita_crunchy_or_soft_taco_dinner_kit.html">Casa Mamita Crunchy or Soft Taco Dinner Kit</a>, 
+                <a href="casa_mamita_flavored_salsa.html">Casa Mamita Flavored Salsa</a>, 
+                <a href="clancy's_barbecue_potato_chips.html">Clancy's Barbecue Potato Chips</a>, 
+                <a href="clancy's_original_or_jalapeno_kettle_chips.html">Clancy's Original or Jalapeno Kettle Chips</a>, 
+                <a href="earthly_grains_white_or_brown_basmati_rice.html">Earthly Grains White or Brown Basmati Rice</a>, 
+                <a href="fresh_baby_back_pork_ribs.html">Fresh Baby Back Pork Ribs</a>, 
+                <a href="fresh_family_pack_937_organic_grass-fed_ground_beef.html">Fresh Family Pack 93/7 Organic Grass-Fed Ground Beef</a>, 
+                <a href="happy_farms_deli-sliced_pepper_jack_cheese.html">Happy Farms Deli-Sliced Pepper Jack Cheese</a>, 
+                <a href="kirkwood_seasoned_turkey_burgers.html">Kirkwood Seasoned Turkey Burgers</a>, 
+                <a href="l'oven_fresh_potato_sandwich_rolls.html">L'oven Fresh Potato Sandwich Rolls</a>, 
+                <a href="nature's_nectar_canned_coconut_water.html">Nature's Nectar Canned Coconut Water</a>, 
+                <a href="organic_baby_peeled_carrots.html">Organic Baby Peeled Carrots</a>, 
+                <a href="organic_baby_spinach.html">Organic Baby Spinach</a>, 
+                <a href="park_street_deli_pineapple_jalapeno_or_sweet_chili_mango_dip.html">Park Street Deli Pineapple Jalapeno or Sweet Chili Mango Dip</a>, 
+                <a href="priano_alfredo_sauce.html">Priano Alfredo Sauce</a>, 
+                <a href="pulmuone_beef_bulgogi_udon_or_chicken_pad_thai_meal_kit.html">Pulmuone Beef Bulgogi Udon or Chicken Pad Thai Meal Kit</a>, 
+                <a href="puraqua_hydration_drink_mix_sticks.html">PurAqua Hydration Drink Mix Sticks</a>, 
+                <a href="red_onions.html">Red Onions</a>, 
+                <a href="reggano_pasta_salad.html">Reggano Pasta Salad</a>, 
+                <a href="season's_choice_steamed_asian_medley_or_broccoli_stir_fry.html">Season's Choice Steamed Asian Medley or Broccoli Stir Fry</a>, 
+                <a href="simply_nature_organic_baby_spinach.html">Simply Nature Organic Baby Spinach</a>, 
+                <a href="simply_nature_organic_chicken_or_chicken_cheddar_bratwurst.html">Simply Nature Organic Chicken or Chicken Cheddar Bratwurst</a>, 
+                <a href="simply_nature_organic_marinara_or_tomato_basil_pasta_sauce.html">Simply Nature Organic Marinara or Tomato Basil Pasta Sauce</a>, 
+                <a href="simply_nature_organic_pasta.html">Simply Nature Organic Pasta</a>, 
+                <a href="specially_selected_6-count_brioche_buns.html">Specially Selected 6-Count Brioche Buns</a>, 
+                <a href="specially_selected_summer_salsa.html">Specially Selected Summer Salsa</a>, 
+                <a href="stonemill_grilling_blends.html">Stonemill Grilling Blends</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_9345d1bd3edb24d4f70123be275bdb39 = L.map(
+                "map_9345d1bd3edb24d4f70123be275bdb39",
+                {
+                    center: [36.655926, -82.848836],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_9345d1bd3edb24d4f70123be275bdb39);
+
+            
+
+        
+    
+            var tile_layer_70f796394267d1507df747bf8b5a95c4 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_70f796394267d1507df747bf8b5a95c4.addTo(map_9345d1bd3edb24d4f70123be275bdb39);
+        
+    
+            map_9345d1bd3edb24d4f70123be275bdb39.fitBounds(
+                [[29.98285, -92.04785], [43.329002, -73.649822]],
+                {}
+            );
+        
+    
+        function geo_json_66c0bd908ca414da249474cd08810ffe_styler(feature) {
+            switch(feature.id) {
+                case "184097": case "184165": case "184369": case "185253": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_66c0bd908ca414da249474cd08810ffe_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_66c0bd908ca414da249474cd08810ffe_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_66c0bd908ca414da249474cd08810ffe_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_66c0bd908ca414da249474cd08810ffe_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_66c0bd908ca414da249474cd08810ffe.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_66c0bd908ca414da249474cd08810ffe_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_66c0bd908ca414da249474cd08810ffe = L.geoJson(null, {
+                onEachFeature: geo_json_66c0bd908ca414da249474cd08810ffe_onEachFeature,
+            
+                style: geo_json_66c0bd908ca414da249474cd08810ffe_styler,
+                pointToLayer: geo_json_66c0bd908ca414da249474cd08810ffe_pointToLayer,
+        });
+
+        function geo_json_66c0bd908ca414da249474cd08810ffe_add (data) {
+            geo_json_66c0bd908ca414da249474cd08810ffe
+                .addData(data);
+        }
+            geo_json_66c0bd908ca414da249474cd08810ffe_add({"bbox": [-92.04785, 29.98285, -73.649822, 43.329002], "features": [{"bbox": [-74.36124, 43.01626, -74.36124, 43.01626], "geometry": {"coordinates": [-74.36124, 43.01626], "type": "Point"}, "id": "68983", "properties": {"Current Price": "1.95 ", "Location": "Johnstown, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.67204, 43.329002, -73.67204, 43.329002], "geometry": {"coordinates": [-73.67204, 43.329002], "type": "Point"}, "id": "69119", "properties": {"Current Price": "1.95 ", "Location": "Queensbury, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.69403, 42.65679, -73.69403, 42.65679], "geometry": {"coordinates": [-73.69403, 42.65679], "type": "Point"}, "id": "69187", "properties": {"Current Price": "1.95 ", "Location": "Rensselaer, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.8523, 42.73472, -73.8523, 42.73472], "geometry": {"coordinates": [-73.8523, 42.73472], "type": "Point"}, "id": "69255", "properties": {"Current Price": "1.95 ", "Location": "Colonie, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.649822, 42.741576, -73.649822, 42.741576], "geometry": {"coordinates": [-73.649822, 42.741576], "type": "Point"}, "id": "69323", "properties": {"Current Price": "1.95 ", "Location": "Troy, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.9311, 42.8739, -73.9311, 42.8739], "geometry": {"coordinates": [-73.9311, 42.8739], "type": "Point"}, "id": "69391", "properties": {"Current Price": "1.95 ", "Location": "Glenville, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.76495, 42.85976, -73.76495, 42.85976], "geometry": {"coordinates": [-73.76495, 42.85976], "type": "Point"}, "id": "69459", "properties": {"Current Price": "1.95 ", "Location": "Clifton Park, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.98004, 42.79096, -73.98004, 42.79096], "geometry": {"coordinates": [-73.98004, 42.79096], "type": "Point"}, "id": "69527", "properties": {"Current Price": "1.95 ", "Location": "Rotterdam, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.1875, 42.96861, -74.1875, 42.96861], "geometry": {"coordinates": [-74.1875, 42.96861], "type": "Point"}, "id": "69595", "properties": {"Current Price": "1.95 ", "Location": "Amsterdam, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.744656, 43.106397, -73.744656, 43.106397], "geometry": {"coordinates": [-73.744656, 43.106397], "type": "Point"}, "id": "69663", "properties": {"Current Price": "1.95 ", "Location": "Saratoga Springs, NY", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.78625, 39.60521, -75.78625, 39.60521], "geometry": {"coordinates": [-75.78625, 39.60521], "type": "Point"}, "id": "106149", "properties": {"Current Price": "1.95 ", "Location": "Elkton, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.503298, 39.27848, -76.503298, 39.27848], "geometry": {"coordinates": [-76.503298, 39.27848], "type": "Point"}, "id": "106285", "properties": {"Current Price": "1.95 ", "Location": "Dundalk, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.45042, 39.316577, -76.45042, 39.316577], "geometry": {"coordinates": [-76.45042, 39.316577], "type": "Point"}, "id": "106557", "properties": {"Current Price": "1.95 ", "Location": "Essex, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.61174, 39.1942, -76.61174, 39.1942], "geometry": {"coordinates": [-76.61174, 39.1942], "type": "Point"}, "id": "106625", "properties": {"Current Price": "1.95 ", "Location": "Glen Burnie, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.89885, 38.85349, -76.89885, 38.85349], "geometry": {"coordinates": [-76.89885, 38.85349], "type": "Point"}, "id": "106693", "properties": {"Current Price": "1.95 ", "Location": "District Heights, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.66229, 39.25862, -76.66229, 39.25862], "geometry": {"coordinates": [-76.66229, 39.25862], "type": "Point"}, "id": "106761", "properties": {"Current Price": "1.95 ", "Location": "Baltimore, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.81127, 39.44359, -76.81127, 39.44359], "geometry": {"coordinates": [-76.81127, 39.44359], "type": "Point"}, "id": "107237", "properties": {"Current Price": "1.95 ", "Location": "Reisterstown, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.73055, 38.98263, -76.73055, 38.98263], "geometry": {"coordinates": [-76.73055, 38.98263], "type": "Point"}, "id": "107441", "properties": {"Current Price": "1.95 ", "Location": "Bowie, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.762872, 39.284673, -76.762872, 39.284673], "geometry": {"coordinates": [-76.762872, 39.284673], "type": "Point"}, "id": "107509", "properties": {"Current Price": "1.95 ", "Location": "Catonsville, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.989943, 39.585318, -76.989943, 39.585318], "geometry": {"coordinates": [-76.989943, 39.585318], "type": "Point"}, "id": "107781", "properties": {"Current Price": "1.95 ", "Location": "Westminster, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.178982, 39.496608, -76.178982, 39.496608], "geometry": {"coordinates": [-76.178982, 39.496608], "type": "Point"}, "id": "107849", "properties": {"Current Price": "1.95 ", "Location": "Aberdeen, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.485597, 39.394587, -76.485597, 39.394587], "geometry": {"coordinates": [-76.485597, 39.394587], "type": "Point"}, "id": "108053", "properties": {"Current Price": "1.95 ", "Location": "Nottingham, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.761232, 39.404039, -76.761232, 39.404039], "geometry": {"coordinates": [-76.761232, 39.404039], "type": "Point"}, "id": "108121", "properties": {"Current Price": "1.95 ", "Location": "Owings Mills, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.69739, 39.019463, -76.69739, 39.019463], "geometry": {"coordinates": [-76.69739, 39.019463], "type": "Point"}, "id": "108189", "properties": {"Current Price": "1.95 ", "Location": "Crofton, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.404555, 39.3861, -77.404555, 39.3861], "geometry": {"coordinates": [-77.404555, 39.3861], "type": "Point"}, "id": "108257", "properties": {"Current Price": "1.95 ", "Location": "Frederick, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.427902, 38.893928, -77.427902, 38.893928], "geometry": {"coordinates": [-77.427902, 38.893928], "type": "Point"}, "id": "108393", "properties": {"Current Price": "1.95 ", "Location": "Chantilly, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.324384, 38.852214, -77.324384, 38.852214], "geometry": {"coordinates": [-77.324384, 38.852214], "type": "Point"}, "id": "108461", "properties": {"Current Price": "1.95 ", "Location": "Fairfax, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.90804, 38.99692, -76.90804, 38.99692], "geometry": {"coordinates": [-76.90804, 38.99692], "type": "Point"}, "id": "108529", "properties": {"Current Price": "1.95 ", "Location": "College Park, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.8537, 38.8671, -76.8537, 38.8671], "geometry": {"coordinates": [-76.8537, 38.8671], "type": "Point"}, "id": "108597", "properties": {"Current Price": "1.95 ", "Location": "Capitol Heights, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.551821, 39.082922, -76.551821, 39.082922], "geometry": {"coordinates": [-76.551821, 39.082922], "type": "Point"}, "id": "108665", "properties": {"Current Price": "1.95 ", "Location": "Severna Park, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.184159, 38.783816, -77.184159, 38.783816], "geometry": {"coordinates": [-77.184159, 38.783816], "type": "Point"}, "id": "108733", "properties": {"Current Price": "1.95 ", "Location": "Springfield, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.407207, 39.034945, -77.407207, 39.034945], "geometry": {"coordinates": [-77.407207, 39.034945], "type": "Point"}, "id": "108801", "properties": {"Current Price": "1.95 ", "Location": "Sterling, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.109627, 38.828808, -77.109627, 38.828808], "geometry": {"coordinates": [-77.109627, 38.828808], "type": "Point"}, "id": "108937", "properties": {"Current Price": "1.95 ", "Location": "Alexandria, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.225617, 38.866385, -77.225617, 38.866385], "geometry": {"coordinates": [-77.225617, 38.866385], "type": "Point"}, "id": "109209", "properties": {"Current Price": "1.95 ", "Location": "Falls Church, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.729553, 39.601204, -77.729553, 39.601204], "geometry": {"coordinates": [-77.729553, 39.601204], "type": "Point"}, "id": "109617", "properties": {"Current Price": "1.95 ", "Location": "Hagerstown, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.172027, 38.879743, -77.172027, 38.879743], "geometry": {"coordinates": [-77.172027, 38.879743], "type": "Point"}, "id": "109821", "properties": {"Current Price": "1.95 ", "Location": "Falls Church, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.67563, 39.97748, -76.67563, 39.97748], "geometry": {"coordinates": [-76.67563, 39.97748], "type": "Point"}, "id": "109889", "properties": {"Current Price": "1.95 ", "Location": "York, PA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.753892, 39.981033, -76.753892, 39.981033], "geometry": {"coordinates": [-76.753892, 39.981033], "type": "Point"}, "id": "109957", "properties": {"Current Price": "1.95 ", "Location": "York, PA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.794156, 39.185202, -76.794156, 39.185202], "geometry": {"coordinates": [-76.794156, 39.185202], "type": "Point"}, "id": "110093", "properties": {"Current Price": "1.95 ", "Location": "Elkridge, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.948337, 39.405423, -76.948337, 39.405423], "geometry": {"coordinates": [-76.948337, 39.405423], "type": "Point"}, "id": "110161", "properties": {"Current Price": "1.95 ", "Location": "Eldersburg, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.508545, 39.026946, -77.508545, 39.026946], "geometry": {"coordinates": [-77.508545, 39.026946], "type": "Point"}, "id": "110229", "properties": {"Current Price": "1.95 ", "Location": "Broadlands, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.391539, 38.856567, -77.391539, 38.856567], "geometry": {"coordinates": [-77.391539, 38.856567], "type": "Point"}, "id": "110297", "properties": {"Current Price": "1.95 ", "Location": "Fairfax, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.810379, 40.304062, -76.810379, 40.304062], "geometry": {"coordinates": [-76.810379, 40.304062], "type": "Point"}, "id": "110365", "properties": {"Current Price": "1.95 ", "Location": "Harrisburg, PA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.519792, 38.943957, -77.519792, 38.943957], "geometry": {"coordinates": [-77.519792, 38.943957], "type": "Point"}, "id": "110433", "properties": {"Current Price": "1.95 ", "Location": "Sterling, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.1835, 39.1277, -77.1835, 39.1277], "geometry": {"coordinates": [-77.1835, 39.1277], "type": "Point"}, "id": "110977", "properties": {"Current Price": "1.95 ", "Location": "Gaithersburg, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.545975, 39.099052, -75.545975, 39.099052], "geometry": {"coordinates": [-75.545975, 39.099052], "type": "Point"}, "id": "111045", "properties": {"Current Price": "1.95 ", "Location": "Camden, DE", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.5179462, 39.1638501, -75.5179462, 39.1638501], "geometry": {"coordinates": [-75.5179462, 39.1638501], "type": "Point"}, "id": "111181", "properties": {"Current Price": "1.95 ", "Location": "Dover, DE", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.5981117, 39.2833401, -75.5981117, 39.2833401], "geometry": {"coordinates": [-75.5981117, 39.2833401], "type": "Point"}, "id": "111249", "properties": {"Current Price": "1.95 ", "Location": "Smyrna, DE", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.53215, 39.09564, -77.53215, 39.09564], "geometry": {"coordinates": [-77.53215, 39.09564], "type": "Point"}, "id": "111317", "properties": {"Current Price": "1.95 ", "Location": "Leesburg, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.0791, 38.7825, -77.0791, 38.7825], "geometry": {"coordinates": [-77.0791, 38.7825], "type": "Point"}, "id": "111385", "properties": {"Current Price": "1.95 ", "Location": "Alexandria, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.620633, 39.432071, -76.620633, 39.432071], "geometry": {"coordinates": [-76.620633, 39.432071], "type": "Point"}, "id": "111453", "properties": {"Current Price": "1.95 ", "Location": "Timonium, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.729794, 39.15169, -76.729794, 39.15169], "geometry": {"coordinates": [-76.729794, 39.15169], "type": "Point"}, "id": "111521", "properties": {"Current Price": "1.95 ", "Location": "Hanover, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.128252, 39.065105, -77.128252, 39.065105], "geometry": {"coordinates": [-77.128252, 39.065105], "type": "Point"}, "id": "111589", "properties": {"Current Price": "1.95 ", "Location": "Rockville, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.205391, 39.1716, -77.205391, 39.1716], "geometry": {"coordinates": [-77.205391, 39.1716], "type": "Point"}, "id": "111725", "properties": {"Current Price": "1.95 ", "Location": "Gaithersburg, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.730018, 39.449436, -75.730018, 39.449436], "geometry": {"coordinates": [-75.730018, 39.449436], "type": "Point"}, "id": "111793", "properties": {"Current Price": "1.95 ", "Location": "Middletown, DE", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.364433, 40.044185, -76.364433, 40.044185], "geometry": {"coordinates": [-76.364433, 40.044185], "type": "Point"}, "id": "111861", "properties": {"Current Price": "1.95 ", "Location": "Lancaster, PA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.31289, 39.46604, -76.31289, 39.46604], "geometry": {"coordinates": [-76.31289, 39.46604], "type": "Point"}, "id": "112133", "properties": {"Current Price": "1.95 ", "Location": "Abingdon, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.99329, 38.74366, -76.99329, 38.74366], "geometry": {"coordinates": [-76.99329, 38.74366], "type": "Point"}, "id": "112201", "properties": {"Current Price": "1.95 ", "Location": "Fort Washington, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.54634, 38.981668, -76.54634, 38.981668], "geometry": {"coordinates": [-76.54634, 38.981668], "type": "Point"}, "id": "112269", "properties": {"Current Price": "1.95 ", "Location": "Annapolis, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.883153, 38.771043, -76.883153, 38.771043], "geometry": {"coordinates": [-76.883153, 38.771043], "type": "Point"}, "id": "112337", "properties": {"Current Price": "1.95 ", "Location": "Clinton, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.807411, 39.095851, -76.807411, 39.095851], "geometry": {"coordinates": [-76.807411, 39.095851], "type": "Point"}, "id": "112405", "properties": {"Current Price": "1.95 ", "Location": "Laurel, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.6274, 39.9149, -76.6274, 39.9149], "geometry": {"coordinates": [-76.6274, 39.9149], "type": "Point"}, "id": "112473", "properties": {"Current Price": "1.95 ", "Location": "Red Lion, PA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.126368, 38.851596, -77.126368, 38.851596], "geometry": {"coordinates": [-77.126368, 38.851596], "type": "Point"}, "id": "112609", "properties": {"Current Price": "1.95 ", "Location": "Falls Church, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.957263, 39.0531, -76.957263, 39.0531], "geometry": {"coordinates": [-76.957263, 39.0531], "type": "Point"}, "id": "112677", "properties": {"Current Price": "1.95 ", "Location": "Silver Spring, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.139613, 38.767902, -77.139613, 38.767902], "geometry": {"coordinates": [-77.139613, 38.767902], "type": "Point"}, "id": "112745", "properties": {"Current Price": "1.95 ", "Location": "Alexandria, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.65055, 39.14295, -76.65055, 39.14295], "geometry": {"coordinates": [-76.65055, 39.14295], "type": "Point"}, "id": "112813", "properties": {"Current Price": "1.95 ", "Location": "Severn, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.6418, 38.8135, -77.6418, 38.8135], "geometry": {"coordinates": [-77.6418, 38.8135], "type": "Point"}, "id": "112949", "properties": {"Current Price": "1.95 ", "Location": "Haymarket, VA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.1049, 39.04455, -77.1049, 39.04455], "geometry": {"coordinates": [-77.1049, 39.04455], "type": "Point"}, "id": "113085", "properties": {"Current Price": "1.95 ", "Location": "Kensington, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.63776, 39.46281, -76.63776, 39.46281], "geometry": {"coordinates": [-76.63776, 39.46281], "type": "Point"}, "id": "113153", "properties": {"Current Price": "1.95 ", "Location": "Cockeysville, MD", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-92.04785, 30.154, -92.04785, 30.154], "geometry": {"coordinates": [-92.04785, 30.154], "type": "Point"}, "id": "184097", "properties": {"Current Price": "2.79 ", "Location": "Lafayette, LA", "Price": "2.79", "Product": "Benner Iced Tea", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.82013, 29.98285, -91.82013, 29.98285], "geometry": {"coordinates": [-91.82013, 29.98285], "type": "Point"}, "id": "184165", "properties": {"Current Price": "2.79 ", "Location": "New Iberia, LA", "Price": "2.79", "Product": "Benner Iced Tea", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.990724, 30.265457, -91.990724, 30.265457], "geometry": {"coordinates": [-91.990724, 30.265457], "type": "Point"}, "id": "184369", "properties": {"Current Price": "2.79 ", "Location": "Lafayette, LA", "Price": "2.79", "Product": "Benner Iced Tea", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.89817, 30.4393, -88.89817, 30.4393], "geometry": {"coordinates": [-88.89817, 30.4393], "type": "Point"}, "id": "185253", "properties": {"Current Price": "2.79 ", "Location": "Diberville, MS", "Price": "2.79", "Product": "Benner Iced Tea", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.21676, 32.07575, -84.21676, 32.07575], "geometry": {"coordinates": [-84.21676, 32.07575], "type": "Point"}, "id": "185389", "properties": {"Current Price": "1.95 ", "Location": "Americus, GA", "Price": "1.95", "Product": "Benner Iced Tea", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_66c0bd908ca414da249474cd08810ffe.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_66c0bd908ca414da249474cd08810ffe.addTo(map_9345d1bd3edb24d4f70123be275bdb39);
+        
+</script>
+</html>
