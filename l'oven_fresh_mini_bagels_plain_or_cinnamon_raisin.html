@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head><title>Aldi Price Map - 1-2-3 Vegetable Oil</title>
+<head><title>Aldi Price Map - L'oven Fresh Mini Bagels Plain or Cinnamon Raisin</title>
     
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do 1-2-3 Vegetable Oil cost at Aldi?">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do L'oven Fresh Mini Bagels Plain or Cinnamon Raisin cost at Aldi?">
     
         <script>
             L_NO_TOUCH = false;
@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_0960b219162414456eca24c0d3649ad3 {
+                #map_d5fefe9fca00f0fd73bd9765490f81be {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -177,8 +177,8 @@
         <div class='legend-title'>Price</div>
         <div class='legend-scale'>
             <ul class='legend-labels'>
-                <li><span style='background:#006400'></span>2.99</li>
-                <li><span style='background:#b22222'></span>3.48</li>
+                <li><span style='background:#006400'></span>2.35</li>
+                <li><span style='background:#b22222'></span>3.59</li>
             </ul>
         </div>
     </div>
@@ -188,7 +188,7 @@
     <div class="header">
                     <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
                             
-                <option value="1-2-3_vegetable_oil" selected>1-2-3 Vegetable Oil</option>
+                <option value="1-2-3_vegetable_oil">1-2-3 Vegetable Oil</option>
 
                 
                 <option value="bake_shop_mini_muffins">Bake Shop Mini Muffins</option>
@@ -236,7 +236,7 @@
                 <option value="l'oven_fresh_mini_bagels">L'oven Fresh Mini Bagels</option>
 
                 
-                <option value="l'oven_fresh_mini_bagels_plain_or_cinnamon_raisin">L'oven Fresh Mini Bagels Plain or Cinnamon Raisin</option>
+                <option value="l'oven_fresh_mini_bagels_plain_or_cinnamon_raisin" selected>L'oven Fresh Mini Bagels Plain or Cinnamon Raisin</option>
 
                 
                 <option value="l'oven_fresh_plain_english_muffins">L'oven Fresh Plain English Muffins</option>
@@ -311,7 +311,7 @@
                     <div class="sub">Prices valid Jul 30<sup>th</sup> - Aug 5<sup>th</sup>. New products and next update on Aug 6<sup>th</sup></span>    </div>
                     <div style="clear: both;"></div>           
                 </div>
-    <div class="folium-map" id="map_0960b219162414456eca24c0d3649ad3" ></div>
+    <div class="folium-map" id="map_d5fefe9fca00f0fd73bd9765490f81be" ></div>
         
 
     <div class="footer">
@@ -370,89 +370,91 @@
 <script>
     
     
-            var map_0960b219162414456eca24c0d3649ad3 = L.map(
-                "map_0960b219162414456eca24c0d3649ad3",
+            var map_d5fefe9fca00f0fd73bd9765490f81be = L.map(
+                "map_d5fefe9fca00f0fd73bd9765490f81be",
                 {
-                    center: [34.7010355, -118.31989300000001],
+                    center: [34.160545, -85.85942750000001],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_0960b219162414456eca24c0d3649ad3);
+            L.control.scale().addTo(map_d5fefe9fca00f0fd73bd9765490f81be);
 
             
 
         
     
-            var tile_layer_bd87f293c59de59953b4555e773e9c90 = L.tileLayer(
+            var tile_layer_5b1075869ab11905f2e4f6896cf088b2 = L.tileLayer(
                 "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_bd87f293c59de59953b4555e773e9c90.addTo(map_0960b219162414456eca24c0d3649ad3);
+            tile_layer_5b1075869ab11905f2e4f6896cf088b2.addTo(map_d5fefe9fca00f0fd73bd9765490f81be);
         
     
-            map_0960b219162414456eca24c0d3649ad3.fitBounds(
-                [[32.593461, -120.45845], [36.80861, -116.181336]],
+            map_d5fefe9fca00f0fd73bd9765490f81be.fitBounds(
+                [[29.54165, -95.71903], [38.77944, -75.999825]],
                 {}
             );
         
     
-        function geo_json_3b4ce73d43013389f9847da284de50ec_styler(feature) {
+        function geo_json_1f1d222496155b516653d654b61f172a_styler(feature) {
             switch(feature.id) {
+                case "169907": case "170101": case "170396": case "171182": case "171279": case "172366": case "173057": case "173843": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
                 default:
                     return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
             }
         }
-        function geo_json_3b4ce73d43013389f9847da284de50ec_highlighter(feature) {
+        function geo_json_1f1d222496155b516653d654b61f172a_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_3b4ce73d43013389f9847da284de50ec_pointToLayer(feature, latlng) {
+        function geo_json_1f1d222496155b516653d654b61f172a_pointToLayer(feature, latlng) {
             var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
             
-            let style = geo_json_3b4ce73d43013389f9847da284de50ec_styler(feature)
+            let style = geo_json_1f1d222496155b516653d654b61f172a_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_3b4ce73d43013389f9847da284de50ec_onEachFeature(feature, layer) {
+        function geo_json_1f1d222496155b516653d654b61f172a_onEachFeature(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_3b4ce73d43013389f9847da284de50ec.resetStyle(e.target);
+                        geo_json_1f1d222496155b516653d654b61f172a.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_3b4ce73d43013389f9847da284de50ec_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_1f1d222496155b516653d654b61f172a_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_3b4ce73d43013389f9847da284de50ec = L.geoJson(null, {
-                onEachFeature: geo_json_3b4ce73d43013389f9847da284de50ec_onEachFeature,
+        var geo_json_1f1d222496155b516653d654b61f172a = L.geoJson(null, {
+                onEachFeature: geo_json_1f1d222496155b516653d654b61f172a_onEachFeature,
             
-                style: geo_json_3b4ce73d43013389f9847da284de50ec_styler,
-                pointToLayer: geo_json_3b4ce73d43013389f9847da284de50ec_pointToLayer,
+                style: geo_json_1f1d222496155b516653d654b61f172a_styler,
+                pointToLayer: geo_json_1f1d222496155b516653d654b61f172a_pointToLayer,
         });
 
-        function geo_json_3b4ce73d43013389f9847da284de50ec_add (data) {
-            geo_json_3b4ce73d43013389f9847da284de50ec
+        function geo_json_1f1d222496155b516653d654b61f172a_add (data) {
+            geo_json_1f1d222496155b516653d654b61f172a
                 .addData(data);
         }
-            geo_json_3b4ce73d43013389f9847da284de50ec_add({"bbox": [-120.45845, 32.593461, -116.181336, 36.80861], "features": [{"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "174694", "properties": {"Current Price": "2.99 ", "Location": "La Habra, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "175159", "properties": {"Current Price": "2.99 ", "Location": "Fontana, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "175466", "properties": {"Current Price": "2.99 ", "Location": "Mira Loma, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "175624", "properties": {"Current Price": "2.99 ", "Location": "Downey, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "175782", "properties": {"Current Price": "2.99 ", "Location": "San Diego, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "175861", "properties": {"Current Price": "2.99 ", "Location": "Gardena, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "176098", "properties": {"Current Price": "2.99 ", "Location": "Anaheim, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "176396", "properties": {"Current Price": "2.99 ", "Location": "Fountain Valley, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "176554", "properties": {"Current Price": "2.99 ", "Location": "Santa Maria, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "176633", "properties": {"Current Price": "2.99 ", "Location": "Visalia, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "176712", "properties": {"Current Price": "2.99 ", "Location": "Fresno, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "176870", "properties": {"Current Price": "2.99 ", "Location": "Temecula, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "177405", "properties": {"Current Price": "2.99 ", "Location": "Buena Park, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "177484", "properties": {"Current Price": "2.99 ", "Location": "Oceanside, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "177931", "properties": {"Current Price": "2.99 ", "Location": "San Marcos, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "178238", "properties": {"Current Price": "2.99 ", "Location": "Temecula, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "178317", "properties": {"Current Price": "2.99 ", "Location": "Jurupa Valley, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "178396", "properties": {"Current Price": "2.99 ", "Location": "Moreno Valley, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "178624", "properties": {"Current Price": "2.99 ", "Location": "Palm Springs, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "178782", "properties": {"Current Price": "2.99 ", "Location": "Escondido, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "178861", "properties": {"Current Price": "2.99 ", "Location": "Escondido, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "178940", "properties": {"Current Price": "2.99 ", "Location": "Perris, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "179098", "properties": {"Current Price": "2.99 ", "Location": "Long Beach, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "179177", "properties": {"Current Price": "2.99 ", "Location": "Moreno Valley, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "179256", "properties": {"Current Price": "2.99 ", "Location": "Lake Elsinore, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "179572", "properties": {"Current Price": "2.99 ", "Location": "San Diego, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "179651", "properties": {"Current Price": "2.99 ", "Location": "Palmdale, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "179958", "properties": {"Current Price": "2.99 ", "Location": "Beaumont, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "180195", "properties": {"Current Price": "2.99 ", "Location": "Hesperia, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "180274", "properties": {"Current Price": "2.99 ", "Location": "Chula Vista, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "180423", "properties": {"Current Price": "2.99 ", "Location": "Chula Vista, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "180800", "properties": {"Current Price": "2.99 ", "Location": "Santa Clarita, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "181809", "properties": {"Current Price": "2.99 ", "Location": "Ventura, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "181888", "properties": {"Current Price": "2.99 ", "Location": "Pomona, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "181967", "properties": {"Current Price": "2.99 ", "Location": "Santa Clarita, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "182046", "properties": {"Current Price": "2.99 ", "Location": "Carson, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "183105", "properties": {"Current Price": "2.99 ", "Location": "Coachella, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "183184", "properties": {"Current Price": "2.99 ", "Location": "Tustin, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "183263", "properties": {"Current Price": "2.99 ", "Location": "Lompoc, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "183342", "properties": {"Current Price": "2.99 ", "Location": "Torrance, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "183500", "properties": {"Current Price": "2.99 ", "Location": "Porterville, CA", "Price": "2.99", "Product": "1-2-3 Vegetable Oil", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_1f1d222496155b516653d654b61f172a_add({"bbox": [-95.71903, 29.54165, -75.999825, 38.77944], "features": [{"bbox": [-95.39826, 29.55538, -95.39826, 29.55538], "geometry": {"coordinates": [-95.39826, 29.55538], "type": "Point"}, "id": "169907", "properties": {"Current Price": "3.59 ", "Location": "Pearland, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.54827, 29.54165, -95.54827, 29.54165], "geometry": {"coordinates": [-95.54827, 29.54165], "type": "Point"}, "id": "170101", "properties": {"Current Price": "3.59 ", "Location": "Missouri City, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.71903, 29.85825, -95.71903, 29.85825], "geometry": {"coordinates": [-95.71903, 29.85825], "type": "Point"}, "id": "170396", "properties": {"Current Price": "3.59 ", "Location": "Katy, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.48596, 29.99359, -95.48596, 29.99359], "geometry": {"coordinates": [-95.48596, 29.99359], "type": "Point"}, "id": "171182", "properties": {"Current Price": "3.59 ", "Location": "Houston, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.3637, 29.702, -95.3637, 29.702], "geometry": {"coordinates": [-95.3637, 29.702], "type": "Point"}, "id": "171279", "properties": {"Current Price": "3.59 ", "Location": "Houston, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.5825, 29.6477, -95.5825, 29.6477], "geometry": {"coordinates": [-95.5825, 29.6477], "type": "Point"}, "id": "172366", "properties": {"Current Price": "3.59 ", "Location": "Meadows Place, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.544762, 29.81815, -95.544762, 29.81815], "geometry": {"coordinates": [-95.544762, 29.81815], "type": "Point"}, "id": "173057", "properties": {"Current Price": "3.59 ", "Location": "Houston, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.9791, 29.7851, -94.9791, 29.7851], "geometry": {"coordinates": [-94.9791, 29.7851], "type": "Point"}, "id": "173843", "properties": {"Current Price": "3.59 ", "Location": "Baytown, TX", "Price": "3.59", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.5108, 37.6362, -77.5108, 37.6362], "geometry": {"coordinates": [-77.5108, 37.6362], "type": "Point"}, "id": "183874", "properties": {"Current Price": "2.35 ", "Location": "Henrico, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.511, 37.5959, -77.511, 37.5959], "geometry": {"coordinates": [-77.511, 37.5959], "type": "Point"}, "id": "184073", "properties": {"Current Price": "2.35 ", "Location": "Richmond, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.50092, 38.25462, -77.50092, 38.25462], "geometry": {"coordinates": [-77.50092, 38.25462], "type": "Point"}, "id": "184171", "properties": {"Current Price": "2.35 ", "Location": "Fredericksburg, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.606624, 37.519895, -77.606624, 37.519895], "geometry": {"coordinates": [-77.606624, 37.519895], "type": "Point"}, "id": "184269", "properties": {"Current Price": "2.35 ", "Location": "North Chesterfield, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.4687, 37.5633, -77.4687, 37.5633], "geometry": {"coordinates": [-77.4687, 37.5633], "type": "Point"}, "id": "184367", "properties": {"Current Price": "2.35 ", "Location": "Richmond, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.97041, 38.48413, -77.97041, 38.48413], "geometry": {"coordinates": [-77.97041, 38.48413], "type": "Point"}, "id": "184563", "properties": {"Current Price": "2.35 ", "Location": "Culpeper, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.644414, 37.661861, -77.644414, 37.661861], "geometry": {"coordinates": [-77.644414, 37.661861], "type": "Point"}, "id": "184661", "properties": {"Current Price": "2.35 ", "Location": "Henrico, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.516814, 37.126127, -76.516814, 37.126127], "geometry": {"coordinates": [-76.516814, 37.126127], "type": "Point"}, "id": "184759", "properties": {"Current Price": "2.35 ", "Location": "Newport News, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.411656, 36.82196, -76.411656, 36.82196], "geometry": {"coordinates": [-76.411656, 36.82196], "type": "Point"}, "id": "184857", "properties": {"Current Price": "2.35 ", "Location": "Chesapeake, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.520808, 38.363816, -77.520808, 38.363816], "geometry": {"coordinates": [-77.520808, 38.363816], "type": "Point"}, "id": "184955", "properties": {"Current Price": "2.35 ", "Location": "Fredericksburg, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.498493, 37.363026, -77.498493, 37.363026], "geometry": {"coordinates": [-77.498493, 37.363026], "type": "Point"}, "id": "185053", "properties": {"Current Price": "2.35 ", "Location": "Chester, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.5342, 38.29081, -77.5342, 38.29081], "geometry": {"coordinates": [-77.5342, 38.29081], "type": "Point"}, "id": "185151", "properties": {"Current Price": "2.35 ", "Location": "Fredericksburg, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.175009, 36.795629, -76.175009, 36.795629], "geometry": {"coordinates": [-76.175009, 36.795629], "type": "Point"}, "id": "185249", "properties": {"Current Price": "2.35 ", "Location": "Virginia Beach, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.488676, 37.096209, -76.488676, 37.096209], "geometry": {"coordinates": [-76.488676, 37.096209], "type": "Point"}, "id": "185347", "properties": {"Current Price": "2.35 ", "Location": "Newport News, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.5309, 37.5365, -77.5309, 37.5365], "geometry": {"coordinates": [-77.5309, 37.5365], "type": "Point"}, "id": "185846", "properties": {"Current Price": "2.35 ", "Location": "Richmond, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.382526, 37.041207, -76.382526, 37.041207], "geometry": {"coordinates": [-76.382526, 37.041207], "type": "Point"}, "id": "186244", "properties": {"Current Price": "2.35 ", "Location": "Hampton, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.094013, 36.812055, -76.094013, 36.812055], "geometry": {"coordinates": [-76.094013, 36.812055], "type": "Point"}, "id": "186645", "properties": {"Current Price": "2.35 ", "Location": "Virginia Beach, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.999825, 36.786978, -75.999825, 36.786978], "geometry": {"coordinates": [-75.999825, 36.786978], "type": "Point"}, "id": "187147", "properties": {"Current Price": "2.35 ", "Location": "Virginia Beach, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.234994, 36.765639, -76.234994, 36.765639], "geometry": {"coordinates": [-76.234994, 36.765639], "type": "Point"}, "id": "187946", "properties": {"Current Price": "2.35 ", "Location": "Chesapeake, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.8002985, 34.2900284, -77.8002985, 34.2900284], "geometry": {"coordinates": [-77.8002985, 34.2900284], "type": "Point"}, "id": "188044", "properties": {"Current Price": "2.35 ", "Location": "Wilmington, NC", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.230796, 36.917295, -76.230796, 36.917295], "geometry": {"coordinates": [-76.230796, 36.917295], "type": "Point"}, "id": "188644", "properties": {"Current Price": "2.35 ", "Location": "Norfolk, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.208981, 36.858434, -76.208981, 36.858434], "geometry": {"coordinates": [-76.208981, 36.858434], "type": "Point"}, "id": "188742", "properties": {"Current Price": "2.35 ", "Location": "Norfolk, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.026607, 36.856654, -76.026607, 36.856654], "geometry": {"coordinates": [-76.026607, 36.856654], "type": "Point"}, "id": "188938", "properties": {"Current Price": "2.35 ", "Location": "Virginia Beach, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.667999, 37.506553, -77.667999, 37.506553], "geometry": {"coordinates": [-77.667999, 37.506553], "type": "Point"}, "id": "189137", "properties": {"Current Price": "2.35 ", "Location": "Midlothian, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.31139, 38.583023, -77.31139, 38.583023], "geometry": {"coordinates": [-77.31139, 38.583023], "type": "Point"}, "id": "189437", "properties": {"Current Price": "2.35 ", "Location": "Dumfries, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.50573, 38.77944, -77.50573, 38.77944], "geometry": {"coordinates": [-77.50573, 38.77944], "type": "Point"}, "id": "189535", "properties": {"Current Price": "2.35 ", "Location": "Manassas, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.877979, 38.67053, -76.877979, 38.67053], "geometry": {"coordinates": [-76.877979, 38.67053], "type": "Point"}, "id": "189633", "properties": {"Current Price": "2.35 ", "Location": "Brandywine, MD", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.30886, 38.6529, -77.30886, 38.6529], "geometry": {"coordinates": [-77.30886, 38.6529], "type": "Point"}, "id": "189731", "properties": {"Current Price": "2.35 ", "Location": "Woodbridge, VA", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.913808, 38.621007, -76.913808, 38.621007], "geometry": {"coordinates": [-76.913808, 38.621007], "type": "Point"}, "id": "190025", "properties": {"Current Price": "2.35 ", "Location": "Waldorf, MD", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.9836091, 38.5549908, -76.9836091, 38.5549908], "geometry": {"coordinates": [-76.9836091, 38.5549908], "type": "Point"}, "id": "190123", "properties": {"Current Price": "2.35 ", "Location": "La Plata, MD", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.890396, 34.174812, -77.890396, 34.174812], "geometry": {"coordinates": [-77.890396, 34.174812], "type": "Point"}, "id": "190322", "properties": {"Current Price": "2.35 ", "Location": "Wilmington, NC", "Price": "2.35", "Product": "L\u0027oven Fresh Mini Bagels Plain or Cinnamon Raisin", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_3b4ce73d43013389f9847da284de50ec.bindTooltip(
+    geo_json_1f1d222496155b516653d654b61f172a.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -474,7 +476,7 @@
     ,{"className": "foliumtooltip", "sticky": true});
                      
     
-            geo_json_3b4ce73d43013389f9847da284de50ec.addTo(map_0960b219162414456eca24c0d3649ad3);
+            geo_json_1f1d222496155b516653d654b61f172a.addTo(map_d5fefe9fca00f0fd73bd9765490f81be);
         
 </script>
 </html>
