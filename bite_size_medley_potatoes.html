@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Bite Size Medley Potatoes</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Bite Size Medley Potatoes cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8dc273915876692090df21fb114f6947 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>1.99</li>
+                <li><span style='background:#b22222'></span>2.29</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="benton's_mini_bear_grahams_snack_packs">Benton's Mini Bear Grahams Snack Packs</option>
+
+                
+                <option value="benton's_original_fig_bars">Benton's Original Fig Bars</option>
+
+                
+                <option value="bite_size_medley_potatoes" selected>Bite Size Medley Potatoes</option>
+
+                
+                <option value="fresh_thin-sliced_beef_chuck_steak">Fresh Thin-Sliced Beef Chuck Steak</option>
+
+                
+                <option value="friendly_farms_low_sugar_greek_yogurt">Friendly Farms Low Sugar Greek Yogurt</option>
+
+                
+                <option value="happy_farms_cheddar_or_colby_jack_cheese_cubes">Happy Farms Cheddar or Colby Jack Cheese Cubes</option>
+
+                
+                <option value="nature's_nectar_apple_juice">Nature's Nectar Apple Juice</option>
+
+                
+                <option value="organic_baby_peeled_carrots">Organic Baby Peeled Carrots</option>
+
+                
+                <option value="park_street_deli_classic_or_spicy_guacamole_mini_cups">Park Street Deli Classic or Spicy Guacamole Mini Cups</option>
+
+                
+                <option value="park_street_deli_dip_snack_pack">Park Street Deli Dip Snack Pack</option>
+
+                
+                <option value="park_street_deli_pine_nut,_spicy_or_olive_tapenade_hummus">Park Street Deli Pine Nut, Spicy or Olive Tapenade Hummus</option>
+
+                
+                <option value="puraqua_purified_water_24-pack">PurAqua Purified Water 24-Pack</option>
+
+                
+                <option value="savoritz_mini_cheese_or_peanut_butter_sandwich_crackers">Savoritz Mini Cheese or Peanut Butter Sandwich Crackers</option>
+
+                
+                <option value="savoritz_turtle_crackers">Savoritz Turtle Crackers</option>
+
+                
+                <option value="simply_nature_organic_coconut_clusters">Simply Nature Organic Coconut Clusters</option>
+
+                
+                <option value="simply_nature_white_cheddar_puffs">Simply Nature White Cheddar Puffs</option>
+
+                
+                <option value="southern_grove_on_the_go_trail_mix">Southern Grove On the Go Trail Mix</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Aug 13<sup>th</sup> - Aug 19<sup>th</sup>. New products and next update on Aug 20<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_8dc273915876692090df21fb114f6947" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Aug 13<sup>th</sup>, price maps are available for the following products - 
+                <a href="benton's_mini_bear_grahams_snack_packs.html">Benton's Mini Bear Grahams Snack Packs</a>, 
+                <a href="benton's_original_fig_bars.html">Benton's Original Fig Bars</a>, 
+                <a href="bite_size_medley_potatoes.html">Bite Size Medley Potatoes</a>, 
+                <a href="fresh_thin-sliced_beef_chuck_steak.html">Fresh Thin-Sliced Beef Chuck Steak</a>, 
+                <a href="friendly_farms_low_sugar_greek_yogurt.html">Friendly Farms Low Sugar Greek Yogurt</a>, 
+                <a href="happy_farms_cheddar_or_colby_jack_cheese_cubes.html">Happy Farms Cheddar or Colby Jack Cheese Cubes</a>, 
+                <a href="nature's_nectar_apple_juice.html">Nature's Nectar Apple Juice</a>, 
+                <a href="organic_baby_peeled_carrots.html">Organic Baby Peeled Carrots</a>, 
+                <a href="park_street_deli_classic_or_spicy_guacamole_mini_cups.html">Park Street Deli Classic or Spicy Guacamole Mini Cups</a>, 
+                <a href="park_street_deli_dip_snack_pack.html">Park Street Deli Dip Snack Pack</a>, 
+                <a href="park_street_deli_pine_nut,_spicy_or_olive_tapenade_hummus.html">Park Street Deli Pine Nut, Spicy or Olive Tapenade Hummus</a>, 
+                <a href="puraqua_purified_water_24-pack.html">PurAqua Purified Water 24-Pack</a>, 
+                <a href="savoritz_mini_cheese_or_peanut_butter_sandwich_crackers.html">Savoritz Mini Cheese or Peanut Butter Sandwich Crackers</a>, 
+                <a href="savoritz_turtle_crackers.html">Savoritz Turtle Crackers</a>, 
+                <a href="simply_nature_organic_coconut_clusters.html">Simply Nature Organic Coconut Clusters</a>, 
+                <a href="simply_nature_white_cheddar_puffs.html">Simply Nature White Cheddar Puffs</a>, 
+                <a href="southern_grove_on_the_go_trail_mix.html">Southern Grove On the Go Trail Mix</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_8dc273915876692090df21fb114f6947 = L.map(
+                "map_8dc273915876692090df21fb114f6947",
+                {
+                    center: [34.8065835, -116.101332],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8dc273915876692090df21fb114f6947);
+
+            
+
+        
+    
+            var tile_layer_9e23f1433ea03e1778595370b9cee05b = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9e23f1433ea03e1778595370b9cee05b.addTo(map_8dc273915876692090df21fb114f6947);
+        
+    
+            map_8dc273915876692090df21fb114f6947.fitBounds(
+                [[32.804557, -120.602194], [36.80861, -111.60047]],
+                {}
+            );
+        
+    
+        function geo_json_540967665282bd1f8d0fb6dee9b1c700_styler(feature) {
+            switch(feature.id) {
+                case "149618": case "149755": case "150443": case "151148": case "151212": case "152095": case "152564": case "152628": case "152822": case "154362": case "154856": case "155131": case "155195": case "156022": case "156086": case "156434": case "156498": case "156562": case "156626": case "156690": case "156754": case "156818": case "156882": case "156946": case "157010": case "157074": case "157138": case "157202": case "157266": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_540967665282bd1f8d0fb6dee9b1c700_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_540967665282bd1f8d0fb6dee9b1c700_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_540967665282bd1f8d0fb6dee9b1c700_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_540967665282bd1f8d0fb6dee9b1c700_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_540967665282bd1f8d0fb6dee9b1c700.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_540967665282bd1f8d0fb6dee9b1c700_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_540967665282bd1f8d0fb6dee9b1c700 = L.geoJson(null, {
+                onEachFeature: geo_json_540967665282bd1f8d0fb6dee9b1c700_onEachFeature,
+            
+                style: geo_json_540967665282bd1f8d0fb6dee9b1c700_styler,
+                pointToLayer: geo_json_540967665282bd1f8d0fb6dee9b1c700_pointToLayer,
+        });
+
+        function geo_json_540967665282bd1f8d0fb6dee9b1c700_add (data) {
+            geo_json_540967665282bd1f8d0fb6dee9b1c700
+                .addData(data);
+        }
+            geo_json_540967665282bd1f8d0fb6dee9b1c700_add({"bbox": [-120.602194, 32.804557, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "149618", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Yucaipa, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "149755", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Burbank, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "150443", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Yucca Valley, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "150871", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Gardena, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "151148", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Laguna Woods, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "151212", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Lake Forest, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "151348", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Fountain Valley, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "151559", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Visalia, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "151624", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Fresno, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "151754", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Temecula, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "152095", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "West Hills, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "152304", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Oceanside, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "152564", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "El Cajon, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "152628", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "San Diego, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "152691", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "San Marcos, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "152822", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Menifee, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "152950", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Temecula, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "153866", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Lake Elsinore, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "154223", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Palmdale, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "154362", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Murrieta, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "154498", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Beaumont, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "154856", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Ramona, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "155131", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "San Diego, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "155195", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Encinitas, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "155258", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Santa Clarita, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "156022", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Poway, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "156086", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Thousand Oaks, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "156295", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Santa Clarita, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "156434", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Buckeye, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "156498", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Queen Creek, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "156562", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Glendale, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "156626", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Tempe, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "156690", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Chandler, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "156754", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Laveen, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "156818", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Phoenix, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "156882", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Peoria, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "156946", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Goodyear, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "157010", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Mesa, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "157074", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Gilbert, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "157138", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Phoenix, AZ", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "157202", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Arroyo Grande, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "157266", "properties": {"Current Price": "2.29 Per 24-oz. Bag", "Location": "Murrieta, CA", "Price": "2.29", "Product": "Bite Size Medley Potatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "157402", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Tustin, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "157540", "properties": {"Current Price": "1.99 Per 24-oz. Bag", "Location": "Torrance, CA", "Price": "1.99", "Product": "Bite Size Medley Potatoes", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_540967665282bd1f8d0fb6dee9b1c700.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_540967665282bd1f8d0fb6dee9b1c700.addTo(map_8dc273915876692090df21fb114f6947);
+        
+</script>
+</html>
