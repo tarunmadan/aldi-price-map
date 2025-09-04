@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Nature Sweet Cherub Grape Tomatoes</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Nature Sweet Cherub Grape Tomatoes cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cdb08a39a5785fcbdf990c32e10295da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>2.19</li>
+                <li><span style='background:#b22222'></span>2.39</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="aldi_guacamole">ALDI Guacamole</option>
+
+                
+                <option value="bake_shop_gourmet_cookies">Bake Shop Gourmet Cookies</option>
+
+                
+                <option value="beef_shaved_steak">Beef Shaved Steak</option>
+
+                
+                <option value="benton's_peanut_butter_filled_cookies">Benton's Peanut Butter Filled Cookies</option>
+
+                
+                <option value="bremer_chicken_pot_pie">Bremer Chicken Pot Pie</option>
+
+                
+                <option value="bremer_regular_corn_dogs">Bremer Regular Corn Dogs</option>
+
+                
+                <option value="burman's_hot_sauce">Burman's Hot Sauce</option>
+
+                
+                <option value="california_peaches">California Peaches</option>
+
+                
+                <option value="california_perfect_pairing_grapes">California Perfect Pairing Grapes</option>
+
+                
+                <option value="casa_mamita_8-pack_burritos">Casa Mamita 8-Pack Burritos</option>
+
+                
+                <option value="cherub_grape_tomatoes">Cherub Grape Tomatoes</option>
+
+                
+                <option value="clancy's_peanut_butter_filled_pretzel_pieces">Clancy's Peanut Butter Filled Pretzel Pieces</option>
+
+                
+                <option value="clancy's_pub_style_seasoned_pretzels">Clancy's Pub Style Seasoned Pretzels</option>
+
+                
+                <option value="clancy's_restaurant_style_tortilla_chips">Clancy's Restaurant Style Tortilla Chips</option>
+
+                
+                <option value="earthly_grains_instant_white_rice">Earthly Grains Instant White Rice</option>
+
+                
+                <option value="garden_salad">Garden Salad</option>
+
+                
+                <option value="happy_farms_light_string_cheese">Happy Farms Light String Cheese</option>
+
+                
+                <option value="kirkwood_buffalo_chicken_wings">Kirkwood Buffalo Chicken Wings</option>
+
+                
+                <option value="l'oven_fresh_hawaiian_sweet_rolls">L'oven Fresh Hawaiian Sweet Rolls</option>
+
+                
+                <option value="l'oven_fresh_hot_dog_buns">L'oven Fresh Hot Dog Buns</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_original_thin_crust_pepperoni_pizza">Mama Cozzi's Pizza Kitchen Original Thin Crust Pepperoni Pizza</option>
+
+                
+                <option value="millville_protein_chewy_bars">Millville Protein Chewy Bars</option>
+
+                
+                <option value="millville_sweet_&_salty_bars">Millville Sweet & Salty Bars</option>
+
+                
+                <option value="nature_sweet_cherub_grape_tomatoes" selected>Nature Sweet Cherub Grape Tomatoes</option>
+
+                
+                <option value="northern_catch_assorted_pouch_tuna">Northern Catch Assorted Pouch Tuna</option>
+
+                
+                <option value="park_street_deli_pulled_pork_or_pulled_chicken">Park Street Deli Pulled Pork or Pulled Chicken</option>
+
+                
+                <option value="priano_cheese_ravioli">Priano Cheese Ravioli</option>
+
+                
+                <option value="puraqua_24-pack_natural_spring_water">PurAqua 24-Pack Natural Spring Water</option>
+
+                
+                <option value="puraqua_belle_vie_sparkling_flavored_water">PurAqua Belle Vie Sparkling Flavored Water</option>
+
+                
+                <option value="puraqua_sparkling_frost_water">PurAqua Sparkling Frost Water</option>
+
+                
+                <option value="red_onions">Red Onions</option>
+
+                
+                <option value="sliced_white_mushrooms">Sliced White Mushrooms</option>
+
+                
+                <option value="specially_selected_california_perfect_pairing_grapes">Specially Selected California Perfect Pairing Grapes</option>
+
+                
+                <option value="sundae_shoppe_vanilla_bars_or_crunch_bars">Sundae Shoppe Vanilla Bars or Crunch Bars</option>
+
+                
+                <option value="whole_white_mushrooms">Whole White Mushrooms</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Sep 3<sup>rd</sup> - Sep 9<sup>th</sup>. New products and next update on Sep 10<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_cdb08a39a5785fcbdf990c32e10295da" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Sep 3<sup>rd</sup>, price maps are available for the following products - 
+                <a href="aldi_guacamole.html">ALDI Guacamole</a>, 
+                <a href="bake_shop_gourmet_cookies.html">Bake Shop Gourmet Cookies</a>, 
+                <a href="beef_shaved_steak.html">Beef Shaved Steak</a>, 
+                <a href="benton's_peanut_butter_filled_cookies.html">Benton's Peanut Butter Filled Cookies</a>, 
+                <a href="bremer_chicken_pot_pie.html">Bremer Chicken Pot Pie</a>, 
+                <a href="bremer_regular_corn_dogs.html">Bremer Regular Corn Dogs</a>, 
+                <a href="burman's_hot_sauce.html">Burman's Hot Sauce</a>, 
+                <a href="california_peaches.html">California Peaches</a>, 
+                <a href="california_perfect_pairing_grapes.html">California Perfect Pairing Grapes</a>, 
+                <a href="casa_mamita_8-pack_burritos.html">Casa Mamita 8-Pack Burritos</a>, 
+                <a href="cherub_grape_tomatoes.html">Cherub Grape Tomatoes</a>, 
+                <a href="clancy's_peanut_butter_filled_pretzel_pieces.html">Clancy's Peanut Butter Filled Pretzel Pieces</a>, 
+                <a href="clancy's_pub_style_seasoned_pretzels.html">Clancy's Pub Style Seasoned Pretzels</a>, 
+                <a href="clancy's_restaurant_style_tortilla_chips.html">Clancy's Restaurant Style Tortilla Chips</a>, 
+                <a href="earthly_grains_instant_white_rice.html">Earthly Grains Instant White Rice</a>, 
+                <a href="garden_salad.html">Garden Salad</a>, 
+                <a href="happy_farms_light_string_cheese.html">Happy Farms Light String Cheese</a>, 
+                <a href="kirkwood_buffalo_chicken_wings.html">Kirkwood Buffalo Chicken Wings</a>, 
+                <a href="l'oven_fresh_hawaiian_sweet_rolls.html">L'oven Fresh Hawaiian Sweet Rolls</a>, 
+                <a href="l'oven_fresh_hot_dog_buns.html">L'oven Fresh Hot Dog Buns</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_original_thin_crust_pepperoni_pizza.html">Mama Cozzi's Pizza Kitchen Original Thin Crust Pepperoni Pizza</a>, 
+                <a href="millville_protein_chewy_bars.html">Millville Protein Chewy Bars</a>, 
+                <a href="millville_sweet_&_salty_bars.html">Millville Sweet & Salty Bars</a>, 
+                <a href="nature_sweet_cherub_grape_tomatoes.html">Nature Sweet Cherub Grape Tomatoes</a>, 
+                <a href="northern_catch_assorted_pouch_tuna.html">Northern Catch Assorted Pouch Tuna</a>, 
+                <a href="park_street_deli_pulled_pork_or_pulled_chicken.html">Park Street Deli Pulled Pork or Pulled Chicken</a>, 
+                <a href="priano_cheese_ravioli.html">Priano Cheese Ravioli</a>, 
+                <a href="puraqua_24-pack_natural_spring_water.html">PurAqua 24-Pack Natural Spring Water</a>, 
+                <a href="puraqua_belle_vie_sparkling_flavored_water.html">PurAqua Belle Vie Sparkling Flavored Water</a>, 
+                <a href="puraqua_sparkling_frost_water.html">PurAqua Sparkling Frost Water</a>, 
+                <a href="red_onions.html">Red Onions</a>, 
+                <a href="sliced_white_mushrooms.html">Sliced White Mushrooms</a>, 
+                <a href="specially_selected_california_perfect_pairing_grapes.html">Specially Selected California Perfect Pairing Grapes</a>, 
+                <a href="sundae_shoppe_vanilla_bars_or_crunch_bars.html">Sundae Shoppe Vanilla Bars or Crunch Bars</a>, 
+                <a href="whole_white_mushrooms.html">Whole White Mushrooms</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_cdb08a39a5785fcbdf990c32e10295da = L.map(
+                "map_cdb08a39a5785fcbdf990c32e10295da",
+                {
+                    center: [37.1967505, -86.340799],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_cdb08a39a5785fcbdf990c32e10295da);
+
+            
+
+        
+    
+            var tile_layer_eb0ef328849e6f28b9487059485e1865 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_eb0ef328849e6f28b9487059485e1865.addTo(map_cdb08a39a5785fcbdf990c32e10295da);
+        
+    
+            map_cdb08a39a5785fcbdf990c32e10295da.fitBounds(
+                [[32.942952, -96.681773], [41.450549, -75.999825]],
+                {}
+            );
+        
+    
+        function geo_json_2a916a657832e5d8e8805f435af1a78b_styler(feature) {
+            switch(feature.id) {
+                case "21177": case "21498": case "21605": case "21712": case "21819": case "21926": case "22033": case "22247": case "22461": case "23210": case "23424": case "24173": case "24280": case "24494": case "24601": case "24708": case "24922": case "25029": case "25136": case "25243": case "25350": case "25564": case "25671": case "25778": case "25992": case "26206": case "26420": case "26527": case "26955": case "27062": case "27276": case "27597": case "27704": case "28025": case "28132": case "28239": case "28346": case "28453": case "28560": case "28988": case "29095": case "29416": case "29523": case "29630": case "87556": case "87768": case "87980": case "88828": case "89358": case "89464": case "89782": case "89888": case "90630": case "90948": case "91054": case "91160": case "91584": case "91690": case "92644": case "93492": case "93598": case "93704": case "93810": case "93916": case "94022": case "94128": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_2a916a657832e5d8e8805f435af1a78b_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_2a916a657832e5d8e8805f435af1a78b_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_2a916a657832e5d8e8805f435af1a78b_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_2a916a657832e5d8e8805f435af1a78b_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_2a916a657832e5d8e8805f435af1a78b.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_2a916a657832e5d8e8805f435af1a78b_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_2a916a657832e5d8e8805f435af1a78b = L.geoJson(null, {
+                onEachFeature: geo_json_2a916a657832e5d8e8805f435af1a78b_onEachFeature,
+            
+                style: geo_json_2a916a657832e5d8e8805f435af1a78b_styler,
+                pointToLayer: geo_json_2a916a657832e5d8e8805f435af1a78b_pointToLayer,
+        });
+
+        function geo_json_2a916a657832e5d8e8805f435af1a78b_add (data) {
+            geo_json_2a916a657832e5d8e8805f435af1a78b
+                .addData(data);
+        }
+            geo_json_2a916a657832e5d8e8805f435af1a78b_add({"bbox": [-96.681773, 32.942952, -75.999825, 41.450549], "features": [{"bbox": [-94.362514, 38.654004, -94.362514, 38.654004], "geometry": {"coordinates": [-94.362514, 38.654004], "type": "Point"}, "id": "21177", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Harrisonville, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.392426, 38.927425, -94.392426, 38.927425], "geometry": {"coordinates": [-94.392426, 38.927425], "type": "Point"}, "id": "21498", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lee\u0027s Summit, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.8360274, 38.88958244, -94.8360274, 38.88958244], "geometry": {"coordinates": [-94.8360274, 38.88958244], "type": "Point"}, "id": "21605", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Olathe, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.666527, 38.840624, -94.666527, 38.840624], "geometry": {"coordinates": [-94.666527, 38.840624], "type": "Point"}, "id": "21712", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Overland Park, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.677867, 39.09197, -95.677867, 39.09197], "geometry": {"coordinates": [-95.677867, 39.09197], "type": "Point"}, "id": "21819", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Topeka, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.216229, 41.234998, -96.216229, 41.234998], "geometry": {"coordinates": [-96.216229, 41.234998], "type": "Point"}, "id": "21926", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Omaha, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.452141, 41.450549, -96.452141, 41.450549], "geometry": {"coordinates": [-96.452141, 41.450549], "type": "Point"}, "id": "22033", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Fremont, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.834447, 39.127587, -94.834447, 39.127587], "geometry": {"coordinates": [-94.834447, 39.127587], "type": "Point"}, "id": "22247", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Kansas City, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.799743, 39.736287, -94.799743, 39.736287], "geometry": {"coordinates": [-94.799743, 39.736287], "type": "Point"}, "id": "22461", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Saint Joseph, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.606644, 40.814428, -96.606644, 40.814428], "geometry": {"coordinates": [-96.606644, 40.814428], "type": "Point"}, "id": "23210", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lincoln, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.681773, 40.724181, -96.681773, 40.724181], "geometry": {"coordinates": [-96.681773, 40.724181], "type": "Point"}, "id": "23424", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lincoln, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.943531, 41.160226, -95.943531, 41.160226], "geometry": {"coordinates": [-95.943531, 41.160226], "type": "Point"}, "id": "24173", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Bellevue, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.12078, 41.23282, -96.12078, 41.23282], "geometry": {"coordinates": [-96.12078, 41.23282], "type": "Point"}, "id": "24280", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Omaha, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.185486, 41.29172, -96.185486, 41.29172], "geometry": {"coordinates": [-96.185486, 41.29172], "type": "Point"}, "id": "24494", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Omaha, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.022545, 41.252266, -96.022545, 41.252266], "geometry": {"coordinates": [-96.022545, 41.252266], "type": "Point"}, "id": "24601", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Omaha, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.592771, 38.991599, -94.592771, 38.991599], "geometry": {"coordinates": [-94.592771, 38.991599], "type": "Point"}, "id": "24708", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Kansas City, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.68549, 38.88477, -94.68549, 38.88477], "geometry": {"coordinates": [-94.68549, 38.88477], "type": "Point"}, "id": "24922", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Overland Park, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.761872, 39.006988, -94.761872, 39.006988], "geometry": {"coordinates": [-94.761872, 39.006988], "type": "Point"}, "id": "25029", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Shawnee, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.768913, 38.969892, -94.768913, 38.969892], "geometry": {"coordinates": [-94.768913, 38.969892], "type": "Point"}, "id": "25136", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lenexa, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.766474, 39.039181, -95.766474, 39.039181], "geometry": {"coordinates": [-95.766474, 39.039181], "type": "Point"}, "id": "25243", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Topeka, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.517956, 38.813246, -94.517956, 38.813246], "geometry": {"coordinates": [-94.517956, 38.813246], "type": "Point"}, "id": "25350", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Belton, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.362406, 38.901451, -94.362406, 38.901451], "geometry": {"coordinates": [-94.362406, 38.901451], "type": "Point"}, "id": "25564", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lee\u0027s Summit, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.388107, 39.07751, -94.388107, 39.07751], "geometry": {"coordinates": [-94.388107, 39.07751], "type": "Point"}, "id": "25671", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Independence, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.639164, 39.040847, -94.639164, 39.040847], "geometry": {"coordinates": [-94.639164, 39.040847], "type": "Point"}, "id": "25778", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Roeland Park, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.449225, 39.050998, -94.449225, 39.050998], "geometry": {"coordinates": [-94.449225, 39.050998], "type": "Point"}, "id": "25992", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Independence, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.50707, 38.93442, -94.50707, 38.93442], "geometry": {"coordinates": [-94.50707, 38.93442], "type": "Point"}, "id": "26206", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Kansas City, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.682176, 38.956629, -94.682176, 38.956629], "geometry": {"coordinates": [-94.682176, 38.956629], "type": "Point"}, "id": "26420", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Overland Park, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-93.736745, 38.782616, -93.736745, 38.782616], "geometry": {"coordinates": [-93.736745, 38.782616], "type": "Point"}, "id": "26527", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Warrensburg, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.846496, 41.229055, -95.846496, 41.229055], "geometry": {"coordinates": [-95.846496, 41.229055], "type": "Point"}, "id": "26955", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Council Bluffs, IA", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.051923, 41.291113, -96.051923, 41.291113], "geometry": {"coordinates": [-96.051923, 41.291113], "type": "Point"}, "id": "27062", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Omaha, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.816651, 39.807467, -94.816651, 39.807467], "geometry": {"coordinates": [-94.816651, 39.807467], "type": "Point"}, "id": "27276", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Saint Joseph, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.271397, 39.013372, -94.271397, 39.013372], "geometry": {"coordinates": [-94.271397, 39.013372], "type": "Point"}, "id": "27597", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Blue Springs, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-95.261081, 38.929076, -95.261081, 38.929076], "geometry": {"coordinates": [-95.261081, 38.929076], "type": "Point"}, "id": "27704", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lawrence, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.217085, 38.426256, -96.217085, 38.426256], "geometry": {"coordinates": [-96.217085, 38.426256], "type": "Point"}, "id": "28025", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Emporia, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.474402, 38.993947, -94.474402, 38.993947], "geometry": {"coordinates": [-94.474402, 38.993947], "type": "Point"}, "id": "28132", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Raytown, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.819775, 38.850753, -94.819775, 38.850753], "geometry": {"coordinates": [-94.819775, 38.850753], "type": "Point"}, "id": "28239", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Olathe, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.763142, 38.915347, -94.763142, 38.915347], "geometry": {"coordinates": [-94.763142, 38.915347], "type": "Point"}, "id": "28346", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Olathe, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.554539, 39.180002, -96.554539, 39.180002], "geometry": {"coordinates": [-96.554539, 39.180002], "type": "Point"}, "id": "28453", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Manhattan, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.900831, 39.268384, -94.900831, 39.268384], "geometry": {"coordinates": [-94.900831, 39.268384], "type": "Point"}, "id": "28560", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Lansing, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.02075, 41.16391, -96.02075, 41.16391], "geometry": {"coordinates": [-96.02075, 41.16391], "type": "Point"}, "id": "28988", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Papillion, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.18556, 36.193033, -94.18556, 36.193033], "geometry": {"coordinates": [-94.18556, 36.193033], "type": "Point"}, "id": "29095", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Springdale, AR", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-94.66529, 38.91147, -94.66529, 38.91147], "geometry": {"coordinates": [-94.66529, 38.91147], "type": "Point"}, "id": "29416", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Overland park, KS", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-93.754935, 38.363567, -93.754935, 38.363567], "geometry": {"coordinates": [-93.754935, 38.363567], "type": "Point"}, "id": "29523", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Clinton, MO", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-96.217911, 41.14766, -96.217911, 41.14766], "geometry": {"coordinates": [-96.217911, 41.14766], "type": "Point"}, "id": "29630", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Gretna, NE", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-80.728977, 35.120963, -80.728977, 35.120963], "geometry": {"coordinates": [-80.728977, 35.120963], "type": "Point"}, "id": "70958", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Matthews, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.760292, 34.961004, -80.760292, 34.961004], "geometry": {"coordinates": [-80.760292, 34.961004], "type": "Point"}, "id": "71065", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Waxhaw, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.786123, 35.372513, -80.786123, 35.372513], "geometry": {"coordinates": [-80.786123, 35.372513], "type": "Point"}, "id": "71279", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Charlotte, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.615136, 35.836629, -78.615136, 35.836629], "geometry": {"coordinates": [-78.615136, 35.836629], "type": "Point"}, "id": "71386", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Raleigh, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.201833, 34.006545, -81.201833, 34.006545], "geometry": {"coordinates": [-81.201833, 34.006545], "type": "Point"}, "id": "71493", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Lexington, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.547186, 35.794054, -78.547186, 35.794054], "geometry": {"coordinates": [-78.547186, 35.794054], "type": "Point"}, "id": "71600", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Raleigh, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.786266, 35.802906, -78.786266, 35.802906], "geometry": {"coordinates": [-78.786266, 35.802906], "type": "Point"}, "id": "71707", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Cary, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.615179, 35.686941, -78.615179, 35.686941], "geometry": {"coordinates": [-78.615179, 35.686941], "type": "Point"}, "id": "71921", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Garner, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.646142, 35.180234, -80.646142, 35.180234], "geometry": {"coordinates": [-80.646142, 35.180234], "type": "Point"}, "id": "72028", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Mint Hill, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.643573, 35.32427, -80.643573, 35.32427], "geometry": {"coordinates": [-80.643573, 35.32427], "type": "Point"}, "id": "72135", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Harrisburg, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.85553, 34.994371, -80.85553, 34.994371], "geometry": {"coordinates": [-80.85553, 34.994371], "type": "Point"}, "id": "72242", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Indian Land, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.166665, 33.031323, -80.166665, 33.031323], "geometry": {"coordinates": [-80.166665, 33.031323], "type": "Point"}, "id": "72349", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Summerville, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.164314, 32.951481, -80.164314, 32.951481], "geometry": {"coordinates": [-80.164314, 32.951481], "type": "Point"}, "id": "72563", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Summerville, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.11996, 35.25815, -81.11996, 35.25815], "geometry": {"coordinates": [-81.11996, 35.25815], "type": "Point"}, "id": "72991", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Gastonia, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.137254, 35.454607, -79.137254, 35.454607], "geometry": {"coordinates": [-79.137254, 35.454607], "type": "Point"}, "id": "73312", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Sanford, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.761388, 35.185057, -80.761388, 35.185057], "geometry": {"coordinates": [-80.761388, 35.185057], "type": "Point"}, "id": "73740", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Charlotte, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.039962, 32.942952, -80.039962, 32.942952], "geometry": {"coordinates": [-80.039962, 32.942952], "type": "Point"}, "id": "74061", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "N Charleston, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.460126, 36.085061, -79.460126, 36.085061], "geometry": {"coordinates": [-79.460126, 36.085061], "type": "Point"}, "id": "74168", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Burlington, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.543649, 34.997241, -80.543649, 34.997241], "geometry": {"coordinates": [-80.543649, 34.997241], "type": "Point"}, "id": "74382", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Monroe, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.09137, 34.98276, -81.09137, 34.98276], "geometry": {"coordinates": [-81.09137, 34.98276], "type": "Point"}, "id": "74489", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Rock Hill, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.991704, 34.968345, -80.991704, 34.968345], "geometry": {"coordinates": [-80.991704, 34.968345], "type": "Point"}, "id": "74703", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Rock Hill, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.25842, 36.054194, -80.25842, 36.054194], "geometry": {"coordinates": [-80.25842, 36.054194], "type": "Point"}, "id": "74810", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Winston-Salem, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.878811, 35.164496, -80.878811, 35.164496], "geometry": {"coordinates": [-80.878811, 35.164496], "type": "Point"}, "id": "74917", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Charlotte, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.8804, 35.237094, -80.8804, 35.237094], "geometry": {"coordinates": [-80.8804, 35.237094], "type": "Point"}, "id": "75024", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Charlotte, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.583116, 35.868863, -78.583116, 35.868863], "geometry": {"coordinates": [-78.583116, 35.868863], "type": "Point"}, "id": "75345", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Raleigh, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.62107, 35.392457, -80.62107, 35.392457], "geometry": {"coordinates": [-80.62107, 35.392457], "type": "Point"}, "id": "75452", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Concord, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.991359, 35.051964, -80.991359, 35.051964], "geometry": {"coordinates": [-80.991359, 35.051964], "type": "Point"}, "id": "75666", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Fort Mill, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.050437, 35.027603, -79.050437, 35.027603], "geometry": {"coordinates": [-79.050437, 35.027603], "type": "Point"}, "id": "75773", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Fayetteville, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.634915, 35.063294, -80.634915, 35.063294], "geometry": {"coordinates": [-80.634915, 35.063294], "type": "Point"}, "id": "75880", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Indian Trail, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.943194, 34.140545, -80.943194, 34.140545], "geometry": {"coordinates": [-80.943194, 34.140545], "type": "Point"}, "id": "75987", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Columbia, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.86848, 35.092227, -80.86848, 35.092227], "geometry": {"coordinates": [-80.86848, 35.092227], "type": "Point"}, "id": "76094", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Charlotte, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.535493, 35.948455, -78.535493, 35.948455], "geometry": {"coordinates": [-78.535493, 35.948455], "type": "Point"}, "id": "76201", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Wake Forest, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.85452, 35.40934, -80.85452, 35.40934], "geometry": {"coordinates": [-80.85452, 35.40934], "type": "Point"}, "id": "76629", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Huntersville, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.883135, 36.110806, -79.883135, 36.110806], "geometry": {"coordinates": [-79.883135, 36.110806], "type": "Point"}, "id": "76736", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Greensboro, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.837841, 34.940605, -80.837841, 34.940605], "geometry": {"coordinates": [-80.837841, 34.940605], "type": "Point"}, "id": "76843", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Indian Land, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.83624, 36.11409, -79.83624, 36.11409], "geometry": {"coordinates": [-79.83624, 36.11409], "type": "Point"}, "id": "76950", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Greensboro, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.04467, 33.00479, -80.04467, 33.00479], "geometry": {"coordinates": [-80.04467, 33.00479], "type": "Point"}, "id": "77057", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Goose Creek, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.874874, 35.759419, -78.874874, 35.759419], "geometry": {"coordinates": [-78.874874, 35.759419], "type": "Point"}, "id": "77378", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Apex, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-89.7103, 39.75089, -89.7103, 39.75089], "geometry": {"coordinates": [-89.7103, 39.75089], "type": "Point"}, "id": "87556", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Springfield, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.95204, 40.51582, -88.95204, 40.51582], "geometry": {"coordinates": [-88.95204, 40.51582], "type": "Point"}, "id": "87768", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Normal, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.612141, 40.729237, -89.612141, 40.729237], "geometry": {"coordinates": [-89.612141, 40.729237], "type": "Point"}, "id": "87980", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Peoria, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.605536, 39.841127, -89.605536, 39.841127], "geometry": {"coordinates": [-89.605536, 39.841127], "type": "Point"}, "id": "88828", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Springfield, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.59675, 40.54536, -89.59675, 40.54536], "geometry": {"coordinates": [-89.59675, 40.54536], "type": "Point"}, "id": "89358", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Pekin, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.87911, 39.81682, -88.87911, 39.81682], "geometry": {"coordinates": [-88.87911, 39.81682], "type": "Point"}, "id": "89464", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Decatur, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.028516, 40.55647, -90.028516, 40.55647], "geometry": {"coordinates": [-90.028516, 40.55647], "type": "Point"}, "id": "89782", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Canton, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.32968, 39.48319, -88.32968, 39.48319], "geometry": {"coordinates": [-88.32968, 39.48319], "type": "Point"}, "id": "89888", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Mattoon, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.951861, 39.877865, -88.951861, 39.877865], "geometry": {"coordinates": [-88.951861, 39.877865], "type": "Point"}, "id": "90630", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Decatur, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.65782, 40.87184, -88.65782, 40.87184], "geometry": {"coordinates": [-88.65782, 40.87184], "type": "Point"}, "id": "90948", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Pontiac, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.0353411, 40.4867903, -89.0353411, 40.4867903], "geometry": {"coordinates": [-89.0353411, 40.4867903], "type": "Point"}, "id": "91054", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Bloomington, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.961179, 40.45961, -88.961179, 40.45961], "geometry": {"coordinates": [-88.961179, 40.45961], "type": "Point"}, "id": "91160", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Bloomington, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.6412, 39.7477, -89.6412, 39.7477], "geometry": {"coordinates": [-89.6412, 39.7477], "type": "Point"}, "id": "91584", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Springfield, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.5845, 40.67388, -89.5845, 40.67388], "geometry": {"coordinates": [-89.5845, 40.67388], "type": "Point"}, "id": "91690", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "East Peoria, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.63211, 40.79911, -89.63211, 40.79911], "geometry": {"coordinates": [-89.63211, 40.79911], "type": "Point"}, "id": "92644", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Peoria, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.463728, 40.628137, -89.463728, 40.628137], "geometry": {"coordinates": [-89.463728, 40.628137], "type": "Point"}, "id": "93492", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Morton, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.460301, 40.707952, -89.460301, 40.707952], "geometry": {"coordinates": [-89.460301, 40.707952], "type": "Point"}, "id": "93598", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Washington, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.680753, 40.64497, -89.680753, 40.64497], "geometry": {"coordinates": [-89.680753, 40.64497], "type": "Point"}, "id": "93704", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Bartonville, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.635223, 40.113855, -87.635223, 40.113855], "geometry": {"coordinates": [-87.635223, 40.113855], "type": "Point"}, "id": "93810", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Danville, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.25623, 40.14875, -88.25623, 40.14875], "geometry": {"coordinates": [-88.25623, 40.14875], "type": "Point"}, "id": "93916", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Champaign, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.16423, 40.11386, -88.16423, 40.11386], "geometry": {"coordinates": [-88.16423, 40.11386], "type": "Point"}, "id": "94022", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Urbana, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.251098, 40.060896, -88.251098, 40.060896], "geometry": {"coordinates": [-88.251098, 40.060896], "type": "Point"}, "id": "94128", "properties": {"Current Price": "2.39 Per 10-oz. Pkg.", "Location": "Savoy, IL", "Price": "2.39", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.285242, 33.796123, -84.285242, 33.796123], "geometry": {"coordinates": [-84.285242, 33.796123], "type": "Point"}, "id": "152227", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Decatur, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.347296, 34.039722, -84.347296, 34.039722], "geometry": {"coordinates": [-84.347296, 34.039722], "type": "Point"}, "id": "152655", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Roswell, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.926032, 33.815649, -83.926032, 33.815649], "geometry": {"coordinates": [-83.926032, 33.815649], "type": "Point"}, "id": "152869", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Loganville, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.221716, 34.045499, -84.221716, 34.045499], "geometry": {"coordinates": [-84.221716, 34.045499], "type": "Point"}, "id": "153083", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Johns Creek, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.909078, 34.068898, -83.909078, 34.068898], "geometry": {"coordinates": [-83.909078, 34.068898], "type": "Point"}, "id": "153190", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Dacula, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.272161, 34.099829, -84.272161, 34.099829], "geometry": {"coordinates": [-84.272161, 34.099829], "type": "Point"}, "id": "153297", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Milton, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.041867, 33.810739, -84.041867, 33.810739], "geometry": {"coordinates": [-84.041867, 33.810739], "type": "Point"}, "id": "153511", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Snellville, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.115868, 34.161333, -84.115868, 34.161333], "geometry": {"coordinates": [-84.115868, 34.161333], "type": "Point"}, "id": "153618", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Cumming, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.570903, 34.009914, -84.570903, 34.009914], "geometry": {"coordinates": [-84.570903, 34.009914], "type": "Point"}, "id": "153832", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Kennesaw, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.328369, 34.907018, -82.328369, 34.907018], "geometry": {"coordinates": [-82.328369, 34.907018], "type": "Point"}, "id": "153939", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Taylors, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.567396, 34.113312, -84.567396, 34.113312], "geometry": {"coordinates": [-84.567396, 34.113312], "type": "Point"}, "id": "154046", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Woodstock, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.650716, 34.030275, -84.650716, 34.030275], "geometry": {"coordinates": [-84.650716, 34.030275], "type": "Point"}, "id": "154260", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Kennesaw, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.469292, 34.088346, -84.469292, 34.088346], "geometry": {"coordinates": [-84.469292, 34.088346], "type": "Point"}, "id": "154474", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Woodstock, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.028491, 33.968289, -84.028491, 33.968289], "geometry": {"coordinates": [-84.028491, 33.968289], "type": "Point"}, "id": "154581", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Lawrenceville, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.477168, 33.883794, -84.477168, 33.883794], "geometry": {"coordinates": [-84.477168, 33.883794], "type": "Point"}, "id": "154688", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Smyrna, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.576612, 33.831571, -84.576612, 33.831571], "geometry": {"coordinates": [-84.576612, 33.831571], "type": "Point"}, "id": "154902", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Mableton, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.987059, 35.050061, -81.987059, 35.050061], "geometry": {"coordinates": [-81.987059, 35.050061], "type": "Point"}, "id": "155972", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Boiling Springs, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.990288, 34.931866, -81.990288, 34.931866], "geometry": {"coordinates": [-81.990288, 34.931866], "type": "Point"}, "id": "156079", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Spartanburg, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.271894, 34.820093, -82.271894, 34.820093], "geometry": {"coordinates": [-82.271894, 34.820093], "type": "Point"}, "id": "156293", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Greenville, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.31197, 34.7826, -82.31197, 34.7826], "geometry": {"coordinates": [-82.31197, 34.7826], "type": "Point"}, "id": "156614", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Mauldin, SC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.99364, 34.06024, -83.99364, 34.06024], "geometry": {"coordinates": [-83.99364, 34.06024], "type": "Point"}, "id": "156721", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Buford, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.51744, 33.94582, -84.51744, 33.94582], "geometry": {"coordinates": [-84.51744, 33.94582], "type": "Point"}, "id": "156935", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Marietta, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.87256, 34.10665, -83.87256, 34.10665], "geometry": {"coordinates": [-83.87256, 34.10665], "type": "Point"}, "id": "157256", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Buford, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.09329, 34.26823, -84.09329, 34.26823], "geometry": {"coordinates": [-84.09329, 34.26823], "type": "Point"}, "id": "158219", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Cumming, GA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.411656, 36.82196, -76.411656, 36.82196], "geometry": {"coordinates": [-76.411656, 36.82196], "type": "Point"}, "id": "176768", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Chesapeake, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.175009, 36.795629, -76.175009, 36.795629], "geometry": {"coordinates": [-76.175009, 36.795629], "type": "Point"}, "id": "176875", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Virginia Beach, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.488676, 37.096209, -76.488676, 37.096209], "geometry": {"coordinates": [-76.488676, 37.096209], "type": "Point"}, "id": "176982", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Newport News, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.382526, 37.041207, -76.382526, 37.041207], "geometry": {"coordinates": [-76.382526, 37.041207], "type": "Point"}, "id": "177410", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Hampton, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.094013, 36.812055, -76.094013, 36.812055], "geometry": {"coordinates": [-76.094013, 36.812055], "type": "Point"}, "id": "177624", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Virginia Beach, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.999825, 36.786978, -75.999825, 36.786978], "geometry": {"coordinates": [-75.999825, 36.786978], "type": "Point"}, "id": "177945", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Virginia Beach, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.234994, 36.765639, -76.234994, 36.765639], "geometry": {"coordinates": [-76.234994, 36.765639], "type": "Point"}, "id": "178373", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Chesapeake, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.8002985, 34.2900284, -77.8002985, 34.2900284], "geometry": {"coordinates": [-77.8002985, 34.2900284], "type": "Point"}, "id": "178480", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Wilmington, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.230796, 36.917295, -76.230796, 36.917295], "geometry": {"coordinates": [-76.230796, 36.917295], "type": "Point"}, "id": "178694", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Norfolk, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.208981, 36.858434, -76.208981, 36.858434], "geometry": {"coordinates": [-76.208981, 36.858434], "type": "Point"}, "id": "178801", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Norfolk, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.026607, 36.856654, -76.026607, 36.856654], "geometry": {"coordinates": [-76.026607, 36.856654], "type": "Point"}, "id": "178908", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Virginia Beach, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.31139, 38.583023, -77.31139, 38.583023], "geometry": {"coordinates": [-77.31139, 38.583023], "type": "Point"}, "id": "179122", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Dumfries, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.877979, 38.67053, -76.877979, 38.67053], "geometry": {"coordinates": [-76.877979, 38.67053], "type": "Point"}, "id": "179229", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Brandywine, MD", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.30886, 38.6529, -77.30886, 38.6529], "geometry": {"coordinates": [-77.30886, 38.6529], "type": "Point"}, "id": "179336", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Woodbridge, VA", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.913808, 38.621007, -76.913808, 38.621007], "geometry": {"coordinates": [-76.913808, 38.621007], "type": "Point"}, "id": "179443", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Waldorf, MD", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.9836091, 38.5549908, -76.9836091, 38.5549908], "geometry": {"coordinates": [-76.9836091, 38.5549908], "type": "Point"}, "id": "179550", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "La Plata, MD", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.890396, 34.174812, -77.890396, 34.174812], "geometry": {"coordinates": [-77.890396, 34.174812], "type": "Point"}, "id": "179657", "properties": {"Current Price": "2.19 Per 10-oz. Pkg.", "Location": "Wilmington, NC", "Price": "2.19", "Product": "Nature Sweet Cherub Grape Tomatoes", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_2a916a657832e5d8e8805f435af1a78b.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_2a916a657832e5d8e8805f435af1a78b.addTo(map_cdb08a39a5785fcbdf990c32e10295da);
+        
+</script>
+</html>
