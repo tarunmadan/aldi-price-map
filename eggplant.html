@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Eggplant</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Eggplant cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56eb64d5902098f771397d698e978df1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>1.19</li>
+                <li><span style='background:#b22222'></span>1.29</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="burman's_assorted_mustard">Burman's Assorted Mustard</option>
+
+                
+                <option value="burman's_soy_or_light_soy_sauce">Burman's Soy or Light Soy Sauce</option>
+
+                
+                <option value="dakota's_pride_green_lentils">Dakota's Pride Green Lentils</option>
+
+                
+                <option value="earthly_grains_couscous">Earthly Grains Couscous</option>
+
+                
+                <option value="eggplant" selected>Eggplant</option>
+
+                
+                <option value="happy_farms_deli-sliced_pepper_jack_cheese">Happy Farms Deli-Sliced Pepper Jack Cheese</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_12_veggie_cauliflower_crust_deli_pizza">Mama Cozzi's Pizza Kitchen 12" Veggie Cauliflower Crust Deli Pizza</option>
+
+                
+                <option value="park_street_deli_mongolian_beef_or_chicken_teriyaki_meal_kit">Park Street Deli Mongolian Beef or Chicken Teriyaki Meal Kit</option>
+
+                
+                <option value="pueblo_lindo_fresco_cheese">Pueblo Lindo Fresco Cheese</option>
+
+                
+                <option value="pueblo_lindo_white_or_yellow_corn_tortillas">Pueblo Lindo White or Yellow Corn Tortillas</option>
+
+                
+                <option value="raspberries">Raspberries</option>
+
+                
+                <option value="red_grapes">Red Grapes</option>
+
+                
+                <option value="reggano_spaghetti">Reggano Spaghetti</option>
+
+                
+                <option value="season's_choice_steamed_asian_medley_or_broccoli_stir_fry">Season's Choice Steamed Asian Medley or Broccoli Stir Fry</option>
+
+                
+                <option value="simply_nature_organic_beef_or_vegetable_broth">Simply Nature Organic Beef or Vegetable Broth</option>
+
+                
+                <option value="simply_nature_organic_quinoa">Simply Nature Organic Quinoa</option>
+
+                
+                <option value="simply_nature_organic_stir-in_paste">Simply Nature Organic Stir-in Paste</option>
+
+                
+                <option value="specially_selected_sesame_seed_brioche_buns">Specially Selected Sesame Seed Brioche Buns</option>
+
+                
+                <option value="spicy_chicken_patties">Spicy Chicken Patties</option>
+
+                
+                <option value="whole_&_simple_chicken,_cilantro_&_lime_burritos">Whole & Simple Chicken, Cilantro & Lime Burritos</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Jan 14<sup>th</sup> - Jan 20<sup>th</sup>. New products and next update on Jan 21<sup>st</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_56eb64d5902098f771397d698e978df1" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Jan 14<sup>th</sup>, price maps are available for the following products - 
+                <a href="burman's_assorted_mustard.html">Burman's Assorted Mustard</a>, 
+                <a href="burman's_soy_or_light_soy_sauce.html">Burman's Soy or Light Soy Sauce</a>, 
+                <a href="dakota's_pride_green_lentils.html">Dakota's Pride Green Lentils</a>, 
+                <a href="earthly_grains_couscous.html">Earthly Grains Couscous</a>, 
+                <a href="eggplant.html">Eggplant</a>, 
+                <a href="happy_farms_deli-sliced_pepper_jack_cheese.html">Happy Farms Deli-Sliced Pepper Jack Cheese</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_12_veggie_cauliflower_crust_deli_pizza.html">Mama Cozzi's Pizza Kitchen 12" Veggie Cauliflower Crust Deli Pizza</a>, 
+                <a href="park_street_deli_mongolian_beef_or_chicken_teriyaki_meal_kit.html">Park Street Deli Mongolian Beef or Chicken Teriyaki Meal Kit</a>, 
+                <a href="pueblo_lindo_fresco_cheese.html">Pueblo Lindo Fresco Cheese</a>, 
+                <a href="pueblo_lindo_white_or_yellow_corn_tortillas.html">Pueblo Lindo White or Yellow Corn Tortillas</a>, 
+                <a href="raspberries.html">Raspberries</a>, 
+                <a href="red_grapes.html">Red Grapes</a>, 
+                <a href="reggano_spaghetti.html">Reggano Spaghetti</a>, 
+                <a href="season's_choice_steamed_asian_medley_or_broccoli_stir_fry.html">Season's Choice Steamed Asian Medley or Broccoli Stir Fry</a>, 
+                <a href="simply_nature_organic_beef_or_vegetable_broth.html">Simply Nature Organic Beef or Vegetable Broth</a>, 
+                <a href="simply_nature_organic_quinoa.html">Simply Nature Organic Quinoa</a>, 
+                <a href="simply_nature_organic_stir-in_paste.html">Simply Nature Organic Stir-in Paste</a>, 
+                <a href="specially_selected_sesame_seed_brioche_buns.html">Specially Selected Sesame Seed Brioche Buns</a>, 
+                <a href="spicy_chicken_patties.html">Spicy Chicken Patties</a>, 
+                <a href="whole_&_simple_chicken,_cilantro_&_lime_burritos.html">Whole & Simple Chicken, Cilantro & Lime Burritos</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_56eb64d5902098f771397d698e978df1 = L.map(
+                "map_56eb64d5902098f771397d698e978df1",
+                {
+                    center: [33.9619285, -116.101332],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_56eb64d5902098f771397d698e978df1);
+
+            
+
+        
+    
+            var tile_layer_043810f4cdc5a5aabce97571ec5c0300 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_043810f4cdc5a5aabce97571ec5c0300.addTo(map_56eb64d5902098f771397d698e978df1);
+        
+    
+            map_56eb64d5902098f771397d698e978df1.fitBounds(
+                [[32.804557, -120.602194], [35.1193, -111.60047]],
+                {}
+            );
+        
+    
+        function geo_json_61143a22484f3814981a729e0236e4a2_styler(feature) {
+            switch(feature.id) {
+                case "173002": case "173153": case "173911": case "174670": case "174745": case "175731": case "176261": case "176336": case "176563": case "178233": case "178764": case "179067": case "179142": case "180053": case "180128": case "181407": case "181482": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_61143a22484f3814981a729e0236e4a2_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_61143a22484f3814981a729e0236e4a2_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_61143a22484f3814981a729e0236e4a2_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_61143a22484f3814981a729e0236e4a2_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_61143a22484f3814981a729e0236e4a2.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_61143a22484f3814981a729e0236e4a2_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_61143a22484f3814981a729e0236e4a2 = L.geoJson(null, {
+                onEachFeature: geo_json_61143a22484f3814981a729e0236e4a2_onEachFeature,
+            
+                style: geo_json_61143a22484f3814981a729e0236e4a2_styler,
+                pointToLayer: geo_json_61143a22484f3814981a729e0236e4a2_pointToLayer,
+        });
+
+        function geo_json_61143a22484f3814981a729e0236e4a2_add (data) {
+            geo_json_61143a22484f3814981a729e0236e4a2
+                .addData(data);
+        }
+            geo_json_61143a22484f3814981a729e0236e4a2_add({"bbox": [-120.602194, 32.804557, -111.60047, 35.1193], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "173002", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Yucaipa, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "173153", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Burbank, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "173911", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Yucca Valley, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "174670", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Laguna Woods, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "174745", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Lake Forest, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "175731", "properties": {"Current Price": "1.19 Per Lb.", "Location": "West Hills, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "176261", "properties": {"Current Price": "1.19 Per Lb.", "Location": "El Cajon, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "176336", "properties": {"Current Price": "1.19 Per Lb.", "Location": "San Diego, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "176563", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Menifee, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "178233", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Murrieta, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "178764", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Ramona, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "179067", "properties": {"Current Price": "1.19 Per Lb.", "Location": "San Diego, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "179142", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Encinitas, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "180053", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Poway, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "180128", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Thousand Oaks, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "180507", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Buckeye, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "180582", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Queen Creek, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "180657", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Glendale, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "180732", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Tempe, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "180807", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Chandler, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "180882", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Laveen, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "180957", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Phoenix, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "181032", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Peoria, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "181107", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Goodyear, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "181182", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Mesa, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "181257", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Gilbert, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "181332", "properties": {"Current Price": "1.29 Per Lb.", "Location": "Phoenix, AZ", "Price": "1.29", "Product": "Eggplant", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "181407", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Arroyo Grande, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "181482", "properties": {"Current Price": "1.19 Per Lb.", "Location": "Murrieta, CA", "Price": "1.19", "Product": "Eggplant", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_61143a22484f3814981a729e0236e4a2.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_61143a22484f3814981a729e0236e4a2.addTo(map_56eb64d5902098f771397d698e978df1);
+        
+</script>
+</html>
