@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Clancy's Veggie Straws Sea Salt or Ranch</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Clancy's Veggie Straws Sea Salt or Ranch cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e4baab4eaacb98975fa31a679d6340de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>2.45</li>
+                <li><span style='background:#b22222'></span>2.79</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="aldi_original_or_unsweetened_applesauce_cups">ALDI Original or Unsweetened Applesauce Cups</option>
+
+                
+                <option value="baby_bella_mushrooms">Baby Bella Mushrooms</option>
+
+                
+                <option value="babybel_cheese">Babybel Cheese</option>
+
+                
+                <option value="bake_shop_gourmet_cookies">Bake Shop Gourmet Cookies</option>
+
+                
+                <option value="baker's_corner_miniature_marshmallows">Baker's Corner Miniature Marshmallows</option>
+
+                
+                <option value="benton's_assorted_sandwich_creme_cookies">Benton's Assorted Sandwich Creme Cookies</option>
+
+                
+                <option value="benton's_chewy_chocolate_chip_cookies">Benton's Chewy Chocolate Chip Cookies</option>
+
+                
+                <option value="benton's_cookie_thins_coconut_or_chocolate_chip">Benton's Cookie Thins Coconut or Chocolate Chip</option>
+
+                
+                <option value="benton's_mini_waffle_cones">Benton's Mini Waffle Cones</option>
+
+                
+                <option value="benton's_original_fudge_striped_shortbread_cookies">Benton's Original Fudge Striped Shortbread Cookies</option>
+
+                
+                <option value="benton's_premium_soft_baked_cookies">Benton's Premium Soft Baked Cookies</option>
+
+                
+                <option value="berryhill_chocolate_syrup">Berryhill Chocolate Syrup</option>
+
+                
+                <option value="cara_cara_oranges">Cara Cara Oranges</option>
+
+                
+                <option value="choceur_dark_chocolate_sea_salt_caramels">Choceur Dark Chocolate Sea Salt Caramels</option>
+
+                
+                <option value="choceur_peanut_butter_cups">Choceur Peanut Butter Cups</option>
+
+                
+                <option value="choceur_superberries_blueberry_acai_or_pomegranate">Choceur Superberries Blueberry Acai or Pomegranate</option>
+
+                
+                <option value="clancy's_milk_chocolate_toffee_or_birthday_cake_pretzels">Clancy's Milk Chocolate Toffee or Birthday Cake Pretzels</option>
+
+                
+                <option value="clancy's_movie_theater_butter_microwave_popcorn">Clancy's Movie Theater Butter Microwave Popcorn</option>
+
+                
+                <option value="clancy's_nacho_tortilla_chips">Clancy's Nacho Tortilla Chips</option>
+
+                
+                <option value="clancy's_popcorn_chips">Clancy's Popcorn Chips</option>
+
+                
+                <option value="clancy's_pretzel_sticks_or_minis">Clancy's Pretzel Sticks or Minis</option>
+
+                
+                <option value="clancy's_seaweed_snacks_teriyaki">Clancy's Seaweed Snacks Teriyaki</option>
+
+                
+                <option value="clancy's_sour_cream_&_onion_potato_chips">Clancy's Sour Cream & Onion Potato Chips</option>
+
+                
+                <option value="clancy's_veggie_straws">Clancy's Veggie Straws</option>
+
+                
+                <option value="clancy's_veggie_straws_sea_salt_or_ranch" selected>Clancy's Veggie Straws Sea Salt or Ranch</option>
+
+                
+                <option value="clancy's_white_cheddar_cheese_popcorn">Clancy's White Cheddar Cheese Popcorn</option>
+
+                
+                <option value="elevation_kids_baked_oat_bars">Elevation Kids Baked Oat Bars</option>
+
+                
+                <option value="elevation_protein_puffs">Elevation Protein Puffs</option>
+
+                
+                <option value="elevation_protein_puffs_nacho_cheese">Elevation Protein Puffs Nacho Cheese</option>
+
+                
+                <option value="friendly_farms_moo_tubes">Friendly Farms Moo Tubes</option>
+
+                
+                <option value="friendly_farms_whipped_topping">Friendly Farms Whipped Topping</option>
+
+                
+                <option value="happy_farms_light_string_cheese">Happy Farms Light String Cheese</option>
+
+                
+                <option value="lunch_buddies_assorted_fruit_snacks_50-count">Lunch Buddies Assorted Fruit Snacks 50-Count</option>
+
+                
+                <option value="lunch_buddies_crustless_pb_&_j_sandwiches">Lunch Buddies Crustless PB & J Sandwiches</option>
+
+                
+                <option value="lunch_buddies_dinos_&_dragons_fruit_snack_shapes">Lunch Buddies Dinos & Dragons Fruit Snack Shapes</option>
+
+                
+                <option value="lunch_buddies_fruit_in_gel">Lunch Buddies Fruit in Gel</option>
+
+                
+                <option value="millville_kids'_fruit_&_grain_mini_bars">Millville Kids' Fruit & Grain Mini Bars</option>
+
+                
+                <option value="park_street_deli_original_snack_selects_3-pack">Park Street Deli Original Snack Selects 3-Pack</option>
+
+                
+                <option value="park_street_deli_spinach_artichoke_or_jalapeno_artichoke_dip">Park Street Deli Spinach Artichoke or Jalapeno Artichoke Dip</option>
+
+                
+                <option value="savoritz_pretzel_crackers">Savoritz Pretzel Crackers</option>
+
+                
+                <option value="simms_beef_or_turkey_snack_sticks">Simms Beef or Turkey Snack Sticks</option>
+
+                
+                <option value="simply_nature_chocolate_covered_freeze_dried_fruit">Simply Nature Chocolate Covered Freeze Dried Fruit</option>
+
+                
+                <option value="simply_nature_fruit_strips">Simply Nature Fruit Strips</option>
+
+                
+                <option value="simply_nature_organic_cashews">Simply Nature Organic Cashews</option>
+
+                
+                <option value="simply_nature_snack_pack_freeze_dried_strawberries">Simply Nature Snack Pack Freeze Dried Strawberries</option>
+
+                
+                <option value="southern_grove_dry_roasted_peanuts">Southern Grove Dry Roasted Peanuts</option>
+
+                
+                <option value="specially_selected_cara_cara_oranges">Specially SELECTED Cara Cara Oranges</option>
+
+                
+                <option value="specially_selected_vanilla_or_chocolate_super_premium_ice_cream">Specially Selected Vanilla or Chocolate Super Premium Ice Cream</option>
+
+                
+                <option value="sundae_shoppe_mint_chocolate_chip_or_chocolate_ice_cream">Sundae Shoppe Mint Chocolate Chip or Chocolate Ice Cream</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Feb 25<sup>th</sup> - Mar 3<sup>rd</sup>. New products and next update on Mar 4<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_e4baab4eaacb98975fa31a679d6340de" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Feb 25<sup>th</sup>, price maps are available for the following products - 
+                <a href="aldi_original_or_unsweetened_applesauce_cups.html">ALDI Original or Unsweetened Applesauce Cups</a>, 
+                <a href="baby_bella_mushrooms.html">Baby Bella Mushrooms</a>, 
+                <a href="babybel_cheese.html">Babybel Cheese</a>, 
+                <a href="bake_shop_gourmet_cookies.html">Bake Shop Gourmet Cookies</a>, 
+                <a href="baker's_corner_miniature_marshmallows.html">Baker's Corner Miniature Marshmallows</a>, 
+                <a href="benton's_assorted_sandwich_creme_cookies.html">Benton's Assorted Sandwich Creme Cookies</a>, 
+                <a href="benton's_chewy_chocolate_chip_cookies.html">Benton's Chewy Chocolate Chip Cookies</a>, 
+                <a href="benton's_cookie_thins_coconut_or_chocolate_chip.html">Benton's Cookie Thins Coconut or Chocolate Chip</a>, 
+                <a href="benton's_mini_waffle_cones.html">Benton's Mini Waffle Cones</a>, 
+                <a href="benton's_original_fudge_striped_shortbread_cookies.html">Benton's Original Fudge Striped Shortbread Cookies</a>, 
+                <a href="benton's_premium_soft_baked_cookies.html">Benton's Premium Soft Baked Cookies</a>, 
+                <a href="berryhill_chocolate_syrup.html">Berryhill Chocolate Syrup</a>, 
+                <a href="cara_cara_oranges.html">Cara Cara Oranges</a>, 
+                <a href="choceur_dark_chocolate_sea_salt_caramels.html">Choceur Dark Chocolate Sea Salt Caramels</a>, 
+                <a href="choceur_peanut_butter_cups.html">Choceur Peanut Butter Cups</a>, 
+                <a href="choceur_superberries_blueberry_acai_or_pomegranate.html">Choceur Superberries Blueberry Acai or Pomegranate</a>, 
+                <a href="clancy's_milk_chocolate_toffee_or_birthday_cake_pretzels.html">Clancy's Milk Chocolate Toffee or Birthday Cake Pretzels</a>, 
+                <a href="clancy's_movie_theater_butter_microwave_popcorn.html">Clancy's Movie Theater Butter Microwave Popcorn</a>, 
+                <a href="clancy's_nacho_tortilla_chips.html">Clancy's Nacho Tortilla Chips</a>, 
+                <a href="clancy's_popcorn_chips.html">Clancy's Popcorn Chips</a>, 
+                <a href="clancy's_pretzel_sticks_or_minis.html">Clancy's Pretzel Sticks or Minis</a>, 
+                <a href="clancy's_seaweed_snacks_teriyaki.html">Clancy's Seaweed Snacks Teriyaki</a>, 
+                <a href="clancy's_sour_cream_&_onion_potato_chips.html">Clancy's Sour Cream & Onion Potato Chips</a>, 
+                <a href="clancy's_veggie_straws.html">Clancy's Veggie Straws</a>, 
+                <a href="clancy's_veggie_straws_sea_salt_or_ranch.html">Clancy's Veggie Straws Sea Salt or Ranch</a>, 
+                <a href="clancy's_white_cheddar_cheese_popcorn.html">Clancy's White Cheddar Cheese Popcorn</a>, 
+                <a href="elevation_kids_baked_oat_bars.html">Elevation Kids Baked Oat Bars</a>, 
+                <a href="elevation_protein_puffs.html">Elevation Protein Puffs</a>, 
+                <a href="elevation_protein_puffs_nacho_cheese.html">Elevation Protein Puffs Nacho Cheese</a>, 
+                <a href="friendly_farms_moo_tubes.html">Friendly Farms Moo Tubes</a>, 
+                <a href="friendly_farms_whipped_topping.html">Friendly Farms Whipped Topping</a>, 
+                <a href="happy_farms_light_string_cheese.html">Happy Farms Light String Cheese</a>, 
+                <a href="lunch_buddies_assorted_fruit_snacks_50-count.html">Lunch Buddies Assorted Fruit Snacks 50-Count</a>, 
+                <a href="lunch_buddies_crustless_pb_&_j_sandwiches.html">Lunch Buddies Crustless PB & J Sandwiches</a>, 
+                <a href="lunch_buddies_dinos_&_dragons_fruit_snack_shapes.html">Lunch Buddies Dinos & Dragons Fruit Snack Shapes</a>, 
+                <a href="lunch_buddies_fruit_in_gel.html">Lunch Buddies Fruit in Gel</a>, 
+                <a href="millville_kids'_fruit_&_grain_mini_bars.html">Millville Kids' Fruit & Grain Mini Bars</a>, 
+                <a href="park_street_deli_original_snack_selects_3-pack.html">Park Street Deli Original Snack Selects 3-Pack</a>, 
+                <a href="park_street_deli_spinach_artichoke_or_jalapeno_artichoke_dip.html">Park Street Deli Spinach Artichoke or Jalapeno Artichoke Dip</a>, 
+                <a href="savoritz_pretzel_crackers.html">Savoritz Pretzel Crackers</a>, 
+                <a href="simms_beef_or_turkey_snack_sticks.html">Simms Beef or Turkey Snack Sticks</a>, 
+                <a href="simply_nature_chocolate_covered_freeze_dried_fruit.html">Simply Nature Chocolate Covered Freeze Dried Fruit</a>, 
+                <a href="simply_nature_fruit_strips.html">Simply Nature Fruit Strips</a>, 
+                <a href="simply_nature_organic_cashews.html">Simply Nature Organic Cashews</a>, 
+                <a href="simply_nature_snack_pack_freeze_dried_strawberries.html">Simply Nature Snack Pack Freeze Dried Strawberries</a>, 
+                <a href="southern_grove_dry_roasted_peanuts.html">Southern Grove Dry Roasted Peanuts</a>, 
+                <a href="specially_selected_cara_cara_oranges.html">Specially SELECTED Cara Cara Oranges</a>, 
+                <a href="specially_selected_vanilla_or_chocolate_super_premium_ice_cream.html">Specially Selected Vanilla or Chocolate Super Premium Ice Cream</a>, 
+                <a href="sundae_shoppe_mint_chocolate_chip_or_chocolate_ice_cream.html">Sundae Shoppe Mint Chocolate Chip or Chocolate Ice Cream</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_e4baab4eaacb98975fa31a679d6340de = L.map(
+                "map_e4baab4eaacb98975fa31a679d6340de",
+                {
+                    center: [37.7618945, -93.83549500000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e4baab4eaacb98975fa31a679d6340de);
+
+            
+
+        
+    
+            var tile_layer_4f29b0ee9ce2ced7cedf93604b276b40 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4f29b0ee9ce2ced7cedf93604b276b40.addTo(map_e4baab4eaacb98975fa31a679d6340de);
+        
+    
+            map_e4baab4eaacb98975fa31a679d6340de.fitBounds(
+                [[33.264147, -112.55529], [42.259642, -75.1157]],
+                {}
+            );
+        
+    
+        function geo_json_9fd1ca730409f39413f727121fffeb0e_styler(feature) {
+            switch(feature.id) {
+                case "248022": case "248234": case "248339": case "248444": case "248549": case "248759": case "248864": case "248969": case "249074": case "249179": case "249284": case "249389": case "249494": case "249599": case "250130": case "250554": case "250980": case "251513": case "251725": case "252361": case "252466": case "253104": case "253209": case "253419": case "253631": case "253950": case "254055": case "254160": case "254265": case "254580": case "254685": case "254897": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_9fd1ca730409f39413f727121fffeb0e_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_9fd1ca730409f39413f727121fffeb0e_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_9fd1ca730409f39413f727121fffeb0e_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_9fd1ca730409f39413f727121fffeb0e_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_9fd1ca730409f39413f727121fffeb0e.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_9fd1ca730409f39413f727121fffeb0e_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_9fd1ca730409f39413f727121fffeb0e = L.geoJson(null, {
+                onEachFeature: geo_json_9fd1ca730409f39413f727121fffeb0e_onEachFeature,
+            
+                style: geo_json_9fd1ca730409f39413f727121fffeb0e_styler,
+                pointToLayer: geo_json_9fd1ca730409f39413f727121fffeb0e_pointToLayer,
+        });
+
+        function geo_json_9fd1ca730409f39413f727121fffeb0e_add (data) {
+            geo_json_9fd1ca730409f39413f727121fffeb0e
+                .addData(data);
+        }
+            geo_json_9fd1ca730409f39413f727121fffeb0e_add({"bbox": [-112.55529, 33.264147, -75.1157, 42.259642], "features": [{"bbox": [-88.019523, 42.252454, -88.019523, 42.252454], "geometry": {"coordinates": [-88.019523, 42.252454], "type": "Point"}, "id": "84723", "properties": {"Current Price": "2.79 ", "Location": "Mundelein, IL", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.949721, 42.259642, -87.949721, 42.259642], "geometry": {"coordinates": [-87.949721, 42.259642], "type": "Point"}, "id": "84827", "properties": {"Current Price": "2.79 ", "Location": "Vernon HIlls, IL", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.08129, 42.18075, -88.08129, 42.18075], "geometry": {"coordinates": [-88.08129, 42.18075], "type": "Point"}, "id": "85143", "properties": {"Current Price": "2.79 ", "Location": "Lake Zurich, IL", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.95868, 39.48106, -77.95868, 39.48106], "geometry": {"coordinates": [-77.95868, 39.48106], "type": "Point"}, "id": "149004", "properties": {"Current Price": "2.79 ", "Location": "Martinsburg, WV", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-78.19554, 39.11864, -78.19554, 39.11864], "geometry": {"coordinates": [-78.19554, 39.11864], "type": "Point"}, "id": "149216", "properties": {"Current Price": "2.79 ", "Location": "Winchester, VA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.81621, 39.30271, -77.81621, 39.30271], "geometry": {"coordinates": [-77.81621, 39.30271], "type": "Point"}, "id": "149323", "properties": {"Current Price": "2.79 ", "Location": "Charles Town, WV", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-78.186823, 38.963895, -78.186823, 38.963895], "geometry": {"coordinates": [-78.186823, 38.963895], "type": "Point"}, "id": "154050", "properties": {"Current Price": "2.79 ", "Location": "Front Royal, VA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-76.059643, 38.772798, -76.059643, 38.772798], "geometry": {"coordinates": [-76.059643, 38.772798], "type": "Point"}, "id": "154577", "properties": {"Current Price": "2.79 ", "Location": "Easton, MD", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-75.564184, 38.421047, -75.564184, 38.421047], "geometry": {"coordinates": [-75.564184, 38.421047], "type": "Point"}, "id": "154789", "properties": {"Current Price": "2.79 ", "Location": "Salisbury, MD", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.992666, 39.440147, -77.992666, 39.440147], "geometry": {"coordinates": [-77.992666, 39.440147], "type": "Point"}, "id": "154896", "properties": {"Current Price": "2.79 ", "Location": "Martinsburg, WV", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-76.94083, 40.22739, -76.94083, 40.22739], "geometry": {"coordinates": [-76.94083, 40.22739], "type": "Point"}, "id": "155108", "properties": {"Current Price": "2.79 ", "Location": "Camp Hill, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-76.7748, 40.26056, -76.7748, 40.26056], "geometry": {"coordinates": [-76.7748, 40.26056], "type": "Point"}, "id": "155215", "properties": {"Current Price": "2.79 ", "Location": "Harrisburg, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-76.98204, 39.82385, -76.98204, 39.82385], "geometry": {"coordinates": [-76.98204, 39.82385], "type": "Point"}, "id": "156372", "properties": {"Current Price": "2.79 ", "Location": "Hanover, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.631867, 39.938794, -77.631867, 39.938794], "geometry": {"coordinates": [-77.631867, 39.938794], "type": "Point"}, "id": "156479", "properties": {"Current Price": "2.79 ", "Location": "Chambersburg, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.15651, 40.19611, -77.15651, 40.19611], "geometry": {"coordinates": [-77.15651, 40.19611], "type": "Point"}, "id": "156586", "properties": {"Current Price": "2.79 ", "Location": "Carlisle, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.55275, 39.745597, -77.55275, 39.745597], "geometry": {"coordinates": [-77.55275, 39.745597], "type": "Point"}, "id": "156800", "properties": {"Current Price": "2.79 ", "Location": "Waynesboro, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-76.06526, 38.56342, -76.06526, 38.56342], "geometry": {"coordinates": [-76.06526, 38.56342], "type": "Point"}, "id": "157014", "properties": {"Current Price": "2.79 ", "Location": "Cambridge, MD", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.018224, 40.247108, -77.018224, 40.247108], "geometry": {"coordinates": [-77.018224, 40.247108], "type": "Point"}, "id": "158171", "properties": {"Current Price": "2.79 ", "Location": "Mechanicsburg, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.20437, 39.84145, -77.20437, 39.84145], "geometry": {"coordinates": [-77.20437, 39.84145], "type": "Point"}, "id": "158593", "properties": {"Current Price": "2.79 ", "Location": "Gettysburg, PA", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-75.43822, 38.91848, -75.43822, 38.91848], "geometry": {"coordinates": [-75.43822, 38.91848], "type": "Point"}, "id": "158700", "properties": {"Current Price": "2.79 ", "Location": "Milford, DE", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-75.2877, 38.57257, -75.2877, 38.57257], "geometry": {"coordinates": [-75.2877, 38.57257], "type": "Point"}, "id": "158807", "properties": {"Current Price": "2.79 ", "Location": "Millsboro, DE", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-75.16566, 38.3421, -75.16566, 38.3421], "geometry": {"coordinates": [-75.16566, 38.3421], "type": "Point"}, "id": "160069", "properties": {"Current Price": "2.79 ", "Location": "Berlin, MD", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-75.1157, 38.7209, -75.1157, 38.7209], "geometry": {"coordinates": [-75.1157, 38.7209], "type": "Point"}, "id": "160281", "properties": {"Current Price": "2.79 ", "Location": "Rehoboth Beach, DE", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-75.82456, 38.87306, -75.82456, 38.87306], "geometry": {"coordinates": [-75.82456, 38.87306], "type": "Point"}, "id": "160598", "properties": {"Current Price": "2.79 ", "Location": "Denton, MD", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "245625", "properties": {"Current Price": "2.79 ", "Location": "Buckeye, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "245730", "properties": {"Current Price": "2.79 ", "Location": "Queen Creek, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "245835", "properties": {"Current Price": "2.79 ", "Location": "Glendale, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "245940", "properties": {"Current Price": "2.79 ", "Location": "Tempe, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "246045", "properties": {"Current Price": "2.79 ", "Location": "Chandler, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "246150", "properties": {"Current Price": "2.79 ", "Location": "Laveen, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "246255", "properties": {"Current Price": "2.79 ", "Location": "Phoenix, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "246360", "properties": {"Current Price": "2.79 ", "Location": "Peoria, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "246465", "properties": {"Current Price": "2.79 ", "Location": "Goodyear, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "246570", "properties": {"Current Price": "2.79 ", "Location": "Mesa, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "246675", "properties": {"Current Price": "2.79 ", "Location": "Gilbert, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "246780", "properties": {"Current Price": "2.79 ", "Location": "Phoenix, AZ", "Price": "2.79", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-77.5108, 37.6362, -77.5108, 37.6362], "geometry": {"coordinates": [-77.5108, 37.6362], "type": "Point"}, "id": "248022", "properties": {"Current Price": "2.45 ", "Location": "Henrico, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.511, 37.5959, -77.511, 37.5959], "geometry": {"coordinates": [-77.511, 37.5959], "type": "Point"}, "id": "248234", "properties": {"Current Price": "2.45 ", "Location": "Richmond, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.50092, 38.25462, -77.50092, 38.25462], "geometry": {"coordinates": [-77.50092, 38.25462], "type": "Point"}, "id": "248339", "properties": {"Current Price": "2.45 ", "Location": "Fredericksburg, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.606624, 37.519895, -77.606624, 37.519895], "geometry": {"coordinates": [-77.606624, 37.519895], "type": "Point"}, "id": "248444", "properties": {"Current Price": "2.45 ", "Location": "North Chesterfield, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.4687, 37.5633, -77.4687, 37.5633], "geometry": {"coordinates": [-77.4687, 37.5633], "type": "Point"}, "id": "248549", "properties": {"Current Price": "2.45 ", "Location": "Richmond, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.97041, 38.48413, -77.97041, 38.48413], "geometry": {"coordinates": [-77.97041, 38.48413], "type": "Point"}, "id": "248759", "properties": {"Current Price": "2.45 ", "Location": "Culpeper, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.644414, 37.661861, -77.644414, 37.661861], "geometry": {"coordinates": [-77.644414, 37.661861], "type": "Point"}, "id": "248864", "properties": {"Current Price": "2.45 ", "Location": "Henrico, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.516814, 37.126127, -76.516814, 37.126127], "geometry": {"coordinates": [-76.516814, 37.126127], "type": "Point"}, "id": "248969", "properties": {"Current Price": "2.45 ", "Location": "Newport News, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.411656, 36.82196, -76.411656, 36.82196], "geometry": {"coordinates": [-76.411656, 36.82196], "type": "Point"}, "id": "249074", "properties": {"Current Price": "2.45 ", "Location": "Chesapeake, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.520808, 38.363816, -77.520808, 38.363816], "geometry": {"coordinates": [-77.520808, 38.363816], "type": "Point"}, "id": "249179", "properties": {"Current Price": "2.45 ", "Location": "Fredericksburg, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.498493, 37.363026, -77.498493, 37.363026], "geometry": {"coordinates": [-77.498493, 37.363026], "type": "Point"}, "id": "249284", "properties": {"Current Price": "2.45 ", "Location": "Chester, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.5342, 38.29081, -77.5342, 38.29081], "geometry": {"coordinates": [-77.5342, 38.29081], "type": "Point"}, "id": "249389", "properties": {"Current Price": "2.45 ", "Location": "Fredericksburg, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.175009, 36.795629, -76.175009, 36.795629], "geometry": {"coordinates": [-76.175009, 36.795629], "type": "Point"}, "id": "249494", "properties": {"Current Price": "2.45 ", "Location": "Virginia Beach, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.488676, 37.096209, -76.488676, 37.096209], "geometry": {"coordinates": [-76.488676, 37.096209], "type": "Point"}, "id": "249599", "properties": {"Current Price": "2.45 ", "Location": "Newport News, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.5309, 37.5365, -77.5309, 37.5365], "geometry": {"coordinates": [-77.5309, 37.5365], "type": "Point"}, "id": "250130", "properties": {"Current Price": "2.45 ", "Location": "Richmond, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.382526, 37.041207, -76.382526, 37.041207], "geometry": {"coordinates": [-76.382526, 37.041207], "type": "Point"}, "id": "250554", "properties": {"Current Price": "2.45 ", "Location": "Hampton, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.094013, 36.812055, -76.094013, 36.812055], "geometry": {"coordinates": [-76.094013, 36.812055], "type": "Point"}, "id": "250980", "properties": {"Current Price": "2.45 ", "Location": "Virginia Beach, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.999825, 36.786978, -75.999825, 36.786978], "geometry": {"coordinates": [-75.999825, 36.786978], "type": "Point"}, "id": "251513", "properties": {"Current Price": "2.45 ", "Location": "Virginia Beach, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.2943599, 36.8705339, -76.2943599, 36.8705339], "geometry": {"coordinates": [-76.2943599, 36.8705339], "type": "Point"}, "id": "251725", "properties": {"Current Price": "2.45 ", "Location": "Norfolk, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.234994, 36.765639, -76.234994, 36.765639], "geometry": {"coordinates": [-76.234994, 36.765639], "type": "Point"}, "id": "252361", "properties": {"Current Price": "2.45 ", "Location": "Chesapeake, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.8002985, 34.2900284, -77.8002985, 34.2900284], "geometry": {"coordinates": [-77.8002985, 34.2900284], "type": "Point"}, "id": "252466", "properties": {"Current Price": "2.45 ", "Location": "Wilmington, NC", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.230796, 36.917295, -76.230796, 36.917295], "geometry": {"coordinates": [-76.230796, 36.917295], "type": "Point"}, "id": "253104", "properties": {"Current Price": "2.45 ", "Location": "Norfolk, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.208981, 36.858434, -76.208981, 36.858434], "geometry": {"coordinates": [-76.208981, 36.858434], "type": "Point"}, "id": "253209", "properties": {"Current Price": "2.45 ", "Location": "Norfolk, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.026607, 36.856654, -76.026607, 36.856654], "geometry": {"coordinates": [-76.026607, 36.856654], "type": "Point"}, "id": "253419", "properties": {"Current Price": "2.45 ", "Location": "Virginia Beach, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.667999, 37.506553, -77.667999, 37.506553], "geometry": {"coordinates": [-77.667999, 37.506553], "type": "Point"}, "id": "253631", "properties": {"Current Price": "2.45 ", "Location": "Midlothian, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.31139, 38.583023, -77.31139, 38.583023], "geometry": {"coordinates": [-77.31139, 38.583023], "type": "Point"}, "id": "253950", "properties": {"Current Price": "2.45 ", "Location": "Dumfries, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.50573, 38.77944, -77.50573, 38.77944], "geometry": {"coordinates": [-77.50573, 38.77944], "type": "Point"}, "id": "254055", "properties": {"Current Price": "2.45 ", "Location": "Manassas, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.877979, 38.67053, -76.877979, 38.67053], "geometry": {"coordinates": [-76.877979, 38.67053], "type": "Point"}, "id": "254160", "properties": {"Current Price": "2.45 ", "Location": "Brandywine, MD", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.30886, 38.6529, -77.30886, 38.6529], "geometry": {"coordinates": [-77.30886, 38.6529], "type": "Point"}, "id": "254265", "properties": {"Current Price": "2.45 ", "Location": "Woodbridge, VA", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.913808, 38.621007, -76.913808, 38.621007], "geometry": {"coordinates": [-76.913808, 38.621007], "type": "Point"}, "id": "254580", "properties": {"Current Price": "2.45 ", "Location": "Waldorf, MD", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.9836091, 38.5549908, -76.9836091, 38.5549908], "geometry": {"coordinates": [-76.9836091, 38.5549908], "type": "Point"}, "id": "254685", "properties": {"Current Price": "2.45 ", "Location": "La Plata, MD", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.890396, 34.174812, -77.890396, 34.174812], "geometry": {"coordinates": [-77.890396, 34.174812], "type": "Point"}, "id": "254897", "properties": {"Current Price": "2.45 ", "Location": "Wilmington, NC", "Price": "2.45", "Product": "Clancy\u0027s Veggie Straws Sea Salt or Ranch", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_9fd1ca730409f39413f727121fffeb0e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_9fd1ca730409f39413f727121fffeb0e.addTo(map_e4baab4eaacb98975fa31a679d6340de);
+        
+</script>
+</html>
