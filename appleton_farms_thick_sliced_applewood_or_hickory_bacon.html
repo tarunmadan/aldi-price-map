@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Appleton Farms Thick Sliced Applewood or Hickory Bacon</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Appleton Farms Thick Sliced Applewood or Hickory Bacon cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf39de23cfa501ba4f8a04c8afcfbd7b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>7.19</li>
+                <li><span style='background:#aa7f00'></span>7.59</li>
+                <li><span style='background:#e5690b'></span>9.29</li>
+                <li><span style='background:#b22222'></span>9.79</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="appetitos_mac_&_cheese_bites_or_loaded_skins">Appetitos Mac & Cheese Bites or Loaded Skins</option>
+
+                
+                <option value="appleton_farms_thick_sliced_applewood_or_hickory_bacon" selected>Appleton Farms Thick Sliced Applewood or Hickory Bacon</option>
+
+                
+                <option value="bake_shop_banana_nut_or_chocolate_chip_muffins">Bake Shop Banana Nut or Chocolate Chip Muffins</option>
+
+                
+                <option value="bake_shop_mini_or_large_croissants">Bake Shop Mini or Large Croissants</option>
+
+                
+                <option value="bake_shop_sliced_loaf_cake">Bake Shop Sliced Loaf Cake</option>
+
+                
+                <option value="bake_shop_strip_danish">Bake Shop Strip Danish</option>
+
+                
+                <option value="barissimo_mocha_or_caramel_macchiato_iced_coffee">Barissimo Mocha or Caramel Macchiato Iced Coffee</option>
+
+                
+                <option value="benner_sparkling_frost_plus_tea">Benner Sparkling Frost Plus Tea</option>
+
+                
+                <option value="benton's_caramel_coconut_fudge_cookies">Benton's Caramel Coconut Fudge Cookies</option>
+
+                
+                <option value="benton's_chewy_chocolate_chip_cookies">Benton's Chewy Chocolate Chip Cookies</option>
+
+                
+                <option value="blackberries">Blackberries</option>
+
+                
+                <option value="bolthouse_farms_green_goodness_or_strawberry_banana_smoothie">Bolthouse Farms Green Goodness or Strawberry Banana Smoothie</option>
+
+                
+                <option value="breakfast_best_protein_buttermilk_&_vanilla_waffles">Breakfast Best Protein Buttermilk & Vanilla Waffles</option>
+
+                
+                <option value="bremer_regular_corn_dogs">Bremer Regular Corn Dogs</option>
+
+                
+                <option value="burman's_hot_sauce">Burman's Hot Sauce</option>
+
+                
+                <option value="casa_mamita_chicken_taquitos">Casa Mamita Chicken Taquitos</option>
+
+                
+                <option value="cherub_grape_tomatoes">Cherub Grape Tomatoes</option>
+
+                
+                <option value="clancy's_barbecue_potato_chips">Clancy's Barbecue Potato Chips</option>
+
+                
+                <option value="clancy's_peanut_butter_filled_pretzel_pieces">Clancy's Peanut Butter Filled Pretzel Pieces</option>
+
+                
+                <option value="clancy's_pretzel_sticks_or_minis">Clancy's Pretzel Sticks or Minis</option>
+
+                
+                <option value="clancy's_restaurant_style_tortilla_chips">Clancy's Restaurant Style Tortilla Chips</option>
+
+                
+                <option value="clancy's_veggie_straws">Clancy's Veggie Straws</option>
+
+                
+                <option value="friendly_farms_original_coconutmilk">Friendly Farms Original Coconutmilk</option>
+
+                
+                <option value="friendly_farms_plain_nonfat_greek_yogurt">Friendly Farms Plain Nonfat Greek Yogurt</option>
+
+                
+                <option value="happy_farms_cheese_curds">Happy Farms Cheese Curds</option>
+
+                
+                <option value="happy_farms_whipped_cream_cheese">Happy Farms Whipped Cream Cheese</option>
+
+                
+                <option value="happy_farms_or_emporium_selection_party_cheese_tray_or_specialty_cheese_tray">Happy Farms or Emporium Selection Party Cheese Tray or Specialty Cheese Tray</option>
+
+                
+                <option value="kirkwood_buffalo_crispy_chicken_strips">Kirkwood Buffalo Crispy Chicken Strips</option>
+
+                
+                <option value="kirkwood_honey_bbq_chicken_wings">Kirkwood Honey BBQ Chicken Wings</option>
+
+                
+                <option value="l'oven_fresh_artisanal_bread">L'oven Fresh Artisanal Bread</option>
+
+                
+                <option value="l'oven_fresh_plain_bagels">L'oven Fresh Plain Bagels</option>
+
+                
+                <option value="lemons">Lemons</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_chocolate_chunk_pizza_cookie">Mama Cozzi's Pizza Kitchen Chocolate Chunk Pizza Cookie</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_pizza_snacks_pepperoni">Mama Cozzi's Pizza Kitchen Pizza Snacks Pepperoni</option>
+
+                
+                <option value="mama_cozzi's_pizza_kitchen_stuffed_crust_pizza">Mama Cozzi's Pizza Kitchen Stuffed Crust Pizza</option>
+
+                
+                <option value="nature's_nectar_orange_juice_not_from_concentrate">Nature's Nectar Orange Juice Not from Concentrate</option>
+
+                
+                <option value="nature's_nectar_orange_juice_not_from_concentrate_no_pulp">Nature's Nectar Orange Juice Not from Concentrate No Pulp</option>
+
+                
+                <option value="original_or_maple_pork_sausage_links">Original or Maple Pork Sausage Links</option>
+
+                
+                <option value="park_street_deli_assorted_fresh_guacamole">Park Street Deli Assorted Fresh Guacamole</option>
+
+                
+                <option value="park_street_deli_pickle_chips_dill_or_atomic_spicy">Park Street Deli Pickle Chips Dill or Atomic Spicy</option>
+
+                
+                <option value="park_street_deli_pulled_pork_or_pulled_chicken">Park Street Deli Pulled Pork or Pulled Chicken</option>
+
+                
+                <option value="parkview_hot_dogs">Parkview Hot Dogs</option>
+
+                
+                <option value="puraqua_24-pack_frut_flavored_water">PurAqua 24-Pack Frut Flavored Water</option>
+
+                
+                <option value="savoritz_entertainment_crackers">Savoritz Entertainment Crackers</option>
+
+                
+                <option value="season's_choice_whole_onion_rings">Season's Choice Whole Onion Rings</option>
+
+                
+                <option value="simply_nature_organic_blue_corn_or_multigrain_tortilla_chips">Simply Nature Organic Blue Corn or Multigrain Tortilla Chips</option>
+
+                
+                <option value="simply_nature_organic_instant_oatmeal">Simply Nature Organic Instant Oatmeal</option>
+
+                
+                <option value="simply_nature_organic_ketchup">Simply Nature Organic Ketchup</option>
+
+                
+                <option value="simply_nature_sweet_potato_chips">Simply Nature Sweet Potato Chips</option>
+
+                
+                <option value="southern_grove_cocktail_peanuts">Southern Grove Cocktail Peanuts</option>
+
+                
+                <option value="southern_grove_mixed_nuts_with_peanuts">Southern Grove Mixed Nuts with Peanuts</option>
+
+                
+                <option value="specially_selected_brioche_hot_dog_buns">Specially Selected Brioche Hot Dog Buns</option>
+
+                
+                <option value="specially_selected_fruit_spread_with_75_fruit">Specially Selected Fruit Spread with 75% Fruit</option>
+
+                
+                <option value="specially_selected_pure_maple_syrup">Specially Selected Pure Maple Syrup</option>
+
+                
+                <option value="specially_selected_raw_honey">Specially Selected Raw Honey</option>
+
+                
+                <option value="summit_gridlock_energy_drink">Summit Gridlock Energy Drink</option>
+
+                
+                <option value="sundae_shoppe_mixed_sundae_nut_cones">Sundae Shoppe Mixed Sundae Nut Cones</option>
+
+                
+                <option value="sundae_shoppe_vanilla_light_ice_cream_pail">Sundae Shoppe Vanilla Light Ice Cream Pail</option>
+
+                
+                <option value="tuscan_garden_ranch_dressing">Tuscan Garden Ranch Dressing</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Mar 18<sup>th</sup> - Mar 24<sup>th</sup>. New products and next update on Mar 25<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_bf39de23cfa501ba4f8a04c8afcfbd7b" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Mar 18<sup>th</sup>, price maps are available for the following products - 
+                <a href="appetitos_mac_&_cheese_bites_or_loaded_skins.html">Appetitos Mac & Cheese Bites or Loaded Skins</a>, 
+                <a href="appleton_farms_thick_sliced_applewood_or_hickory_bacon.html">Appleton Farms Thick Sliced Applewood or Hickory Bacon</a>, 
+                <a href="bake_shop_banana_nut_or_chocolate_chip_muffins.html">Bake Shop Banana Nut or Chocolate Chip Muffins</a>, 
+                <a href="bake_shop_mini_or_large_croissants.html">Bake Shop Mini or Large Croissants</a>, 
+                <a href="bake_shop_sliced_loaf_cake.html">Bake Shop Sliced Loaf Cake</a>, 
+                <a href="bake_shop_strip_danish.html">Bake Shop Strip Danish</a>, 
+                <a href="barissimo_mocha_or_caramel_macchiato_iced_coffee.html">Barissimo Mocha or Caramel Macchiato Iced Coffee</a>, 
+                <a href="benner_sparkling_frost_plus_tea.html">Benner Sparkling Frost Plus Tea</a>, 
+                <a href="benton's_caramel_coconut_fudge_cookies.html">Benton's Caramel Coconut Fudge Cookies</a>, 
+                <a href="benton's_chewy_chocolate_chip_cookies.html">Benton's Chewy Chocolate Chip Cookies</a>, 
+                <a href="blackberries.html">Blackberries</a>, 
+                <a href="bolthouse_farms_green_goodness_or_strawberry_banana_smoothie.html">Bolthouse Farms Green Goodness or Strawberry Banana Smoothie</a>, 
+                <a href="breakfast_best_protein_buttermilk_&_vanilla_waffles.html">Breakfast Best Protein Buttermilk & Vanilla Waffles</a>, 
+                <a href="bremer_regular_corn_dogs.html">Bremer Regular Corn Dogs</a>, 
+                <a href="burman's_hot_sauce.html">Burman's Hot Sauce</a>, 
+                <a href="casa_mamita_chicken_taquitos.html">Casa Mamita Chicken Taquitos</a>, 
+                <a href="cherub_grape_tomatoes.html">Cherub Grape Tomatoes</a>, 
+                <a href="clancy's_barbecue_potato_chips.html">Clancy's Barbecue Potato Chips</a>, 
+                <a href="clancy's_peanut_butter_filled_pretzel_pieces.html">Clancy's Peanut Butter Filled Pretzel Pieces</a>, 
+                <a href="clancy's_pretzel_sticks_or_minis.html">Clancy's Pretzel Sticks or Minis</a>, 
+                <a href="clancy's_restaurant_style_tortilla_chips.html">Clancy's Restaurant Style Tortilla Chips</a>, 
+                <a href="clancy's_veggie_straws.html">Clancy's Veggie Straws</a>, 
+                <a href="friendly_farms_original_coconutmilk.html">Friendly Farms Original Coconutmilk</a>, 
+                <a href="friendly_farms_plain_nonfat_greek_yogurt.html">Friendly Farms Plain Nonfat Greek Yogurt</a>, 
+                <a href="happy_farms_cheese_curds.html">Happy Farms Cheese Curds</a>, 
+                <a href="happy_farms_whipped_cream_cheese.html">Happy Farms Whipped Cream Cheese</a>, 
+                <a href="happy_farms_or_emporium_selection_party_cheese_tray_or_specialty_cheese_tray.html">Happy Farms or Emporium Selection Party Cheese Tray or Specialty Cheese Tray</a>, 
+                <a href="kirkwood_buffalo_crispy_chicken_strips.html">Kirkwood Buffalo Crispy Chicken Strips</a>, 
+                <a href="kirkwood_honey_bbq_chicken_wings.html">Kirkwood Honey BBQ Chicken Wings</a>, 
+                <a href="l'oven_fresh_artisanal_bread.html">L'oven Fresh Artisanal Bread</a>, 
+                <a href="l'oven_fresh_plain_bagels.html">L'oven Fresh Plain Bagels</a>, 
+                <a href="lemons.html">Lemons</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_chocolate_chunk_pizza_cookie.html">Mama Cozzi's Pizza Kitchen Chocolate Chunk Pizza Cookie</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_pizza_snacks_pepperoni.html">Mama Cozzi's Pizza Kitchen Pizza Snacks Pepperoni</a>, 
+                <a href="mama_cozzi's_pizza_kitchen_stuffed_crust_pizza.html">Mama Cozzi's Pizza Kitchen Stuffed Crust Pizza</a>, 
+                <a href="nature's_nectar_orange_juice_not_from_concentrate.html">Nature's Nectar Orange Juice Not from Concentrate</a>, 
+                <a href="nature's_nectar_orange_juice_not_from_concentrate_no_pulp.html">Nature's Nectar Orange Juice Not from Concentrate No Pulp</a>, 
+                <a href="original_or_maple_pork_sausage_links.html">Original or Maple Pork Sausage Links</a>, 
+                <a href="park_street_deli_assorted_fresh_guacamole.html">Park Street Deli Assorted Fresh Guacamole</a>, 
+                <a href="park_street_deli_pickle_chips_dill_or_atomic_spicy.html">Park Street Deli Pickle Chips Dill or Atomic Spicy</a>, 
+                <a href="park_street_deli_pulled_pork_or_pulled_chicken.html">Park Street Deli Pulled Pork or Pulled Chicken</a>, 
+                <a href="parkview_hot_dogs.html">Parkview Hot Dogs</a>, 
+                <a href="puraqua_24-pack_frut_flavored_water.html">PurAqua 24-Pack Frut Flavored Water</a>, 
+                <a href="savoritz_entertainment_crackers.html">Savoritz Entertainment Crackers</a>, 
+                <a href="season's_choice_whole_onion_rings.html">Season's Choice Whole Onion Rings</a>, 
+                <a href="simply_nature_organic_blue_corn_or_multigrain_tortilla_chips.html">Simply Nature Organic Blue Corn or Multigrain Tortilla Chips</a>, 
+                <a href="simply_nature_organic_instant_oatmeal.html">Simply Nature Organic Instant Oatmeal</a>, 
+                <a href="simply_nature_organic_ketchup.html">Simply Nature Organic Ketchup</a>, 
+                <a href="simply_nature_sweet_potato_chips.html">Simply Nature Sweet Potato Chips</a>, 
+                <a href="southern_grove_cocktail_peanuts.html">Southern Grove Cocktail Peanuts</a>, 
+                <a href="southern_grove_mixed_nuts_with_peanuts.html">Southern Grove Mixed Nuts with Peanuts</a>, 
+                <a href="specially_selected_brioche_hot_dog_buns.html">Specially Selected Brioche Hot Dog Buns</a>, 
+                <a href="specially_selected_fruit_spread_with_75_fruit.html">Specially Selected Fruit Spread with 75% Fruit</a>, 
+                <a href="specially_selected_pure_maple_syrup.html">Specially Selected Pure Maple Syrup</a>, 
+                <a href="specially_selected_raw_honey.html">Specially Selected Raw Honey</a>, 
+                <a href="summit_gridlock_energy_drink.html">Summit Gridlock Energy Drink</a>, 
+                <a href="sundae_shoppe_mixed_sundae_nut_cones.html">Sundae Shoppe Mixed Sundae Nut Cones</a>, 
+                <a href="sundae_shoppe_vanilla_light_ice_cream_pail.html">Sundae Shoppe Vanilla Light Ice Cream Pail</a>, 
+                <a href="tuscan_garden_ranch_dressing.html">Tuscan Garden Ranch Dressing</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_bf39de23cfa501ba4f8a04c8afcfbd7b = L.map(
+                "map_bf39de23cfa501ba4f8a04c8afcfbd7b",
+                {
+                    center: [38.0916955, -95.600324],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_bf39de23cfa501ba4f8a04c8afcfbd7b);
+
+            
+
+        
+    
+            var tile_layer_b3fecd564d14af4a02148415ff12c6ac = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b3fecd564d14af4a02148415ff12c6ac.addTo(map_bf39de23cfa501ba4f8a04c8afcfbd7b);
+        
+    
+            map_bf39de23cfa501ba4f8a04c8afcfbd7b.fitBounds(
+                [[32.593461, -120.602194], [43.58993, -70.598454]],
+                {}
+            );
+        
+    
+        function geo_json_1f6f70bade42d8664d8fd7da125a36b4_styler(feature) {
+            switch(feature.id) {
+                case "184530": case "184643": case "184869": case "185321": case "185434": case "185547": case "185660": case "185773": case "185886": case "186225": case "186451": case "186564": case "186677": case "186790": case "187016": case "187129": case "187355": case "187468": case "187807": case "188033": case "188146": case "188259": case "188372": case "188485": case "188598": case "188711": case "188824": case "188937": case "189050": case "189163": case "189276": case "189389": case "189502": case "189615": case "189728": case "189841": case "189954": case "190067": case "190180": case "190406": case "190632": case "190745": case "191197": case "191423": case "191536": case "191649": case "191762": case "191875": case "192101": case "192327": case "192440": case "192553": case "192666": case "192892": case "193005": case "193118": case "193231": case "193683": case "193796": case "193909": case "194022": case "194135": case "194248": case "194361": case "194587": case "194700": case "194813": case "194926": case "195152": case "195265": case "195378": case "195491": case "195604": case "195717": case "195830": case "195943": case "196056": case "196169": case "196395": case "196508": case "196621": case "196734": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                case "250409": case "250634": case "250746": case "251423": case "251762": case "251874": case "252100": case "252326": case "252439": case "252778": case "252891": case "253003": case "253228": case "253454": case "253567": case "253680": case "253906": case "254470": case "254695": case "254808": case "255259": case "255371": case "255483": case "255709": case "255934": case "256047": case "256160": case "256498": case "256724": case "256837": case "256950": case "257176": case "257289": case "257402": case "257854": case "257967": case "258193": case "258418": case "258757": case "258870": case "258983": case "259095": case "259434": case "259546": case "259658": case "260901": case "261013": case "261125": case "261238": case "261351": case "261464": case "262921": case "263033": case "263145": case "263258": case "263371": case "263484": case "263710": 
+                    return {"color": "#e5690b", "fillColor": "#e5690b", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#aa7f00", "fillColor": "#aa7f00", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_1f6f70bade42d8664d8fd7da125a36b4_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_1f6f70bade42d8664d8fd7da125a36b4_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_1f6f70bade42d8664d8fd7da125a36b4_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_1f6f70bade42d8664d8fd7da125a36b4_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_1f6f70bade42d8664d8fd7da125a36b4.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_1f6f70bade42d8664d8fd7da125a36b4_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_1f6f70bade42d8664d8fd7da125a36b4 = L.geoJson(null, {
+                onEachFeature: geo_json_1f6f70bade42d8664d8fd7da125a36b4_onEachFeature,
+            
+                style: geo_json_1f6f70bade42d8664d8fd7da125a36b4_styler,
+                pointToLayer: geo_json_1f6f70bade42d8664d8fd7da125a36b4_pointToLayer,
+        });
+
+        function geo_json_1f6f70bade42d8664d8fd7da125a36b4_add (data) {
+            geo_json_1f6f70bade42d8664d8fd7da125a36b4
+                .addData(data);
+        }
+            geo_json_1f6f70bade42d8664d8fd7da125a36b4_add({"bbox": [-120.602194, 32.593461, -70.598454, 43.58993], "features": [{"bbox": [-73.0321, 40.77709, -73.0321, 40.77709], "geometry": {"coordinates": [-73.0321, 40.77709], "type": "Point"}, "id": "184530", "properties": {"Current Price": "7.19 ", "Location": "Patchogue, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.0329, 40.86697, -73.0329, 40.86697], "geometry": {"coordinates": [-73.0329, 40.86697], "type": "Point"}, "id": "184643", "properties": {"Current Price": "7.19 ", "Location": "Selden, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.987, 41.9431, -73.987, 41.9431], "geometry": {"coordinates": [-73.987, 41.9431], "type": "Point"}, "id": "184869", "properties": {"Current Price": "7.19 ", "Location": "Kingston, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.00378, 41.09436, -74.00378, 41.09436], "geometry": {"coordinates": [-74.00378, 41.09436], "type": "Point"}, "id": "185321", "properties": {"Current Price": "7.19 ", "Location": "Nanuet, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.2364, 40.7384, -73.2364, 40.7384], "geometry": {"coordinates": [-73.2364, 40.7384], "type": "Point"}, "id": "185434", "properties": {"Current Price": "7.19 ", "Location": "Bay Shore, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.13316, 40.86615, -73.13316, 40.86615], "geometry": {"coordinates": [-73.13316, 40.86615], "type": "Point"}, "id": "185547", "properties": {"Current Price": "7.19 ", "Location": "Lake Grove, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.7034, 40.92395, -72.7034, 40.92395], "geometry": {"coordinates": [-72.7034, 40.92395], "type": "Point"}, "id": "185660", "properties": {"Current Price": "7.19 ", "Location": "Riverhead, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.35274, 40.68619, -73.35274, 40.68619], "geometry": {"coordinates": [-73.35274, 40.68619], "type": "Point"}, "id": "185773", "properties": {"Current Price": "7.19 ", "Location": "Lindenhurst, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.76854, 42.25508, -73.76854, 42.25508], "geometry": {"coordinates": [-73.76854, 42.25508], "type": "Point"}, "id": "185886", "properties": {"Current Price": "7.19 ", "Location": "Hudson, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.62574, 42.1284, -72.62574, 42.1284], "geometry": {"coordinates": [-72.62574, 42.1284], "type": "Point"}, "id": "186225", "properties": {"Current Price": "7.19 ", "Location": "West Springfield, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.55157, 42.35748, -72.55157, 42.35748], "geometry": {"coordinates": [-72.55157, 42.35748], "type": "Point"}, "id": "186451", "properties": {"Current Price": "7.19 ", "Location": "Hadley, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.206608, 42.46767, -73.206608, 42.46767], "geometry": {"coordinates": [-73.206608, 42.46767], "type": "Point"}, "id": "186564", "properties": {"Current Price": "7.19 ", "Location": "Pittsfield, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.497363, 41.815499, -71.497363, 41.815499], "geometry": {"coordinates": [-71.497363, 41.815499], "type": "Point"}, "id": "186677", "properties": {"Current Price": "7.19 ", "Location": "Johnston, RI", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.63394, 42.333662, -72.63394, 42.333662], "geometry": {"coordinates": [-72.63394, 42.333662], "type": "Point"}, "id": "186790", "properties": {"Current Price": "7.19 ", "Location": "Northampton, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.19357, 42.89386, -73.19357, 42.89386], "geometry": {"coordinates": [-73.19357, 42.89386], "type": "Point"}, "id": "187016", "properties": {"Current Price": "7.19 ", "Location": "Bennington, VT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.97007, 43.58993, -72.97007, 43.58993], "geometry": {"coordinates": [-72.97007, 43.58993], "type": "Point"}, "id": "187129", "properties": {"Current Price": "7.19 ", "Location": "Rutland, VT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.51448, 41.9824, -71.51448, 41.9824], "geometry": {"coordinates": [-71.51448, 41.9824], "type": "Point"}, "id": "187355", "properties": {"Current Price": "7.19 ", "Location": "North Smithfield, RI", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.68465, 41.55385, -72.68465, 41.55385], "geometry": {"coordinates": [-72.68465, 41.55385], "type": "Point"}, "id": "187468", "properties": {"Current Price": "7.19 ", "Location": "Middletown, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.35445, 41.85734, -71.35445, 41.85734], "geometry": {"coordinates": [-71.35445, 41.85734], "type": "Point"}, "id": "187807", "properties": {"Current Price": "7.19 ", "Location": "Rumford, RI", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.8101, 41.3623, -71.8101, 41.3623], "geometry": {"coordinates": [-71.8101, 41.3623], "type": "Point"}, "id": "188033", "properties": {"Current Price": "7.19 ", "Location": "Westerly, RI", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.48838, 41.84264, -72.48838, 41.84264], "geometry": {"coordinates": [-72.48838, 41.84264], "type": "Point"}, "id": "188146", "properties": {"Current Price": "7.19 ", "Location": "Vernon, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.58104, 41.98989, -72.58104, 41.98989], "geometry": {"coordinates": [-72.58104, 41.98989], "type": "Point"}, "id": "188259", "properties": {"Current Price": "7.19 ", "Location": "Enfield, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.0132, 41.56694, -72.0132, 41.56694], "geometry": {"coordinates": [-72.0132, 41.56694], "type": "Point"}, "id": "188372", "properties": {"Current Price": "7.19 ", "Location": "Lisbon, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.29617, 41.52763, -71.29617, 41.52763], "geometry": {"coordinates": [-71.29617, 41.52763], "type": "Point"}, "id": "188485", "properties": {"Current Price": "7.19 ", "Location": "Middletown, RI", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.60874, 41.76455, -72.60874, 41.76455], "geometry": {"coordinates": [-72.60874, 41.76455], "type": "Point"}, "id": "188598", "properties": {"Current Price": "7.19 ", "Location": "East Hartford, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.17921, 41.73899, -72.17921, 41.73899], "geometry": {"coordinates": [-72.17921, 41.73899], "type": "Point"}, "id": "188711", "properties": {"Current Price": "7.19 ", "Location": "North Windham, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.87307, 41.83922, -71.87307, 41.83922], "geometry": {"coordinates": [-71.87307, 41.83922], "type": "Point"}, "id": "188824", "properties": {"Current Price": "7.19 ", "Location": "Dayville, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.1257, 41.34208, -72.1257, 41.34208], "geometry": {"coordinates": [-72.1257, 41.34208], "type": "Point"}, "id": "188937", "properties": {"Current Price": "7.19 ", "Location": "Waterford, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.055647, 41.34976, -72.055647, 41.34976], "geometry": {"coordinates": [-72.055647, 41.34976], "type": "Point"}, "id": "189050", "properties": {"Current Price": "7.19 ", "Location": "Groton, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.872432, 41.638626, -72.872432, 41.638626], "geometry": {"coordinates": [-72.872432, 41.638626], "type": "Point"}, "id": "189163", "properties": {"Current Price": "7.19 ", "Location": "Southington, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.0843, 41.3391, -73.0843, 41.3391], "geometry": {"coordinates": [-73.0843, 41.3391], "type": "Point"}, "id": "189276", "properties": {"Current Price": "7.19 ", "Location": "Derby, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.4191, 41.40514, -73.4191, 41.40514], "geometry": {"coordinates": [-73.4191, 41.40514], "type": "Point"}, "id": "189389", "properties": {"Current Price": "7.19 ", "Location": "Danbury, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.39034, 41.4559, -74.39034, 41.4559], "geometry": {"coordinates": [-74.39034, 41.4559], "type": "Point"}, "id": "189502", "properties": {"Current Price": "7.19 ", "Location": "Middletown, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.41719, 41.55651, -73.41719, 41.55651], "geometry": {"coordinates": [-73.41719, 41.55651], "type": "Point"}, "id": "189615", "properties": {"Current Price": "7.19 ", "Location": "New Milford, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.11441, 41.80754, -73.11441, 41.80754], "geometry": {"coordinates": [-73.11441, 41.80754], "type": "Point"}, "id": "189728", "properties": {"Current Price": "7.19 ", "Location": "Torrington, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.80993, 41.50601, -72.80993, 41.50601], "geometry": {"coordinates": [-72.80993, 41.50601], "type": "Point"}, "id": "189841", "properties": {"Current Price": "7.19 ", "Location": "Wallingford, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.87002, 41.32048, -72.87002, 41.32048], "geometry": {"coordinates": [-72.87002, 41.32048], "type": "Point"}, "id": "189954", "properties": {"Current Price": "7.19 ", "Location": "New Haven, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.92216, 41.66648, -72.92216, 41.66648], "geometry": {"coordinates": [-72.92216, 41.66648], "type": "Point"}, "id": "190067", "properties": {"Current Price": "7.19 ", "Location": "Bristol, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.97852, 41.26848, -72.97852, 41.26848], "geometry": {"coordinates": [-72.97852, 41.26848], "type": "Point"}, "id": "190180", "properties": {"Current Price": "7.19 ", "Location": "West Haven, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.71258, 41.679, -72.71258, 41.679], "geometry": {"coordinates": [-72.71258, 41.679], "type": "Point"}, "id": "190406", "properties": {"Current Price": "7.19 ", "Location": "Newington, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.07436, 41.22166, -73.07436, 41.22166], "geometry": {"coordinates": [-73.07436, 41.22166], "type": "Point"}, "id": "190632", "properties": {"Current Price": "7.19 ", "Location": "Milford, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.03069, 41.5796, -73.03069, 41.5796], "geometry": {"coordinates": [-73.03069, 41.5796], "type": "Point"}, "id": "190745", "properties": {"Current Price": "7.19 ", "Location": "Waterbury, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.05197, 41.50293, -74.05197, 41.50293], "geometry": {"coordinates": [-74.05197, 41.50293], "type": "Point"}, "id": "191197", "properties": {"Current Price": "7.19 ", "Location": "Newburgh, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.919283, 41.373003, -72.919283, 41.373003], "geometry": {"coordinates": [-72.919283, 41.373003], "type": "Point"}, "id": "191423", "properties": {"Current Price": "7.19 ", "Location": "Hamden, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.73102, 42.49801, -71.73102, 42.49801], "geometry": {"coordinates": [-71.73102, 42.49801], "type": "Point"}, "id": "191536", "properties": {"Current Price": "7.19 ", "Location": "Leominster, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.65139, 41.67679, -72.65139, 41.67679], "geometry": {"coordinates": [-72.65139, 41.67679], "type": "Point"}, "id": "191649", "properties": {"Current Price": "7.19 ", "Location": "Rocky Hill, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.49851, 42.1508, -71.49851, 42.1508], "geometry": {"coordinates": [-71.49851, 42.1508], "type": "Point"}, "id": "191762", "properties": {"Current Price": "7.19 ", "Location": "Milford, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.083, 42.40762, -71.083, 42.40762], "geometry": {"coordinates": [-71.083, 42.40762], "type": "Point"}, "id": "191875", "properties": {"Current Price": "7.19 ", "Location": "Medford, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.730833, 42.114227, -72.730833, 42.114227], "geometry": {"coordinates": [-72.730833, 42.114227], "type": "Point"}, "id": "192101", "properties": {"Current Price": "7.19 ", "Location": "Westfield, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.62477, 42.58546, -72.62477, 42.58546], "geometry": {"coordinates": [-72.62477, 42.58546], "type": "Point"}, "id": "192327", "properties": {"Current Price": "7.19 ", "Location": "Greenfield, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.7443, 41.7814, -70.7443, 41.7814], "geometry": {"coordinates": [-70.7443, 41.7814], "type": "Point"}, "id": "192440", "properties": {"Current Price": "7.19 ", "Location": "Wareham, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.716, 41.95021, -70.716, 41.95021], "geometry": {"coordinates": [-70.716, 41.95021], "type": "Point"}, "id": "192553", "properties": {"Current Price": "7.19 ", "Location": "Plymouth, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.487121, 43.226064, -71.487121, 43.226064], "geometry": {"coordinates": [-71.487121, 43.226064], "type": "Point"}, "id": "192666", "properties": {"Current Price": "7.19 ", "Location": "Concord, NH", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.7967017, 43.0954302, -70.7967017, 43.0954302], "geometry": {"coordinates": [-70.7967017, 43.0954302], "type": "Point"}, "id": "192892", "properties": {"Current Price": "7.19 ", "Location": "Newington, NH", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.332, 42.8969, -71.332, 42.8969], "geometry": {"coordinates": [-71.332, 42.8969], "type": "Point"}, "id": "193005", "properties": {"Current Price": "7.19 ", "Location": "Derry, NH", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.4949, 42.77753, -71.4949, 42.77753], "geometry": {"coordinates": [-71.4949, 42.77753], "type": "Point"}, "id": "193118", "properties": {"Current Price": "7.19 ", "Location": "Nashua, NH", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.2967, 42.93369, -72.2967, 42.93369], "geometry": {"coordinates": [-72.2967, 42.93369], "type": "Point"}, "id": "193231", "properties": {"Current Price": "7.19 ", "Location": "Keene, NH", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.726443, 40.663552, -73.726443, 40.663552], "geometry": {"coordinates": [-73.726443, 40.663552], "type": "Point"}, "id": "193683", "properties": {"Current Price": "7.19 ", "Location": "Valley Stream, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.133299, 41.312406, -74.133299, 41.312406], "geometry": {"coordinates": [-74.133299, 41.312406], "type": "Point"}, "id": "193796", "properties": {"Current Price": "7.19 ", "Location": "Central Valley, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.884812, 41.824377, -72.884812, 41.824377], "geometry": {"coordinates": [-72.884812, 41.824377], "type": "Point"}, "id": "193909", "properties": {"Current Price": "7.19 ", "Location": "Canton, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.31806, 40.73872, -73.31806, 40.73872], "geometry": {"coordinates": [-73.31806, 40.73872], "type": "Point"}, "id": "194022", "properties": {"Current Price": "7.19 ", "Location": "North Babylon, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.55282, 41.81391, -72.55282, 41.81391], "geometry": {"coordinates": [-72.55282, 41.81391], "type": "Point"}, "id": "194135", "properties": {"Current Price": "7.19 ", "Location": "South Windsor, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.867099, 40.802722, -72.867099, 40.802722], "geometry": {"coordinates": [-72.867099, 40.802722], "type": "Point"}, "id": "194248", "properties": {"Current Price": "7.19 ", "Location": "Shirley, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.379622, 42.304061, -71.379622, 42.304061], "geometry": {"coordinates": [-71.379622, 42.304061], "type": "Point"}, "id": "194361", "properties": {"Current Price": "7.19 ", "Location": "Natick, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.20144, 42.15574, -71.20144, 42.15574], "geometry": {"coordinates": [-71.20144, 42.15574], "type": "Point"}, "id": "194587", "properties": {"Current Price": "7.19 ", "Location": "East Walpole, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.827702, 41.276429, -72.827702, 41.276429], "geometry": {"coordinates": [-72.827702, 41.276429], "type": "Point"}, "id": "194700", "properties": {"Current Price": "7.19 ", "Location": "Branford, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.989382, 41.641265, -70.989382, 41.641265], "geometry": {"coordinates": [-70.989382, 41.641265], "type": "Point"}, "id": "194813", "properties": {"Current Price": "7.19 ", "Location": "Dartmouth, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.228433, 41.177486, -73.228433, 41.177486], "geometry": {"coordinates": [-73.228433, 41.177486], "type": "Point"}, "id": "194926", "properties": {"Current Price": "7.19 ", "Location": "Fairfield, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.993339, 40.824984, -72.993339, 40.824984], "geometry": {"coordinates": [-72.993339, 40.824984], "type": "Point"}, "id": "195152", "properties": {"Current Price": "7.19 ", "Location": "Medford, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.094573, 40.764152, -73.094573, 40.764152], "geometry": {"coordinates": [-73.094573, 40.764152], "type": "Point"}, "id": "195265", "properties": {"Current Price": "7.19 ", "Location": "Bohemia, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.62419, 40.70568, -73.62419, 40.70568], "geometry": {"coordinates": [-73.62419, 40.70568], "type": "Point"}, "id": "195378", "properties": {"Current Price": "7.19 ", "Location": "Hempstead, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.81139, 41.55199, -72.81139, 41.55199], "geometry": {"coordinates": [-72.81139, 41.55199], "type": "Point"}, "id": "195491", "properties": {"Current Price": "7.19 ", "Location": "Meriden, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.61734, 40.7481, -73.61734, 40.7481], "geometry": {"coordinates": [-73.61734, 40.7481], "type": "Point"}, "id": "195604", "properties": {"Current Price": "7.19 ", "Location": "Carle Place, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.198492, 40.77036, -73.198492, 40.77036], "geometry": {"coordinates": [-73.198492, 40.77036], "type": "Point"}, "id": "195717", "properties": {"Current Price": "7.19 ", "Location": "Central Islip, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.95824, 40.94582, -72.95824, 40.94582], "geometry": {"coordinates": [-72.95824, 40.94582], "type": "Point"}, "id": "195830", "properties": {"Current Price": "7.19 ", "Location": "Rocky Point, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.938807, 42.552149, -70.938807, 42.552149], "geometry": {"coordinates": [-70.938807, 42.552149], "type": "Point"}, "id": "195943", "properties": {"Current Price": "7.19 ", "Location": "Danvers, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.16885, 40.55782, -74.16885, 40.55782], "geometry": {"coordinates": [-74.16885, 40.55782], "type": "Point"}, "id": "196056", "properties": {"Current Price": "7.19 ", "Location": "Staten Island, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.31597, 40.83891, -73.31597, 40.83891], "geometry": {"coordinates": [-73.31597, 40.83891], "type": "Point"}, "id": "196169", "properties": {"Current Price": "7.19 ", "Location": "East Northport, NY", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-71.989211, 42.558892, -71.989211, 42.558892], "geometry": {"coordinates": [-71.989211, 42.558892], "type": "Point"}, "id": "196395", "properties": {"Current Price": "7.19 ", "Location": "Gardner, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.22712832514, 41.299161112353, -73.22712832514, 41.299161112353], "geometry": {"coordinates": [-73.22712832514, 41.299161112353], "type": "Point"}, "id": "196508", "properties": {"Current Price": "7.19 ", "Location": "Monroe, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.83896, 41.67304, -72.83896, 41.67304], "geometry": {"coordinates": [-72.83896, 41.67304], "type": "Point"}, "id": "196621", "properties": {"Current Price": "7.19 ", "Location": "Plainville, CT", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-70.598454, 41.557204, -70.598454, 41.557204], "geometry": {"coordinates": [-70.598454, 41.557204], "type": "Point"}, "id": "196734", "properties": {"Current Price": "7.19 ", "Location": "Falmouth, MA", "Price": "7.19", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "250409", "properties": {"Current Price": "9.29 ", "Location": "Yucaipa, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "250634", "properties": {"Current Price": "9.29 ", "Location": "Burbank, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "250746", "properties": {"Current Price": "9.29 ", "Location": "La Habra, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "251423", "properties": {"Current Price": "9.29 ", "Location": "Fontana, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "251762", "properties": {"Current Price": "9.29 ", "Location": "Yucca Valley, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "251874", "properties": {"Current Price": "9.29 ", "Location": "Mira Loma, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "252100", "properties": {"Current Price": "9.29 ", "Location": "Downey, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "252326", "properties": {"Current Price": "9.29 ", "Location": "San Diego, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "252439", "properties": {"Current Price": "9.29 ", "Location": "Gardena, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "252778", "properties": {"Current Price": "9.29 ", "Location": "Anaheim, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "252891", "properties": {"Current Price": "9.29 ", "Location": "Laguna Woods, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "253003", "properties": {"Current Price": "9.29 ", "Location": "Lake Forest, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "253228", "properties": {"Current Price": "9.29 ", "Location": "Fountain Valley, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "253454", "properties": {"Current Price": "9.29 ", "Location": "Santa Maria, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "253567", "properties": {"Current Price": "9.29 ", "Location": "Visalia, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "253680", "properties": {"Current Price": "9.29 ", "Location": "Fresno, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "253906", "properties": {"Current Price": "9.29 ", "Location": "Temecula, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "254470", "properties": {"Current Price": "9.29 ", "Location": "West Hills, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "254695", "properties": {"Current Price": "9.29 ", "Location": "Buena Park, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "254808", "properties": {"Current Price": "9.29 ", "Location": "Oceanside, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "255259", "properties": {"Current Price": "9.29 ", "Location": "El Cajon, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "255371", "properties": {"Current Price": "9.29 ", "Location": "San Diego, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "255483", "properties": {"Current Price": "9.29 ", "Location": "San Marcos, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "255709", "properties": {"Current Price": "9.29 ", "Location": "Menifee, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "255934", "properties": {"Current Price": "9.29 ", "Location": "Temecula, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "256047", "properties": {"Current Price": "9.29 ", "Location": "Jurupa Valley, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "256160", "properties": {"Current Price": "9.29 ", "Location": "Moreno Valley, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "256498", "properties": {"Current Price": "9.29 ", "Location": "Palm Springs, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "256724", "properties": {"Current Price": "9.29 ", "Location": "Escondido, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "256837", "properties": {"Current Price": "9.29 ", "Location": "Escondido, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "256950", "properties": {"Current Price": "9.29 ", "Location": "Perris, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "257176", "properties": {"Current Price": "9.29 ", "Location": "Long Beach, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "257289", "properties": {"Current Price": "9.29 ", "Location": "Moreno Valley, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "257402", "properties": {"Current Price": "9.29 ", "Location": "Lake Elsinore, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "257854", "properties": {"Current Price": "9.29 ", "Location": "San Diego, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "257967", "properties": {"Current Price": "9.29 ", "Location": "Palmdale, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "258193", "properties": {"Current Price": "9.29 ", "Location": "Murrieta, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "258418", "properties": {"Current Price": "9.29 ", "Location": "Beaumont, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "258757", "properties": {"Current Price": "9.29 ", "Location": "Hesperia, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "258870", "properties": {"Current Price": "9.29 ", "Location": "Chula Vista, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "258983", "properties": {"Current Price": "9.29 ", "Location": "Ramona, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "259095", "properties": {"Current Price": "9.29 ", "Location": "Chula Vista, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "259434", "properties": {"Current Price": "9.29 ", "Location": "San Diego, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "259546", "properties": {"Current Price": "9.29 ", "Location": "Encinitas, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "259658", "properties": {"Current Price": "9.29 ", "Location": "Santa Clarita, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "260901", "properties": {"Current Price": "9.29 ", "Location": "Poway, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "261013", "properties": {"Current Price": "9.29 ", "Location": "Thousand Oaks, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "261125", "properties": {"Current Price": "9.29 ", "Location": "Ventura, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "261238", "properties": {"Current Price": "9.29 ", "Location": "Pomona, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "261351", "properties": {"Current Price": "9.29 ", "Location": "Santa Clarita, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "261464", "properties": {"Current Price": "9.29 ", "Location": "Carson, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "261577", "properties": {"Current Price": "7.59 ", "Location": "Buckeye, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "261689", "properties": {"Current Price": "7.59 ", "Location": "Queen Creek, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "261801", "properties": {"Current Price": "7.59 ", "Location": "Glendale, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "261913", "properties": {"Current Price": "7.59 ", "Location": "Tempe, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "262025", "properties": {"Current Price": "7.59 ", "Location": "Chandler, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "262137", "properties": {"Current Price": "7.59 ", "Location": "Laveen, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "262249", "properties": {"Current Price": "7.59 ", "Location": "Phoenix, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "262361", "properties": {"Current Price": "7.59 ", "Location": "Peoria, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "262473", "properties": {"Current Price": "7.59 ", "Location": "Goodyear, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "262585", "properties": {"Current Price": "7.59 ", "Location": "Mesa, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "262697", "properties": {"Current Price": "7.59 ", "Location": "Gilbert, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "262809", "properties": {"Current Price": "7.59 ", "Location": "Phoenix, AZ", "Price": "7.59", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "262921", "properties": {"Current Price": "9.29 ", "Location": "Arroyo Grande, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "263033", "properties": {"Current Price": "9.29 ", "Location": "Murrieta, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "263145", "properties": {"Current Price": "9.29 ", "Location": "Coachella, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "263258", "properties": {"Current Price": "9.29 ", "Location": "Tustin, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "263371", "properties": {"Current Price": "9.29 ", "Location": "Lompoc, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "263484", "properties": {"Current Price": "9.29 ", "Location": "Torrance, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "263710", "properties": {"Current Price": "9.29 ", "Location": "Porterville, CA", "Price": "9.29", "Product": "Appleton Farms Thick Sliced Applewood or Hickory Bacon", "__folium_color": "#e5690b"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_1f6f70bade42d8664d8fd7da125a36b4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_1f6f70bade42d8664d8fd7da125a36b4.addTo(map_bf39de23cfa501ba4f8a04c8afcfbd7b);
+        
+</script>
+</html>
