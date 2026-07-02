@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Green Onions</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Green Onions cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1d4b5099907a71493448bd75fae87498 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>0.33</li>
+                <li><span style='background:#ff8c00'></span>0.49</li>
+                <li><span style='background:#b22222'></span>0.99</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="benton's_chocolate_or_chocolate_chip_100_calorie_packs">Benton's Chocolate or Chocolate Chip 100 Calorie Packs</option>
+
+                
+                <option value="clancy's_original_or_barbecue_baked_potato_crisps">Clancy's Original or Barbecue Baked Potato Crisps</option>
+
+                
+                <option value="easy_home_rubber_broom_set">Easy Home Rubber Broom Set</option>
+
+                
+                <option value="elevation_protein_puffs">Elevation Protein Puffs</option>
+
+                
+                <option value="fit_&_active_lightly_salted_or_caramel_corn_rice_cakes">Fit & Active Lightly Salted or Caramel Corn Rice Cakes</option>
+
+                
+                <option value="fresh_black_angus_usda_choice">Fresh Black Angus USDA Choice</option>
+
+                
+                <option value="fresh_chuck_&_brisket_angus_beef_burgers">Fresh Chuck & Brisket Angus Beef Burgers</option>
+
+                
+                <option value="fresh_family_pack">Fresh Family Pack</option>
+
+                
+                <option value="fresh_family_pack_chicken_wings">Fresh Family Pack Chicken Wings</option>
+
+                
+                <option value="fresh_grass-fed">Fresh Grass-Fed</option>
+
+                
+                <option value="fresh_pork_spareribs">Fresh Pork Spareribs</option>
+
+                
+                <option value="friendly_farms_drinkable_greek_yogurt">Friendly Farms Drinkable Greek Yogurt</option>
+
+                
+                <option value="green_onions" selected>Green Onions</option>
+
+                
+                <option value="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</option>
+
+                
+                <option value="millville_protein_granola">Millville Protein Granola</option>
+
+                
+                <option value="nature's_nectar_pure_coconut_water">Nature's Nectar Pure Coconut Water</option>
+
+                
+                <option value="parkview_cheddar_brats">Parkview Cheddar Brats</option>
+
+                
+                <option value="peaches">Peaches</option>
+
+                
+                <option value="roma_tomatoes">Roma Tomatoes</option>
+
+                
+                <option value="simply_nature_organic_blue_corn_or_multigrain_tortilla_chips">Simply Nature Organic Blue Corn or Multigrain Tortilla Chips</option>
+
+                
+                <option value="simply_nature_organic_creamy_peanut_butter">Simply Nature Organic Creamy Peanut Butter</option>
+
+                
+                <option value="simply_nature_organic_granola_bars">Simply Nature Organic Granola Bars</option>
+
+                
+                <option value="simply_nature_organic_hummus">Simply Nature Organic Hummus</option>
+
+                
+                <option value="southern_grove_mixed_nuts_with_peanuts">Southern Grove Mixed Nuts with Peanuts</option>
+
+                
+                <option value="specially_selected_summer_salsa">Specially Selected Summer Salsa</option>
+
+                
+                <option value="vitalife_strawberry_mint_or_pineapple_mango_probiotic_spritzer">VitaLife Strawberry Mint or Pineapple Mango Probiotic Spritzer</option>
+
+                
+                <option value="wagyu_ground_beef">Wagyu Ground Beef</option>
+
+                
+                <option value="whole_seedless_watermelon">Whole Seedless Watermelon</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Jul 1<sup>st</sup> - Jul 7<sup>th</sup>. New products and next update on Jul 8<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_1d4b5099907a71493448bd75fae87498" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Jul 1<sup>st</sup>, price maps are available for the following products - 
+                <a href="benton's_chocolate_or_chocolate_chip_100_calorie_packs.html">Benton's Chocolate or Chocolate Chip 100 Calorie Packs</a>, 
+                <a href="clancy's_original_or_barbecue_baked_potato_crisps.html">Clancy's Original or Barbecue Baked Potato Crisps</a>, 
+                <a href="easy_home_rubber_broom_set.html">Easy Home Rubber Broom Set</a>, 
+                <a href="elevation_protein_puffs.html">Elevation Protein Puffs</a>, 
+                <a href="fit_&_active_lightly_salted_or_caramel_corn_rice_cakes.html">Fit & Active Lightly Salted or Caramel Corn Rice Cakes</a>, 
+                <a href="fresh_black_angus_usda_choice.html">Fresh Black Angus USDA Choice</a>, 
+                <a href="fresh_chuck_&_brisket_angus_beef_burgers.html">Fresh Chuck & Brisket Angus Beef Burgers</a>, 
+                <a href="fresh_family_pack.html">Fresh Family Pack</a>, 
+                <a href="fresh_family_pack_chicken_wings.html">Fresh Family Pack Chicken Wings</a>, 
+                <a href="fresh_grass-fed.html">Fresh Grass-Fed</a>, 
+                <a href="fresh_pork_spareribs.html">Fresh Pork Spareribs</a>, 
+                <a href="friendly_farms_drinkable_greek_yogurt.html">Friendly Farms Drinkable Greek Yogurt</a>, 
+                <a href="green_onions.html">Green Onions</a>, 
+                <a href="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts.html">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</a>, 
+                <a href="millville_protein_granola.html">Millville Protein Granola</a>, 
+                <a href="nature's_nectar_pure_coconut_water.html">Nature's Nectar Pure Coconut Water</a>, 
+                <a href="parkview_cheddar_brats.html">Parkview Cheddar Brats</a>, 
+                <a href="peaches.html">Peaches</a>, 
+                <a href="roma_tomatoes.html">Roma Tomatoes</a>, 
+                <a href="simply_nature_organic_blue_corn_or_multigrain_tortilla_chips.html">Simply Nature Organic Blue Corn or Multigrain Tortilla Chips</a>, 
+                <a href="simply_nature_organic_creamy_peanut_butter.html">Simply Nature Organic Creamy Peanut Butter</a>, 
+                <a href="simply_nature_organic_granola_bars.html">Simply Nature Organic Granola Bars</a>, 
+                <a href="simply_nature_organic_hummus.html">Simply Nature Organic Hummus</a>, 
+                <a href="southern_grove_mixed_nuts_with_peanuts.html">Southern Grove Mixed Nuts with Peanuts</a>, 
+                <a href="specially_selected_summer_salsa.html">Specially Selected Summer Salsa</a>, 
+                <a href="vitalife_strawberry_mint_or_pineapple_mango_probiotic_spritzer.html">VitaLife Strawberry Mint or Pineapple Mango Probiotic Spritzer</a>, 
+                <a href="wagyu_ground_beef.html">Wagyu Ground Beef</a>, 
+                <a href="whole_seedless_watermelon.html">Whole Seedless Watermelon</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_1d4b5099907a71493448bd75fae87498 = L.map(
+                "map_1d4b5099907a71493448bd75fae87498",
+                {
+                    center: [34.7010355, -116.101332],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_1d4b5099907a71493448bd75fae87498);
+
+            
+
+        
+    
+            var tile_layer_f17c4780d80fd30f9e78b76474442874 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f17c4780d80fd30f9e78b76474442874.addTo(map_1d4b5099907a71493448bd75fae87498);
+        
+    
+            map_1d4b5099907a71493448bd75fae87498.fitBounds(
+                [[32.593461, -120.602194], [36.80861, -111.60047]],
+                {}
+            );
+        
+    
+        function geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_styler(feature) {
+            switch(feature.id) {
+                case "222710": case "222911": case "223921": case "224930": case "225030": case "226341": case "227047": case "227148": case "227451": case "229673": case "230380": case "230784": case "230885": case "232096": case "232196": case "233901": case "234002": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                case "223013": case "223619": case "224023": case "224225": case "224427": case "224528": case "224831": case "225233": case "225435": case "225536": case "225637": case "225839": case "226544": case "226645": case "227250": case "227654": case "227755": case "227856": case "228159": case "228361": case "228462": case "228563": case "228765": case "228866": case "228967": case "229371": case "229472": case "229876": case "230179": case "230280": case "230482": case "230987": case "232298": case "232399": case "232500": case "232601": case "234104": case "234205": case "234306": case "234407": case "234609": 
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#ff8c00", "fillColor": "#ff8c00", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_f8010f20b55ac2e1384e3172cc7ca6cb.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_f8010f20b55ac2e1384e3172cc7ca6cb = L.geoJson(null, {
+                onEachFeature: geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_onEachFeature,
+            
+                style: geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_styler,
+                pointToLayer: geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_pointToLayer,
+        });
+
+        function geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_add (data) {
+            geo_json_f8010f20b55ac2e1384e3172cc7ca6cb
+                .addData(data);
+        }
+            geo_json_f8010f20b55ac2e1384e3172cc7ca6cb_add({"bbox": [-120.602194, 32.593461, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "222710", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Yucaipa, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "222911", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Burbank, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "223013", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "La Habra, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "223619", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Fontana, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "223921", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Yucca Valley, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "224023", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Mira Loma, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "224225", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Downey, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "224427", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "San Diego, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "224528", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Gardena, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "224831", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Anaheim, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "224930", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Laguna Woods, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "225030", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Lake Forest, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "225233", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Fountain Valley, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "225435", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Santa Maria, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "225536", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Visalia, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "225637", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Fresno, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "225839", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Temecula, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "226341", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "West Hills, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "226544", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Buena Park, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "226645", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Oceanside, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "227047", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "El Cajon, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "227148", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "San Diego, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "227250", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "San Marcos, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "227451", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Menifee, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "227654", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Temecula, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "227755", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Jurupa Valley, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "227856", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Moreno Valley, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "228159", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Palm Springs, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "228361", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Escondido, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "228462", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Escondido, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "228563", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Perris, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "228765", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Long Beach, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "228866", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Moreno Valley, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "228967", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Lake Elsinore, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "229371", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "San Diego, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "229472", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Palmdale, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "229673", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Murrieta, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "229876", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Beaumont, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "230179", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Hesperia, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "230280", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Chula Vista, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "230380", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Ramona, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "230482", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Chula Vista, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "230784", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "San Diego, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "230885", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Encinitas, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "230987", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Santa Clarita, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "232096", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Poway, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "232196", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Thousand Oaks, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "232298", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Ventura, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "232399", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Pomona, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "232500", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Santa Clarita, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "232601", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Carson, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "232700", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Buckeye, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "232800", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Queen Creek, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "232900", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Glendale, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "233000", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Tempe, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "233100", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Chandler, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "233200", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Laveen, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "233300", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Phoenix, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "233400", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Peoria, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "233500", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Goodyear, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "233600", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Mesa, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "233700", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Gilbert, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "233800", "properties": {"Current Price": "0.49 Per 5.5-oz. Pkg.", "Location": "Phoenix, AZ", "Price": "0.49", "Product": "Green Onions", "__folium_color": "#ff8c00"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "233901", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Arroyo Grande, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "234002", "properties": {"Current Price": "0.33 Per 5.5-oz. Pkg.", "Location": "Murrieta, CA", "Price": "0.33", "Product": "Green Onions", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "234104", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Coachella, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "234205", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Tustin, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "234306", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Lompoc, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "234407", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Torrance, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "234609", "properties": {"Current Price": "0.99 Per 5.5-oz. Pkg.", "Location": "Porterville, CA", "Price": "0.99", "Product": "Green Onions", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_f8010f20b55ac2e1384e3172cc7ca6cb.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_f8010f20b55ac2e1384e3172cc7ca6cb.addTo(map_1d4b5099907a71493448bd75fae87498);
+        
+</script>
+</html>

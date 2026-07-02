@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - Fresh Family Pack</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Fresh Family Pack cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a455d8787fd8b01b75d39ee8b5fc7698 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>0.99</li>
+                <li><span style='background:#b22222'></span>2.49</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="benton's_chocolate_or_chocolate_chip_100_calorie_packs">Benton's Chocolate or Chocolate Chip 100 Calorie Packs</option>
+
+                
+                <option value="clancy's_original_or_barbecue_baked_potato_crisps">Clancy's Original or Barbecue Baked Potato Crisps</option>
+
+                
+                <option value="easy_home_rubber_broom_set">Easy Home Rubber Broom Set</option>
+
+                
+                <option value="elevation_protein_puffs">Elevation Protein Puffs</option>
+
+                
+                <option value="fit_&_active_lightly_salted_or_caramel_corn_rice_cakes">Fit & Active Lightly Salted or Caramel Corn Rice Cakes</option>
+
+                
+                <option value="fresh_black_angus_usda_choice">Fresh Black Angus USDA Choice</option>
+
+                
+                <option value="fresh_chuck_&_brisket_angus_beef_burgers">Fresh Chuck & Brisket Angus Beef Burgers</option>
+
+                
+                <option value="fresh_family_pack" selected>Fresh Family Pack</option>
+
+                
+                <option value="fresh_family_pack_chicken_wings">Fresh Family Pack Chicken Wings</option>
+
+                
+                <option value="fresh_grass-fed">Fresh Grass-Fed</option>
+
+                
+                <option value="fresh_pork_spareribs">Fresh Pork Spareribs</option>
+
+                
+                <option value="friendly_farms_drinkable_greek_yogurt">Friendly Farms Drinkable Greek Yogurt</option>
+
+                
+                <option value="green_onions">Green Onions</option>
+
+                
+                <option value="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</option>
+
+                
+                <option value="millville_protein_granola">Millville Protein Granola</option>
+
+                
+                <option value="nature's_nectar_pure_coconut_water">Nature's Nectar Pure Coconut Water</option>
+
+                
+                <option value="parkview_cheddar_brats">Parkview Cheddar Brats</option>
+
+                
+                <option value="peaches">Peaches</option>
+
+                
+                <option value="roma_tomatoes">Roma Tomatoes</option>
+
+                
+                <option value="simply_nature_organic_blue_corn_or_multigrain_tortilla_chips">Simply Nature Organic Blue Corn or Multigrain Tortilla Chips</option>
+
+                
+                <option value="simply_nature_organic_creamy_peanut_butter">Simply Nature Organic Creamy Peanut Butter</option>
+
+                
+                <option value="simply_nature_organic_granola_bars">Simply Nature Organic Granola Bars</option>
+
+                
+                <option value="simply_nature_organic_hummus">Simply Nature Organic Hummus</option>
+
+                
+                <option value="southern_grove_mixed_nuts_with_peanuts">Southern Grove Mixed Nuts with Peanuts</option>
+
+                
+                <option value="specially_selected_summer_salsa">Specially Selected Summer Salsa</option>
+
+                
+                <option value="vitalife_strawberry_mint_or_pineapple_mango_probiotic_spritzer">VitaLife Strawberry Mint or Pineapple Mango Probiotic Spritzer</option>
+
+                
+                <option value="wagyu_ground_beef">Wagyu Ground Beef</option>
+
+                
+                <option value="whole_seedless_watermelon">Whole Seedless Watermelon</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Jul 1<sup>st</sup> - Jul 7<sup>th</sup>. New products and next update on Jul 8<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_a455d8787fd8b01b75d39ee8b5fc7698" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Jul 1<sup>st</sup>, price maps are available for the following products - 
+                <a href="benton's_chocolate_or_chocolate_chip_100_calorie_packs.html">Benton's Chocolate or Chocolate Chip 100 Calorie Packs</a>, 
+                <a href="clancy's_original_or_barbecue_baked_potato_crisps.html">Clancy's Original or Barbecue Baked Potato Crisps</a>, 
+                <a href="easy_home_rubber_broom_set.html">Easy Home Rubber Broom Set</a>, 
+                <a href="elevation_protein_puffs.html">Elevation Protein Puffs</a>, 
+                <a href="fit_&_active_lightly_salted_or_caramel_corn_rice_cakes.html">Fit & Active Lightly Salted or Caramel Corn Rice Cakes</a>, 
+                <a href="fresh_black_angus_usda_choice.html">Fresh Black Angus USDA Choice</a>, 
+                <a href="fresh_chuck_&_brisket_angus_beef_burgers.html">Fresh Chuck & Brisket Angus Beef Burgers</a>, 
+                <a href="fresh_family_pack.html">Fresh Family Pack</a>, 
+                <a href="fresh_family_pack_chicken_wings.html">Fresh Family Pack Chicken Wings</a>, 
+                <a href="fresh_grass-fed.html">Fresh Grass-Fed</a>, 
+                <a href="fresh_pork_spareribs.html">Fresh Pork Spareribs</a>, 
+                <a href="friendly_farms_drinkable_greek_yogurt.html">Friendly Farms Drinkable Greek Yogurt</a>, 
+                <a href="green_onions.html">Green Onions</a>, 
+                <a href="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts.html">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</a>, 
+                <a href="millville_protein_granola.html">Millville Protein Granola</a>, 
+                <a href="nature's_nectar_pure_coconut_water.html">Nature's Nectar Pure Coconut Water</a>, 
+                <a href="parkview_cheddar_brats.html">Parkview Cheddar Brats</a>, 
+                <a href="peaches.html">Peaches</a>, 
+                <a href="roma_tomatoes.html">Roma Tomatoes</a>, 
+                <a href="simply_nature_organic_blue_corn_or_multigrain_tortilla_chips.html">Simply Nature Organic Blue Corn or Multigrain Tortilla Chips</a>, 
+                <a href="simply_nature_organic_creamy_peanut_butter.html">Simply Nature Organic Creamy Peanut Butter</a>, 
+                <a href="simply_nature_organic_granola_bars.html">Simply Nature Organic Granola Bars</a>, 
+                <a href="simply_nature_organic_hummus.html">Simply Nature Organic Hummus</a>, 
+                <a href="southern_grove_mixed_nuts_with_peanuts.html">Southern Grove Mixed Nuts with Peanuts</a>, 
+                <a href="specially_selected_summer_salsa.html">Specially Selected Summer Salsa</a>, 
+                <a href="vitalife_strawberry_mint_or_pineapple_mango_probiotic_spritzer.html">VitaLife Strawberry Mint or Pineapple Mango Probiotic Spritzer</a>, 
+                <a href="wagyu_ground_beef.html">Wagyu Ground Beef</a>, 
+                <a href="whole_seedless_watermelon.html">Whole Seedless Watermelon</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_a455d8787fd8b01b75d39ee8b5fc7698 = L.map(
+                "map_a455d8787fd8b01b75d39ee8b5fc7698",
+                {
+                    center: [33.2080537459815, -102.205911936505],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a455d8787fd8b01b75d39ee8b5fc7698);
+
+            
+
+        
+    
+            var tile_layer_1ca6b247e82db67aac1c353c2bd8631b = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1ca6b247e82db67aac1c353c2bd8631b.addTo(map_a455d8787fd8b01b75d39ee8b5fc7698);
+        
+    
+            map_a455d8787fd8b01b75d39ee8b5fc7698.fitBounds(
+                [[29.607497491963, -120.45845], [36.80861, -83.95337387301]],
+                {}
+            );
+        
+    
+        function geo_json_bc7c3bf9755b745afc5697e1d15843fa_styler(feature) {
+            switch(feature.id) {
+                case "222997": case "223603": case "224007": case "224209": case "224411": case "224512": case "224815": case "225217": case "225419": case "225520": case "225621": case "225823": case "226528": case "226629": case "227234": case "227638": case "227739": case "227840": case "228143": case "228345": case "228446": case "228547": case "228749": case "228850": case "228951": case "229355": case "229456": case "229860": case "230163": case "230264": case "230466": case "230971": case "232282": case "232383": case "232484": case "232585": case "234088": case "234189": case "234290": case "234391": case "234593": 
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_bc7c3bf9755b745afc5697e1d15843fa_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_bc7c3bf9755b745afc5697e1d15843fa_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_bc7c3bf9755b745afc5697e1d15843fa_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_bc7c3bf9755b745afc5697e1d15843fa_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_bc7c3bf9755b745afc5697e1d15843fa.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_bc7c3bf9755b745afc5697e1d15843fa_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_bc7c3bf9755b745afc5697e1d15843fa = L.geoJson(null, {
+                onEachFeature: geo_json_bc7c3bf9755b745afc5697e1d15843fa_onEachFeature,
+            
+                style: geo_json_bc7c3bf9755b745afc5697e1d15843fa_styler,
+                pointToLayer: geo_json_bc7c3bf9755b745afc5697e1d15843fa_pointToLayer,
+        });
+
+        function geo_json_bc7c3bf9755b745afc5697e1d15843fa_add (data) {
+            geo_json_bc7c3bf9755b745afc5697e1d15843fa
+                .addData(data);
+        }
+            geo_json_bc7c3bf9755b745afc5697e1d15843fa_add({"bbox": [-120.45845, 29.607497491963, -83.95337387301, 36.80861], "features": [{"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "222997", "properties": {"Current Price": "0.99 Per Lb.", "Location": "La Habra, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "223603", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Fontana, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "224007", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Mira Loma, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "224209", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Downey, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "224411", "properties": {"Current Price": "0.99 Per Lb.", "Location": "San Diego, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "224512", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Gardena, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "224815", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Anaheim, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "225217", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Fountain Valley, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "225419", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Santa Maria, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "225520", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Visalia, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "225621", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Fresno, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "225823", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Temecula, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "226528", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Buena Park, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "226629", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Oceanside, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "227234", "properties": {"Current Price": "0.99 Per Lb.", "Location": "San Marcos, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "227638", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Temecula, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "227739", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Jurupa Valley, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "227840", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Moreno Valley, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "228143", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Palm Springs, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "228345", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Escondido, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "228446", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Escondido, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "228547", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Perris, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "228749", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Long Beach, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "228850", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Moreno Valley, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "228951", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Lake Elsinore, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "229355", "properties": {"Current Price": "0.99 Per Lb.", "Location": "San Diego, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "229456", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Palmdale, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "229860", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Beaumont, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "230163", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Hesperia, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "230264", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Chula Vista, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "230466", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Chula Vista, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "230971", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Santa Clarita, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "232282", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Ventura, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "232383", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Pomona, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "232484", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Santa Clarita, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "232585", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Carson, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "234088", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Coachella, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "234189", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Tustin, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "234290", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Lompoc, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "234391", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Torrance, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "234593", "properties": {"Current Price": "0.99 Per Lb.", "Location": "Porterville, CA", "Price": "0.99", "Product": "Fresh Family Pack", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-86.42036, 32.461834, -86.42036, 32.461834], "geometry": {"coordinates": [-86.42036, 32.461834], "type": "Point"}, "id": "241497", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Prattville, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.214866, 32.506497, -86.214866, 32.506497], "geometry": {"coordinates": [-86.214866, 32.506497], "type": "Point"}, "id": "241699", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Wetumpka, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.16381, 32.359658, -86.16381, 32.359658], "geometry": {"coordinates": [-86.16381, 32.359658], "type": "Point"}, "id": "241800", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Montgomery, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.09664, 30.45564, -91.09664, 30.45564], "geometry": {"coordinates": [-91.09664, 30.45564], "type": "Point"}, "id": "241901", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Baton Rouge, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.64514, 30.42524, -86.64514, 30.42524], "geometry": {"coordinates": [-86.64514, 30.42524], "type": "Point"}, "id": "242103", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Fort Walton Beach, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.46301, 31.5807, -90.46301, 31.5807], "geometry": {"coordinates": [-90.46301, 31.5807], "type": "Point"}, "id": "242204", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Brookhaven, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.85139, 30.52438, -87.85139, 30.52438], "geometry": {"coordinates": [-87.85139, 30.52438], "type": "Point"}, "id": "242305", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Fairhope, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.13172, 30.67726, -88.13172, 30.67726], "geometry": {"coordinates": [-88.13172, 30.67726], "type": "Point"}, "id": "242406", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Mobile, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.225258, 30.668889, -88.225258, 30.668889], "geometry": {"coordinates": [-88.225258, 30.668889], "type": "Point"}, "id": "242507", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Mobile, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.162642, 30.597774, -88.162642, 30.597774], "geometry": {"coordinates": [-88.162642, 30.597774], "type": "Point"}, "id": "242608", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Mobile, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.90436, 30.61961, -87.90436, 30.61961], "geometry": {"coordinates": [-87.90436, 30.61961], "type": "Point"}, "id": "242709", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Daphne, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.76516, 30.41056, -88.76516, 30.41056], "geometry": {"coordinates": [-88.76516, 30.41056], "type": "Point"}, "id": "242810", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Ocean Springs, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.682344, 30.380865, -87.682344, 30.380865], "geometry": {"coordinates": [-87.682344, 30.380865], "type": "Point"}, "id": "242911", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Foley, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.52318, 30.381134, -88.52318, 30.381134], "geometry": {"coordinates": [-88.52318, 30.381134], "type": "Point"}, "id": "243012", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Pascagoula, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.282407, 30.440387, -87.282407, 30.440387], "geometry": {"coordinates": [-87.282407, 30.440387], "type": "Point"}, "id": "243113", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Pensacola, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.357053, 30.361254, -87.357053, 30.361254], "geometry": {"coordinates": [-87.357053, 30.361254], "type": "Point"}, "id": "243214", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Pensacola, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.855055, 30.403773, -86.855055, 30.403773], "geometry": {"coordinates": [-86.855055, 30.403773], "type": "Point"}, "id": "243315", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Navarre, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.123784, 30.604683, -87.123784, 30.604683], "geometry": {"coordinates": [-87.123784, 30.604683], "type": "Point"}, "id": "243416", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Pace, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.56706, 30.73277, -86.56706, 30.73277], "geometry": {"coordinates": [-86.56706, 30.73277], "type": "Point"}, "id": "243517", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Crestview, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-86.4708, 30.51737, -86.4708, 30.51737], "geometry": {"coordinates": [-86.4708, 30.51737], "type": "Point"}, "id": "243618", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Niceville, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.592905, 30.15997, -85.592905, 30.15997], "geometry": {"coordinates": [-85.592905, 30.15997], "type": "Point"}, "id": "243719", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Callaway, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.65095, 30.22473, -85.65095, 30.22473], "geometry": {"coordinates": [-85.65095, 30.22473], "type": "Point"}, "id": "243820", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Lynn Haven, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.827296, 30.304764, -89.827296, 30.304764], "geometry": {"coordinates": [-89.827296, 30.304764], "type": "Point"}, "id": "243921", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Slidell, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.09797, 29.878678, -90.09797, 29.878678], "geometry": {"coordinates": [-90.09797, 29.878678], "type": "Point"}, "id": "244022", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Marrero, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.504625, 30.074385, -90.504625, 30.074385], "geometry": {"coordinates": [-90.504625, 30.074385], "type": "Point"}, "id": "244123", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Laplace, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.02115, 32.35429, -90.02115, 32.35429], "geometry": {"coordinates": [-90.02115, 32.35429], "type": "Point"}, "id": "244224", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Flowood, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.00703, 30.43538, -91.00703, 30.43538], "geometry": {"coordinates": [-91.00703, 30.43538], "type": "Point"}, "id": "244325", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Baton Rouge, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-83.95337387301, 30.85502950736, -83.95337387301, 30.85502950736], "geometry": {"coordinates": [-83.95337387301, 30.85502950736], "type": "Point"}, "id": "244426", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Thomasville, GA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.02859, 30.540789, -91.02859, 30.540789], "geometry": {"coordinates": [-91.02859, 30.540789], "type": "Point"}, "id": "244527", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Baton Rouge, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.8363, 33.44969, -88.8363, 33.44969], "geometry": {"coordinates": [-88.8363, 33.44969], "type": "Point"}, "id": "244628", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Starkville, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.671304, 32.364179, -88.671304, 32.364179], "geometry": {"coordinates": [-88.671304, 32.364179], "type": "Point"}, "id": "244729", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Meridian, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.6147206, 33.2342584, -87.6147206, 33.2342584], "geometry": {"coordinates": [-87.6147206, 33.2342584], "type": "Point"}, "id": "244830", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Northport, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-92.04785, 30.154, -92.04785, 30.154], "geometry": {"coordinates": [-92.04785, 30.154], "type": "Point"}, "id": "244931", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Lafayette, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.82013, 29.98285, -91.82013, 29.98285], "geometry": {"coordinates": [-91.82013, 29.98285], "type": "Point"}, "id": "245032", "properties": {"Current Price": "2.49 Per Lb.", "Location": "New Iberia, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.06671, 30.38456, -91.06671, 30.38456], "geometry": {"coordinates": [-91.06671, 30.38456], "type": "Point"}, "id": "245133", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Baton Rouge, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.22738, 30.00711, -90.22738, 30.00711], "geometry": {"coordinates": [-90.22738, 30.00711], "type": "Point"}, "id": "245234", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Metairie, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-91.990724, 30.265457, -91.990724, 30.265457], "geometry": {"coordinates": [-91.990724, 30.265457], "type": "Point"}, "id": "245335", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Lafayette, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.0849, 30.437299, -90.0849, 30.437299], "geometry": {"coordinates": [-90.0849, 30.437299], "type": "Point"}, "id": "245436", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Covington, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.47752, 31.26234, -90.47752, 31.26234], "geometry": {"coordinates": [-90.47752, 31.26234], "type": "Point"}, "id": "245537", "properties": {"Current Price": "2.49 Per Lb.", "Location": "McComb, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.377014, 31.321478, -89.377014, 31.321478], "geometry": {"coordinates": [-89.377014, 31.321478], "type": "Point"}, "id": "245638", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Hattiesburg, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.2397594, 30.4270765, -84.2397594, 30.4270765], "geometry": {"coordinates": [-84.2397594, 30.4270765], "type": "Point"}, "id": "245739", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Tallahassee, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.74636701719, 29.607497491963, -90.74636701719, 29.607497491963], "geometry": {"coordinates": [-90.74636701719, 29.607497491963], "type": "Point"}, "id": "245840", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Houma, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.81943, 29.80573, -90.81943, 29.80573], "geometry": {"coordinates": [-90.81943, 29.80573], "type": "Point"}, "id": "245941", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Thibodaux, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.317491, 30.441836, -84.317491, 30.441836], "geometry": {"coordinates": [-84.317491, 30.441836], "type": "Point"}, "id": "246042", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Tallahassee, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.828629, 31.318638, -85.828629, 31.318638], "geometry": {"coordinates": [-85.828629, 31.318638], "type": "Point"}, "id": "246143", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Enterprise, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.19725, 29.97786, -90.19725, 29.97786], "geometry": {"coordinates": [-90.19725, 29.97786], "type": "Point"}, "id": "246244", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Metairie, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.34323, 29.91288, -90.34323, 29.91288], "geometry": {"coordinates": [-90.34323, 29.91288], "type": "Point"}, "id": "246345", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Luling, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.03181, 29.88828, -90.03181, 29.88828], "geometry": {"coordinates": [-90.03181, 29.88828], "type": "Point"}, "id": "246446", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Gretna, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.52057, 30.72843, -90.52057, 30.72843], "geometry": {"coordinates": [-90.52057, 30.72843], "type": "Point"}, "id": "246547", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Amite, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.89817, 30.4393, -88.89817, 30.4393], "geometry": {"coordinates": [-88.89817, 30.4393], "type": "Point"}, "id": "246648", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Diberville, MS", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-90.98313, 30.33452, -90.98313, 30.33452], "geometry": {"coordinates": [-90.98313, 30.33452], "type": "Point"}, "id": "246749", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Prairieville, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.21676, 32.07575, -84.21676, 32.07575], "geometry": {"coordinates": [-84.21676, 32.07575], "type": "Point"}, "id": "246850", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Americus, GA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.56455, 30.90522, -84.56455, 30.90522], "geometry": {"coordinates": [-84.56455, 30.90522], "type": "Point"}, "id": "246951", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Bainbridge, GA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.25903, 30.78055, -88.25903, 30.78055], "geometry": {"coordinates": [-88.25903, 30.78055], "type": "Point"}, "id": "247052", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Semmes, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-84.59715, 30.58737, -84.59715, 30.58737], "geometry": {"coordinates": [-84.59715, 30.58737], "type": "Point"}, "id": "247153", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Quincy, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.70311, 30.189, -85.70311, 30.189], "geometry": {"coordinates": [-85.70311, 30.189], "type": "Point"}, "id": "247254", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Panama City, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-85.973389, 30.263153, -85.973389, 30.263153], "geometry": {"coordinates": [-85.973389, 30.263153], "type": "Point"}, "id": "247355", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Panama City, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-89.78369, 30.26219, -89.78369, 30.26219], "geometry": {"coordinates": [-89.78369, 30.26219], "type": "Point"}, "id": "247456", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Slidell, LA", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.26048, 30.53446, -87.26048, 30.53446], "geometry": {"coordinates": [-87.26048, 30.53446], "type": "Point"}, "id": "247557", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Pensacola, FL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-87.552463, 33.237341, -87.552463, 33.237341], "geometry": {"coordinates": [-87.552463, 33.237341], "type": "Point"}, "id": "247658", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Northport, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-88.07537, 30.68066, -88.07537, 30.68066], "geometry": {"coordinates": [-88.07537, 30.68066], "type": "Point"}, "id": "247759", "properties": {"Current Price": "2.49 Per Lb.", "Location": "Mobile, AL", "Price": "2.49", "Product": "Fresh Family Pack", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_bc7c3bf9755b745afc5697e1d15843fa.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_bc7c3bf9755b745afc5697e1d15843fa.addTo(map_a455d8787fd8b01b75d39ee8b5fc7698);
+        
+</script>
+</html>
