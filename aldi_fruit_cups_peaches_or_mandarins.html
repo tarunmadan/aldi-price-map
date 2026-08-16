@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head><title>Aldi Price Map - ALDI Fruit Cups Peaches or Mandarins</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do ALDI Fruit Cups Peaches or Mandarins cost at Aldi?">
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68f0554bb2a417dca4d9917e6a2c3214 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            font-size: 18px;
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>$( function() {
+        $( ".maplegend" ).draggable({
+            start: function (event, ui) {
+                $(this).css({
+                    right: "auto",
+                    top: "auto",
+                    bottom: "auto"
+                });
+            }
+        });
+    });
+    </script>
+    <style type='text/css'>
+      .maplegend {
+        position: absolute;
+        z-index:9999;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        padding: 10px;
+        font: 12px/14px Arial, Helvetica, sans-serif;
+        right: 10px;
+        bottom: 20px;
+      }
+      .maplegend .legend-title {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        }
+      .maplegend .legend-scale ul {
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+        float: left;
+        list-style: none;
+        }
+      .maplegend .legend-scale ul li {
+        list-style: none;
+        margin-left: 0;
+        line-height: 16px;
+        margin-bottom: 2px;
+        }
+      .maplegend ul.legend-labels li span {
+        display: block;
+        float: left;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        margin-left: 0;
+        border: 0px solid #ccc;
+        }
+      .maplegend .legend-source {
+        color: #777;
+        clear: both;
+        }
+      .maplegend a {
+        color: #777;
+        }
+    </style>
+    
+
+    <style>
+                            .header {
+                                
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 800;
+                                background-color: #001f78;
+                                color: #FFF;
+                                padding-left: 20px;
+                            }
+                            .footer{
+                                width: 100%;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                background-color: #001f78;
+                                color: #FFF;
+                            }
+                            .banner {
+                                padding-top: 20px;
+                                padding-bottom: 15px;
+                                padding-left: 20px;
+                                padding-right: 10px;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                
+                                background-color: #ffbf45;
+                            }
+
+                            .header option {
+                                font-weight: 800;
+                            }
+                            .header select {
+                                font-weight: 800; 
+                                max-width: 250px;                            
+                            }
+                            .header .main {                            
+                                float: left;
+                            }
+                            .header .sub {
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: 	#ffbf45;
+                                float: right;
+                                padding-top: 10px;
+                                padding-right: 20px;
+                            }
+                            .header a, .footer a {
+                                color: 	#ffbf45;
+                            }
+                        </style>
+    </head>
+<body>
+    
+    
+    <div id='maplegend Price' class='maplegend'>
+        <div class='legend-title'>Price</div>
+        <div class='legend-scale'>
+            <ul class='legend-labels'>
+                <li><span style='background:#006400'></span>1.95</li>
+                <li><span style='background:#aa7f00'></span>2.19</li>
+                <li><span style='background:#e5690b'></span>2.29</li>
+                <li><span style='background:#b22222'></span>2.89</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+            
+    <div class="header">
+                    <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
+                            
+                <option value="aldi_fruit_cups">ALDI Fruit Cups</option>
+
+                
+                <option value="aldi_fruit_cups_peaches_or_mandarins" selected>ALDI Fruit Cups Peaches or Mandarins</option>
+
+                
+                <option value="avocados">Avocados</option>
+
+                
+                <option value="baker's_treat_mini_bites">Baker's Treat Mini Bites</option>
+
+                
+                <option value="baker's_treat_mini_muffins">Baker's Treat Mini Muffins</option>
+
+                
+                <option value="benton's_mini_bear_grahams_snack_pack">Benton's Mini Bear Grahams Snack Pack</option>
+
+                
+                <option value="benton's_mini_crunchy_or_chewy_cookies">Benton's Mini Crunchy or Chewy Cookies</option>
+
+                
+                <option value="berryhill_grape_jelly">Berryhill Grape Jelly</option>
+
+                
+                <option value="blueberries">Blueberries</option>
+
+                
+                <option value="boulder_reclosable_sandwich_bags">Boulder Reclosable Sandwich Bags</option>
+
+                
+                <option value="boulder_snack_bags">Boulder Snack Bags</option>
+
+                
+                <option value="cantaloupe">Cantaloupe</option>
+
+                
+                <option value="chicken_caesar_salad_bowl">Chicken Caesar Salad Bowl</option>
+
+                
+                <option value="clancy's_avocado_oil_kettle_chips">Clancy's Avocado Oil Kettle Chips</option>
+
+                
+                <option value="clancy's_snack_combo">Clancy's Snack Combo</option>
+
+                
+                <option value="clancy's_veggie_straws">Clancy's Veggie Straws</option>
+
+                
+                <option value="driscoll's_raspberries">Driscoll's Raspberries</option>
+
+                
+                <option value="elevation_high_protein_bars">Elevation High Protein Bars</option>
+
+                
+                <option value="elevation_kids_baked_oat_bars">Elevation Kids Baked Oat Bars</option>
+
+                
+                <option value="friendly_farms_drinkable_yogurt">Friendly Farms Drinkable Yogurt</option>
+
+                
+                <option value="golden_kiwi">Golden Kiwi</option>
+
+                
+                <option value="happy_farms_deli-sliced_medium_or_mild_cheddar">Happy Farms Deli-Sliced Medium or Mild Cheddar</option>
+
+                
+                <option value="little_salad_bar_chicken_caesar_salad_bowl">Little Salad Bar Chicken Caesar Salad Bowl</option>
+
+                
+                <option value="millville_chewy_granola_bars">Millville Chewy Granola Bars</option>
+
+                
+                <option value="millville_crunchy_bars">Millville Crunchy Bars</option>
+
+                
+                <option value="millville_kids_fruit_&_grain_mini_bars">Millville Kids Fruit & Grain Mini Bars</option>
+
+                
+                <option value="mini_cucumbers">Mini Cucumbers</option>
+
+                
+                <option value="nature's_nectar_single_serve_apple_juice_6-pack">Nature's Nectar Single Serve Apple Juice 6-Pack</option>
+
+                
+                <option value="organic_blueberries">Organic Blueberries</option>
+
+                
+                <option value="park_street_deli_guacamole_mini_cups">Park Street Deli Guacamole Mini Cups</option>
+
+                
+                <option value="park_street_deli_hummus_mini_cups">Park Street Deli Hummus Mini Cups</option>
+
+                
+                <option value="park_street_deli_hummus_or_tzatziki_snackers">Park Street Deli Hummus or Tzatziki Snackers</option>
+
+                
+                <option value="puraqua_purified_water_24-pack">PurAqua Purified Water 24-Pack</option>
+
+                
+                <option value="raspberries">Raspberries</option>
+
+                
+                <option value="red_onions">Red Onions</option>
+
+                
+                <option value="savoritz_family_size_cheese_crackers">Savoritz Family Size Cheese Crackers</option>
+
+                
+                <option value="savoritz_mini_sandwich_crackers">Savoritz Mini Sandwich Crackers</option>
+
+                
+                <option value="savoritz_turtle_crackers">Savoritz Turtle Crackers</option>
+
+                
+                <option value="simply_nature_coconut_clusters">Simply Nature Coconut Clusters</option>
+
+                
+                <option value="simply_nature_granola_bites">Simply Nature Granola Bites</option>
+
+                
+                <option value="simply_nature_organic_creamy_peanut_butter">Simply Nature Organic Creamy Peanut Butter</option>
+
+                
+                <option value="simply_nature_organic_juice_boxes">Simply Nature Organic Juice Boxes</option>
+
+                
+                <option value="simply_nature_organic_turkey">Simply Nature Organic Turkey</option>
+
+                
+                <option value="southern_grove_on-the-go_trail_mix">Southern Grove On-the-Go Trail Mix</option>
+
+                
+                <option value="whole_seedless_watermelon">Whole Seedless Watermelon</option>
+
+                </select> &nbsp;cost at Aldi? </div>
+                    <div class="sub">Prices valid Aug 12<sup>th</sup> - Aug 18<sup>th</sup>. New products and next update on Aug 19<sup>th</sup></span>    </div>
+                    <div style="clear: both;"></div>           
+                </div>
+    <div class="folium-map" id="map_68f0554bb2a417dca4d9917e6a2c3214" ></div>
+        
+
+    <div class="footer">
+        <p>This site is not affiliated with Aldi. The prices are provided for information purpose only. 
+        Store pricing may change without notice and may differ from the information provided on this site. 
+        View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
+            
+        </p>
+        <p>For the week of Aug 12<sup>th</sup>, price maps are available for the following products - 
+                <a href="aldi_fruit_cups.html">ALDI Fruit Cups</a>, 
+                <a href="aldi_fruit_cups_peaches_or_mandarins.html">ALDI Fruit Cups Peaches or Mandarins</a>, 
+                <a href="avocados.html">Avocados</a>, 
+                <a href="baker's_treat_mini_bites.html">Baker's Treat Mini Bites</a>, 
+                <a href="baker's_treat_mini_muffins.html">Baker's Treat Mini Muffins</a>, 
+                <a href="benton's_mini_bear_grahams_snack_pack.html">Benton's Mini Bear Grahams Snack Pack</a>, 
+                <a href="benton's_mini_crunchy_or_chewy_cookies.html">Benton's Mini Crunchy or Chewy Cookies</a>, 
+                <a href="berryhill_grape_jelly.html">Berryhill Grape Jelly</a>, 
+                <a href="blueberries.html">Blueberries</a>, 
+                <a href="boulder_reclosable_sandwich_bags.html">Boulder Reclosable Sandwich Bags</a>, 
+                <a href="boulder_snack_bags.html">Boulder Snack Bags</a>, 
+                <a href="cantaloupe.html">Cantaloupe</a>, 
+                <a href="chicken_caesar_salad_bowl.html">Chicken Caesar Salad Bowl</a>, 
+                <a href="clancy's_avocado_oil_kettle_chips.html">Clancy's Avocado Oil Kettle Chips</a>, 
+                <a href="clancy's_snack_combo.html">Clancy's Snack Combo</a>, 
+                <a href="clancy's_veggie_straws.html">Clancy's Veggie Straws</a>, 
+                <a href="driscoll's_raspberries.html">Driscoll's Raspberries</a>, 
+                <a href="elevation_high_protein_bars.html">Elevation High Protein Bars</a>, 
+                <a href="elevation_kids_baked_oat_bars.html">Elevation Kids Baked Oat Bars</a>, 
+                <a href="friendly_farms_drinkable_yogurt.html">Friendly Farms Drinkable Yogurt</a>, 
+                <a href="golden_kiwi.html">Golden Kiwi</a>, 
+                <a href="happy_farms_deli-sliced_medium_or_mild_cheddar.html">Happy Farms Deli-Sliced Medium or Mild Cheddar</a>, 
+                <a href="little_salad_bar_chicken_caesar_salad_bowl.html">Little Salad Bar Chicken Caesar Salad Bowl</a>, 
+                <a href="millville_chewy_granola_bars.html">Millville Chewy Granola Bars</a>, 
+                <a href="millville_crunchy_bars.html">Millville Crunchy Bars</a>, 
+                <a href="millville_kids_fruit_&_grain_mini_bars.html">Millville Kids Fruit & Grain Mini Bars</a>, 
+                <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+                <a href="nature's_nectar_single_serve_apple_juice_6-pack.html">Nature's Nectar Single Serve Apple Juice 6-Pack</a>, 
+                <a href="organic_blueberries.html">Organic Blueberries</a>, 
+                <a href="park_street_deli_guacamole_mini_cups.html">Park Street Deli Guacamole Mini Cups</a>, 
+                <a href="park_street_deli_hummus_mini_cups.html">Park Street Deli Hummus Mini Cups</a>, 
+                <a href="park_street_deli_hummus_or_tzatziki_snackers.html">Park Street Deli Hummus or Tzatziki Snackers</a>, 
+                <a href="puraqua_purified_water_24-pack.html">PurAqua Purified Water 24-Pack</a>, 
+                <a href="raspberries.html">Raspberries</a>, 
+                <a href="red_onions.html">Red Onions</a>, 
+                <a href="savoritz_family_size_cheese_crackers.html">Savoritz Family Size Cheese Crackers</a>, 
+                <a href="savoritz_mini_sandwich_crackers.html">Savoritz Mini Sandwich Crackers</a>, 
+                <a href="savoritz_turtle_crackers.html">Savoritz Turtle Crackers</a>, 
+                <a href="simply_nature_coconut_clusters.html">Simply Nature Coconut Clusters</a>, 
+                <a href="simply_nature_granola_bites.html">Simply Nature Granola Bites</a>, 
+                <a href="simply_nature_organic_creamy_peanut_butter.html">Simply Nature Organic Creamy Peanut Butter</a>, 
+                <a href="simply_nature_organic_juice_boxes.html">Simply Nature Organic Juice Boxes</a>, 
+                <a href="simply_nature_organic_turkey.html">Simply Nature Organic Turkey</a>, 
+                <a href="southern_grove_on-the-go_trail_mix.html">Southern Grove On-the-Go Trail Mix</a>, 
+                <a href="whole_seedless_watermelon.html">Whole Seedless Watermelon</a></p></div></body>
+    <script>
+        function countryHandler(value) {
+            window.location.assign(`${value}.html`);
+        }
+    </script>
+    
+<script>
+    
+    
+            var map_68f0554bb2a417dca4d9917e6a2c3214 = L.map(
+                "map_68f0554bb2a417dca4d9917e6a2c3214",
+                {
+                    center: [36.879581, -96.65279699999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_68f0554bb2a417dca4d9917e6a2c3214);
+
+            
+
+        
+    
+            var tile_layer_02001a7f265fbe485179d59ba04f6c87 = L.tileLayer(
+                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_02001a7f265fbe485179d59ba04f6c87.addTo(map_68f0554bb2a417dca4d9917e6a2c3214);
+        
+    
+            map_68f0554bb2a417dca4d9917e6a2c3214.fitBounds(
+                [[32.804557, -120.602194], [40.954605, -72.7034]],
+                {}
+            );
+        
+    
+        function geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_styler(feature) {
+            switch(feature.id) {
+                case "285804": case "286079": case "287472": case "288883": case "289016": case "290844": case "291820": case "291953": case "292370": case "295476": case "296461": case "297020": case "297153": case "298848": case "298981": case "301194": case "301327": 
+                    return {"color": "#e5690b", "fillColor": "#e5690b", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                case "299682": case "299808": case "299934": case "300060": case "300186": case "300312": case "300438": case "300564": case "300690": case "300816": case "300942": case "301068": 
+                    return {"color": "#aa7f00", "fillColor": "#aa7f00", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+            }
+        }
+        function geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_8f3a76bb199b5c18ebc75a25dbb6390b.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_8f3a76bb199b5c18ebc75a25dbb6390b = L.geoJson(null, {
+                onEachFeature: geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_onEachFeature,
+            
+                style: geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_styler,
+                pointToLayer: geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_pointToLayer,
+        });
+
+        function geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_add (data) {
+            geo_json_8f3a76bb199b5c18ebc75a25dbb6390b
+                .addData(data);
+        }
+            geo_json_8f3a76bb199b5c18ebc75a25dbb6390b_add({"bbox": [-120.602194, 32.804557, -72.7034, 40.954605], "features": [{"bbox": [-75.2863334, 39.9091272, -75.2863334, 39.9091272], "geometry": {"coordinates": [-75.2863334, 39.9091272], "type": "Point"}, "id": "46111", "properties": {"Current Price": "1.95 ", "Location": "Collingdale, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.7640953, 40.2460702, -74.7640953, 40.2460702], "geometry": {"coordinates": [-74.7640953, 40.2460702], "type": "Point"}, "id": "46241", "properties": {"Current Price": "1.95 ", "Location": "Trenton, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.112293, 39.721114, -75.112293, 39.721114], "geometry": {"coordinates": [-75.112293, 39.721114], "type": "Point"}, "id": "46371", "properties": {"Current Price": "1.95 ", "Location": "Glassboro, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.6342693, 40.0265815, -75.6342693, 40.0265815], "geometry": {"coordinates": [-75.6342693, 40.0265815], "type": "Point"}, "id": "47931", "properties": {"Current Price": "1.95 ", "Location": "Exton, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.307397, 40.731533, -75.307397, 40.731533], "geometry": {"coordinates": [-75.307397, 40.731533], "type": "Point"}, "id": "48451", "properties": {"Current Price": "1.95 ", "Location": "Nazareth, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.9395071, 39.8963208, -74.9395071, 39.8963208], "geometry": {"coordinates": [-74.9395071, 39.8963208], "type": "Point"}, "id": "49491", "properties": {"Current Price": "1.95 ", "Location": "Marlton, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.223835, 40.129081, -74.223835, 40.129081], "geometry": {"coordinates": [-74.223835, 40.129081], "type": "Point"}, "id": "50271", "properties": {"Current Price": "1.95 ", "Location": "Howell, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.180932, 40.416862, -74.180932, 40.416862], "geometry": {"coordinates": [-74.180932, 40.416862], "type": "Point"}, "id": "50531", "properties": {"Current Price": "1.95 ", "Location": "Hazlet, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.29873, 40.53624, -74.29873, 40.53624], "geometry": {"coordinates": [-74.29873, 40.53624], "type": "Point"}, "id": "50661", "properties": {"Current Price": "1.95 ", "Location": "Woodbridge, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.098433, 40.006873, -75.098433, 40.006873], "geometry": {"coordinates": [-75.098433, 40.006873], "type": "Point"}, "id": "50791", "properties": {"Current Price": "1.95 ", "Location": "Philadelphia, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.39924, 40.13021, -75.39924, 40.13021], "geometry": {"coordinates": [-75.39924, 40.13021], "type": "Point"}, "id": "51441", "properties": {"Current Price": "1.95 ", "Location": "Norristown, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.0924049, 39.9204609, -75.0924049, 39.9204609], "geometry": {"coordinates": [-75.0924049, 39.9204609], "type": "Point"}, "id": "52351", "properties": {"Current Price": "1.95 ", "Location": "Collingswood, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.0407607, 39.4336887, -75.0407607, 39.4336887], "geometry": {"coordinates": [-75.0407607, 39.4336887], "type": "Point"}, "id": "52611", "properties": {"Current Price": "1.95 ", "Location": "Vineland, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.9176108, 40.0398176, -74.9176108, 40.0398176], "geometry": {"coordinates": [-74.9176108, 40.0398176], "type": "Point"}, "id": "52741", "properties": {"Current Price": "1.95 ", "Location": "Edgewater Park, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.0279063, 40.2962262, -74.0279063, 40.2962262], "geometry": {"coordinates": [-74.0279063, 40.2962262], "type": "Point"}, "id": "52871", "properties": {"Current Price": "1.95 ", "Location": "West Long Branch, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.7624, 40.24552, -74.7624, 40.24552], "geometry": {"coordinates": [-74.7624, 40.24552], "type": "Point"}, "id": "53391", "properties": {"Current Price": "1.95 ", "Location": "Ewing, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.020835, 39.9402904, -75.020835, 39.9402904], "geometry": {"coordinates": [-75.020835, 39.9402904], "type": "Point"}, "id": "54171", "properties": {"Current Price": "1.95 ", "Location": "Cherry Hill, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.502792, 40.215192, -75.502792, 40.215192], "geometry": {"coordinates": [-75.502792, 40.215192], "type": "Point"}, "id": "54301", "properties": {"Current Price": "1.95 ", "Location": "Limerick, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.136047, 40.064984, -74.136047, 40.064984], "geometry": {"coordinates": [-74.136047, 40.064984], "type": "Point"}, "id": "54431", "properties": {"Current Price": "1.95 ", "Location": "Brick, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.6148731, 39.4370047, -74.6148731, 39.4370047], "geometry": {"coordinates": [-74.6148731, 39.4370047], "type": "Point"}, "id": "55341", "properties": {"Current Price": "1.95 ", "Location": "Egg Harbor Twsp., NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.9485, 40.29782, -75.9485, 40.29782], "geometry": {"coordinates": [-75.9485, 40.29782], "type": "Point"}, "id": "55731", "properties": {"Current Price": "1.95 ", "Location": "Reading, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.2463, 40.67484, -75.2463, 40.67484], "geometry": {"coordinates": [-75.2463, 40.67484], "type": "Point"}, "id": "55991", "properties": {"Current Price": "1.95 ", "Location": "Easton, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.0088972, 40.0679505, -75.0088972, 40.0679505], "geometry": {"coordinates": [-75.0088972, 40.0679505], "type": "Point"}, "id": "57031", "properties": {"Current Price": "1.95 ", "Location": "Philadelphia, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.1895485, 39.8490236, -74.1895485, 39.8490236], "geometry": {"coordinates": [-74.1895485, 39.8490236], "type": "Point"}, "id": "59111", "properties": {"Current Price": "1.95 ", "Location": "Forked River, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.3613135, 40.0948149, -75.3613135, 40.0948149], "geometry": {"coordinates": [-75.3613135, 40.0948149], "type": "Point"}, "id": "59241", "properties": {"Current Price": "1.95 ", "Location": "King of Prussia, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.6659497, 39.6698364, -75.6659497, 39.6698364], "geometry": {"coordinates": [-75.6659497, 39.6698364], "type": "Point"}, "id": "59371", "properties": {"Current Price": "1.95 ", "Location": "Christiana, DE", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.31679, 40.263281, -75.31679, 40.263281], "geometry": {"coordinates": [-75.31679, 40.263281], "type": "Point"}, "id": "59501", "properties": {"Current Price": "1.95 ", "Location": "Lansdale, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.230265, 40.043227, -74.230265, 40.043227], "geometry": {"coordinates": [-74.230265, 40.043227], "type": "Point"}, "id": "60931", "properties": {"Current Price": "1.95 ", "Location": "Toms River, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.280027, 40.245368, -74.280027, 40.245368], "geometry": {"coordinates": [-74.280027, 40.245368], "type": "Point"}, "id": "61321", "properties": {"Current Price": "1.95 ", "Location": "Freehold, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.1601276, 39.9664329, -75.1601276, 39.9664329], "geometry": {"coordinates": [-75.1601276, 39.9664329], "type": "Point"}, "id": "61711", "properties": {"Current Price": "1.95 ", "Location": "Philadelphia, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.231473, 40.895639, -74.231473, 40.895639], "geometry": {"coordinates": [-74.231473, 40.895639], "type": "Point"}, "id": "61841", "properties": {"Current Price": "1.95 ", "Location": "Totowa, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.971382, 40.345495, -75.971382, 40.345495], "geometry": {"coordinates": [-75.971382, 40.345495], "type": "Point"}, "id": "62491", "properties": {"Current Price": "1.95 ", "Location": "Wyomissing, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.0025659, 40.1047293, -75.0025659, 40.1047293], "geometry": {"coordinates": [-75.0025659, 40.1047293], "type": "Point"}, "id": "63141", "properties": {"Current Price": "1.95 ", "Location": "Philadelphia, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.3463382, 39.8766322, -75.3463382, 39.8766322], "geometry": {"coordinates": [-75.3463382, 39.8766322], "type": "Point"}, "id": "63271", "properties": {"Current Price": "1.95 ", "Location": "Woodlyn, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.1017416, 39.99297, -75.1017416, 39.99297], "geometry": {"coordinates": [-75.1017416, 39.99297], "type": "Point"}, "id": "63661", "properties": {"Current Price": "1.95 ", "Location": "Philadelphia, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.32233, 40.68621, -74.32233, 40.68621], "geometry": {"coordinates": [-74.32233, 40.68621], "type": "Point"}, "id": "63791", "properties": {"Current Price": "1.95 ", "Location": "Springfield, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.0747467, 40.33659, -74.0747467, 40.33659], "geometry": {"coordinates": [-74.0747467, 40.33659], "type": "Point"}, "id": "63921", "properties": {"Current Price": "1.95 ", "Location": "Shrewsbury, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.5540243, 39.8113188, -75.5540243, 39.8113188], "geometry": {"coordinates": [-75.5540243, 39.8113188], "type": "Point"}, "id": "64051", "properties": {"Current Price": "1.95 ", "Location": "Wilmington, DE", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.22059, 40.954605, -74.22059, 40.954605], "geometry": {"coordinates": [-74.22059, 40.954605], "type": "Point"}, "id": "64181", "properties": {"Current Price": "1.95 ", "Location": "Wayne, NJ", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.728977, 35.120963, -80.728977, 35.120963], "geometry": {"coordinates": [-80.728977, 35.120963], "type": "Point"}, "id": "120744", "properties": {"Current Price": "1.95 ", "Location": "Matthews, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.760292, 34.961004, -80.760292, 34.961004], "geometry": {"coordinates": [-80.760292, 34.961004], "type": "Point"}, "id": "120873", "properties": {"Current Price": "1.95 ", "Location": "Waxhaw, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.786123, 35.372513, -80.786123, 35.372513], "geometry": {"coordinates": [-80.786123, 35.372513], "type": "Point"}, "id": "121900", "properties": {"Current Price": "1.95 ", "Location": "Charlotte, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.201833, 34.006545, -81.201833, 34.006545], "geometry": {"coordinates": [-81.201833, 34.006545], "type": "Point"}, "id": "122158", "properties": {"Current Price": "1.95 ", "Location": "Lexington, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.646142, 35.180234, -80.646142, 35.180234], "geometry": {"coordinates": [-80.646142, 35.180234], "type": "Point"}, "id": "123441", "properties": {"Current Price": "1.95 ", "Location": "Mint Hill, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.643573, 35.32427, -80.643573, 35.32427], "geometry": {"coordinates": [-80.643573, 35.32427], "type": "Point"}, "id": "123699", "properties": {"Current Price": "1.95 ", "Location": "Harrisburg, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.85553, 34.994371, -80.85553, 34.994371], "geometry": {"coordinates": [-80.85553, 34.994371], "type": "Point"}, "id": "123828", "properties": {"Current Price": "1.95 ", "Location": "Indian Land, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.166665, 33.031323, -80.166665, 33.031323], "geometry": {"coordinates": [-80.166665, 33.031323], "type": "Point"}, "id": "124085", "properties": {"Current Price": "1.95 ", "Location": "Summerville, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.164314, 32.951481, -80.164314, 32.951481], "geometry": {"coordinates": [-80.164314, 32.951481], "type": "Point"}, "id": "124470", "properties": {"Current Price": "1.95 ", "Location": "Summerville, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.11996, 35.25815, -81.11996, 35.25815], "geometry": {"coordinates": [-81.11996, 35.25815], "type": "Point"}, "id": "125495", "properties": {"Current Price": "1.95 ", "Location": "Gastonia, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.137254, 35.454607, -79.137254, 35.454607], "geometry": {"coordinates": [-79.137254, 35.454607], "type": "Point"}, "id": "125880", "properties": {"Current Price": "1.95 ", "Location": "Sanford, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.761388, 35.185057, -80.761388, 35.185057], "geometry": {"coordinates": [-80.761388, 35.185057], "type": "Point"}, "id": "126137", "properties": {"Current Price": "1.95 ", "Location": "Charlotte, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.039962, 32.942952, -80.039962, 32.942952], "geometry": {"coordinates": [-80.039962, 32.942952], "type": "Point"}, "id": "126650", "properties": {"Current Price": "1.95 ", "Location": "N Charleston, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.460126, 36.085061, -79.460126, 36.085061], "geometry": {"coordinates": [-79.460126, 36.085061], "type": "Point"}, "id": "126908", "properties": {"Current Price": "1.95 ", "Location": "Burlington, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.543649, 34.997241, -80.543649, 34.997241], "geometry": {"coordinates": [-80.543649, 34.997241], "type": "Point"}, "id": "127422", "properties": {"Current Price": "1.95 ", "Location": "Monroe, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.09137, 34.98276, -81.09137, 34.98276], "geometry": {"coordinates": [-81.09137, 34.98276], "type": "Point"}, "id": "127551", "properties": {"Current Price": "1.95 ", "Location": "Rock Hill, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.991704, 34.968345, -80.991704, 34.968345], "geometry": {"coordinates": [-80.991704, 34.968345], "type": "Point"}, "id": "128192", "properties": {"Current Price": "1.95 ", "Location": "Rock Hill, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.25842, 36.054194, -80.25842, 36.054194], "geometry": {"coordinates": [-80.25842, 36.054194], "type": "Point"}, "id": "128321", "properties": {"Current Price": "1.95 ", "Location": "Winston-Salem, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.878811, 35.164496, -80.878811, 35.164496], "geometry": {"coordinates": [-80.878811, 35.164496], "type": "Point"}, "id": "128450", "properties": {"Current Price": "1.95 ", "Location": "Charlotte, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.8804, 35.237094, -80.8804, 35.237094], "geometry": {"coordinates": [-80.8804, 35.237094], "type": "Point"}, "id": "128579", "properties": {"Current Price": "1.95 ", "Location": "Charlotte, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.62107, 35.392457, -80.62107, 35.392457], "geometry": {"coordinates": [-80.62107, 35.392457], "type": "Point"}, "id": "129222", "properties": {"Current Price": "1.95 ", "Location": "Concord, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.991359, 35.051964, -80.991359, 35.051964], "geometry": {"coordinates": [-80.991359, 35.051964], "type": "Point"}, "id": "129863", "properties": {"Current Price": "1.95 ", "Location": "Fort Mill, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.050437, 35.027603, -79.050437, 35.027603], "geometry": {"coordinates": [-79.050437, 35.027603], "type": "Point"}, "id": "129992", "properties": {"Current Price": "1.95 ", "Location": "Fayetteville, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.634915, 35.063294, -80.634915, 35.063294], "geometry": {"coordinates": [-80.634915, 35.063294], "type": "Point"}, "id": "130121", "properties": {"Current Price": "1.95 ", "Location": "Indian Trail, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.943194, 34.140545, -80.943194, 34.140545], "geometry": {"coordinates": [-80.943194, 34.140545], "type": "Point"}, "id": "130250", "properties": {"Current Price": "1.95 ", "Location": "Columbia, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.86848, 35.092227, -80.86848, 35.092227], "geometry": {"coordinates": [-80.86848, 35.092227], "type": "Point"}, "id": "130379", "properties": {"Current Price": "1.95 ", "Location": "Charlotte, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.85452, 35.40934, -80.85452, 35.40934], "geometry": {"coordinates": [-80.85452, 35.40934], "type": "Point"}, "id": "130892", "properties": {"Current Price": "1.95 ", "Location": "Huntersville, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.883135, 36.110806, -79.883135, 36.110806], "geometry": {"coordinates": [-79.883135, 36.110806], "type": "Point"}, "id": "131021", "properties": {"Current Price": "1.95 ", "Location": "Greensboro, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.837841, 34.940605, -80.837841, 34.940605], "geometry": {"coordinates": [-80.837841, 34.940605], "type": "Point"}, "id": "131150", "properties": {"Current Price": "1.95 ", "Location": "Indian Land, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-79.83624, 36.11409, -79.83624, 36.11409], "geometry": {"coordinates": [-79.83624, 36.11409], "type": "Point"}, "id": "131407", "properties": {"Current Price": "1.95 ", "Location": "Greensboro, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-80.04467, 33.00479, -80.04467, 33.00479], "geometry": {"coordinates": [-80.04467, 33.00479], "type": "Point"}, "id": "131536", "properties": {"Current Price": "1.95 ", "Location": "Goose Creek, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-78.874874, 35.759419, -78.874874, 35.759419], "geometry": {"coordinates": [-78.874874, 35.759419], "type": "Point"}, "id": "132049", "properties": {"Current Price": "1.95 ", "Location": "Apex, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.78625, 39.60521, -75.78625, 39.60521], "geometry": {"coordinates": [-75.78625, 39.60521], "type": "Point"}, "id": "181610", "properties": {"Current Price": "1.95 ", "Location": "Elkton, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.503298, 39.27848, -76.503298, 39.27848], "geometry": {"coordinates": [-76.503298, 39.27848], "type": "Point"}, "id": "181868", "properties": {"Current Price": "1.95 ", "Location": "Dundalk, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.45042, 39.316577, -76.45042, 39.316577], "geometry": {"coordinates": [-76.45042, 39.316577], "type": "Point"}, "id": "182384", "properties": {"Current Price": "1.95 ", "Location": "Essex, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.61174, 39.1942, -76.61174, 39.1942], "geometry": {"coordinates": [-76.61174, 39.1942], "type": "Point"}, "id": "182513", "properties": {"Current Price": "1.95 ", "Location": "Glen Burnie, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.89885, 38.85349, -76.89885, 38.85349], "geometry": {"coordinates": [-76.89885, 38.85349], "type": "Point"}, "id": "182642", "properties": {"Current Price": "1.95 ", "Location": "District Heights, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.66229, 39.25862, -76.66229, 39.25862], "geometry": {"coordinates": [-76.66229, 39.25862], "type": "Point"}, "id": "182771", "properties": {"Current Price": "1.95 ", "Location": "Baltimore, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.81127, 39.44359, -76.81127, 39.44359], "geometry": {"coordinates": [-76.81127, 39.44359], "type": "Point"}, "id": "183674", "properties": {"Current Price": "1.95 ", "Location": "Reisterstown, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.73055, 38.98263, -76.73055, 38.98263], "geometry": {"coordinates": [-76.73055, 38.98263], "type": "Point"}, "id": "184061", "properties": {"Current Price": "1.95 ", "Location": "Bowie, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.762872, 39.284673, -76.762872, 39.284673], "geometry": {"coordinates": [-76.762872, 39.284673], "type": "Point"}, "id": "184190", "properties": {"Current Price": "1.95 ", "Location": "Catonsville, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.989943, 39.585318, -76.989943, 39.585318], "geometry": {"coordinates": [-76.989943, 39.585318], "type": "Point"}, "id": "184706", "properties": {"Current Price": "1.95 ", "Location": "Westminster, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.178982, 39.496608, -76.178982, 39.496608], "geometry": {"coordinates": [-76.178982, 39.496608], "type": "Point"}, "id": "184835", "properties": {"Current Price": "1.95 ", "Location": "Aberdeen, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.485597, 39.394587, -76.485597, 39.394587], "geometry": {"coordinates": [-76.485597, 39.394587], "type": "Point"}, "id": "185222", "properties": {"Current Price": "1.95 ", "Location": "Nottingham, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.761232, 39.404039, -76.761232, 39.404039], "geometry": {"coordinates": [-76.761232, 39.404039], "type": "Point"}, "id": "185351", "properties": {"Current Price": "1.95 ", "Location": "Owings Mills, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.69739, 39.019463, -76.69739, 39.019463], "geometry": {"coordinates": [-76.69739, 39.019463], "type": "Point"}, "id": "185480", "properties": {"Current Price": "1.95 ", "Location": "Crofton, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.404555, 39.3861, -77.404555, 39.3861], "geometry": {"coordinates": [-77.404555, 39.3861], "type": "Point"}, "id": "185609", "properties": {"Current Price": "1.95 ", "Location": "Frederick, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.427902, 38.893928, -77.427902, 38.893928], "geometry": {"coordinates": [-77.427902, 38.893928], "type": "Point"}, "id": "185867", "properties": {"Current Price": "1.95 ", "Location": "Chantilly, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.324384, 38.852214, -77.324384, 38.852214], "geometry": {"coordinates": [-77.324384, 38.852214], "type": "Point"}, "id": "185996", "properties": {"Current Price": "1.95 ", "Location": "Fairfax, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.90804, 38.99692, -76.90804, 38.99692], "geometry": {"coordinates": [-76.90804, 38.99692], "type": "Point"}, "id": "186125", "properties": {"Current Price": "1.95 ", "Location": "College Park, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.8537, 38.8671, -76.8537, 38.8671], "geometry": {"coordinates": [-76.8537, 38.8671], "type": "Point"}, "id": "186254", "properties": {"Current Price": "1.95 ", "Location": "Capitol Heights, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.551821, 39.082922, -76.551821, 39.082922], "geometry": {"coordinates": [-76.551821, 39.082922], "type": "Point"}, "id": "186383", "properties": {"Current Price": "1.95 ", "Location": "Severna Park, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.184159, 38.783816, -77.184159, 38.783816], "geometry": {"coordinates": [-77.184159, 38.783816], "type": "Point"}, "id": "186512", "properties": {"Current Price": "1.95 ", "Location": "Springfield, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.407207, 39.034945, -77.407207, 39.034945], "geometry": {"coordinates": [-77.407207, 39.034945], "type": "Point"}, "id": "186641", "properties": {"Current Price": "1.95 ", "Location": "Sterling, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.109627, 38.828808, -77.109627, 38.828808], "geometry": {"coordinates": [-77.109627, 38.828808], "type": "Point"}, "id": "186899", "properties": {"Current Price": "1.95 ", "Location": "Alexandria, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.225617, 38.866385, -77.225617, 38.866385], "geometry": {"coordinates": [-77.225617, 38.866385], "type": "Point"}, "id": "187415", "properties": {"Current Price": "1.95 ", "Location": "Falls Church, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.729553, 39.601204, -77.729553, 39.601204], "geometry": {"coordinates": [-77.729553, 39.601204], "type": "Point"}, "id": "188189", "properties": {"Current Price": "1.95 ", "Location": "Hagerstown, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.172027, 38.879743, -77.172027, 38.879743], "geometry": {"coordinates": [-77.172027, 38.879743], "type": "Point"}, "id": "188576", "properties": {"Current Price": "1.95 ", "Location": "Falls Church, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.67563, 39.97748, -76.67563, 39.97748], "geometry": {"coordinates": [-76.67563, 39.97748], "type": "Point"}, "id": "188705", "properties": {"Current Price": "1.95 ", "Location": "York, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.753892, 39.981033, -76.753892, 39.981033], "geometry": {"coordinates": [-76.753892, 39.981033], "type": "Point"}, "id": "188834", "properties": {"Current Price": "1.95 ", "Location": "York, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.794156, 39.185202, -76.794156, 39.185202], "geometry": {"coordinates": [-76.794156, 39.185202], "type": "Point"}, "id": "189092", "properties": {"Current Price": "1.95 ", "Location": "Elkridge, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.948337, 39.405423, -76.948337, 39.405423], "geometry": {"coordinates": [-76.948337, 39.405423], "type": "Point"}, "id": "189221", "properties": {"Current Price": "1.95 ", "Location": "Eldersburg, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.508545, 39.026946, -77.508545, 39.026946], "geometry": {"coordinates": [-77.508545, 39.026946], "type": "Point"}, "id": "189350", "properties": {"Current Price": "1.95 ", "Location": "Broadlands, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.391539, 38.856567, -77.391539, 38.856567], "geometry": {"coordinates": [-77.391539, 38.856567], "type": "Point"}, "id": "189479", "properties": {"Current Price": "1.95 ", "Location": "Fairfax, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.810379, 40.304062, -76.810379, 40.304062], "geometry": {"coordinates": [-76.810379, 40.304062], "type": "Point"}, "id": "189608", "properties": {"Current Price": "1.95 ", "Location": "Harrisburg, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.519792, 38.943957, -77.519792, 38.943957], "geometry": {"coordinates": [-77.519792, 38.943957], "type": "Point"}, "id": "189737", "properties": {"Current Price": "1.95 ", "Location": "Sterling, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.1835, 39.1277, -77.1835, 39.1277], "geometry": {"coordinates": [-77.1835, 39.1277], "type": "Point"}, "id": "190769", "properties": {"Current Price": "1.95 ", "Location": "Gaithersburg, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.545975, 39.099052, -75.545975, 39.099052], "geometry": {"coordinates": [-75.545975, 39.099052], "type": "Point"}, "id": "190898", "properties": {"Current Price": "1.95 ", "Location": "Camden, DE", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.5179462, 39.1638501, -75.5179462, 39.1638501], "geometry": {"coordinates": [-75.5179462, 39.1638501], "type": "Point"}, "id": "191156", "properties": {"Current Price": "1.95 ", "Location": "Dover, DE", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.5981117, 39.2833401, -75.5981117, 39.2833401], "geometry": {"coordinates": [-75.5981117, 39.2833401], "type": "Point"}, "id": "191285", "properties": {"Current Price": "1.95 ", "Location": "Smyrna, DE", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.53215, 39.09564, -77.53215, 39.09564], "geometry": {"coordinates": [-77.53215, 39.09564], "type": "Point"}, "id": "191414", "properties": {"Current Price": "1.95 ", "Location": "Leesburg, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.0791, 38.7825, -77.0791, 38.7825], "geometry": {"coordinates": [-77.0791, 38.7825], "type": "Point"}, "id": "191543", "properties": {"Current Price": "1.95 ", "Location": "Alexandria, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.620633, 39.432071, -76.620633, 39.432071], "geometry": {"coordinates": [-76.620633, 39.432071], "type": "Point"}, "id": "191672", "properties": {"Current Price": "1.95 ", "Location": "Timonium, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.729794, 39.15169, -76.729794, 39.15169], "geometry": {"coordinates": [-76.729794, 39.15169], "type": "Point"}, "id": "191801", "properties": {"Current Price": "1.95 ", "Location": "Hanover, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.128252, 39.065105, -77.128252, 39.065105], "geometry": {"coordinates": [-77.128252, 39.065105], "type": "Point"}, "id": "191930", "properties": {"Current Price": "1.95 ", "Location": "Rockville, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.205391, 39.1716, -77.205391, 39.1716], "geometry": {"coordinates": [-77.205391, 39.1716], "type": "Point"}, "id": "192188", "properties": {"Current Price": "1.95 ", "Location": "Gaithersburg, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.730018, 39.449436, -75.730018, 39.449436], "geometry": {"coordinates": [-75.730018, 39.449436], "type": "Point"}, "id": "192317", "properties": {"Current Price": "1.95 ", "Location": "Middletown, DE", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.364433, 40.044185, -76.364433, 40.044185], "geometry": {"coordinates": [-76.364433, 40.044185], "type": "Point"}, "id": "192446", "properties": {"Current Price": "1.95 ", "Location": "Lancaster, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.31289, 39.46604, -76.31289, 39.46604], "geometry": {"coordinates": [-76.31289, 39.46604], "type": "Point"}, "id": "192962", "properties": {"Current Price": "1.95 ", "Location": "Abingdon, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.99329, 38.74366, -76.99329, 38.74366], "geometry": {"coordinates": [-76.99329, 38.74366], "type": "Point"}, "id": "193091", "properties": {"Current Price": "1.95 ", "Location": "Fort Washington, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.54634, 38.981668, -76.54634, 38.981668], "geometry": {"coordinates": [-76.54634, 38.981668], "type": "Point"}, "id": "193220", "properties": {"Current Price": "1.95 ", "Location": "Annapolis, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.883153, 38.771043, -76.883153, 38.771043], "geometry": {"coordinates": [-76.883153, 38.771043], "type": "Point"}, "id": "193349", "properties": {"Current Price": "1.95 ", "Location": "Clinton, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.807411, 39.095851, -76.807411, 39.095851], "geometry": {"coordinates": [-76.807411, 39.095851], "type": "Point"}, "id": "193478", "properties": {"Current Price": "1.95 ", "Location": "Laurel, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.6274, 39.9149, -76.6274, 39.9149], "geometry": {"coordinates": [-76.6274, 39.9149], "type": "Point"}, "id": "193607", "properties": {"Current Price": "1.95 ", "Location": "Red Lion, PA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.126368, 38.851596, -77.126368, 38.851596], "geometry": {"coordinates": [-77.126368, 38.851596], "type": "Point"}, "id": "193865", "properties": {"Current Price": "1.95 ", "Location": "Falls Church, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.957263, 39.0531, -76.957263, 39.0531], "geometry": {"coordinates": [-76.957263, 39.0531], "type": "Point"}, "id": "193994", "properties": {"Current Price": "1.95 ", "Location": "Silver Spring, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.139613, 38.767902, -77.139613, 38.767902], "geometry": {"coordinates": [-77.139613, 38.767902], "type": "Point"}, "id": "194123", "properties": {"Current Price": "1.95 ", "Location": "Alexandria, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.65055, 39.14295, -76.65055, 39.14295], "geometry": {"coordinates": [-76.65055, 39.14295], "type": "Point"}, "id": "194252", "properties": {"Current Price": "1.95 ", "Location": "Severn, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.6418, 38.8135, -77.6418, 38.8135], "geometry": {"coordinates": [-77.6418, 38.8135], "type": "Point"}, "id": "194510", "properties": {"Current Price": "1.95 ", "Location": "Haymarket, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.1049, 39.04455, -77.1049, 39.04455], "geometry": {"coordinates": [-77.1049, 39.04455], "type": "Point"}, "id": "194768", "properties": {"Current Price": "1.95 ", "Location": "Kensington, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.63776, 39.46281, -76.63776, 39.46281], "geometry": {"coordinates": [-76.63776, 39.46281], "type": "Point"}, "id": "194897", "properties": {"Current Price": "1.95 ", "Location": "Cockeysville, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.0321, 40.77709, -73.0321, 40.77709], "geometry": {"coordinates": [-73.0321, 40.77709], "type": "Point"}, "id": "210637", "properties": {"Current Price": "1.95 ", "Location": "Patchogue, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.0329, 40.86697, -73.0329, 40.86697], "geometry": {"coordinates": [-73.0329, 40.86697], "type": "Point"}, "id": "210767", "properties": {"Current Price": "1.95 ", "Location": "Selden, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.2364, 40.7384, -73.2364, 40.7384], "geometry": {"coordinates": [-73.2364, 40.7384], "type": "Point"}, "id": "211677", "properties": {"Current Price": "1.95 ", "Location": "Bay Shore, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.13316, 40.86615, -73.13316, 40.86615], "geometry": {"coordinates": [-73.13316, 40.86615], "type": "Point"}, "id": "211807", "properties": {"Current Price": "1.95 ", "Location": "Lake Grove, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.7034, 40.92395, -72.7034, 40.92395], "geometry": {"coordinates": [-72.7034, 40.92395], "type": "Point"}, "id": "211937", "properties": {"Current Price": "1.95 ", "Location": "Riverhead, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.35274, 40.68619, -73.35274, 40.68619], "geometry": {"coordinates": [-73.35274, 40.68619], "type": "Point"}, "id": "212067", "properties": {"Current Price": "1.95 ", "Location": "Lindenhurst, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.726443, 40.663552, -73.726443, 40.663552], "geometry": {"coordinates": [-73.726443, 40.663552], "type": "Point"}, "id": "221167", "properties": {"Current Price": "1.95 ", "Location": "Valley Stream, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.31806, 40.73872, -73.31806, 40.73872], "geometry": {"coordinates": [-73.31806, 40.73872], "type": "Point"}, "id": "221557", "properties": {"Current Price": "1.95 ", "Location": "North Babylon, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.867099, 40.802722, -72.867099, 40.802722], "geometry": {"coordinates": [-72.867099, 40.802722], "type": "Point"}, "id": "221817", "properties": {"Current Price": "1.95 ", "Location": "Shirley, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.993339, 40.824984, -72.993339, 40.824984], "geometry": {"coordinates": [-72.993339, 40.824984], "type": "Point"}, "id": "222857", "properties": {"Current Price": "1.95 ", "Location": "Medford, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.094573, 40.764152, -73.094573, 40.764152], "geometry": {"coordinates": [-73.094573, 40.764152], "type": "Point"}, "id": "222987", "properties": {"Current Price": "1.95 ", "Location": "Bohemia, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.62419, 40.70568, -73.62419, 40.70568], "geometry": {"coordinates": [-73.62419, 40.70568], "type": "Point"}, "id": "223117", "properties": {"Current Price": "1.95 ", "Location": "Hempstead, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.61734, 40.7481, -73.61734, 40.7481], "geometry": {"coordinates": [-73.61734, 40.7481], "type": "Point"}, "id": "223377", "properties": {"Current Price": "1.95 ", "Location": "Carle Place, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.198492, 40.77036, -73.198492, 40.77036], "geometry": {"coordinates": [-73.198492, 40.77036], "type": "Point"}, "id": "223507", "properties": {"Current Price": "1.95 ", "Location": "Central Islip, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-72.95824, 40.94582, -72.95824, 40.94582], "geometry": {"coordinates": [-72.95824, 40.94582], "type": "Point"}, "id": "223637", "properties": {"Current Price": "1.95 ", "Location": "Rocky Point, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-74.16885, 40.55782, -74.16885, 40.55782], "geometry": {"coordinates": [-74.16885, 40.55782], "type": "Point"}, "id": "223897", "properties": {"Current Price": "1.95 ", "Location": "Staten Island, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-73.31597, 40.83891, -73.31597, 40.83891], "geometry": {"coordinates": [-73.31597, 40.83891], "type": "Point"}, "id": "224027", "properties": {"Current Price": "1.95 ", "Location": "East Northport, NY", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.285242, 33.796123, -84.285242, 33.796123], "geometry": {"coordinates": [-84.285242, 33.796123], "type": "Point"}, "id": "253297", "properties": {"Current Price": "1.95 ", "Location": "Decatur, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.347296, 34.039722, -84.347296, 34.039722], "geometry": {"coordinates": [-84.347296, 34.039722], "type": "Point"}, "id": "254716", "properties": {"Current Price": "1.95 ", "Location": "Roswell, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.09244, 33.50643, -82.09244, 33.50643], "geometry": {"coordinates": [-82.09244, 33.50643], "type": "Point"}, "id": "255232", "properties": {"Current Price": "1.95 ", "Location": "Augusta, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.926032, 33.815649, -83.926032, 33.815649], "geometry": {"coordinates": [-83.926032, 33.815649], "type": "Point"}, "id": "255361", "properties": {"Current Price": "1.95 ", "Location": "Loganville, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.221716, 34.045499, -84.221716, 34.045499], "geometry": {"coordinates": [-84.221716, 34.045499], "type": "Point"}, "id": "255877", "properties": {"Current Price": "1.95 ", "Location": "Johns Creek, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.909078, 34.068898, -83.909078, 34.068898], "geometry": {"coordinates": [-83.909078, 34.068898], "type": "Point"}, "id": "256006", "properties": {"Current Price": "1.95 ", "Location": "Dacula, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.272161, 34.099829, -84.272161, 34.099829], "geometry": {"coordinates": [-84.272161, 34.099829], "type": "Point"}, "id": "256393", "properties": {"Current Price": "1.95 ", "Location": "Milton, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.041867, 33.810739, -84.041867, 33.810739], "geometry": {"coordinates": [-84.041867, 33.810739], "type": "Point"}, "id": "256651", "properties": {"Current Price": "1.95 ", "Location": "Snellville, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.115868, 34.161333, -84.115868, 34.161333], "geometry": {"coordinates": [-84.115868, 34.161333], "type": "Point"}, "id": "256909", "properties": {"Current Price": "1.95 ", "Location": "Cumming, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.570903, 34.009914, -84.570903, 34.009914], "geometry": {"coordinates": [-84.570903, 34.009914], "type": "Point"}, "id": "257425", "properties": {"Current Price": "1.95 ", "Location": "Kennesaw, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.328369, 34.907018, -82.328369, 34.907018], "geometry": {"coordinates": [-82.328369, 34.907018], "type": "Point"}, "id": "257683", "properties": {"Current Price": "1.95 ", "Location": "Taylors, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.567396, 34.113312, -84.567396, 34.113312], "geometry": {"coordinates": [-84.567396, 34.113312], "type": "Point"}, "id": "257812", "properties": {"Current Price": "1.95 ", "Location": "Woodstock, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.650716, 34.030275, -84.650716, 34.030275], "geometry": {"coordinates": [-84.650716, 34.030275], "type": "Point"}, "id": "258844", "properties": {"Current Price": "1.95 ", "Location": "Kennesaw, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.469292, 34.088346, -84.469292, 34.088346], "geometry": {"coordinates": [-84.469292, 34.088346], "type": "Point"}, "id": "259102", "properties": {"Current Price": "1.95 ", "Location": "Woodstock, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.028491, 33.968289, -84.028491, 33.968289], "geometry": {"coordinates": [-84.028491, 33.968289], "type": "Point"}, "id": "260005", "properties": {"Current Price": "1.95 ", "Location": "Lawrenceville, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.477168, 33.883794, -84.477168, 33.883794], "geometry": {"coordinates": [-84.477168, 33.883794], "type": "Point"}, "id": "260134", "properties": {"Current Price": "1.95 ", "Location": "Smyrna, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.576612, 33.831571, -84.576612, 33.831571], "geometry": {"coordinates": [-84.576612, 33.831571], "type": "Point"}, "id": "261037", "properties": {"Current Price": "1.95 ", "Location": "Mableton, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.987059, 35.050061, -81.987059, 35.050061], "geometry": {"coordinates": [-81.987059, 35.050061], "type": "Point"}, "id": "263488", "properties": {"Current Price": "1.95 ", "Location": "Boiling Springs, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-81.990288, 34.931866, -81.990288, 34.931866], "geometry": {"coordinates": [-81.990288, 34.931866], "type": "Point"}, "id": "263617", "properties": {"Current Price": "1.95 ", "Location": "Spartanburg, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.271894, 34.820093, -82.271894, 34.820093], "geometry": {"coordinates": [-82.271894, 34.820093], "type": "Point"}, "id": "263875", "properties": {"Current Price": "1.95 ", "Location": "Greenville, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-82.31197, 34.7826, -82.31197, 34.7826], "geometry": {"coordinates": [-82.31197, 34.7826], "type": "Point"}, "id": "264649", "properties": {"Current Price": "1.95 ", "Location": "Mauldin, SC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.99364, 34.06024, -83.99364, 34.06024], "geometry": {"coordinates": [-83.99364, 34.06024], "type": "Point"}, "id": "264778", "properties": {"Current Price": "1.95 ", "Location": "Buford, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.51744, 33.94582, -84.51744, 33.94582], "geometry": {"coordinates": [-84.51744, 33.94582], "type": "Point"}, "id": "265036", "properties": {"Current Price": "1.95 ", "Location": "Marietta, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-83.87256, 34.10665, -83.87256, 34.10665], "geometry": {"coordinates": [-83.87256, 34.10665], "type": "Point"}, "id": "265423", "properties": {"Current Price": "1.95 ", "Location": "Buford, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-84.09329, 34.26823, -84.09329, 34.26823], "geometry": {"coordinates": [-84.09329, 34.26823], "type": "Point"}, "id": "266197", "properties": {"Current Price": "1.95 ", "Location": "Cumming, GA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "285804", "properties": {"Current Price": "2.29 ", "Location": "Yucaipa, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "286079", "properties": {"Current Price": "2.29 ", "Location": "Burbank, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "287472", "properties": {"Current Price": "2.29 ", "Location": "Yucca Valley, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "288883", "properties": {"Current Price": "2.29 ", "Location": "Laguna Woods, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "289016", "properties": {"Current Price": "2.29 ", "Location": "Lake Forest, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "290844", "properties": {"Current Price": "2.29 ", "Location": "West Hills, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "291820", "properties": {"Current Price": "2.29 ", "Location": "El Cajon, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "291953", "properties": {"Current Price": "2.29 ", "Location": "San Diego, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "292370", "properties": {"Current Price": "2.29 ", "Location": "Menifee, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "295476", "properties": {"Current Price": "2.29 ", "Location": "Murrieta, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "296461", "properties": {"Current Price": "2.29 ", "Location": "Ramona, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "297020", "properties": {"Current Price": "2.29 ", "Location": "San Diego, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "297153", "properties": {"Current Price": "2.29 ", "Location": "Encinitas, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "298848", "properties": {"Current Price": "2.29 ", "Location": "Poway, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "298981", "properties": {"Current Price": "2.29 ", "Location": "Thousand Oaks, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "299682", "properties": {"Current Price": "2.19 ", "Location": "Buckeye, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "299808", "properties": {"Current Price": "2.19 ", "Location": "Queen Creek, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "299934", "properties": {"Current Price": "2.19 ", "Location": "Glendale, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "300060", "properties": {"Current Price": "2.19 ", "Location": "Tempe, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "300186", "properties": {"Current Price": "2.19 ", "Location": "Chandler, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "300312", "properties": {"Current Price": "2.19 ", "Location": "Laveen, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "300438", "properties": {"Current Price": "2.19 ", "Location": "Phoenix, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "300564", "properties": {"Current Price": "2.19 ", "Location": "Peoria, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "300690", "properties": {"Current Price": "2.19 ", "Location": "Goodyear, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "300816", "properties": {"Current Price": "2.19 ", "Location": "Mesa, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "300942", "properties": {"Current Price": "2.19 ", "Location": "Gilbert, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "301068", "properties": {"Current Price": "2.19 ", "Location": "Phoenix, AZ", "Price": "2.19", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#aa7f00"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "301194", "properties": {"Current Price": "2.29 ", "Location": "Arroyo Grande, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "301327", "properties": {"Current Price": "2.29 ", "Location": "Murrieta, CA", "Price": "2.29", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#e5690b"}, "type": "Feature"}, {"bbox": [-77.5108, 37.6362, -77.5108, 37.6362], "geometry": {"coordinates": [-77.5108, 37.6362], "type": "Point"}, "id": "302690", "properties": {"Current Price": "1.95 ", "Location": "Henrico, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.511, 37.5959, -77.511, 37.5959], "geometry": {"coordinates": [-77.511, 37.5959], "type": "Point"}, "id": "302948", "properties": {"Current Price": "1.95 ", "Location": "Richmond, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.50092, 38.25462, -77.50092, 38.25462], "geometry": {"coordinates": [-77.50092, 38.25462], "type": "Point"}, "id": "303077", "properties": {"Current Price": "1.95 ", "Location": "Fredericksburg, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.606624, 37.519895, -77.606624, 37.519895], "geometry": {"coordinates": [-77.606624, 37.519895], "type": "Point"}, "id": "303206", "properties": {"Current Price": "1.95 ", "Location": "North Chesterfield, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.4687, 37.5633, -77.4687, 37.5633], "geometry": {"coordinates": [-77.4687, 37.5633], "type": "Point"}, "id": "303335", "properties": {"Current Price": "1.95 ", "Location": "Richmond, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.97041, 38.48413, -77.97041, 38.48413], "geometry": {"coordinates": [-77.97041, 38.48413], "type": "Point"}, "id": "303593", "properties": {"Current Price": "1.95 ", "Location": "Culpeper, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.644414, 37.661861, -77.644414, 37.661861], "geometry": {"coordinates": [-77.644414, 37.661861], "type": "Point"}, "id": "303722", "properties": {"Current Price": "1.95 ", "Location": "Henrico, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.516814, 37.126127, -76.516814, 37.126127], "geometry": {"coordinates": [-76.516814, 37.126127], "type": "Point"}, "id": "303851", "properties": {"Current Price": "1.95 ", "Location": "Newport News, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.411656, 36.82196, -76.411656, 36.82196], "geometry": {"coordinates": [-76.411656, 36.82196], "type": "Point"}, "id": "303980", "properties": {"Current Price": "1.95 ", "Location": "Chesapeake, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.520808, 38.363816, -77.520808, 38.363816], "geometry": {"coordinates": [-77.520808, 38.363816], "type": "Point"}, "id": "304109", "properties": {"Current Price": "1.95 ", "Location": "Fredericksburg, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.498493, 37.363026, -77.498493, 37.363026], "geometry": {"coordinates": [-77.498493, 37.363026], "type": "Point"}, "id": "304238", "properties": {"Current Price": "1.95 ", "Location": "Chester, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.5342, 38.29081, -77.5342, 38.29081], "geometry": {"coordinates": [-77.5342, 38.29081], "type": "Point"}, "id": "304367", "properties": {"Current Price": "1.95 ", "Location": "Fredericksburg, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.175009, 36.795629, -76.175009, 36.795629], "geometry": {"coordinates": [-76.175009, 36.795629], "type": "Point"}, "id": "304496", "properties": {"Current Price": "1.95 ", "Location": "Virginia Beach, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.488676, 37.096209, -76.488676, 37.096209], "geometry": {"coordinates": [-76.488676, 37.096209], "type": "Point"}, "id": "304625", "properties": {"Current Price": "1.95 ", "Location": "Newport News, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.5309, 37.5365, -77.5309, 37.5365], "geometry": {"coordinates": [-77.5309, 37.5365], "type": "Point"}, "id": "305270", "properties": {"Current Price": "1.95 ", "Location": "Richmond, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.382526, 37.041207, -76.382526, 37.041207], "geometry": {"coordinates": [-76.382526, 37.041207], "type": "Point"}, "id": "305786", "properties": {"Current Price": "1.95 ", "Location": "Hampton, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.094013, 36.812055, -76.094013, 36.812055], "geometry": {"coordinates": [-76.094013, 36.812055], "type": "Point"}, "id": "306302", "properties": {"Current Price": "1.95 ", "Location": "Virginia Beach, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-75.999825, 36.786978, -75.999825, 36.786978], "geometry": {"coordinates": [-75.999825, 36.786978], "type": "Point"}, "id": "306947", "properties": {"Current Price": "1.95 ", "Location": "Virginia Beach, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.2943599, 36.8705339, -76.2943599, 36.8705339], "geometry": {"coordinates": [-76.2943599, 36.8705339], "type": "Point"}, "id": "307205", "properties": {"Current Price": "1.95 ", "Location": "Norfolk, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.234994, 36.765639, -76.234994, 36.765639], "geometry": {"coordinates": [-76.234994, 36.765639], "type": "Point"}, "id": "307979", "properties": {"Current Price": "1.95 ", "Location": "Chesapeake, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.8002985, 34.2900284, -77.8002985, 34.2900284], "geometry": {"coordinates": [-77.8002985, 34.2900284], "type": "Point"}, "id": "308108", "properties": {"Current Price": "1.95 ", "Location": "Wilmington, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.230796, 36.917295, -76.230796, 36.917295], "geometry": {"coordinates": [-76.230796, 36.917295], "type": "Point"}, "id": "308882", "properties": {"Current Price": "1.95 ", "Location": "Norfolk, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.208981, 36.858434, -76.208981, 36.858434], "geometry": {"coordinates": [-76.208981, 36.858434], "type": "Point"}, "id": "309011", "properties": {"Current Price": "1.95 ", "Location": "Norfolk, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.026607, 36.856654, -76.026607, 36.856654], "geometry": {"coordinates": [-76.026607, 36.856654], "type": "Point"}, "id": "309269", "properties": {"Current Price": "1.95 ", "Location": "Virginia Beach, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.667999, 37.506553, -77.667999, 37.506553], "geometry": {"coordinates": [-77.667999, 37.506553], "type": "Point"}, "id": "309527", "properties": {"Current Price": "1.95 ", "Location": "Midlothian, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.31139, 38.583023, -77.31139, 38.583023], "geometry": {"coordinates": [-77.31139, 38.583023], "type": "Point"}, "id": "309914", "properties": {"Current Price": "1.95 ", "Location": "Dumfries, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.50573, 38.77944, -77.50573, 38.77944], "geometry": {"coordinates": [-77.50573, 38.77944], "type": "Point"}, "id": "310043", "properties": {"Current Price": "1.95 ", "Location": "Manassas, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.877979, 38.67053, -76.877979, 38.67053], "geometry": {"coordinates": [-76.877979, 38.67053], "type": "Point"}, "id": "310172", "properties": {"Current Price": "1.95 ", "Location": "Brandywine, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.30886, 38.6529, -77.30886, 38.6529], "geometry": {"coordinates": [-77.30886, 38.6529], "type": "Point"}, "id": "310301", "properties": {"Current Price": "1.95 ", "Location": "Woodbridge, VA", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.913808, 38.621007, -76.913808, 38.621007], "geometry": {"coordinates": [-76.913808, 38.621007], "type": "Point"}, "id": "310559", "properties": {"Current Price": "1.95 ", "Location": "Waldorf, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-76.9836091, 38.5549908, -76.9836091, 38.5549908], "geometry": {"coordinates": [-76.9836091, 38.5549908], "type": "Point"}, "id": "310688", "properties": {"Current Price": "1.95 ", "Location": "La Plata, MD", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-77.890396, 34.174812, -77.890396, 34.174812], "geometry": {"coordinates": [-77.890396, 34.174812], "type": "Point"}, "id": "310946", "properties": {"Current Price": "1.95 ", "Location": "Wilmington, NC", "Price": "1.95", "Product": "ALDI Fruit Cups Peaches or Mandarins", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_8f3a76bb199b5c18ebc75a25dbb6390b.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["Product", "Current Price", "Location"];
+    let aliases = ["Product", "Current Price", "Location"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_8f3a76bb199b5c18ebc75a25dbb6390b.addTo(map_68f0554bb2a417dca4d9917e6a2c3214);
+        
+</script>
+</html>
