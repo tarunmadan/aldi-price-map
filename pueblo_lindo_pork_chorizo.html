@@ -3,21 +3,13 @@
 <head><title>Aldi Price Map - Pueblo Lindo Pork Chorizo</title>
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Pueblo Lindo Pork Chorizo cost at Aldi?">
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
@@ -25,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_228bf81a90b34ca083b9d5dcf0210828 {
+                #map_c6df7c66436f49f9b7978e7417bcd0a0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -34,6 +26,29 @@
                 }
                 .leaflet-container { font-size: 1rem; }
             </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
         
     
                     <style>
@@ -188,125 +203,73 @@
     <div class="header">
                     <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
                             
-                <option value="california_mandarins">California Mandarins</option>
+                <option value="appleton_farms_bite-size_salami">APPLETON FARMS Bite-Size Salami</option>
 
                 
-                <option value="cantaloupe_melon">Cantaloupe Melon</option>
+                <option value="avocados">Avocados</option>
 
                 
-                <option value="cauliflower">Cauliflower</option>
+                <option value="bake_shop_mini_donuts">BAKE SHOP Mini Donuts</option>
 
                 
-                <option value="clancy's_hint_of_lime_tortilla_chips">Clancy's Hint of Lime Tortilla Chips</option>
+                <option value="bake_shop_triple_chocolate_creme_cake">BAKE SHOP Triple Chocolate Creme Cake</option>
 
                 
-                <option value="earth_grown_extra_firm_organic_tofu">Earth Grown Extra Firm Organic Tofu</option>
+                <option value="baker's_corner_evaporated_milk">BAKER'S CORNER Evaporated Milk</option>
 
                 
-                <option value="earthly_grains_new_orleans_style_rice_mix">Earthly Grains New Orleans Style Rice Mix</option>
+                <option value="benton's_maple_leaf_creme_cookies">Benton's Maple Leaf Creme Cookies</option>
 
                 
-                <option value="el_pato_hot_tomato_sauce">El Pato Hot Tomato Sauce</option>
+                <option value="park_street_deli_artichoke_dip">PARK STREET DELI Artichoke Dip</option>
 
                 
-                <option value="fit_&_active_lightly_salted_or_caramel_corn_rice_cakes">Fit & Active Lightly Salted or Caramel Corn Rice Cakes</option>
+                <option value="park_street_deli_assorted_hummus">PARK STREET DELI Assorted Hummus</option>
 
                 
-                <option value="fresh_family_pack_937_organic_grass-fed_ground_beef">Fresh Family Pack 93/7 Organic Grass-Fed Ground Beef</option>
+                <option value="park_street_deli_olive_variety_pack">PARK STREET DELI Olive Variety Pack</option>
 
                 
-                <option value="goya_sazon_seasoning">Goya Sazon Seasoning</option>
+                <option value="park_street_deli_specialty_dip">PARK STREET DELI Specialty Dip</option>
 
                 
-                <option value="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</option>
-
-                
-                <option value="happy_farms_light_string_cheese">Happy Farms Light String Cheese</option>
-
-                
-                <option value="l'oven_fresh_protein_wraps">L'oven Fresh Protein Wraps</option>
-
-                
-                <option value="la_abuela_6.5_refrigerated_flour_tortillas">La Abuela 6.5" Refrigerated Flour Tortillas</option>
-
-                
-                <option value="mama_cozzi's_pizza_kitchen_stuffed_crust_pizza_pepperoni_or_three_meat">Mama Cozzi's Pizza Kitchen Stuffed Crust Pizza Pepperoni or Three Meat</option>
-
-                
-                <option value="pagasa_alphabets_or_elbow_pasta">Pagasa Alphabets or Elbow Pasta</option>
-
-                
-                <option value="panera_bread_broccoli_cheddar_soup">Panera Bread Broccoli Cheddar Soup</option>
-
-                
-                <option value="park_street_deli_classic_or_spicy_guacamole_mini_cups">Park Street Deli Classic or Spicy Guacamole Mini Cups</option>
-
-                
-                <option value="park_street_deli_cranberry_almond_chicken_salad">Park Street Deli Cranberry Almond Chicken Salad</option>
-
-                
-                <option value="park_street_deli_italian_or_turkey_wrap">Park Street Deli Italian or Turkey Wrap</option>
-
-                
-                <option value="park_street_deli_jubilee,_antipasti_or_greek_feta_salad">Park Street Deli Jubilee, Antipasti or Greek Feta Salad</option>
-
-                
-                <option value="park_street_deli_original_snack_selects_3-pack">Park Street Deli Original Snack Selects 3-Pack</option>
-
-                
-                <option value="park_street_deli_pork_burnt_ends">Park Street Deli Pork Burnt Ends</option>
-
-                
-                <option value="pueblo_lindo_instant_corn_masa">Pueblo Lindo Instant Corn Masa</option>
+                <option value="puraqua_italian_sparkling_mineral_water">PURAQUA Italian Sparkling Mineral Water</option>
 
                 
                 <option value="pueblo_lindo_pork_chorizo" selected>Pueblo Lindo Pork Chorizo</option>
 
                 
-                <option value="red_onions">Red Onions</option>
+                <option value="savoritz_entertainment_crackers">SAVORITZ Entertainment Crackers</option>
 
                 
-                <option value="savoritz_thin_wheat_crackers">Savoritz Thin Wheat Crackers</option>
+                <option value="season's_choice_frozen_extra_fine_green_beans">SEASON'S CHOICE Frozen Extra Fine Green Beans</option>
 
                 
-                <option value="savoritz_thin_wheat_crackers_original_or_tomato">Savoritz Thin Wheat Crackers Original or Tomato</option>
+                <option value="specially_selected_creme_brulee">SPECIALLY SELECTED Creme Brulee</option>
 
                 
-                <option value="savoritz_thin_wheat_crackers_original_or_tomato_basil">Savoritz Thin Wheat Crackers Original or Tomato Basil</option>
+                <option value="specially_selected_mini_cream_puffs_or_eclairs">SPECIALLY SELECTED Mini Cream Puffs or Eclairs</option>
 
                 
-                <option value="season's_choice_steamed_broccoli_florets">Season's Choice Steamed Broccoli Florets</option>
+                <option value="stonemill_brown_gravy_mix">STONEMILL Brown Gravy Mix</option>
 
                 
-                <option value="simply_nature_organic_creamy_peanut_butter">Simply Nature Organic Creamy Peanut Butter</option>
+                <option value="stonemill_poultry_spices_or_herbs">STONEMILL Poultry Spices or Herbs</option>
 
                 
-                <option value="specially_selected_italian_loaf">Specially Selected Italian Loaf</option>
+                <option value="sweet_harvest_whole_berry_cranberry_sauce">SWEET HARVEST Whole Berry Cranberry Sauce</option>
 
                 
-                <option value="vitalife_organic_kombucha">VitaLife Organic Kombucha</option>
+                <option value="simply_nature_organic_squash_or_sweet_potatoes">Simply Nature Organic Squash or Sweet Potatoes</option>
 
                 
-                <option value="vitalife_organic_kombucha_mixed_berry_or_ginger_lemon">VitaLife Organic Kombucha Mixed Berry or Ginger Lemon</option>
-
-                
-                <option value="whole_&_simple_southwest_or_mediterranean_chicken_quinoa_bowl">Whole & Simple Southwest or Mediterranean Chicken Quinoa Bowl</option>
-
-                
-                <option value="whole_white_mushrooms">Whole White Mushrooms</option>
+                <option value="summit_ginger_beer_or_root_beer">Summit Ginger Beer or Root Beer</option>
 
                 </select> &nbsp;cost at Aldi? </div>
-                    <div class="sub">Prices valid Apr 8<sup>th</sup> - Apr 14<sup>th</sup>. New products and next update on Apr 15<sup>th</sup></span>    </div>
+                    <div class="sub">Prices valid Nov 11<sup>th</sup> - Nov 17<sup>th</sup>. New products and next update on Nov 18<sup>th</sup></span>    </div>
                     <div style="clear: both;"></div>           
                 </div>
-    
-    <div class="banner">
-        <p>
-            You are viewing a price map from the past. Prices in store may have changed. View price maps of this week on <a href="https://www.aldipricemap.com">
-            aldipricemap.com</a>
-        </p>
-    </div>
-    <div class="folium-map" id="map_228bf81a90b34ca083b9d5dcf0210828" ></div>
+    <div class="folium-map" id="map_c6df7c66436f49f9b7978e7417bcd0a0" ></div>
         
 
     <div class="footer">
@@ -315,43 +278,28 @@
         View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
             
         </p>
-        <p>For the week of Apr 8<sup>th</sup>, price maps are available for the following products - 
-                <a href="california_mandarins.html">California Mandarins</a>, 
-                <a href="cantaloupe_melon.html">Cantaloupe Melon</a>, 
-                <a href="cauliflower.html">Cauliflower</a>, 
-                <a href="clancy's_hint_of_lime_tortilla_chips.html">Clancy's Hint of Lime Tortilla Chips</a>, 
-                <a href="earth_grown_extra_firm_organic_tofu.html">Earth Grown Extra Firm Organic Tofu</a>, 
-                <a href="earthly_grains_new_orleans_style_rice_mix.html">Earthly Grains New Orleans Style Rice Mix</a>, 
-                <a href="el_pato_hot_tomato_sauce.html">El Pato Hot Tomato Sauce</a>, 
-                <a href="fit_&_active_lightly_salted_or_caramel_corn_rice_cakes.html">Fit & Active Lightly Salted or Caramel Corn Rice Cakes</a>, 
-                <a href="fresh_family_pack_937_organic_grass-fed_ground_beef.html">Fresh Family Pack 93/7 Organic Grass-Fed Ground Beef</a>, 
-                <a href="goya_sazon_seasoning.html">Goya Sazon Seasoning</a>, 
-                <a href="happy_farms_extra_sharp_cheddar_or_gouda_cracker_cuts.html">Happy Farms Extra Sharp Cheddar or Gouda Cracker Cuts</a>, 
-                <a href="happy_farms_light_string_cheese.html">Happy Farms Light String Cheese</a>, 
-                <a href="l'oven_fresh_protein_wraps.html">L'oven Fresh Protein Wraps</a>, 
-                <a href="la_abuela_6.5_refrigerated_flour_tortillas.html">La Abuela 6.5" Refrigerated Flour Tortillas</a>, 
-                <a href="mama_cozzi's_pizza_kitchen_stuffed_crust_pizza_pepperoni_or_three_meat.html">Mama Cozzi's Pizza Kitchen Stuffed Crust Pizza Pepperoni or Three Meat</a>, 
-                <a href="pagasa_alphabets_or_elbow_pasta.html">Pagasa Alphabets or Elbow Pasta</a>, 
-                <a href="panera_bread_broccoli_cheddar_soup.html">Panera Bread Broccoli Cheddar Soup</a>, 
-                <a href="park_street_deli_classic_or_spicy_guacamole_mini_cups.html">Park Street Deli Classic or Spicy Guacamole Mini Cups</a>, 
-                <a href="park_street_deli_cranberry_almond_chicken_salad.html">Park Street Deli Cranberry Almond Chicken Salad</a>, 
-                <a href="park_street_deli_italian_or_turkey_wrap.html">Park Street Deli Italian or Turkey Wrap</a>, 
-                <a href="park_street_deli_jubilee,_antipasti_or_greek_feta_salad.html">Park Street Deli Jubilee, Antipasti or Greek Feta Salad</a>, 
-                <a href="park_street_deli_original_snack_selects_3-pack.html">Park Street Deli Original Snack Selects 3-Pack</a>, 
-                <a href="park_street_deli_pork_burnt_ends.html">Park Street Deli Pork Burnt Ends</a>, 
-                <a href="pueblo_lindo_instant_corn_masa.html">Pueblo Lindo Instant Corn Masa</a>, 
+        <p>For the week of Nov 11<sup>th</sup>, price maps are available for the following products - 
+                <a href="appleton_farms_bite-size_salami.html">APPLETON FARMS Bite-Size Salami</a>, 
+                <a href="avocados.html">Avocados</a>, 
+                <a href="bake_shop_mini_donuts.html">BAKE SHOP Mini Donuts</a>, 
+                <a href="bake_shop_triple_chocolate_creme_cake.html">BAKE SHOP Triple Chocolate Creme Cake</a>, 
+                <a href="baker's_corner_evaporated_milk.html">BAKER'S CORNER Evaporated Milk</a>, 
+                <a href="benton's_maple_leaf_creme_cookies.html">Benton's Maple Leaf Creme Cookies</a>, 
+                <a href="park_street_deli_artichoke_dip.html">PARK STREET DELI Artichoke Dip</a>, 
+                <a href="park_street_deli_assorted_hummus.html">PARK STREET DELI Assorted Hummus</a>, 
+                <a href="park_street_deli_olive_variety_pack.html">PARK STREET DELI Olive Variety Pack</a>, 
+                <a href="park_street_deli_specialty_dip.html">PARK STREET DELI Specialty Dip</a>, 
+                <a href="puraqua_italian_sparkling_mineral_water.html">PURAQUA Italian Sparkling Mineral Water</a>, 
                 <a href="pueblo_lindo_pork_chorizo.html">Pueblo Lindo Pork Chorizo</a>, 
-                <a href="red_onions.html">Red Onions</a>, 
-                <a href="savoritz_thin_wheat_crackers.html">Savoritz Thin Wheat Crackers</a>, 
-                <a href="savoritz_thin_wheat_crackers_original_or_tomato.html">Savoritz Thin Wheat Crackers Original or Tomato</a>, 
-                <a href="savoritz_thin_wheat_crackers_original_or_tomato_basil.html">Savoritz Thin Wheat Crackers Original or Tomato Basil</a>, 
-                <a href="season's_choice_steamed_broccoli_florets.html">Season's Choice Steamed Broccoli Florets</a>, 
-                <a href="simply_nature_organic_creamy_peanut_butter.html">Simply Nature Organic Creamy Peanut Butter</a>, 
-                <a href="specially_selected_italian_loaf.html">Specially Selected Italian Loaf</a>, 
-                <a href="vitalife_organic_kombucha.html">VitaLife Organic Kombucha</a>, 
-                <a href="vitalife_organic_kombucha_mixed_berry_or_ginger_lemon.html">VitaLife Organic Kombucha Mixed Berry or Ginger Lemon</a>, 
-                <a href="whole_&_simple_southwest_or_mediterranean_chicken_quinoa_bowl.html">Whole & Simple Southwest or Mediterranean Chicken Quinoa Bowl</a>, 
-                <a href="whole_white_mushrooms.html">Whole White Mushrooms</a></p></div></body>
+                <a href="savoritz_entertainment_crackers.html">SAVORITZ Entertainment Crackers</a>, 
+                <a href="season's_choice_frozen_extra_fine_green_beans.html">SEASON'S CHOICE Frozen Extra Fine Green Beans</a>, 
+                <a href="specially_selected_creme_brulee.html">SPECIALLY SELECTED Creme Brulee</a>, 
+                <a href="specially_selected_mini_cream_puffs_or_eclairs.html">SPECIALLY SELECTED Mini Cream Puffs or Eclairs</a>, 
+                <a href="stonemill_brown_gravy_mix.html">STONEMILL Brown Gravy Mix</a>, 
+                <a href="stonemill_poultry_spices_or_herbs.html">STONEMILL Poultry Spices or Herbs</a>, 
+                <a href="sweet_harvest_whole_berry_cranberry_sauce.html">SWEET HARVEST Whole Berry Cranberry Sauce</a>, 
+                <a href="simply_nature_organic_squash_or_sweet_potatoes.html">Simply Nature Organic Squash or Sweet Potatoes</a>, 
+                <a href="summit_ginger_beer_or_root_beer.html">Summit Ginger Beer or Root Beer</a></p></div></body>
     <script>
         function countryHandler(value) {
             window.location.assign(`${value}.html`);
@@ -361,95 +309,135 @@
 <script>
     
     
-            var map_228bf81a90b34ca083b9d5dcf0210828 = L.map(
-                "map_228bf81a90b34ca083b9d5dcf0210828",
+            var map_c6df7c66436f49f9b7978e7417bcd0a0 = L.map(
+                "map_c6df7c66436f49f9b7978e7417bcd0a0",
                 {
                     center: [34.7010355, -116.101332],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
                 }
             );
-            L.control.scale().addTo(map_228bf81a90b34ca083b9d5dcf0210828);
+            L.control.scale().addTo(map_c6df7c66436f49f9b7978e7417bcd0a0);
 
             
 
         
     
-            var tile_layer_a0e5f57526ef411165940c8143ce024b = L.tileLayer(
-                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            var tile_layer_bb7032c094bd171bc9e2e50f617b8517 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
             );
         
     
-            tile_layer_a0e5f57526ef411165940c8143ce024b.addTo(map_228bf81a90b34ca083b9d5dcf0210828);
+            tile_layer_bb7032c094bd171bc9e2e50f617b8517.addTo(map_c6df7c66436f49f9b7978e7417bcd0a0);
         
     
-            map_228bf81a90b34ca083b9d5dcf0210828.fitBounds(
+            map_c6df7c66436f49f9b7978e7417bcd0a0.fitBounds(
                 [[32.593461, -120.602194], [36.80861, -111.60047]],
                 {}
             );
         
     
-        function geo_json_ded1b9d5acfefd5be578f30c9b04033c_styler(feature) {
+        function geo_json_a3a1d7803906c4898f192155f43fe726_styler(feature) {
             switch(feature.id) {
-                case "164124": case "164279": case "164356": case "164822": case "165056": case "165134": case "165289": case "165446": case "165523": case "165757": case "165835": case "165912": case "166067": case "166224": case "166302": case "166380": case "166535": case "166924": case "167079": case "167158": case "167468": case "167545": case "167623": case "167778": case "167933": case "168012": case "168090": case "168323": case "168479": case "168557": case "168634": case "168790": case "168869": case "168946": case "169259": case "169337": case "169492": case "169648": case "169882": case "169960": case "170037": case "170115": case "170348": case "170425": case "170503": case "171360": case "171437": case "171515": case "171592": case "171671": case "171748": case "172750": case "172827": case "172905": case "172983": case "173061": case "173139": case "173295": 
+                case "63171": case "63256": case "63342": case "63427": case "63512": case "63598": case "63683": case "63768": case "63854": case "63940": case "64025": case "64110": case "64196": case "64282": case "64367": case "64452": case "64538": case "64624": case "64710": case "64796": case "64882": case "64968": case "65054": case "65140": case "65225": case "65311": case "65396": case "65481": case "65567": case "65653": case "65739": case "65825": case "65910": case "65996": case "66082": case "66168": case "66254": case "66340": case "66426": case "66511": case "66596": case "66681": case "66766": case "66851": case "66936": case "68140": case "68312": case "68484": case "68570": case "68656": 
                     return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
                 default:
                     return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
             }
         }
-        function geo_json_ded1b9d5acfefd5be578f30c9b04033c_highlighter(feature) {
+        function geo_json_a3a1d7803906c4898f192155f43fe726_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_ded1b9d5acfefd5be578f30c9b04033c_pointToLayer(feature, latlng) {
-            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+        function geo_json_a3a1d7803906c4898f192155f43fe726_pointToLayer(feature, latlng) {
+            var opts = {
+  "stroke": true,
+  "color": "#3388ff",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 2,
+};
             
-            let style = geo_json_ded1b9d5acfefd5be578f30c9b04033c_styler(feature)
+            let style = geo_json_a3a1d7803906c4898f192155f43fe726_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_ded1b9d5acfefd5be578f30c9b04033c_onEachFeature(feature, layer) {
+        function geo_json_a3a1d7803906c4898f192155f43fe726_onEachFeature(feature, layer) {
+
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_ded1b9d5acfefd5be578f30c9b04033c.resetStyle(e.target);
+                            geo_json_a3a1d7803906c4898f192155f43fe726.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_ded1b9d5acfefd5be578f30c9b04033c_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_a3a1d7803906c4898f192155f43fe726_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_ded1b9d5acfefd5be578f30c9b04033c = L.geoJson(null, {
-                onEachFeature: geo_json_ded1b9d5acfefd5be578f30c9b04033c_onEachFeature,
+        var geo_json_a3a1d7803906c4898f192155f43fe726 = L.geoJson(null, {
+                onEachFeature: geo_json_a3a1d7803906c4898f192155f43fe726_onEachFeature,
             
-                style: geo_json_ded1b9d5acfefd5be578f30c9b04033c_styler,
-                pointToLayer: geo_json_ded1b9d5acfefd5be578f30c9b04033c_pointToLayer,
+                style: geo_json_a3a1d7803906c4898f192155f43fe726_styler,
+                pointToLayer: geo_json_a3a1d7803906c4898f192155f43fe726_pointToLayer,
+            ...{
+}
         });
 
-        function geo_json_ded1b9d5acfefd5be578f30c9b04033c_add (data) {
-            geo_json_ded1b9d5acfefd5be578f30c9b04033c
+        function geo_json_a3a1d7803906c4898f192155f43fe726_add (data) {
+            geo_json_a3a1d7803906c4898f192155f43fe726
                 .addData(data);
         }
-            geo_json_ded1b9d5acfefd5be578f30c9b04033c_add({"bbox": [-120.602194, 32.593461, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "164124", "properties": {"Current Price": "1.45 ", "Location": "Yucaipa, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "164279", "properties": {"Current Price": "1.45 ", "Location": "Burbank, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "164356", "properties": {"Current Price": "1.45 ", "Location": "La Habra, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "164822", "properties": {"Current Price": "1.45 ", "Location": "Fontana, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "165056", "properties": {"Current Price": "1.45 ", "Location": "Yucca Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "165134", "properties": {"Current Price": "1.45 ", "Location": "Mira Loma, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "165289", "properties": {"Current Price": "1.45 ", "Location": "Downey, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "165446", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "165523", "properties": {"Current Price": "1.45 ", "Location": "Gardena, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "165757", "properties": {"Current Price": "1.45 ", "Location": "Anaheim, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "165835", "properties": {"Current Price": "1.45 ", "Location": "Laguna Woods, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "165912", "properties": {"Current Price": "1.45 ", "Location": "Lake Forest, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "166067", "properties": {"Current Price": "1.45 ", "Location": "Fountain Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "166224", "properties": {"Current Price": "1.45 ", "Location": "Santa Maria, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "166302", "properties": {"Current Price": "1.45 ", "Location": "Visalia, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "166380", "properties": {"Current Price": "1.45 ", "Location": "Fresno, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "166535", "properties": {"Current Price": "1.45 ", "Location": "Temecula, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "166924", "properties": {"Current Price": "1.45 ", "Location": "West Hills, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "167079", "properties": {"Current Price": "1.45 ", "Location": "Buena Park, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "167158", "properties": {"Current Price": "1.45 ", "Location": "Oceanside, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "167468", "properties": {"Current Price": "1.45 ", "Location": "El Cajon, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "167545", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "167623", "properties": {"Current Price": "1.45 ", "Location": "San Marcos, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "167778", "properties": {"Current Price": "1.45 ", "Location": "Menifee, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "167933", "properties": {"Current Price": "1.45 ", "Location": "Temecula, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "168012", "properties": {"Current Price": "1.45 ", "Location": "Jurupa Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "168090", "properties": {"Current Price": "1.45 ", "Location": "Moreno Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "168323", "properties": {"Current Price": "1.45 ", "Location": "Palm Springs, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "168479", "properties": {"Current Price": "1.45 ", "Location": "Escondido, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "168557", "properties": {"Current Price": "1.45 ", "Location": "Escondido, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "168634", "properties": {"Current Price": "1.45 ", "Location": "Perris, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "168790", "properties": {"Current Price": "1.45 ", "Location": "Long Beach, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "168869", "properties": {"Current Price": "1.45 ", "Location": "Moreno Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "168946", "properties": {"Current Price": "1.45 ", "Location": "Lake Elsinore, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "169259", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "169337", "properties": {"Current Price": "1.45 ", "Location": "Palmdale, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "169492", "properties": {"Current Price": "1.45 ", "Location": "Murrieta, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "169648", "properties": {"Current Price": "1.45 ", "Location": "Beaumont, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "169882", "properties": {"Current Price": "1.45 ", "Location": "Hesperia, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "169960", "properties": {"Current Price": "1.45 ", "Location": "Chula Vista, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "170037", "properties": {"Current Price": "1.45 ", "Location": "Ramona, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "170115", "properties": {"Current Price": "1.45 ", "Location": "Chula Vista, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "170348", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "170425", "properties": {"Current Price": "1.45 ", "Location": "Encinitas, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "170503", "properties": {"Current Price": "1.45 ", "Location": "Santa Clarita, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "171360", "properties": {"Current Price": "1.45 ", "Location": "Poway, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "171437", "properties": {"Current Price": "1.45 ", "Location": "Thousand Oaks, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "171515", "properties": {"Current Price": "1.45 ", "Location": "Ventura, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "171592", "properties": {"Current Price": "1.45 ", "Location": "Pomona, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "171671", "properties": {"Current Price": "1.45 ", "Location": "Santa Clarita, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "171748", "properties": {"Current Price": "1.45 ", "Location": "Carson, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "171826", "properties": {"Current Price": "1.29 ", "Location": "Buckeye, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "171903", "properties": {"Current Price": "1.29 ", "Location": "Queen Creek, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "171980", "properties": {"Current Price": "1.29 ", "Location": "Glendale, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "172057", "properties": {"Current Price": "1.29 ", "Location": "Tempe, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "172134", "properties": {"Current Price": "1.29 ", "Location": "Chandler, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "172211", "properties": {"Current Price": "1.29 ", "Location": "Laveen, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "172288", "properties": {"Current Price": "1.29 ", "Location": "Phoenix, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "172365", "properties": {"Current Price": "1.29 ", "Location": "Peoria, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "172442", "properties": {"Current Price": "1.29 ", "Location": "Goodyear, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "172519", "properties": {"Current Price": "1.29 ", "Location": "Mesa, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "172596", "properties": {"Current Price": "1.29 ", "Location": "Gilbert, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "172673", "properties": {"Current Price": "1.29 ", "Location": "Phoenix, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "172750", "properties": {"Current Price": "1.45 ", "Location": "Arroyo Grande, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "172827", "properties": {"Current Price": "1.45 ", "Location": "Murrieta, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "172905", "properties": {"Current Price": "1.45 ", "Location": "Coachella, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "172983", "properties": {"Current Price": "1.45 ", "Location": "Tustin, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "173061", "properties": {"Current Price": "1.45 ", "Location": "Lompoc, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "173139", "properties": {"Current Price": "1.45 ", "Location": "Torrance, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "173295", "properties": {"Current Price": "1.45 ", "Location": "Porterville, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_a3a1d7803906c4898f192155f43fe726_add({"bbox": [-120.602194, 32.593461, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "63171", "properties": {"Current Price": "1.45 ", "Location": "Yucaipa, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "63256", "properties": {"Current Price": "1.45 ", "Location": "Burbank, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "63342", "properties": {"Current Price": "1.45 ", "Location": "La Habra, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "63427", "properties": {"Current Price": "1.45 ", "Location": "Fontana, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "63512", "properties": {"Current Price": "1.45 ", "Location": "Yucca Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "63598", "properties": {"Current Price": "1.45 ", "Location": "Mira Loma, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "63683", "properties": {"Current Price": "1.45 ", "Location": "Downey, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "63768", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "63854", "properties": {"Current Price": "1.45 ", "Location": "Gardena, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "63940", "properties": {"Current Price": "1.45 ", "Location": "Anaheim, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "64025", "properties": {"Current Price": "1.45 ", "Location": "Laguna Woods, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "64110", "properties": {"Current Price": "1.45 ", "Location": "Lake Forest, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "64196", "properties": {"Current Price": "1.45 ", "Location": "Fountain Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "64282", "properties": {"Current Price": "1.45 ", "Location": "Santa Maria, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "64367", "properties": {"Current Price": "1.45 ", "Location": "Visalia, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "64452", "properties": {"Current Price": "1.45 ", "Location": "Fresno, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "64538", "properties": {"Current Price": "1.45 ", "Location": "Temecula, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "64624", "properties": {"Current Price": "1.45 ", "Location": "West Hills, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "64710", "properties": {"Current Price": "1.45 ", "Location": "Buena Park, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "64796", "properties": {"Current Price": "1.45 ", "Location": "Oceanside, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "64882", "properties": {"Current Price": "1.45 ", "Location": "El Cajon, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "64968", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "65054", "properties": {"Current Price": "1.45 ", "Location": "San Marcos, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "65140", "properties": {"Current Price": "1.45 ", "Location": "Menifee, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "65225", "properties": {"Current Price": "1.45 ", "Location": "Temecula, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "65311", "properties": {"Current Price": "1.45 ", "Location": "Jurupa Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "65396", "properties": {"Current Price": "1.45 ", "Location": "Moreno Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "65481", "properties": {"Current Price": "1.45 ", "Location": "Palm Springs, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "65567", "properties": {"Current Price": "1.45 ", "Location": "Escondido, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "65653", "properties": {"Current Price": "1.45 ", "Location": "Escondido, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "65739", "properties": {"Current Price": "1.45 ", "Location": "Perris, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "65825", "properties": {"Current Price": "1.45 ", "Location": "Long Beach, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "65910", "properties": {"Current Price": "1.45 ", "Location": "Moreno Valley, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "65996", "properties": {"Current Price": "1.45 ", "Location": "Lake Elsinore, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "66082", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "66168", "properties": {"Current Price": "1.45 ", "Location": "Palmdale, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "66254", "properties": {"Current Price": "1.45 ", "Location": "Murrieta, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "66340", "properties": {"Current Price": "1.45 ", "Location": "Beaumont, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "66426", "properties": {"Current Price": "1.45 ", "Location": "Hesperia, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "66511", "properties": {"Current Price": "1.45 ", "Location": "Chula Vista, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "66596", "properties": {"Current Price": "1.45 ", "Location": "Ramona, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "66681", "properties": {"Current Price": "1.45 ", "Location": "Chula Vista, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "66766", "properties": {"Current Price": "1.45 ", "Location": "San Diego, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "66851", "properties": {"Current Price": "1.45 ", "Location": "Encinitas, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "66936", "properties": {"Current Price": "1.45 ", "Location": "Santa Clarita, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "67022", "properties": {"Current Price": "1.29 ", "Location": "Poway, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "67108", "properties": {"Current Price": "1.29 ", "Location": "Thousand Oaks, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "67194", "properties": {"Current Price": "1.29 ", "Location": "Ventura, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "67280", "properties": {"Current Price": "1.29 ", "Location": "Pomona, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "67366", "properties": {"Current Price": "1.29 ", "Location": "Santa Clarita, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "67452", "properties": {"Current Price": "1.29 ", "Location": "Carson, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "67538", "properties": {"Current Price": "1.29 ", "Location": "Buckeye, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "67624", "properties": {"Current Price": "1.29 ", "Location": "Queen Creek, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "67710", "properties": {"Current Price": "1.29 ", "Location": "Glendale, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "67796", "properties": {"Current Price": "1.29 ", "Location": "Tempe, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "67882", "properties": {"Current Price": "1.29 ", "Location": "Chandler, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "67968", "properties": {"Current Price": "1.29 ", "Location": "Laveen, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "68054", "properties": {"Current Price": "1.29 ", "Location": "Phoenix, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "68140", "properties": {"Current Price": "1.45 ", "Location": "Peoria, AZ", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "68226", "properties": {"Current Price": "1.29 ", "Location": "Goodyear, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "68312", "properties": {"Current Price": "1.45 ", "Location": "Mesa, AZ", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "68398", "properties": {"Current Price": "1.29 ", "Location": "Gilbert, AZ", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "68484", "properties": {"Current Price": "1.45 ", "Location": "Phoenix, AZ", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "68570", "properties": {"Current Price": "1.45 ", "Location": "Arroyo Grande, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "68656", "properties": {"Current Price": "1.45 ", "Location": "Murrieta, CA", "Price": "1.45", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "68742", "properties": {"Current Price": "1.29 ", "Location": "Coachella, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "68828", "properties": {"Current Price": "1.29 ", "Location": "Tustin, CA", "Price": "1.29", "Product": "Pueblo Lindo Pork Chorizo", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_ded1b9d5acfefd5be578f30c9b04033c.bindTooltip(
+    geo_json_a3a1d7803906c4898f192155f43fe726.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
-    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
     let fields = ["Product", "Current Price", "Location"];
     let aliases = ["Product", "Current Price", "Location"];
     let table = '<table>' +
@@ -464,10 +452,13 @@
     
     return div
     }
-    ,{"className": "foliumtooltip", "sticky": true});
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
                      
     
-            geo_json_ded1b9d5acfefd5be578f30c9b04033c.addTo(map_228bf81a90b34ca083b9d5dcf0210828);
+            geo_json_a3a1d7803906c4898f192155f43fe726.addTo(map_c6df7c66436f49f9b7978e7417bcd0a0);
         
 </script>
 </html>
