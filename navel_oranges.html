@@ -3,21 +3,13 @@
 <head><title>Aldi Price Map - Navel Oranges</title>
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Navel Oranges cost at Aldi?">
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
@@ -25,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_95a5069f6a98e25d5672b1f6e63ff532 {
+                #map_67810f92de7185e1e174e7b9ecffc6d9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -34,6 +26,29 @@
                 }
                 .leaflet-container { font-size: 1rem; }
             </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
         
     
                     <style>
@@ -177,8 +192,8 @@
         <div class='legend-title'>Price</div>
         <div class='legend-scale'>
             <ul class='legend-labels'>
-                <li><span style='background:#006400'></span>2.79</li>
-                <li><span style='background:#b22222'></span>3.99</li>
+                <li><span style='background:#006400'></span>2.69</li>
+                <li><span style='background:#b22222'></span>7.69</li>
             </ul>
         </div>
     </div>
@@ -188,68 +203,55 @@
     <div class="header">
                     <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
                             
-                <option value="avocados">Avocados</option>
+                <option value="bake_house_creations_pie_crusts">BAKE HOUSE CREATIONS Pie Crusts</option>
 
                 
-                <option value="boulder_heavy_duty_or_regular_aluminum_foil">Boulder Heavy Duty or Regular Aluminum Foil</option>
+                <option value="baker's_corner_evaporated_milk">BAKER'S CORNER Evaporated Milk</option>
 
                 
-                <option value="boulder_parchment_paper">Boulder Parchment Paper</option>
+                <option value="baby_peeled_carrots">Baby Peeled Carrots</option>
 
                 
-                <option value="boulder_utility_foil_pan_with_lid">Boulder Utility Foil Pan with Lid</option>
+                <option value="bob_evans_refrigerated_mashed_potatoes">Bob Evans Refrigerated Mashed Potatoes</option>
 
                 
-                <option value="clancy's_restaurant_style_tortilla_chips">Clancy's Restaurant Style Tortilla Chips</option>
+                <option value="celery">Celery</option>
 
                 
-                <option value="earthly_grains_ready-to-eat_rice_cups">Earthly Grains Ready-to-Eat Rice Cups</option>
-
-                
-                <option value="fresh_family_pack_organic_grass-fed_93_ground_beef">Fresh Family Pack Organic Grass-Fed 93% Ground Beef</option>
-
-                
-                <option value="happy_farms_2_milk_mexican_or_sharp_cheddar">Happy Farms 2% Milk Mexican or Sharp Cheddar</option>
-
-                
-                <option value="kiwi">Kiwi</option>
-
-                
-                <option value="mini_cucumbers">Mini Cucumbers</option>
+                <option value="friendly_farms_whipped_dairy_topping">FRIENDLY FARMS Whipped Dairy Topping</option>
 
                 
                 <option value="navel_oranges" selected>Navel Oranges</option>
 
                 
-                <option value="peaches">Peaches</option>
+                <option value="russet_potatoes">Russet Potatoes</option>
 
                 
-                <option value="priano_stuffed_shells_or_manicotti">Priano Stuffed Shells or Manicotti</option>
+                <option value="southern_grove_dried_mediterranean_apricots">SOUTHERN GROVE Dried Mediterranean Apricots</option>
 
                 
-                <option value="reggano_cheesy_skillet_dinner">Reggano Cheesy Skillet Dinner</option>
+                <option value="specially_selected_pinot_grigio_alto_adige">SPECIALLY SELECTED Pinot Grigio Alto Adige</option>
 
                 
-                <option value="reggano_meat_or_tomato,_basil_&_garlic">Reggano Meat or Tomato, Basil & Garlic</option>
+                <option value="sweet_harvest_jellied_cranberry_sauce">SWEET HARVEST Jellied Cranberry Sauce</option>
 
                 
-                <option value="reggano_parmesan_or_parmesan_&_romano_cheese">Reggano Parmesan or Parmesan & Romano Cheese</option>
+                <option value="specially_selected_fig_or_sour_cherry_fruit_spread">Specially Selected Fig or Sour Cherry Fruit Spread</option>
 
                 
-                <option value="snacking_tomatoes_on_the_vine">Snacking Tomatoes on the Vine</option>
+                <option value="specially_selected_mini_artisan_crackers">Specially Selected Mini Artisan Crackers</option>
+
+                
+                <option value="specially_selected_seeded_crackers">Specially Selected Seeded Crackers</option>
+
+                
+                <option value="sweet_potatoes">Sweet Potatoes</option>
 
                 </select> &nbsp;cost at Aldi? </div>
-                    <div class="sub">Prices valid Aug 19<sup>th</sup> - Aug 25<sup>th</sup>. New products and next update on Aug 26<sup>th</sup></span>    </div>
+                    <div class="sub">Prices valid Nov 18<sup>th</sup> - Nov 24<sup>th</sup>. New products and next update on Nov 25<sup>th</sup></span>    </div>
                     <div style="clear: both;"></div>           
                 </div>
-    
-    <div class="banner">
-        <p>
-            You are viewing a price map from the past. Prices in store may have changed. View price maps of this week on <a href="https://www.aldipricemap.com">
-            aldipricemap.com</a>
-        </p>
-    </div>
-    <div class="folium-map" id="map_95a5069f6a98e25d5672b1f6e63ff532" ></div>
+    <div class="folium-map" id="map_67810f92de7185e1e174e7b9ecffc6d9" ></div>
         
 
     <div class="footer">
@@ -258,24 +260,22 @@
         View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
             
         </p>
-        <p>For the week of Aug 19<sup>th</sup>, price maps are available for the following products - 
-                <a href="avocados.html">Avocados</a>, 
-                <a href="boulder_heavy_duty_or_regular_aluminum_foil.html">Boulder Heavy Duty or Regular Aluminum Foil</a>, 
-                <a href="boulder_parchment_paper.html">Boulder Parchment Paper</a>, 
-                <a href="boulder_utility_foil_pan_with_lid.html">Boulder Utility Foil Pan with Lid</a>, 
-                <a href="clancy's_restaurant_style_tortilla_chips.html">Clancy's Restaurant Style Tortilla Chips</a>, 
-                <a href="earthly_grains_ready-to-eat_rice_cups.html">Earthly Grains Ready-to-Eat Rice Cups</a>, 
-                <a href="fresh_family_pack_organic_grass-fed_93_ground_beef.html">Fresh Family Pack Organic Grass-Fed 93% Ground Beef</a>, 
-                <a href="happy_farms_2_milk_mexican_or_sharp_cheddar.html">Happy Farms 2% Milk Mexican or Sharp Cheddar</a>, 
-                <a href="kiwi.html">Kiwi</a>, 
-                <a href="mini_cucumbers.html">Mini Cucumbers</a>, 
+        <p>For the week of Nov 18<sup>th</sup>, price maps are available for the following products - 
+                <a href="bake_house_creations_pie_crusts.html">BAKE HOUSE CREATIONS Pie Crusts</a>, 
+                <a href="baker's_corner_evaporated_milk.html">BAKER'S CORNER Evaporated Milk</a>, 
+                <a href="baby_peeled_carrots.html">Baby Peeled Carrots</a>, 
+                <a href="bob_evans_refrigerated_mashed_potatoes.html">Bob Evans Refrigerated Mashed Potatoes</a>, 
+                <a href="celery.html">Celery</a>, 
+                <a href="friendly_farms_whipped_dairy_topping.html">FRIENDLY FARMS Whipped Dairy Topping</a>, 
                 <a href="navel_oranges.html">Navel Oranges</a>, 
-                <a href="peaches.html">Peaches</a>, 
-                <a href="priano_stuffed_shells_or_manicotti.html">Priano Stuffed Shells or Manicotti</a>, 
-                <a href="reggano_cheesy_skillet_dinner.html">Reggano Cheesy Skillet Dinner</a>, 
-                <a href="reggano_meat_or_tomato,_basil_&_garlic.html">Reggano Meat or Tomato, Basil & Garlic</a>, 
-                <a href="reggano_parmesan_or_parmesan_&_romano_cheese.html">Reggano Parmesan or Parmesan & Romano Cheese</a>, 
-                <a href="snacking_tomatoes_on_the_vine.html">Snacking Tomatoes on the Vine</a></p></div></body>
+                <a href="russet_potatoes.html">Russet Potatoes</a>, 
+                <a href="southern_grove_dried_mediterranean_apricots.html">SOUTHERN GROVE Dried Mediterranean Apricots</a>, 
+                <a href="specially_selected_pinot_grigio_alto_adige.html">SPECIALLY SELECTED Pinot Grigio Alto Adige</a>, 
+                <a href="sweet_harvest_jellied_cranberry_sauce.html">SWEET HARVEST Jellied Cranberry Sauce</a>, 
+                <a href="specially_selected_fig_or_sour_cherry_fruit_spread.html">Specially Selected Fig or Sour Cherry Fruit Spread</a>, 
+                <a href="specially_selected_mini_artisan_crackers.html">Specially Selected Mini Artisan Crackers</a>, 
+                <a href="specially_selected_seeded_crackers.html">Specially Selected Seeded Crackers</a>, 
+                <a href="sweet_potatoes.html">Sweet Potatoes</a></p></div></body>
     <script>
         function countryHandler(value) {
             window.location.assign(`${value}.html`);
@@ -285,95 +285,135 @@
 <script>
     
     
-            var map_95a5069f6a98e25d5672b1f6e63ff532 = L.map(
-                "map_95a5069f6a98e25d5672b1f6e63ff532",
+            var map_67810f92de7185e1e174e7b9ecffc6d9 = L.map(
+                "map_67810f92de7185e1e174e7b9ecffc6d9",
                 {
                     center: [34.7010355, -116.101332],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
                 }
             );
-            L.control.scale().addTo(map_95a5069f6a98e25d5672b1f6e63ff532);
+            L.control.scale().addTo(map_67810f92de7185e1e174e7b9ecffc6d9);
 
             
 
         
     
-            var tile_layer_c0470f8d6db9dfa277744671287bcd7d = L.tileLayer(
-                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            var tile_layer_e777caa3d1d14a1a90dde528d2de7bf8 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
             );
         
     
-            tile_layer_c0470f8d6db9dfa277744671287bcd7d.addTo(map_95a5069f6a98e25d5672b1f6e63ff532);
+            tile_layer_e777caa3d1d14a1a90dde528d2de7bf8.addTo(map_67810f92de7185e1e174e7b9ecffc6d9);
         
     
-            map_95a5069f6a98e25d5672b1f6e63ff532.fitBounds(
+            map_67810f92de7185e1e174e7b9ecffc6d9.fitBounds(
                 [[32.593461, -120.602194], [36.80861, -111.60047]],
                 {}
             );
         
     
-        function geo_json_995b0d88fe1438e5f595b1493178b283_styler(feature) {
+        function geo_json_9cae40dac37ef2e0c8caea6208c07921_styler(feature) {
             switch(feature.id) {
-                case "33637": case "33739": case "34045": case "34657": case "34759": case "35371": case "35677": case "35779": case "35983": case "37309": case "37717": case "37921": case "38023": case "38227": case "38329": case "38839": case "38941": case "39043": case "39145": case "39247": case "39349": case "39451": case "39553": case "39655": case "39757": case "39859": case "39961": case "40063": case "40165": 
+                case "44865": case "44972": case "45079": case "45186": case "45293": case "45400": case "45507": case "45614": case "45721": case "45828": case "45935": case "46042": case "46149": case "46256": case "46363": case "46470": case "46577": case "46684": case "46791": case "46898": case "47005": case "47112": case "47219": case "47326": case "47433": case "47540": case "47647": case "47754": case "47861": case "47968": case "48075": case "48182": case "48289": case "48396": case "48503": case "48610": case "48717": case "48824": case "48931": case "49038": case "49145": case "49252": case "49359": case "49466": case "49573": case "49680": case "49787": case "49894": case "50001": case "50108": case "50215": case "51606": case "51713": case "51820": case "51927": case "52034": case "52141": case "52248": 
                     return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
                 default:
                     return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
             }
         }
-        function geo_json_995b0d88fe1438e5f595b1493178b283_highlighter(feature) {
+        function geo_json_9cae40dac37ef2e0c8caea6208c07921_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_995b0d88fe1438e5f595b1493178b283_pointToLayer(feature, latlng) {
-            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+        function geo_json_9cae40dac37ef2e0c8caea6208c07921_pointToLayer(feature, latlng) {
+            var opts = {
+  "stroke": true,
+  "color": "#3388ff",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 2,
+};
             
-            let style = geo_json_995b0d88fe1438e5f595b1493178b283_styler(feature)
+            let style = geo_json_9cae40dac37ef2e0c8caea6208c07921_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_995b0d88fe1438e5f595b1493178b283_onEachFeature(feature, layer) {
+        function geo_json_9cae40dac37ef2e0c8caea6208c07921_onEachFeature(feature, layer) {
+
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_995b0d88fe1438e5f595b1493178b283.resetStyle(e.target);
+                            geo_json_9cae40dac37ef2e0c8caea6208c07921.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_995b0d88fe1438e5f595b1493178b283_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_9cae40dac37ef2e0c8caea6208c07921_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_995b0d88fe1438e5f595b1493178b283 = L.geoJson(null, {
-                onEachFeature: geo_json_995b0d88fe1438e5f595b1493178b283_onEachFeature,
+        var geo_json_9cae40dac37ef2e0c8caea6208c07921 = L.geoJson(null, {
+                onEachFeature: geo_json_9cae40dac37ef2e0c8caea6208c07921_onEachFeature,
             
-                style: geo_json_995b0d88fe1438e5f595b1493178b283_styler,
-                pointToLayer: geo_json_995b0d88fe1438e5f595b1493178b283_pointToLayer,
+                style: geo_json_9cae40dac37ef2e0c8caea6208c07921_styler,
+                pointToLayer: geo_json_9cae40dac37ef2e0c8caea6208c07921_pointToLayer,
+            ...{
+}
         });
 
-        function geo_json_995b0d88fe1438e5f595b1493178b283_add (data) {
-            geo_json_995b0d88fe1438e5f595b1493178b283
+        function geo_json_9cae40dac37ef2e0c8caea6208c07921_add (data) {
+            geo_json_9cae40dac37ef2e0c8caea6208c07921
                 .addData(data);
         }
-            geo_json_995b0d88fe1438e5f595b1493178b283_add({"bbox": [-120.602194, 32.593461, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "33637", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Yucaipa, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "33739", "properties": {"Current Price": "3.99 Per 3-Lb. Pkg.", "Location": "Burbank, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "33842", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "La Habra, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "33944", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Fontana, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "34045", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Yucca Valley, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "34148", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Mira Loma, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "34250", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Downey, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "34352", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "San Diego, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "34454", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Gardena, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "34556", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Anaheim, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "34657", "properties": {"Current Price": "3.99 Per 3-Lb. Pkg.", "Location": "Laguna Woods, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "34759", "properties": {"Current Price": "3.99 Per 3-Lb. Pkg.", "Location": "Lake Forest, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "34862", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Fountain Valley, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "34964", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Santa Maria, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "35066", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Visalia, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "35168", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Fresno, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "35270", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Temecula, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "35371", "properties": {"Current Price": "3.99 Per 3-Lb. Pkg.", "Location": "West Hills, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "35474", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Buena Park, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "35576", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Oceanside, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "35677", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "El Cajon, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "35779", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "San Diego, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "35882", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "San Marcos, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "35983", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Menifee, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "36086", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Temecula, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "36188", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Jurupa Valley, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "36290", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Moreno Valley, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "36392", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Palm Springs, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "36494", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Escondido, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "36596", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Escondido, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "36698", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Perris, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "36800", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Long Beach, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "36902", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Moreno Valley, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "37004", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Lake Elsinore, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "37106", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "San Diego, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "37208", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Palmdale, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "37309", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Murrieta, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "37412", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Beaumont, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "37514", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Hesperia, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "37616", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Chula Vista, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "37717", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Ramona, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "37820", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Chula Vista, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "37921", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "San Diego, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "38023", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Encinitas, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "38126", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Santa Clarita, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "38227", "properties": {"Current Price": "3.99 Per 3-Lb. Pkg.", "Location": "Poway, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "38329", "properties": {"Current Price": "3.99 Per 3-Lb. Pkg.", "Location": "Thousand Oaks, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "38432", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Ventura, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "38534", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Pomona, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "38636", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Santa Clarita, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "38738", "properties": {"Current Price": "2.79 Per 3-Lb. Pkg.", "Location": "Carson, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "38839", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Buckeye, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "38941", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Queen Creek, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "39043", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Glendale, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "39145", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Tempe, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "39247", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Chandler, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "39349", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Laveen, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "39451", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Phoenix, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "39553", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Peoria, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "39655", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Goodyear, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "39757", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Mesa, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "39859", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Gilbert, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "39961", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Phoenix, AZ", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "40063", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Arroyo Grande, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "40165", "properties": {"Current Price": "3.99 Per 3-Lb. Bag", "Location": "Murrieta, CA", "Price": "3.99", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "40268", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Coachella, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "40370", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Tustin, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "40472", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Lompoc, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "40574", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Torrance, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "40676", "properties": {"Current Price": "2.79 Per 3-Lb. Bag", "Location": "Porterville, CA", "Price": "2.79", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_9cae40dac37ef2e0c8caea6208c07921_add({"bbox": [-120.602194, 32.593461, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "44865", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Yucaipa, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "44972", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Burbank, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "45079", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "La Habra, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "45186", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Fontana, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "45293", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Yucca Valley, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "45400", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Mira Loma, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "45507", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Downey, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "45614", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "San Diego, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "45721", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Gardena, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "45828", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Anaheim, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "45935", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Laguna Woods, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "46042", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Lake Forest, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "46149", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Fountain Valley, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "46256", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Santa Maria, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "46363", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Visalia, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "46470", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Fresno, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "46577", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Temecula, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "46684", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "West Hills, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "46791", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Buena Park, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "46898", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Oceanside, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "47005", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "El Cajon, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "47112", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "San Diego, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "47219", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "San Marcos, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "47326", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Menifee, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "47433", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Temecula, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "47540", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Jurupa Valley, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "47647", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Moreno Valley, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "47754", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Palm Springs, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "47861", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Escondido, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "47968", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Escondido, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "48075", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Perris, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "48182", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Long Beach, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "48289", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Moreno Valley, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "48396", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Lake Elsinore, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "48503", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "San Diego, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "48610", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Palmdale, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "48717", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Murrieta, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "48824", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Beaumont, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "48931", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Hesperia, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "49038", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Chula Vista, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "49145", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Ramona, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "49252", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Chula Vista, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "49359", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "San Diego, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "49466", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Encinitas, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "49573", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Santa Clarita, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "49680", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Poway, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "49787", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Thousand Oaks, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "49894", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Ventura, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "50001", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Pomona, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "50108", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Santa Clarita, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "50215", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Carson, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "50322", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Buckeye, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "50429", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Queen Creek, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "50536", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Glendale, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "50643", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Tempe, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "50750", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Chandler, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "50857", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Laveen, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "50964", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Phoenix, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "51071", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Peoria, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "51178", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Goodyear, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "51285", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Mesa, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "51392", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Gilbert, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "51499", "properties": {"Current Price": "2.69 Per 4-Lb. Bag", "Location": "Phoenix, AZ", "Price": "2.69", "Product": "Navel Oranges", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "51606", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Arroyo Grande, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "51713", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Murrieta, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "51820", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Coachella, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "51927", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Tustin, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "52034", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Lompoc, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "52141", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Torrance, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "52248", "properties": {"Current Price": "7.69 Per 4-Lb. Bag", "Location": "Porterville, CA", "Price": "7.69", "Product": "Navel Oranges", "__folium_color": "#b22222"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_995b0d88fe1438e5f595b1493178b283.bindTooltip(
+    geo_json_9cae40dac37ef2e0c8caea6208c07921.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
-    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
     let fields = ["Product", "Current Price", "Location"];
     let aliases = ["Product", "Current Price", "Location"];
     let table = '<table>' +
@@ -388,10 +428,13 @@
     
     return div
     }
-    ,{"className": "foliumtooltip", "sticky": true});
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
                      
     
-            geo_json_995b0d88fe1438e5f595b1493178b283.addTo(map_95a5069f6a98e25d5672b1f6e63ff532);
+            geo_json_9cae40dac37ef2e0c8caea6208c07921.addTo(map_67810f92de7185e1e174e7b9ecffc6d9);
         
 </script>
 </html>
