@@ -3,21 +3,13 @@
 <head><title>Aldi Price Map - Garlic</title>
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="description" content="How much do Garlic cost at Aldi?">
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
@@ -25,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_12507a2f21e658e5f586489a1ec26db0 {
+                #map_6f46095914a212f0e6e5768bd65a7247 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -34,6 +26,29 @@
                 }
                 .leaflet-container { font-size: 1rem; }
             </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
         
     
                     <style>
@@ -177,7 +192,7 @@
         <div class='legend-title'>Price</div>
         <div class='legend-scale'>
             <ul class='legend-labels'>
-                <li><span style='background:#006400'></span>0.85</li>
+                <li><span style='background:#006400'></span>0.89</li>
                 <li><span style='background:#b22222'></span>0.99</li>
             </ul>
         </div>
@@ -188,92 +203,16 @@
     <div class="header">
                     <div class="main">How much do &nbsp;<select name="products" id="products" onchange="countryHandler(this.value)">
                             
-                <option value="baker's_corner_fudge_brownie_mix">Baker's Corner Fudge Brownie Mix</option>
-
-                
-                <option value="benton's_peanut_butter_filled_cookies">Benton's Peanut Butter Filled Cookies</option>
-
-                
-                <option value="california_nectarines_or_plums">California Nectarines or Plums</option>
-
-                
-                <option value="cantaloupe">Cantaloupe</option>
-
-                
-                <option value="casa_mamita_medium_salsa">Casa Mamita Medium Salsa</option>
-
-                
-                <option value="cattlemen's_ranch_unseasoned_or_bacon_cheddar_black_angus_patties">Cattlemen's Ranch Unseasoned or Bacon Cheddar Black Angus Patties</option>
-
-                
-                <option value="clancy's_big_dippers_tortilla_chips">Clancy's Big Dippers Tortilla Chips</option>
-
-                
-                <option value="clancy's_cheese_melt">Clancy's Cheese Melt</option>
-
-                
-                <option value="clancy's_original_or_jalapeno_kettle_chips">Clancy's Original or Jalapeno Kettle Chips</option>
-
-                
-                <option value="classic_coleslaw">Classic Coleslaw</option>
-
-                
-                <option value="dakota's_pride_baked_beans">Dakota's Pride Baked Beans</option>
-
-                
-                <option value="earthly_grains_long_grain_white_rice">Earthly Grains Long Grain White Rice</option>
-
-                
-                <option value="fresh_family_pack_937_organic_grass-fed_ground_beef">Fresh Family Pack 93/7 Organic Grass-Fed Ground Beef</option>
-
-                
                 <option value="garlic" selected>Garlic</option>
 
                 
-                <option value="helados_mexico_bolis_rompope">Helados Mexico Bolis Rompope</option>
-
-                
-                <option value="little_salad_bar_classic_coleslaw">Little salad bar Classic Coleslaw</option>
-
-                
-                <option value="nature's_nectar_not_from_concentrate_lemonade">Nature's Nectar Not from Concentrate Lemonade</option>
-
-                
-                <option value="organic_zucchini">Organic Zucchini</option>
-
-                
-                <option value="park_street_deli_classic_chicken_salad">Park Street Deli Classic Chicken Salad</option>
-
-                
-                <option value="park_street_deli_classic,_garlic_or_red_pepper_hummus">Park Street Deli Classic, Garlic or Red Pepper Hummus</option>
-
-                
-                <option value="park_street_deli_pickle_chips_dill_or_atomic_spicy">Park Street Deli Pickle Chips Dill or Atomic Spicy</option>
-
-                
-                <option value="puraqua_belle_vie_sparkling_flavored_water">PurAqua Belle Vie Sparkling Flavored Water</option>
-
-                
-                <option value="simply_nature_organic_premium_100_juice">Simply Nature Organic Premium 100% Juice</option>
-
-                
-                <option value="sundae_shoppe_butter_pecan_or_cookies_&_cream_ice_cream">Sundae Shoppe Butter Pecan or Cookies & Cream Ice Cream</option>
-
-                
-                <option value="tajin_fruit_seasoning">Tajin Fruit Seasoning</option>
+                <option value="mini_cucumbers">Mini Cucumbers</option>
 
                 </select> &nbsp;cost at Aldi? </div>
-                    <div class="sub">Prices valid Aug 27<sup>th</sup> - Sep 2<sup>nd</sup>. New products and next update on Sep 3<sup>rd</sup></span>    </div>
+                    <div class="sub">Prices valid Nov 25<sup>th</sup> - Dec 1<sup>st</sup>. New products and next update on Dec 2<sup>nd</sup></span>    </div>
                     <div style="clear: both;"></div>           
                 </div>
-    
-    <div class="banner">
-        <p>
-            You are viewing a price map from the past. Prices in store may have changed. View price maps of this week on <a href="https://www.aldipricemap.com">
-            aldipricemap.com</a>
-        </p>
-    </div>
-    <div class="folium-map" id="map_12507a2f21e658e5f586489a1ec26db0" ></div>
+    <div class="folium-map" id="map_6f46095914a212f0e6e5768bd65a7247" ></div>
         
 
     <div class="footer">
@@ -282,32 +221,9 @@
         View price maps of this week on <a href="https://www.aldipricemap.com">aldipricemap.com</a>. 
             
         </p>
-        <p>For the week of Aug 27<sup>th</sup>, price maps are available for the following products - 
-                <a href="baker's_corner_fudge_brownie_mix.html">Baker's Corner Fudge Brownie Mix</a>, 
-                <a href="benton's_peanut_butter_filled_cookies.html">Benton's Peanut Butter Filled Cookies</a>, 
-                <a href="california_nectarines_or_plums.html">California Nectarines or Plums</a>, 
-                <a href="cantaloupe.html">Cantaloupe</a>, 
-                <a href="casa_mamita_medium_salsa.html">Casa Mamita Medium Salsa</a>, 
-                <a href="cattlemen's_ranch_unseasoned_or_bacon_cheddar_black_angus_patties.html">Cattlemen's Ranch Unseasoned or Bacon Cheddar Black Angus Patties</a>, 
-                <a href="clancy's_big_dippers_tortilla_chips.html">Clancy's Big Dippers Tortilla Chips</a>, 
-                <a href="clancy's_cheese_melt.html">Clancy's Cheese Melt</a>, 
-                <a href="clancy's_original_or_jalapeno_kettle_chips.html">Clancy's Original or Jalapeno Kettle Chips</a>, 
-                <a href="classic_coleslaw.html">Classic Coleslaw</a>, 
-                <a href="dakota's_pride_baked_beans.html">Dakota's Pride Baked Beans</a>, 
-                <a href="earthly_grains_long_grain_white_rice.html">Earthly Grains Long Grain White Rice</a>, 
-                <a href="fresh_family_pack_937_organic_grass-fed_ground_beef.html">Fresh Family Pack 93/7 Organic Grass-Fed Ground Beef</a>, 
+        <p>For the week of Nov 25<sup>th</sup>, price maps are available for the following products - 
                 <a href="garlic.html">Garlic</a>, 
-                <a href="helados_mexico_bolis_rompope.html">Helados Mexico Bolis Rompope</a>, 
-                <a href="little_salad_bar_classic_coleslaw.html">Little salad bar Classic Coleslaw</a>, 
-                <a href="nature's_nectar_not_from_concentrate_lemonade.html">Nature's Nectar Not from Concentrate Lemonade</a>, 
-                <a href="organic_zucchini.html">Organic Zucchini</a>, 
-                <a href="park_street_deli_classic_chicken_salad.html">Park Street Deli Classic Chicken Salad</a>, 
-                <a href="park_street_deli_classic,_garlic_or_red_pepper_hummus.html">Park Street Deli Classic, Garlic or Red Pepper Hummus</a>, 
-                <a href="park_street_deli_pickle_chips_dill_or_atomic_spicy.html">Park Street Deli Pickle Chips Dill or Atomic Spicy</a>, 
-                <a href="puraqua_belle_vie_sparkling_flavored_water.html">PurAqua Belle Vie Sparkling Flavored Water</a>, 
-                <a href="simply_nature_organic_premium_100_juice.html">Simply Nature Organic Premium 100% Juice</a>, 
-                <a href="sundae_shoppe_butter_pecan_or_cookies_&_cream_ice_cream.html">Sundae Shoppe Butter Pecan or Cookies & Cream Ice Cream</a>, 
-                <a href="tajin_fruit_seasoning.html">Tajin Fruit Seasoning</a></p></div></body>
+                <a href="mini_cucumbers.html">Mini Cucumbers</a></p></div></body>
     <script>
         function countryHandler(value) {
             window.location.assign(`${value}.html`);
@@ -317,93 +233,135 @@
 <script>
     
     
-            var map_12507a2f21e658e5f586489a1ec26db0 = L.map(
-                "map_12507a2f21e658e5f586489a1ec26db0",
+            var map_6f46095914a212f0e6e5768bd65a7247 = L.map(
+                "map_6f46095914a212f0e6e5768bd65a7247",
                 {
-                    center: [34.7010355, -118.31989300000001],
+                    center: [34.7010355, -116.101332],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
                 }
             );
-            L.control.scale().addTo(map_12507a2f21e658e5f586489a1ec26db0);
+            L.control.scale().addTo(map_6f46095914a212f0e6e5768bd65a7247);
 
             
 
         
     
-            var tile_layer_fa149630e6a97e96c1572281267bcd10 = L.tileLayer(
-                "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            var tile_layer_0fe3ba23a867b6489987f41c0df25e4f = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
             );
         
     
-            tile_layer_fa149630e6a97e96c1572281267bcd10.addTo(map_12507a2f21e658e5f586489a1ec26db0);
+            tile_layer_0fe3ba23a867b6489987f41c0df25e4f.addTo(map_6f46095914a212f0e6e5768bd65a7247);
         
     
-            map_12507a2f21e658e5f586489a1ec26db0.fitBounds(
-                [[32.593461, -120.45845], [36.80861, -116.181336]],
+            map_6f46095914a212f0e6e5768bd65a7247.fitBounds(
+                [[32.593461, -120.602194], [36.80861, -111.60047]],
                 {}
             );
         
     
-        function geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_styler(feature) {
+        function geo_json_5d1fc040f614116833776251b3072af5_styler(feature) {
             switch(feature.id) {
-                default:
+                case "104634": case "104729": case "104824": case "104919": case "105014": case "105109": case "105204": case "105299": case "105394": case "105489": case "105584": case "105679": case "105774": case "105869": case "105964": case "106059": case "106154": case "106249": case "106344": case "106439": case "106534": case "106629": case "106724": case "106819": case "106914": case "107009": case "107104": case "107199": case "107294": case "107389": case "107484": case "107579": case "107674": case "107769": case "107864": case "107959": case "108054": case "108149": case "108244": case "108339": case "108434": case "108529": case "108624": case "108719": case "108814": case "108909": case "109004": case "109099": case "109194": case "109289": case "109384": case "110619": case "110714": case "110809": case "110904": case "110999": case "111094": case "111189": 
                     return {"color": "#006400", "fillColor": "#006400", "fillOpacity": 0.5, "radius": 3, "weight": 2};
+                default:
+                    return {"color": "#b22222", "fillColor": "#b22222", "fillOpacity": 0.5, "radius": 3, "weight": 2};
             }
         }
-        function geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_highlighter(feature) {
+        function geo_json_5d1fc040f614116833776251b3072af5_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_pointToLayer(feature, latlng) {
-            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+        function geo_json_5d1fc040f614116833776251b3072af5_pointToLayer(feature, latlng) {
+            var opts = {
+  "stroke": true,
+  "color": "#3388ff",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 2,
+};
             
-            let style = geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_styler(feature)
+            let style = geo_json_5d1fc040f614116833776251b3072af5_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_onEachFeature(feature, layer) {
+        function geo_json_5d1fc040f614116833776251b3072af5_onEachFeature(feature, layer) {
+
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_37dc07c728d7dfcb2f98a37d3d6523bf.resetStyle(e.target);
+                            geo_json_5d1fc040f614116833776251b3072af5.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_5d1fc040f614116833776251b3072af5_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_37dc07c728d7dfcb2f98a37d3d6523bf = L.geoJson(null, {
-                onEachFeature: geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_onEachFeature,
+        var geo_json_5d1fc040f614116833776251b3072af5 = L.geoJson(null, {
+                onEachFeature: geo_json_5d1fc040f614116833776251b3072af5_onEachFeature,
             
-                style: geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_styler,
-                pointToLayer: geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_pointToLayer,
+                style: geo_json_5d1fc040f614116833776251b3072af5_styler,
+                pointToLayer: geo_json_5d1fc040f614116833776251b3072af5_pointToLayer,
+            ...{
+}
         });
 
-        function geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_add (data) {
-            geo_json_37dc07c728d7dfcb2f98a37d3d6523bf
+        function geo_json_5d1fc040f614116833776251b3072af5_add (data) {
+            geo_json_5d1fc040f614116833776251b3072af5
                 .addData(data);
         }
-            geo_json_37dc07c728d7dfcb2f98a37d3d6523bf_add({"bbox": [-120.45845, 32.593461, -116.181336, 36.80861], "features": [{"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "145361", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "La Habra, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "145761", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Fontana, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "146025", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Mira Loma, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "146161", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Downey, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "146297", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "San Diego, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "146365", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Gardena, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "146569", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Anaheim, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "146825", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Fountain Valley, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "146961", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Santa Maria, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "147029", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Visalia, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "147097", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Fresno, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "147233", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Temecula, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "147693", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Buena Park, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "147761", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Oceanside, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "148145", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "San Marcos, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "148409", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Temecula, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "148477", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Jurupa Valley, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "148545", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Moreno Valley, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "148741", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Palm Springs, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "148877", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Escondido, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "148945", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Escondido, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "149013", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Perris, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "149149", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Long Beach, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "149217", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Moreno Valley, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "149285", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Lake Elsinore, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "149557", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "San Diego, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "149625", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Palmdale, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "149889", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Beaumont, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "150093", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Hesperia, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "150161", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Chula Vista, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "150289", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Chula Vista, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "150613", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Santa Clarita, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "151481", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Ventura, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "151549", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Pomona, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "151617", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Santa Clarita, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "151685", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Carson, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "152593", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Coachella, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "152661", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Tustin, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "152729", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Lompoc, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "152797", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Torrance, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "152933", "properties": {"Current Price": "0.85 Per 3-Pack", "Location": "Porterville, CA", "Price": "0.85", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_5d1fc040f614116833776251b3072af5_add({"bbox": [-120.602194, 32.593461, -111.60047, 36.80861], "features": [{"bbox": [-117.061889, 34.034756, -117.061889, 34.034756], "geometry": {"coordinates": [-117.061889, 34.034756], "type": "Point"}, "id": "104634", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Yucaipa, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.319851, 34.18058, -118.319851, 34.18058], "geometry": {"coordinates": [-118.319851, 34.18058], "type": "Point"}, "id": "104729", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Burbank, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.934671, 33.917893, -117.934671, 33.917893], "geometry": {"coordinates": [-117.934671, 33.917893], "type": "Point"}, "id": "104824", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "La Habra, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4368, 34.07305, -117.4368, 34.07305], "geometry": {"coordinates": [-117.4368, 34.07305], "type": "Point"}, "id": "104919", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Fontana, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.40566, 34.12548, -116.40566, 34.12548], "geometry": {"coordinates": [-116.40566, 34.12548], "type": "Point"}, "id": "105014", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Yucca Valley, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.546, 33.9733, -117.546, 33.9733], "geometry": {"coordinates": [-117.546, 33.9733], "type": "Point"}, "id": "105109", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Mira Loma, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.12514, 33.934814, -118.12514, 33.934814], "geometry": {"coordinates": [-118.12514, 33.934814], "type": "Point"}, "id": "105204", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Downey, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.172843, 32.906076, -117.172843, 32.906076], "geometry": {"coordinates": [-117.172843, 32.906076], "type": "Point"}, "id": "105299", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "San Diego, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3036821, 33.8895418, -118.3036821, 33.8895418], "geometry": {"coordinates": [-118.3036821, 33.8895418], "type": "Point"}, "id": "105394", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Gardena, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.94303, 33.829266, -117.94303, 33.829266], "geometry": {"coordinates": [-117.94303, 33.829266], "type": "Point"}, "id": "105489", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Anaheim, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.723293, 33.609773, -117.723293, 33.609773], "geometry": {"coordinates": [-117.723293, 33.609773], "type": "Point"}, "id": "105584", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Laguna Woods, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.6969, 33.62316, -117.6969, 33.62316], "geometry": {"coordinates": [-117.6969, 33.62316], "type": "Point"}, "id": "105679", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Lake Forest, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.97028, 33.714804, -117.97028, 33.714804], "geometry": {"coordinates": [-117.97028, 33.714804], "type": "Point"}, "id": "105774", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Fountain Valley, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.426802, 34.925453, -120.426802, 34.925453], "geometry": {"coordinates": [-120.426802, 34.925453], "type": "Point"}, "id": "105869", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Santa Maria, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.3115, 36.2908, -119.3115, 36.2908], "geometry": {"coordinates": [-119.3115, 36.2908], "type": "Point"}, "id": "105964", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Visalia, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.82794, 36.80861, -119.82794, 36.80861], "geometry": {"coordinates": [-119.82794, 36.80861], "type": "Point"}, "id": "106059", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Fresno, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.097344, 33.48145, -117.097344, 33.48145], "geometry": {"coordinates": [-117.097344, 33.48145], "type": "Point"}, "id": "106154", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Temecula, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.622595, 34.187148, -118.622595, 34.187148], "geometry": {"coordinates": [-118.622595, 34.187148], "type": "Point"}, "id": "106249", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "West Hills, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.988061, 33.848672, -117.988061, 33.848672], "geometry": {"coordinates": [-117.988061, 33.848672], "type": "Point"}, "id": "106344", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Buena Park, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.281751, 33.207965, -117.281751, 33.207965], "geometry": {"coordinates": [-117.281751, 33.207965], "type": "Point"}, "id": "106439", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Oceanside, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.9633, 32.80716, -116.9633, 32.80716], "geometry": {"coordinates": [-116.9633, 32.80716], "type": "Point"}, "id": "106534", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "El Cajon, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.007784, 32.804557, -117.007784, 32.804557], "geometry": {"coordinates": [-117.007784, 32.804557], "type": "Point"}, "id": "106629", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "San Diego, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.205568, 33.131408, -117.205568, 33.131408], "geometry": {"coordinates": [-117.205568, 33.131408], "type": "Point"}, "id": "106724", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "San Marcos, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.176843, 33.682877, -117.176843, 33.682877], "geometry": {"coordinates": [-117.176843, 33.682877], "type": "Point"}, "id": "106819", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Menifee, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1425482, 33.506299, -117.1425482, 33.506299], "geometry": {"coordinates": [-117.1425482, 33.506299], "type": "Point"}, "id": "106914", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Temecula, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.4599, 34.0135, -117.4599, 34.0135], "geometry": {"coordinates": [-117.4599, 34.0135], "type": "Point"}, "id": "107009", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Jurupa Valley, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.2274, 33.8874, -117.2274, 33.8874], "geometry": {"coordinates": [-117.2274, 33.8874], "type": "Point"}, "id": "107104", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Moreno Valley, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.492912, 33.818763, -116.492912, 33.818763], "geometry": {"coordinates": [-116.492912, 33.818763], "type": "Point"}, "id": "107199", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Palm Springs, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.064703, 33.132859, -117.064703, 33.132859], "geometry": {"coordinates": [-117.064703, 33.132859], "type": "Point"}, "id": "107294", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Escondido, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.10395, 33.112869, -117.10395, 33.112869], "geometry": {"coordinates": [-117.10395, 33.112869], "type": "Point"}, "id": "107389", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Escondido, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.228269, 33.808737, -117.228269, 33.808737], "geometry": {"coordinates": [-117.228269, 33.808737], "type": "Point"}, "id": "107484", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Perris, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.1809026, 33.78277752406, -118.1809026, 33.78277752406], "geometry": {"coordinates": [-118.1809026, 33.78277752406], "type": "Point"}, "id": "107579", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Long Beach, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.276131, 33.936734, -117.276131, 33.936734], "geometry": {"coordinates": [-117.276131, 33.936734], "type": "Point"}, "id": "107674", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Moreno Valley, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.339307, 33.691995, -117.339307, 33.691995], "geometry": {"coordinates": [-117.339307, 33.691995], "type": "Point"}, "id": "107769", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Lake Elsinore, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.1246, 32.91744, -117.1246, 32.91744], "geometry": {"coordinates": [-117.1246, 32.91744], "type": "Point"}, "id": "107864", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "San Diego, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.145193, 34.600732, -118.145193, 34.600732], "geometry": {"coordinates": [-118.145193, 34.600732], "type": "Point"}, "id": "107959", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Palmdale, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.141026, 33.552304, -117.141026, 33.552304], "geometry": {"coordinates": [-117.141026, 33.552304], "type": "Point"}, "id": "108054", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Murrieta, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.949396, 33.925508, -116.949396, 33.925508], "geometry": {"coordinates": [-116.949396, 33.925508], "type": "Point"}, "id": "108149", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Beaumont, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.372004, 34.427908, -117.372004, 34.427908], "geometry": {"coordinates": [-117.372004, 34.427908], "type": "Point"}, "id": "108244", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Hesperia, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.089637, 32.65102, -117.089637, 32.65102], "geometry": {"coordinates": [-117.089637, 32.65102], "type": "Point"}, "id": "108339", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Chula Vista, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.87938, 33.03844, -116.87938, 33.03844], "geometry": {"coordinates": [-116.87938, 33.03844], "type": "Point"}, "id": "108434", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Ramona, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.035181, 32.593461, -117.035181, 32.593461], "geometry": {"coordinates": [-117.035181, 32.593461], "type": "Point"}, "id": "108529", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Chula Vista, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.182807, 32.819796, -117.182807, 32.819796], "geometry": {"coordinates": [-117.182807, 32.819796], "type": "Point"}, "id": "108624", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "San Diego, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.260398, 33.055673, -117.260398, 33.055673], "geometry": {"coordinates": [-117.260398, 33.055673], "type": "Point"}, "id": "108719", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Encinitas, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.540431, 34.381612, -118.540431, 34.381612], "geometry": {"coordinates": [-118.540431, 34.381612], "type": "Point"}, "id": "108814", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Santa Clarita, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.038736, 32.957492, -117.038736, 32.957492], "geometry": {"coordinates": [-117.038736, 32.957492], "type": "Point"}, "id": "108909", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Poway, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.8757, 34.1826, -118.8757, 34.1826], "geometry": {"coordinates": [-118.8757, 34.1826], "type": "Point"}, "id": "109004", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Thousand Oaks, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.23451, 34.26074, -119.23451, 34.26074], "geometry": {"coordinates": [-119.23451, 34.26074], "type": "Point"}, "id": "109099", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Ventura, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.7185, 34.0755, -117.7185, 34.0755], "geometry": {"coordinates": [-117.7185, 34.0755], "type": "Point"}, "id": "109194", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Pomona, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.4741630822, 34.416643298673, -118.4741630822, 34.416643298673], "geometry": {"coordinates": [-118.4741630822, 34.416643298673], "type": "Point"}, "id": "109289", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Santa Clarita, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.26065, 33.84234, -118.26065, 33.84234], "geometry": {"coordinates": [-118.26065, 33.84234], "type": "Point"}, "id": "109384", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Carson, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-112.55529, 33.43374, -112.55529, 33.43374], "geometry": {"coordinates": [-112.55529, 33.43374], "type": "Point"}, "id": "109479", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Buckeye, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.6345969, 33.2648599, -111.6345969, 33.2648599], "geometry": {"coordinates": [-111.6345969, 33.2648599], "type": "Point"}, "id": "109574", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Queen Creek, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18854, 33.63799, -112.18854, 33.63799], "geometry": {"coordinates": [-112.18854, 33.63799], "type": "Point"}, "id": "109669", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Glendale, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9102274342, 33.391606974819, -111.9102274342, 33.391606974819], "geometry": {"coordinates": [-111.9102274342, 33.391606974819], "type": "Point"}, "id": "109764", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Tempe, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.860423, 33.264147, -111.860423, 33.264147], "geometry": {"coordinates": [-111.860423, 33.264147], "type": "Point"}, "id": "109859", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Chandler, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.18366, 33.37687, -112.18366, 33.37687], "geometry": {"coordinates": [-112.18366, 33.37687], "type": "Point"}, "id": "109954", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Laveen, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.0519, 33.63983, -112.0519, 33.63983], "geometry": {"coordinates": [-112.0519, 33.63983], "type": "Point"}, "id": "110049", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Phoenix, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.2711, 33.70758, -112.2711, 33.70758], "geometry": {"coordinates": [-112.2711, 33.70758], "type": "Point"}, "id": "110144", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Peoria, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-112.39175, 33.45623, -112.39175, 33.45623], "geometry": {"coordinates": [-112.39175, 33.45623], "type": "Point"}, "id": "110239", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Goodyear, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.60047, 33.36498, -111.60047, 33.36498], "geometry": {"coordinates": [-111.60047, 33.36498], "type": "Point"}, "id": "110334", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Mesa, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.7511, 33.29523, -111.7511, 33.29523], "geometry": {"coordinates": [-111.7511, 33.29523], "type": "Point"}, "id": "110429", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Gilbert, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-111.9854, 33.59941, -111.9854, 33.59941], "geometry": {"coordinates": [-111.9854, 33.59941], "type": "Point"}, "id": "110524", "properties": {"Current Price": "0.99 Per 3-Pack", "Location": "Phoenix, AZ", "Price": "0.99", "Product": "Garlic", "__folium_color": "#b22222"}, "type": "Feature"}, {"bbox": [-120.602194, 35.1193, -120.602194, 35.1193], "geometry": {"coordinates": [-120.602194, 35.1193], "type": "Point"}, "id": "110619", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Arroyo Grande, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.167912, 33.599544, -117.167912, 33.599544], "geometry": {"coordinates": [-117.167912, 33.599544], "type": "Point"}, "id": "110714", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Murrieta, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-116.181336, 33.681971, -116.181336, 33.681971], "geometry": {"coordinates": [-116.181336, 33.681971], "type": "Point"}, "id": "110809", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Coachella, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-117.8095972, 33.7488444, -117.8095972, 33.7488444], "geometry": {"coordinates": [-117.8095972, 33.7488444], "type": "Point"}, "id": "110904", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Tustin, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-120.45845, 34.64858, -120.45845, 34.64858], "geometry": {"coordinates": [-120.45845, 34.64858], "type": "Point"}, "id": "110999", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Lompoc, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-118.3501, 33.87512, -118.3501, 33.87512], "geometry": {"coordinates": [-118.3501, 33.87512], "type": "Point"}, "id": "111094", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Torrance, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}, {"bbox": [-119.0258418, 36.052311, -119.0258418, 36.052311], "geometry": {"coordinates": [-119.0258418, 36.052311], "type": "Point"}, "id": "111189", "properties": {"Current Price": "0.89 Per 3-Pack", "Location": "Porterville, CA", "Price": "0.89", "Product": "Garlic", "__folium_color": "#006400"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_37dc07c728d7dfcb2f98a37d3d6523bf.bindTooltip(
+    geo_json_5d1fc040f614116833776251b3072af5.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
-    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
     let fields = ["Product", "Current Price", "Location"];
     let aliases = ["Product", "Current Price", "Location"];
     let table = '<table>' +
@@ -418,10 +376,13 @@
     
     return div
     }
-    ,{"className": "foliumtooltip", "sticky": true});
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
                      
     
-            geo_json_37dc07c728d7dfcb2f98a37d3d6523bf.addTo(map_12507a2f21e658e5f586489a1ec26db0);
+            geo_json_5d1fc040f614116833776251b3072af5.addTo(map_6f46095914a212f0e6e5768bd65a7247);
         
 </script>
 </html>
